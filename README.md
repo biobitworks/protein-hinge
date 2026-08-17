@@ -1,9 +1,19 @@
 # Protein Hinge
 
-A hash-pinned evidence ledger for a small-molecule repurposing hypothesis in
-Barth syndrome, and the freedom-to-operate record that sits beside it.
+Protein Hinge is a dating app for drugs and rare diseases: the drugs already
+exist, the diseases have been waiting forever, and somehow nobody has
+introduced them. Type in a rare disease and we swipe through known
+therapeutics — matching on broken biology, patient genetics, and trial
+history — then tell you who's single, who's taken, and who got ghosted after
+a failed Phase 3. And like any good matchmaker, we spill the tea *with
+receipts*: every claim is hash-fingerprinted, so if anyone edits the evidence,
+the ledger calls them out in front of everybody. No AI wingman makes the
+call — plain, readable rules decide every match, and "we don't know" is a
+respectable answer. Claim ceiling `REPURPOSING_HYPOTHESIS`: we set up the
+date; we don't officiate the wedding.
 
-Two lanes, one Merkle root.
+Two custody lanes, one Merkle root — with a HealthOmics genetics lane feeding
+the gap grading beside them.
 
 ```
   SCIENCE LANE                          FTO LANE
@@ -15,6 +25,56 @@ Two lanes, one Merkle root.
         +------------ one root ---------------+
         sha256:d98a2972e57a8e9c2f3111e224950d4ae74c65a6cfc18d064eb07014d4d589a4
 ```
+
+## The project in plain language
+
+**The pain point.** More than 90% of rare diseases have no approved treatment.
+Drugs that already exist could help some of them, but nobody has tried — and
+when a computer program does propose such a match, there is no way to check its
+work. So companies re-run trials that already failed, promising leads sit
+untried, and doctors cannot tell an auditable finding from a confident guess.
+
+**What people in the field are doing.** Large AI efforts (TxGNN, Every Cure's
+MATRIX program, commercial platforms like Healx) use machine learning to score
+millions of drug–disease pairs, and subscription databases (Citeline, Cortellis)
+sell the competitive landscape. They are good at ranking. They are black boxes:
+no receipts, no record of which evidence produced a score, and no honest way to
+say "we don't know."
+
+**What we do.** Type in a rare disease; get back a table of existing drugs
+graded by simple, readable rules as a genuine gap, already tried, or "we
+cannot say" — with every piece of evidence fingerprinted so anyone can verify
+nothing was invented or changed. The AI helps present; it never decides.
+
+**The workflow — three phases: GATHER, GRADE, PROVE.**
+Input: a rare disease name. Output: a graded drug–disease table with a
+verifiable receipt on every row.
+
+1. **GATHER** — ask five public sources one question each, hashing every
+   response at capture: Open Targets (what biology is broken?), NCBI ClinVar
+   loaded into an **AWS HealthOmics annotation store** (do patients carry
+   pathogenic variants in these genes?), ClinicalTrials.gov (has this pairing
+   been tried?), openFDA (is the drug approved?), and JUMP Cell Painting
+   (does any compound push cells back toward the healthy state?).
+   *Tech: Python, GraphQL/REST, NCBI E-utilities, boto3 + S3 + IAM +
+   HealthOmics.*
+2. **GRADE** — nine plain-Python rules (G000–G008) grade each pairing
+   GAP / NOT_A_GAP / ABSTAIN. Abstentions are displayed at equal visual
+   weight with results. No machine learning in the decision.
+   *Tech: plain Python.*
+3. **PROVE** — every record is SHA-256 content-addressed under one RFC 6962
+   Merkle root, projected into SQLite, and verified **in the reader's own
+   browser**; a tamper button shows a one-byte edit being caught live.
+   *Tech: fcg.py, SQLite, sql.js (WebAssembly), vanilla JS.*
+
+**AWS HealthOmics status, honestly:** the ClinVar subset (355 gene-specific
+pathogenic-variant records for the eight consensus genes, all query digests
+recorded, large multi-gene copy-number events excluded rather than counted)
+is uploaded digest-keyed to the event account's HealthOmics S3 bucket, and
+our own VEP annotation run executes on the account's HealthOmics workflow.
+The event's service control policy denies the deprecated annotation-store
+API; the dashboard's live probe records that denial as a receipt beside the
+working workflow surface — in this system, "denied" is a first-class answer.
 
 ## What the project is
 
@@ -40,7 +100,28 @@ python3 fto/fto.py            # registry status + the FTO_OPINION refusal
 python3 db/serve.py 8787      # serve the local browser demo
 ```
 
-Open `http://localhost:8787` after starting the demo server.
+Open `http://localhost:8787` after starting the demo server. Tabs deep-link:
+`#omics` opens HealthOmics, `#prove` opens the tamper check, and so on.
+
+### The AWS HealthOmics lane
+
+```bash
+python3 scripts/build_clinvar_evidence.py   # fetch the ClinVar subset (no AWS needed)
+python3 scripts/healthomics_preflight.py    # redacted credential + store check
+python3 scripts/setup_healthomics.py        # create bucket, role, store; import the TSV
+```
+
+The first script queries NCBI ClinVar for pathogenic / likely-pathogenic
+variants in the eight consensus genes and writes
+`data/healthomics/clinvar_subset.tsv` plus per-query digests. The setup script
+(requires `aws configure`; hackathon user `elvish.an`, region `us-east-1`)
+idempotently creates `s3://protein-hinge-omics-<account>`, an import IAM role,
+and the `protein_hinge_clinvar` TSV/GENERIC annotation store, then runs the
+import. TSV/GENERIC was a deliberate scoping choice over a VCF variant store:
+a VCF store requires importing a full reference genome first, which buys
+nothing for gene-level evidence within hackathon time. The dashboard's HealthOmics tab and its live probe
+(`/api/healthomics`) render whatever state actually exists — including the
+credentials-missing abstention.
 
 Recording-ready materials:
 
