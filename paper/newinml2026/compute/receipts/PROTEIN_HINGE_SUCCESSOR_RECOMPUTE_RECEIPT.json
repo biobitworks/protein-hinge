@@ -1,0 +1,34 @@
+{
+  "schema": "protein_hinge.successor_recompute.v1",
+  "receipt_id": "PROTEIN_HINGE_SUCCESSOR_RECOMPUTE_RECEIPT",
+  "recorded_at_utc": "2026-08-29T00:10:00Z",
+  "host": "magicSTUDIObox.local",
+  "classification": "ARTIFACT_RECOMPUTE_PASS",
+  "exact_source_reproduction": false,
+  "EXP-002-SUCCESSOR-001": {
+    "records_in": 364,
+    "emitted": 98,
+    "abstained": 266,
+    "accounting": "364 = 98 + 266",
+    "abstention_taxonomy": {
+      "frameshift": 131,
+      "no_protein_notation": 118,
+      "residue_mismatch": 16,
+      "position_out_of_range": 1
+    },
+    "artifact_sha256_clinvar_input": "3aa5e6723563a567fc2b77733a2ee1bd4707c5d254b2537192851c143c1fc2ec",
+    "verdict": "PASS"
+  },
+  "EXP-003-SUCCESSOR-001": {
+    "ids_fetched": 746,
+    "kept": 364,
+    "excluded_large_cnv": 382,
+    "no_summary_returned": 0,
+    "accounted": 746,
+    "balanced": true,
+    "tafazzin_failure_mechanism_verified": true,
+    "verdict": "PASS"
+  },
+  "live_refetch_performed": false,
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

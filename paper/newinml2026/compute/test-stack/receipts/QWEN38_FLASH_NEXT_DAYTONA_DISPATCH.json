@@ -38,5 +38,13 @@
     "gpu_class",
     "sandbox_receipt"
   ],
-  "note": "Dispatch manifest only. No remote execution until DAYTONA_API_KEY is present."
+  "experimental_design": {
+    "primary_comparison_host": "Daytona",
+    "condition_a": "qwen3.8:27b",
+    "condition_b": "qwen3.8-flash-next:125b-a6b-nvfp4",
+    "matched_factors": ["sandbox_class", "GPU", "Ollama_version", "prompts", "context_budget", "temperature", "verifier"],
+    "studio_q38_role": "CROSS_HOST_REPLICATION_ONLY",
+    "forbidden_primary_comparison": "Studio_Q38_vs_Daytona_FlashNext"
+  },
+  "note": "Dispatch manifest only. No remote execution until Daytona auth passes."
 }

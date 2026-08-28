@@ -1,0 +1,29 @@
+{
+  "schema": "protein_hinge.provider_auth_restoration.v1",
+  "receipt_id": "DAYTONA_AUTH_RESTORATION_RECEIPT",
+  "recorded_at_utc": "2026-08-29T00:10:00Z",
+  "host": "magicSTUDIObox.local",
+  "host_scoped": true,
+  "provider": "Daytona",
+  "cli_version": "v0.200.1",
+  "cli_present": true,
+  "auth_method_class": "NONE_ACTIVE",
+  "credential_checks": {
+    "DAYTONA_API_KEY_env_present": false,
+    "launchctl_DAYTONA_API_KEY_present": false,
+    "daytona_cli_profile_present": false,
+    "application_support_config_present": true
+  },
+  "authenticated": false,
+  "list_probe": {
+    "command": "daytona list --format json",
+    "exit_code": 1,
+    "result": "FAIL",
+    "error_class": "no_profiles_found"
+  },
+  "restoration_action": "OPERATOR_REQUIRED",
+  "restoration_command": "daytona login",
+  "historical_state": "LIVE_PASS (2026-08 prior smoke; sandbox destroyed)",
+  "no_secret_leak": true,
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}
