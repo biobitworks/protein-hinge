@@ -1,0 +1,22 @@
+{
+  "receipt_id": "Q38_LOCAL_BASELINE_RECEIPT",
+  "schema": "protein_hinge.q38_baseline_freeze.v1",
+  "generated_at_utc": "2026-08-28T19:40:00Z",
+  "Q38_LOCAL_BASELINE_SHA": "490e7ba0267d99fb4538bd85802bb81e65dde47d9",
+  "branch": "paper/newinml-fcg-20260828",
+  "remote": "origin/paper/newinml-fcg-20260828",
+  "remote_parity": "VERIFIED",
+  "host": "magicSTUDIObox.local",
+  "model": "qwen3.8:27b",
+  "digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+  "ollama_version": "0.33.0",
+  "path_states": {
+    "OLLARMA_Q38_PRE_POLICY": "DEGRADED_TIMEOUT",
+    "OLLAMA_Q38_DIRECT_HISTORICAL": "PASS",
+    "OLLARMA_Q38_POST_POLICY": "PASS"
+  },
+  "primary_receipts": [
+    "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json",
+    "compute/test-stack/receipts/QWEN38_OLLARMA_GOVERNED_RECEIPT.json"
+  ]
+}
