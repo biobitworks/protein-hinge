@@ -2,7 +2,7 @@
   "schema": "protein_hinge.seeds_of_truth.vNext",
   "generated_at_utc": "2026-08-28T22:50:00Z",
   "paper_branch": "paper/newinml-fcg-20260828",
-  "paper_sha": "fc79ae854a83014e21a7b99eda919d02d7696ac3",
+  "paper_sha": "40e35abbb9d8bc3d25f26efadb822ebb31c76799",
   "seeds": [
     {
       "seed_id": "G1_SUCCESSOR_SEQUENCE_GUARD",

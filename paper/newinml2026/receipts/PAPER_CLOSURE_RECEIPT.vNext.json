@@ -2,7 +2,7 @@
   "schema": "protein_hinge.paper.closure_receipt.vNext",
   "receipt_id": "PAPER-CLOSURE-RECEIPT-vNext",
   "generated_at_utc": "2026-08-28T22:50:00Z",
-  "closure_subject_sha": "fc79ae854a83014e21a7b99eda919d02d7696ac3",
+  "closure_subject_sha": "40e35abbb9d8bc3d25f26efadb822ebb31c76799",
   "supersedes": "PAPER_CLOSURE_RECEIPT.v6.json",
   "team_update_included": true,
   "additions": [
