@@ -1,0 +1,19 @@
+{
+  "schema": "protein_hinge.paper.closure_receipt.vNext",
+  "receipt_id": "PAPER-CLOSURE-RECEIPT-vNext",
+  "generated_at_utc": "2026-08-28T22:50:00Z",
+  "closure_subject_sha": "fc79ae854a83014e21a7b99eda919d02d7696ac3",
+  "supersedes": "PAPER_CLOSURE_RECEIPT.v6.json",
+  "team_update_included": true,
+  "additions": [
+    "TEAM_PR1_CONTRIBUTION_MANIFEST.jsonl",
+    "EXP-002-SUCCESSOR-001",
+    "EXP-003-SUCCESSOR-001",
+    "Q38_TEST_STACK_CLOSEOUT.json",
+    "G2_SOURCE_DRIFT_ANALYSIS.json",
+    "HACKATHON_TIMELINE_PROVENANCE.vNext.json"
+  ],
+  "historical_exact_reproduction_disclaimed": true,
+  "pr1_merged": false,
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

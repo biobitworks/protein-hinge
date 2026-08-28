@@ -1,0 +1,33 @@
+{
+  "experiment_id": "EXP-002-SUCCESSOR-001",
+  "classification": "RETROSPECTIVE_SUCCESSOR_EVALUATION",
+  "predecessor_lane": "G1_FASTA_HISTORICAL",
+  "team_artifact_source": {
+    "fork": "ElvisHan2022/protein-hinge",
+    "branch": "healthomics-lane",
+    "head": "6e47dbe367d9223c15c80ef27ca2634b50054035"
+  },
+  "frozen_artifact_bytes": {
+    "clinvar_input_sha256": "3aa5e6723563a567fc2b77733a2ee1bd4707c5d254b2537192851c143c1fc2ec",
+    "consensus_genes_fasta_sha256": "98f31f1ce20f4f919e6463b026ab321ee3617acaf3c1e1e02a555ae289ed4565",
+    "variants_fasta_sha256": "355d8e96bc6123427d6e05f305bb017cc09acaf3f6bdfc1255874a6ad561cd9d",
+    "fasta_provenance_sha256": null,
+    "build_script": "scripts/build_fasta_lane.py"
+  },
+  "successor_evidence": {
+    "records_in": 364,
+    "emitted": 98,
+    "abstained": 266,
+    "accounting": "364 = 98 + 266",
+    "abstention_breakdown": {
+      "frameshift": 131,
+      "no_protein_notation": 118,
+      "residue_mismatch": 16,
+      "position_out_of_range": 1
+    }
+  },
+  "historical_exact_reproduction": "NO",
+  "claim_ceiling": "SEQUENCE_RECORD",
+  "recorded_at_utc": "2026-08-28T22:50:00Z",
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

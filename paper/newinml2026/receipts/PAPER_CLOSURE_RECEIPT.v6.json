@@ -7,17 +7,17 @@
     "biocustody_zip_admitted": true,
     "branch": "paper/newinml-fcg-20260828",
     "closure_semantics": "CURRENT_TREE_PLUS_EXTERNAL_POINTERS",
-    "closure_subject_sha": "8a34f472b937aa324b40e018b5d6215f2bd36f48",
-    "generated_at_utc": "2026-08-28T07:55:56Z",
+    "closure_subject_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5",
+    "generated_at_utc": "2026-08-28T07:58:15Z",
     "hostname": "magicSTUDIObox.local",
     "invariant_ok": true,
-    "receipt_commit_sha": "8a34f472b937aa324b40e018b5d6215f2bd36f48",
+    "receipt_commit_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5",
     "schema": "protein_hinge.paper.import_accounting.v6",
     "supersedes": "PAPER_IMPORT_ACCOUNTING.v5.json"
   },
-  "closure_subject_sha": "8a34f472b937aa324b40e018b5d6215f2bd36f48",
-  "generated_at_utc": "2026-08-28T07:55:56Z",
-  "manifest_sha256": "22c29a035aca4bbaffa8b42dd9dba98c1ae55d18794da6224996d724fb85a5f5",
+  "closure_subject_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5",
+  "generated_at_utc": "2026-08-28T07:58:15Z",
+  "manifest_sha256": "b6ecf17d0b395b669ffb4c58af126bf9c687ebe5be1cd833a780714a92801baf",
   "receipt_id": "PAPER-CLOSURE-RECEIPT-v6",
   "supersedes": "PAPER_CLOSURE_RECEIPT.v5.json"
 }

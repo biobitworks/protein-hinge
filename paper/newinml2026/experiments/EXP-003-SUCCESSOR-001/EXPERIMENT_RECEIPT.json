@@ -1,0 +1,35 @@
+{
+  "experiment_id": "EXP-003-SUCCESSOR-001",
+  "classification": "RETROSPECTIVE_SUCCESSOR_EVALUATION",
+  "predecessor_lane": "G2_CLINVAR_HISTORICAL",
+  "team_artifact_source": {
+    "fork": "ElvisHan2022/protein-hinge",
+    "branch": "healthomics-lane",
+    "head": "6e47dbe367d9223c15c80ef27ca2634b50054035",
+    "pr": "biobitworks/protein-hinge#1"
+  },
+  "frozen_artifact_bytes": {
+    "clinvar_subset_tsv_sha256": "3aa5e6723563a567fc2b77733a2ee1bd4707c5d254b2537192851c143c1fc2ec",
+    "clinvar_provenance_sha256": null,
+    "build_script": "scripts/build_clinvar_evidence.py"
+  },
+  "successor_evidence": {
+    "ids_fetched": 746,
+    "kept": 364,
+    "excluded_large_cnv": 382,
+    "no_summary_returned": 0,
+    "accounted": 746,
+    "balanced": true
+  },
+  "tafazzin_100_id_failure": {
+    "observed": true,
+    "mechanism": "ESummary JSON conversion failure; XML payload ~16.5 MB exceeds 10 MB JSON conversion ceiling",
+    "recovery": "split-and-retry",
+    "recoverable": true
+  },
+  "historical_exact_reproduction": "NO",
+  "historical_failure_mechanism_recovered": "YES",
+  "historical_count_claim_boundary": "742→642 historical run NOT reproduced; mechanism recovery only",
+  "recorded_at_utc": "2026-08-28T22:50:00Z",
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

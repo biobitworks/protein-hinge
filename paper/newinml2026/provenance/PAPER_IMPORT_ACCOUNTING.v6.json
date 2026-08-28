@@ -6,11 +6,11 @@
   "biocustody_zip_admitted": true,
   "branch": "paper/newinml-fcg-20260828",
   "closure_semantics": "CURRENT_TREE_PLUS_EXTERNAL_POINTERS",
-  "closure_subject_sha": "8a34f472b937aa324b40e018b5d6215f2bd36f48",
-  "generated_at_utc": "2026-08-28T07:55:56Z",
+  "closure_subject_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5",
+  "generated_at_utc": "2026-08-28T07:58:15Z",
   "hostname": "magicSTUDIObox.local",
   "invariant_ok": true,
-  "receipt_commit_sha": "8a34f472b937aa324b40e018b5d6215f2bd36f48",
+  "receipt_commit_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5",
   "schema": "protein_hinge.paper.import_accounting.v6",
   "supersedes": "PAPER_IMPORT_ACCOUNTING.v5.json"
 }

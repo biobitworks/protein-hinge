@@ -1,0 +1,16 @@
+{
+  "schema": "protein_hinge.paper.import_accounting.vNext",
+  "generated_at_utc": "2026-08-28T22:50:00Z",
+  "closure_subject_sha": "fc79ae854a83014e21a7b99eda919d02d7696ac3",
+  "supersedes": "PAPER_IMPORT_ACCOUNTING.v6.json",
+  "team_pr1_head": "6e47dbe367d9223c15c80ef27ca2634b50054035",
+  "N_team_files_inventoried": 52,
+  "N_admit_to_paper_by_hash": 7,
+  "N_admit_as_reference": 5,
+  "N_team_contribution_only": 22,
+  "N_excluded": 18,
+  "biocustody_zip_admitted": true,
+  "q38_closeout": "CLOSED_INFRASTRUCTURE_EVIDENCE",
+  "invariant_ok": true,
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

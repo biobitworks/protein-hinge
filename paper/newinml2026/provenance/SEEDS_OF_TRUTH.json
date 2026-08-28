@@ -1,0 +1,40 @@
+{
+  "schema": "protein_hinge.seeds_of_truth.vNext",
+  "generated_at_utc": "2026-08-28T22:50:00Z",
+  "paper_branch": "paper/newinml-fcg-20260828",
+  "paper_sha": "fc79ae854a83014e21a7b99eda919d02d7696ac3",
+  "seeds": [
+    {
+      "seed_id": "G1_SUCCESSOR_SEQUENCE_GUARD",
+      "source": "EXP-002-SUCCESSOR-001",
+      "claim": "UniProt canonical guard abstains on residue mismatch/frameshift rather than emitting wrong sequences",
+      "evidence_sha256": "355d8e96bc6123427d6e05f305bb017cc09acaf3f6bdfc1255874a6ad561cd9d",
+      "historical_exact_reproduction": "NO"
+    },
+    {
+      "seed_id": "G2_SUCCESSOR_CNV_FILTERING",
+      "source": "EXP-003-SUCCESSOR-001",
+      "claim": "CNV exclusion and 746-id accounting balanced in successor ClinVar build",
+      "evidence_sha256": "3aa5e6723563a567fc2b77733a2ee1bd4707c5d254b2537192851c143c1fc2ec",
+      "historical_exact_reproduction": "NO"
+    },
+    {
+      "seed_id": "G2_TAFAZZIN_100ID_API_FAILURE_MECHANISM",
+      "source": "clinvar_provenance.json batch_failures",
+      "claim": "ESummary 10MB JSON ceiling failure recovered via split-and-retry",
+      "historical_exact_reproduction": "NO",
+      "historical_failure_mechanism_recovered": "YES"
+    },
+    {
+      "seed_id": "Q38_TEST_STACK_CLOSEOUT",
+      "source": "Q38_TEST_STACK_CLOSEOUT.json",
+      "claim": "qwen3.8:27b digest-bound local infrastructure evidence; no NewInML thesis impact",
+      "newinml_relevant": false
+    }
+  ],
+  "uncertainty_preserved": [
+    "742→642 historical ClinVar accounting not exactly reproduced",
+    "Historical G1 emission counts not exactly reproduced"
+  ],
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

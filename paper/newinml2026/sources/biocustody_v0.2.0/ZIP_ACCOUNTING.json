@@ -1,6 +1,6 @@
 {
   "schema": "protein_hinge.biocustody.zip_accounting.v1",
-  "generated_at_utc": "2026-08-28T07:51:16Z",
+  "generated_at_utc": "2026-08-28T07:57:50Z",
   "zip_path": "/Users/byron/projects/inbox/biocustody-stateshift-aws-bootstrap-v0.2.0.zip",
   "zip_sha256": "d78d9f006655920a25baf98e300dcb1c2bdca4899f7e3be112d4e29cdf420a20",
   "zip_byte_count": 206174739,

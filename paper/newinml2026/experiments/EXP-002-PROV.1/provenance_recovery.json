@@ -2,7 +2,7 @@
   "experiment_id": "EXP-002-PROV.1",
   "classification": "PROVENANCE_RECOVERY",
   "status": "COMPLETE_NEGATIVE_PROVENANCE",
-  "generated_at_utc": "2026-08-28T07:53:38Z",
+  "generated_at_utc": "2026-08-28T07:58:07Z",
   "source_artifact_sha256": "d78d9f006655920a25baf98e300dcb1c2bdca4899f7e3be112d4e29cdf420a20",
   "historical_components": {
     "355": "NOT_FOUND",

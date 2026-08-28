@@ -1,0 +1,39 @@
+{
+  "schema": "protein_hinge.g2_source_drift_analysis.v1",
+  "recorded_at_utc": "2026-08-28T22:50:00Z",
+  "historical_candidates": {
+    "total": 742,
+    "downstream": 642,
+    "discrepancy": 100,
+    "note": "Historical exact counts not reproduced in successor lane"
+  },
+  "successor_corpus": {
+    "ids_fetched": 746,
+    "kept": 364,
+    "excluded_large_cnv": 382,
+    "accounted": 746,
+    "balanced": true
+  },
+  "gene_comparisons": [
+    {"gene": "CRLS1", "historical": "33→3", "successor": "33→3", "classification": "CONSISTENT"},
+    {"gene": "PGS1", "historical": "14→0", "successor": "14→0", "classification": "CONSISTENT"},
+    {"gene": "HADHA", "historical": "267→251", "successor": "267→251", "classification": "CONSISTENT"},
+    {"gene": "PHB2", "historical": "46→0", "successor": "46→0", "classification": "CONSISTENT"},
+    {"gene": "CHCHD3", "historical": "32→0", "successor": "34→0", "classification": "SOURCE_DRIFT"},
+    {"gene": "TAFAZZIN", "historical": "237→100", "successor": "339→109", "classification": "QUERY_CHANGE"}
+  ],
+  "aggregate_classification": {
+    "SOURCE_DRIFT": ["CHCHD3 esearch count 32→34"],
+    "QUERY_CHANGE": ["TAFAZZIN expanded fetch with split-and-retry recovery"],
+    "FILTER_CHANGE": ["CNV exclusion now explicit: excluded_large_cnv=382"],
+    "HISTORICAL_COUNT_ERROR": ["742→642 exact accounting not re-established"],
+    "UNKNOWN": []
+  },
+  "tafazzin_mechanism": {
+    "failure": "ESummary JSON conversion ceiling 10MB on ~16.5MB XML",
+    "recovery": "split-and-retry",
+    "historical_exact_reproduction": "NO",
+    "historical_failure_mechanism_recovered": "YES"
+  },
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}
