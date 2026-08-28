@@ -1,0 +1,52 @@
+{
+  "receipt_id": "BIOCUSTODY-HANDOFF-RECEIPT-v2",
+  "generated_at_utc": "2026-08-28T07:54:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "fco_object_id": "FCO-EXT-biocustody-v0.2.0-d78d9f00",
+  "admitted_by": "operator",
+  "execution_allowed": false,
+  "contents_executed": false,
+  "archive_mutated": false,
+  "claim_ceiling": "EXTERNAL_SOURCE_ARTIFACT; provenance recovery only; not scientific validation",
+  "prior_pointer": {
+    "path": "/Users/byron/Downloads/biocustody.zip",
+    "fcg_status": "UNAVAILABLE",
+    "relationship": "RELATED_HANDOFF_CANDIDATE",
+    "note": "Not collapsed; byte identity not established"
+  },
+  "admitted_artifact": {
+    "path": "/Users/byron/projects/inbox/biocustody-stateshift-aws-bootstrap-v0.2.0.zip",
+    "byte_count": 206174739,
+    "sha256": "d78d9f006655920a25baf98e300dcb1c2bdca4899f7e3be112d4e29cdf420a20",
+    "package_id": "biocustody-stateshift-aws-bootstrap-v0.2.0",
+    "package_version": "v0.2.0",
+    "external_source_classification": "SOURCE_ARTIFACT",
+    "in_repo_custody": false,
+    "custody_mode": "content-addressed external pointer"
+  },
+  "zip_intake": {
+    "N_members": 39326,
+    "N_hashed": 362,
+    "N_duplicate": 5,
+    "N_excluded": 38959,
+    "N_failed": 0,
+    "N_quarantined": 0,
+    "invariant_ok": true,
+    "expanded_byte_count": 613738883,
+    "security_status": "PASS_WITH_EXCLUSIONS",
+    "manifest": "sources/biocustody_v0.2.0/ZIP_MEMBER_MANIFEST.jsonl"
+  },
+  "source_artifact_present": true,
+  "historical_g1_g2_provenance_recovered": false,
+  "repo_biocustody_db": {
+    "path": "db/biocustody.db",
+    "sha256": "0823eb19a3dbb993c17c199f3f7b32d3e80ee390a4f08578649e901645f4cc8c",
+    "note": "SQLite projection in protein-hinge; zip contains no .db file"
+  },
+  "experiment_impact": {
+    "EXP-002": "COMPLETE_NEGATIVE_PROVENANCE unchanged",
+    "EXP-003": "COMPLETE_NEGATIVE_PROVENANCE unchanged",
+    "EXP-002-PROV.1": "COMPLETE_NEGATIVE_PROVENANCE",
+    "EXP-003-PROV.1": "COMPLETE_NEGATIVE_PROVENANCE"
+  }
+}

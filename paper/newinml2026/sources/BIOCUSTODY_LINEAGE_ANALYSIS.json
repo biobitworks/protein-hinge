@@ -1,0 +1,37 @@
+{
+  "analysis_id": "BIOCUSTODY-LINEAGE-v1",
+  "generated_at_utc": "2026-08-28T07:54:00Z",
+  "source_artifact": {
+    "path": "/Users/byron/projects/inbox/biocustody-stateshift-aws-bootstrap-v0.2.0.zip",
+    "sha256": "d78d9f006655920a25baf98e300dcb1c2bdca4899f7e3be112d4e29cdf420a20",
+    "package_id": "biocustody-stateshift-aws-bootstrap-v0.2.0",
+    "package_version": "v0.2.0"
+  },
+  "prior_unavailable_pointer": {
+    "path": "/Users/byron/Downloads/biocustody.zip",
+    "relationship": "RELATED_HANDOFF_CANDIDATE",
+    "byte_identity_proven": false,
+    "note": "Historical pointer remains UNAVAILABLE; no EXACT_COPY_OF claim without hash match"
+  },
+  "relationship_to_protein_hinge": "RELATED_PROJECT_PACKAGE",
+  "relationship_rationale": [
+    "Exact content match: data/partner/candidate_ranking.csv == zip runs/magicstudiobox/primary/candidate_ranking.csv",
+    "Package README/handoff describes magicstudiobox repurposing sweep aligned with protein-hinge partner data lane",
+    "Embedded git HEAD d00ecab; 3 commits; no remote configured in archive",
+    "Package focus: cell-painting repurposing bootstrap; not G1 residue or G2 ClinVar CNV pipeline"
+  ],
+  "hackday_state_evidence": {
+    "referenced_in_repo": true,
+    "reference_path": "fcg/ingest.py",
+    "present_in_zip": false,
+    "classification": "EXTERNAL_MISSING"
+  },
+  "embedded_git": {
+    "present": true,
+    "head": "d00ecabb29b17b5ad972aef5433109e26ad1aa2a",
+    "earliest_relevant_commit": "d001ac3 checkpoint before magicstudiobox unattended run",
+    "commit_count_sampled": 3
+  },
+  "exact_hash_matches_to_protein_hinge_fcg": 4,
+  "claim_ceiling": "SOURCE_ARTIFACT_PRESENT does not imply HISTORICAL G1/G2 PROVENANCE RECOVERED"
+}

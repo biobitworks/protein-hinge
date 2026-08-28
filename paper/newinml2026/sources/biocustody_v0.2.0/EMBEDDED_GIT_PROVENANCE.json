@@ -1,0 +1,11 @@
+{
+  "embedded_git_present": true,
+  "commits": [
+    "d00ecab add ollarma bridge task list",
+    "23b9f6a magicstudiobox bounded repurposing sweep",
+    "d001ac3 checkpoint before magicstudiobox unattended run"
+  ],
+  "remotes": [],
+  "git_file_count": 355,
+  "HEAD": "d00ecabb29b17b5ad972aef5433109e26ad1aa2a"
+}
