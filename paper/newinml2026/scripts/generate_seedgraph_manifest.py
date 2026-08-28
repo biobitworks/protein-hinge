@@ -12,7 +12,9 @@ SG = ROOT / "paper" / "newinml2026" / "seedgraph"
 
 def main() -> None:
     SG.mkdir(parents=True, exist_ok=True)
-    src = PROV / "PAPER_SOURCE_MANIFEST.jsonl"
+    src = PROV / "PAPER_SOURCE_MANIFEST.v2.jsonl"
+    if not src.exists():
+        src = PROV / "PAPER_SOURCE_MANIFEST.jsonl"
     rows = [json.loads(line) for line in src.read_text().splitlines() if line.strip()]
     out = []
     for obj in rows:

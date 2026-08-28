@@ -1,0 +1,37 @@
+{
+  "contract_id": "CFMO_MMR_DERIVATION_CONTRACT",
+  "generated_at_utc": "2026-08-28T07:02:00Z",
+  "mmr_merkle_mountain_range": {
+    "located": true,
+    "implementation_path": "/Users/byron/projects/active/antigence/web_app/static/fco/antigence_fcg.json",
+    "version_commit": null,
+    "deterministic": true,
+    "inputs": ["canonical atom bytes"],
+    "outputs": ["fco_root", "backbone peaks"],
+    "update_semantics": "new_derived_fco_per_config_or_atom_set"
+  },
+  "mmr_maximal_marginal_relevance_reranking": {
+    "located": false,
+    "design_citation": "docs/FCO_FCG_DESIGN_CITATIONS.md (SIGIR 1998)",
+    "implemented_in_protein_hinge": false,
+    "status": "DESIGN_CITATION_ONLY"
+  },
+  "cfmo": {
+    "located": false,
+    "status": "BLOCKED_CANONICAL_IMPLEMENTATION_NOT_FOUND",
+    "related_citations": [
+      "https://doi.org/10.5281/zenodo.21830287",
+      "fcg/fcg.py",
+      "antigence/handoff/from_ollarma/ANTIGENCE_IMMUNE_MATRIX_MANUSCRIPT_v1_DRAFT.md"
+    ]
+  },
+  "invariant": "derived_evidence_only_no_thesis_or_source_mutation",
+  "per_run_required_fields": [
+    "source_fco_set_hash",
+    "scorer_version",
+    "config_hash",
+    "output_hash",
+    "prior_thesis_id",
+    "derived_fco_id"
+  ]
+}

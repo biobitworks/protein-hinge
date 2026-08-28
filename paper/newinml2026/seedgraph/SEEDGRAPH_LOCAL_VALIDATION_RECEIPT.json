@@ -1,0 +1,33 @@
+{
+  "receipt_id": "SEEDGRAPH-LOCAL-VALIDATION-v1",
+  "generated_at_utc": "2026-08-28T07:02:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "seedgraph_repo": "/Users/byron/projects/active/seedgraph",
+  "seedgraph_head": "6807b1960dd1e981afbf13e79c2f29c3d803b79a",
+  "seedgraph_version": "0.1.0",
+  "entrypoint": "uv run seedgraph",
+  "actions": [
+    {
+      "action": "resolve_entrypoint",
+      "result": "PASS",
+      "evidence": "uv run seedgraph --help and version succeeded"
+    },
+    {
+      "action": "candidate_accounting",
+      "result": "PASS",
+      "evidence": "seedgraph/SEEDGRAPH_CANDIDATE_ACCOUNTING.json invariant true"
+    },
+    {
+      "action": "live_neo4j_import",
+      "result": "SKIPPED",
+      "reason": "LIVE_WRITEBACK=DEFERRED per project policy"
+    },
+    {
+      "action": "manifest_row_validation",
+      "result": "PASS",
+      "evidence": "215 ingest candidates; 201 unique content + 14 reference edges; 2 unavailable excluded"
+    }
+  ],
+  "live_writeback_status": "DEFERRED",
+  "neo4j_mutated": false
+}

@@ -16,7 +16,7 @@
 
 | ID | Gap | Status |
 |----|-----|--------|
-| EXP-G-001 | G1 28/123 residue verification source not recovered | NOT_STARTED |
+| EXP-G-001 | G1 28/123 residue verification source not recovered | COMPLETE_NEGATIVE (EXP-002) |
 | EXP-G-002 | G2 CNV batch accounting incomplete | NOT_STARTED |
 | EXP-G-003 | G3 identity-resolution uses same symbol both sides in prescripted demo | NOT_STARTED |
 | EXP-G-004 | Frozen-corpus replication not preregistered | NOT_STARTED |

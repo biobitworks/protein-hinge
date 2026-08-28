@@ -16,10 +16,10 @@
 | EXP-GAP-ACCOUNTING-001 | GAP semantic-accounting retrospective audit | EXPLORATORY | COMPLETE | LOCAL | `gap/ingest_gap.py:119-124` |
 | EXP-GAP-ACCOUNTING-001.1 | GAP accounting repaired rerun | REPLICATION | PREREGISTERED | LOCAL | EXP-001 findings |
 | EXP-001 | Alias for EXP-GAP-ACCOUNTING-001 | EXPLORATORY | COMPLETE | LOCAL | same |
-| EXP-002 | G1 sequence/residue verification ablation | EXPLORATORY | NOT_STARTED | LOCAL | recover canonical 28/123 source |
+| EXP-002 | G1 sequence/residue verification — provenance recovery | EXPLORATORY | COMPLETE_NEGATIVE | LOCAL | all historical counts NOT_FOUND; rerun blocked |
 | EXP-003 | G2 CNV attribution ablation | EXPLORATORY | NOT_STARTED | LOCAL | fetched/processed/terminal accounting |
 | EXP-004 | G3 identity-resolution ablation | EXPLORATORY | NOT_STARTED | LOCAL | raw vs canonical ID join |
-| EXP-005 | Frozen-corpus independent replication | REPLICATION | NOT_STARTED | LOCAL | prereg before outcomes |
+| EXP-005 | Frozen-corpus independent replication | REPLICATION | PREREGISTERED_LOCKED | LOCAL | outcome_exposure=NO |
 | EXP-006 | Morphology/null reproduction | REPLICATION | NOT_STARTED | LOCAL | frozen CPJUMP1 inputs |
 | EXP-007 | SGLang CUDA graph-break stress | EXPLORATORY | PREREGISTERED | KAGGLE/DAYTONA | SGLANG_GRAPH_BREAK_PREREG.md |
 

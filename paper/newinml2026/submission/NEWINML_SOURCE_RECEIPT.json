@@ -1,0 +1,28 @@
+{
+  "captures": [
+    {
+      "byte_count": 46365,
+      "local_path": "paper/newinml2026/submission/sources/newinml2026_cfp.html",
+      "media_type": "text/html",
+      "retrieved_at_utc": "2026-08-28T07:02:52Z",
+      "sha256": "42dd23653253d81be192dfeacf36ccea8ddf714db2370051bec7ba118475e586",
+      "url": "https://newinml.github.io/NewInML2026NeurIPS/"
+    },
+    {
+      "byte_count": 965586,
+      "local_path": "paper/newinml2026/submission/sources/openreview_venues.html",
+      "media_type": "text/html",
+      "retrieved_at_utc": "2026-08-28T07:02:53Z",
+      "sha256": "abecca32ba839c89d6b3ce8254355b6b3bf0fc7c1f6feea8af528aa3c14d221f",
+      "url": "https://openreview.net/"
+    },
+    {
+      "error": "HTTP Error 404: Not Found",
+      "local_path": null,
+      "retrieved_at_utc": "2026-08-28T07:02:53Z",
+      "url": "https://media.neurips.cc/Conferences/NeurIPS2026/Styles/neurips_2026.zip"
+    }
+  ],
+  "generated_at_utc": "2026-08-28T07:02:53Z",
+  "matrix_sha256": "387206ecb18829699f4842ad08d996ca2dcf9cde254c7b5826e9b437aea55ca6"
+}

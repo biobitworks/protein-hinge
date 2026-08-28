@@ -1,0 +1,15 @@
+{
+  "delta_id": "EVIDENCE_DELTA_EXP002",
+  "created_at_utc": "2026-08-28T07:02:00Z",
+  "experiment_id": "EXP-002",
+  "parent_thesis": "THESIS-001",
+  "classification": "NEGATIVE_PROVENANCE",
+  "summary": "Systematic G1 point-of-origin recovery across protein-hinge git history and paper-scoped materials failed to locate dataset, code, or any historical count (355/239/113/126/123/3/28/28:123) outside bootstrap meta-references.",
+  "supporting_fcos": [
+    "paper/newinml2026/experiments/EXP-002/provenance_recovery.json"
+  ],
+  "contradicting_fcos": [],
+  "historical_claim_status": "UNLOCATED — treat mission-brief counts as HISTORICAL_CLAIM_CANDIDATES only",
+  "rerun_executed": false,
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS"
+}

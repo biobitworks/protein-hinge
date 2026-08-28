@@ -51,9 +51,18 @@ seedgraph:
   writeback: deferred_local_first
 
 cloudflare_os:
-  status: not_pinned
+  status: pinned
+  upstream: https://github.com/cloudflare/cloudflare-os.git
+  upstream_commit: "14fea8592a6dbc59769d592c0752bbf6a465fa84"
+  local_checkout: /Users/byron/projects/external/cloudflare-os
   role: agent_workspace_ui_only
   canonical_truth: magicSTUDIObox
+
+seedgraph_resolution:
+  repo: /Users/byron/projects/active/seedgraph
+  head: "6807b1960dd1e981afbf13e79c2f29c3d803b79a"
+  entrypoint: "uv run seedgraph"
+  live_writeback: DEFERRED
 
 governance:
   immutable_history: true
@@ -75,5 +84,8 @@ acceptance_gates:
 
 next_daisy_step:
   role: SWE
-  action: execute EXP-GAP-ACCOUNTING-001.1 repaired rerun locally
-  blocked_by: []
+  action: operator supply G1 external pointer or biocustody.zip hash; else EXP-003 G2 CNV attribution recovery
+  blocked_by:
+    - G1 provenance NOT_FOUND
+    - Cloudflare OS upstream NOT_LOCATED
+    - NewInML hard gates REQ-002 REQ-006 REQ-007
