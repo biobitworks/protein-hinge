@@ -1,0 +1,57 @@
+{
+  "receipt_id": "QWEN38_STUDIO_CANARY_RECEIPT",
+  "schema": "protein_hinge.model_canary.v2",
+  "generated_at_utc": "2026-08-28T18:02:17Z",
+  "host": "magicSTUDIObox.local",
+  "ollama_version": "ollama version is 0.33.0",
+  "provider": "Ollama",
+  "model_requested": "qwen3.8:27b",
+  "model_effective": "qwen3.8:27b",
+  "model_digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+  "model_size_bytes": 17741872154,
+  "parameter_size": "27.3B",
+  "quantization_level": "Q4_K_M",
+  "capabilities": [
+    "completion",
+    "tools",
+    "thinking",
+    "vision"
+  ],
+  "prompt_sha256": "23a0a3110682f984b4f5153450fc904332cc8ad5271cffd532c135f136a7f7f5",
+  "settings_sha256": "b1c8548c440563d8777b5312ee6ab7af4e68c296c240748b47cd5513722ea9e0",
+  "governed_path_pass": true,
+  "ollarma_result": "PASS",
+  "direct_ollama_result": "NOT_RUN",
+  "overall_model_availability": "VERIFIED",
+  "ollarma_attempt": {
+    "execution_path": "Ollarma_HTTP_8484_chat",
+    "status": "answered",
+    "blocked": false,
+    "reason_code": null,
+    "response": "{\"model\":\"claude-sonnet-4-6-20250514\",\"canary\":\"Q38_CANARY_OK\",\"answer\":\"OK\"}",
+    "executed_model": "qwen3.8:27b",
+    "latency_sec": 450.435,
+    "request_sha256": "aec307ad3ff4bd8dc7accccf80aaada0cee3b530d781d0bf1fb262d05c872668"
+  },
+  "direct_ollama_attempt": null,
+  "raw_output": "{\"model\":\"claude-sonnet-4-6-20250514\",\"canary\":\"Q38_CANARY_OK\",\"answer\":\"OK\"}",
+  "raw_output_sha256": "f1759798aab42cc612a4fc975b10ae2933332f0b75a3bd2b3a1473fd46568c8f",
+  "parsed_output": {
+    "model": "claude-sonnet-4-6-20250514",
+    "canary": "Q38_CANARY_OK",
+    "answer": "OK"
+  },
+  "output_class": "PROBABILISTIC_MODEL_OUTPUT",
+  "verifier_version": "q38_canary_validator.v1",
+  "verifier_verdict": "PASS",
+  "verifier_reason": "PASS",
+  "token_counts": {
+    "prompt_tokens": null,
+    "completion_tokens": null
+  },
+  "swap_pages_before": {},
+  "swap_pages_after": {},
+  "resource_state": {
+    "memory_pressure_note": "Studio 32GB; qwen3.8:27b cold load ~127-140s historically"
+  }
+}

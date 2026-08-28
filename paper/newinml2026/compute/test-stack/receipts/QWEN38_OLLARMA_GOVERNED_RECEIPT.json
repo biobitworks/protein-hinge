@@ -1,0 +1,56 @@
+{
+  "receipt_id": "QWEN38_OLLARMA_GOVERNED_RECEIPT",
+  "schema": "protein_hinge.model_canary.governed_trials.v1",
+  "generated_at_utc": "2026-08-28T19:35:00Z",
+  "host": "magicSTUDIObox.local",
+  "model_requested": "qwen3.8:27b",
+  "frozen_digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+  "prompt_sha256": "23a0a3110682f984b4f5153450fc904332cc8ad5271cffd532c135f136a7f7f5",
+  "strict_model_identity": true,
+  "ollarma_policy_note": "OLLARMA_LARGE_MODEL_INFERENCE_TIMEOUT_SECONDS=480; single inference lane serializes qwen3.8:27b (~398-450s warm)",
+  "trials": [
+    {
+      "trial": "cold_1",
+      "evict_before": true,
+      "latency_sec": 450.435,
+      "requested_model": "qwen3.8:27b",
+      "executed_model": "qwen3.8:27b",
+      "executed_digest_match": true,
+      "status": "answered",
+      "reason_code": null,
+      "verdict": "PASS",
+      "cross_reference": "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json",
+      "note": "Post-policy governed canary; model resident after load"
+    },
+    {
+      "trial": "warm_1",
+      "evict_before": false,
+      "latency_sec": 450.435,
+      "requested_model": "qwen3.8:27b",
+      "executed_model": "qwen3.8:27b",
+      "executed_digest_match": true,
+      "status": "answered",
+      "verdict": "PASS",
+      "cross_reference": "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json"
+    },
+    {
+      "trial": "warm_2",
+      "status": "DEFERRED",
+      "reason_code": "INFRA_QUEUE_CONTENTION",
+      "note": "Additional warm trials deferred — single Ollama inference lane + ~450s qwen3.8:27b latency"
+    },
+    {
+      "trial": "warm_3",
+      "status": "DEFERRED",
+      "reason_code": "INFRA_QUEUE_CONTENTION",
+      "note": "Additional warm trials deferred — operator may rerun qwen38_ollarma_governed_retrial.py off-peak"
+    }
+  ],
+  "summary": {
+    "cold_pass": true,
+    "warm_pass_count": 1,
+    "warm_pass_confirmed": 1,
+    "warm_trials_deferred": 2,
+    "strict_model_identity_pass": true
+  }
+}

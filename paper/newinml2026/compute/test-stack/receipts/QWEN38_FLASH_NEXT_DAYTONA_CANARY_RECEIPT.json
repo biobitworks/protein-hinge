@@ -1,0 +1,11 @@
+{
+  "receipt_id": "QWEN38_FLASH_NEXT_DAYTONA_CANARY_RECEIPT",
+  "schema": "protein_hinge.model_canary.v1",
+  "generated_at_utc": "2026-08-28T16:00:00Z",
+  "terminal": "BLOCKED_REMOTE_COMPUTE",
+  "reason": "DAYTONA_API_KEY absent; remote canary not executed",
+  "model_requested": "qwen3.8-flash-next:125b-a6b-nvfp4",
+  "host": "Daytona GPU (not provisioned)",
+  "execution_path": null,
+  "historical_flash_next_executions_found": false
+}

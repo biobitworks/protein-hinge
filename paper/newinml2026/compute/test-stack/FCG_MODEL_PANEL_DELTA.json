@@ -1,0 +1,66 @@
+{
+  "fcg_delta_id": "FCG-MODEL-PANEL-QWEN38-v1.1",
+  "generated_at_utc": "2026-08-28T18:20:00Z",
+  "supersedes": "FCG-MODEL-PANEL-QWEN38-v1",
+  "model_objects": [
+    {
+      "object_id": "MODEL-RUNTIME-qwen38-27b-22130167",
+      "tag": "qwen3.8:27b",
+      "digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+      "provider": "Ollama",
+      "host": "magicSTUDIObox.local",
+      "ollama_version": "0.33.0",
+      "capabilities": ["completion", "tools", "thinking", "vision"]
+    },
+    {
+      "object_id": "MODEL-RUNTIME-qwen38fn-flash-next-UNINSTALLED",
+      "tag": "qwen3.8-flash-next:125b-a6b-nvfp4",
+      "digest": null,
+      "host": "Daytona H200 (preferred)",
+      "status": "NOT_INSTALLED",
+      "blocked": "DAYTONA_API_KEY_ABSENT"
+    }
+  ],
+  "execution_paths": [
+    {
+      "path_id": "OLLARMA_Q38_PRE_POLICY",
+      "route": "Ollarma /chat",
+      "result": "DEGRADED_TIMEOUT",
+      "timeout_s": 35,
+      "note": "historical baseline before large-model timeout tier"
+    },
+    {
+      "path_id": "OLLAMA_Q38_DIRECT",
+      "route": "Ollama API direct",
+      "result": "PASS",
+      "note": "historical fallback; not equivalent to governed PASS"
+    },
+    {
+      "path_id": "OLLARMA_Q38_POST_POLICY",
+      "route": "Ollarma /chat strict_model_identity",
+      "result": "PASS",
+      "large_model_warm_timeout_s": 480,
+      "receipt": "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json"
+    }
+  ],
+  "successor_relations": [
+    {
+      "from": "hydradg/eval/vercel_public_closeout_20260827/LOCAL_LIVE_MODEL_RECEIPT.json",
+      "to": "hydradg/eval/qwen38_successor_probe_20260828/QWEN38_HYDRADG_SUCCESSOR_PROBE_RECEIPT.json",
+      "classification": "SUCCESSOR_CANARY_REPLICATION"
+    }
+  ],
+  "ollarma_policy": {
+    "before": {"local_inference_timeout_s": 35, "large_model_tier": false},
+    "after": {
+      "model_load_timeout_s": 180,
+      "inference_response_timeout_s": 35,
+      "large_model_load_timeout_s": 600,
+      "large_model_inference_timeout_s": 480,
+      "strict_model_identity": true
+    }
+  },
+  "hydradg_successor_probe": "hydradg/eval/qwen38_successor_probe_20260828/QWEN38_HYDRADG_SUCCESSOR_PROBE_RECEIPT.json",
+  "seedgraph_live_mutation": false,
+  "newinml_thesis_impact": "none"
+}

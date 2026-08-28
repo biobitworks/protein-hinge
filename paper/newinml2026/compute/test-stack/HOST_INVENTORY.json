@@ -1,0 +1,17 @@
+{
+  "inventory_id": "MAGICSTUDIOBOX_HOST_INVENTORY",
+  "recorded_at_utc": "2026-08-28T16:00:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "architecture": "arm64",
+  "ollama_version": "0.33.0",
+  "ollama_api_reachable": true,
+  "ollarma_http_status": "degraded",
+  "ollarma_http_url": "http://127.0.0.1:8484",
+  "ollarma_cli_in_path": false,
+  "ollarma_uv_run_available": true,
+  "ram_gb": 32,
+  "disk_data_capacity_pct": 97,
+  "disk_root_avail_gb": 12,
+  "cuda_capable": false,
+  "daytona_api_key": "ABSENT"
+}

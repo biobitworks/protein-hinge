@@ -1,0 +1,48 @@
+{
+  "schema": "protein_hinge.model_panel.v1",
+  "panel_id": "MODEL_PANEL_QWEN38_SUCCESSOR_V1",
+  "version": "1.0.0",
+  "generated_at_utc": "2026-08-28T16:00:00Z",
+  "primary_comparison": "Q38_LOCAL vs Q38FN_DAYTONA",
+  "conditions": {
+    "Q38_LOCAL": {
+      "provider": "Ollama",
+      "host": "magicSTUDIObox.local",
+      "model_tag": "qwen3.8:27b",
+      "model_digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+      "parameter_size": "27.3B",
+      "quantization_level": "Q4_K_M",
+      "size_bytes": 17741872154,
+      "capabilities": ["completion", "tools", "thinking", "vision"],
+      "installation_status": "CURRENTLY_INSTALLED",
+      "distinct_from": ["qwen3.8", "qwen3.8-flash-next:125b-a6b-nvfp4"]
+    },
+    "Q38FN_DAYTONA": {
+      "provider": "Ollama",
+      "host": "Daytona",
+      "model_tag": "qwen3.8-flash-next:125b-a6b-nvfp4",
+      "preferred_gpu": "NVIDIA H200",
+      "quantization": "nvfp4",
+      "approx_size_gb": 105,
+      "installation_status": "NOT_INSTALLED",
+      "blocked_reason": "DAYTONA_API_KEY_ABSENT",
+      "distinct_from": ["qwen3.8:27b"],
+      "mlx_artifact_on_daytona": false
+    }
+  },
+  "comparison_lanes": {
+    "LANE_A_CONTROLLED": {
+      "thinking": "disabled where supported",
+      "temperature": 0,
+      "max_output_tokens": 256,
+      "context_ceiling_tokens": 32768
+    },
+    "LANE_B_REASONING": {
+      "thinking": "enabled",
+      "matched_reasoning_budget": true,
+      "configuration_non_equivalence_note": "Record if APIs differ"
+    }
+  },
+  "frozen_canary_prompt_sha256": "23a0a3110682f984b4f5153450fc904332cc8ad5271cffd532c135f136a7f7f5",
+  "digest_policy": "tag + Ollama digest required; tag alone insufficient"
+}
