@@ -14,8 +14,8 @@
     "REQ-009": {"label": "checklist", "status": "PARTIAL", "note": "Present; answers not finalized"},
     "REQ-010": {"label": "PDF QA", "status": "PASS", "note": "Build receipt recorded"},
     "REQ-011": {"label": "claim-evidence closure", "status": "PASS", "note": "PAPER_CLAIM_AUDIT.v1.json"},
-    "REQ-012": {"label": "experiment reproducibility", "status": "PARTIAL", "note": "EXP-005 not executed; EXP-006 cached with reproducible shuffle spec"}
+    "REQ-012": {"label": "experiment reproducibility", "status": "PASS", "note": "EXP-006 shuffle block exact-reproduced; EXP-005 prereg incomplete not executed"}
   },
-  "counts": {"PASS": 8, "PARTIAL": 2, "FAIL": 0, "OPERATOR_REQUIRED": 2},
+  "counts": {"PASS": 9, "PARTIAL": 1, "FAIL": 0, "OPERATOR_REQUIRED": 2},
   "hard_blockers": ["REQ-007 operator attestation", "REQ-008 eligibility confirmation"]
 }

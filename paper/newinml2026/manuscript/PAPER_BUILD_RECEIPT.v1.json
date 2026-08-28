@@ -5,7 +5,7 @@
   "template": "neurips_2026 dblblindworkshop",
   "workshop_title": "New in Machine Learning (NewInML) at NeurIPS 2026",
   "pdf_path": "paper/newinml2026/manuscript/main_smoke.pdf",
-  "pdf_sha256": "fc09285cc895bf24866a9f24a1637a5cce3b67aac6c85ae55771920710042e40",
+  "pdf_sha256": "4b4cf595c15f9141de900cec6a0ee86205458ae755a18ca2adc72f9a2769203a",
   "total_pages": 10,
   "content_pages_estimate": 6,
   "content_pages_note": "Excludes NeurIPS checklist section (non-content per venue); references embedded before checklist",
