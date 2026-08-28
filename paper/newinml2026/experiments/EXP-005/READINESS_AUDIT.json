@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-005",
+  "audit_id": "EXP-005-READINESS-AUDIT-v1",
+  "generated_at_utc": "2026-08-28T07:54:00Z",
+  "prereg_hash": "locked_at_utc=2026-08-28T07:02:00Z",
+  "readiness_state": "PREREG_INCOMPLETE",
+  "secondary_states": ["INPUT_NOT_FROZEN"],
+  "execution_permitted": false,
+  "execution_status_field_ignored": true,
+  "blocking_conditions": [
+    {
+      "condition": "primary_metric",
+      "required": "Declared before any outcome file is opened",
+      "actual": "TBD at corpus freeze",
+      "blocks": true
+    },
+    {
+      "condition": "corpus_freezing_procedure",
+      "required": "Independent corpus snapshotted to experiments/EXP-005/inputs/ with SHA-256 manifest",
+      "actual": "Not completed; no inputs/ freeze receipt",
+      "blocks": true
+    },
+    {
+      "condition": "source_acquisition_rule",
+      "required": "Sources with LOCAL_CUSTODY or IMPORTED in manifest v2",
+      "actual": "Independent corpus not identified or frozen",
+      "blocks": true
+    }
+  ],
+  "satisfied_conditions": [
+    "classification=REPLICATION",
+    "outcome_exposure=NO",
+    "stopping_rule defined",
+    "terminal_accounting invariant defined",
+    "statistical_test declared",
+    "alpha=0.05",
+    "decision_tree defined"
+  ],
+  "executed": false,
+  "prereg_deviation_count": 0,
+  "recommendation": "Do not execute until corpus freeze + primary metric lock; emit REPLICATION_PREREGISTERED_NOT_EXECUTED if deadline passes"
+}

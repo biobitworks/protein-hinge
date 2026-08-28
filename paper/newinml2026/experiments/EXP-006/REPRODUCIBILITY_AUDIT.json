@@ -1,0 +1,37 @@
+{
+  "experiment_id": "EXP-006",
+  "audit_id": "EXP-006-REPRODUCIBILITY-AUDIT-v1",
+  "generated_at_utc": "2026-08-28T07:54:00Z",
+  "classification": "REPLICATION",
+  "reproducibility_classification": "EXACT_REPRODUCTION_POSSIBLE",
+  "result_status": "CACHED_NEGATIVE_EVIDENCE",
+  "executed_this_wave": false,
+  "cached_artifacts": {
+    "candidate_ranking.csv": {
+      "path": "data/partner/candidate_ranking.csv",
+      "sha256": "e93d3ce7526049c8904e36e6e1aeefc2558c38b3032c8c348342390d8cf30b51"
+    },
+    "evaluation.json": {
+      "path": "data/partner/evaluation.json",
+      "known_pair_rank": 28,
+      "reciprocal_rank": 0.03571428571428571,
+      "shuffle_seed": 260813,
+      "shuffle_iterations": 1000,
+      "reciprocal_rank_enrichment_vs_shuffle": 0.24638253360287107,
+      "hits_at_10": false
+    },
+    "state_model.json": "data/partner/state_model.json",
+    "perturbation_state.json": "data/partner/perturbation_state.json"
+  },
+  "recovered_specification": {
+    "script_path_in_biocustody_zip": "scripts/magicstudiobox_repurposing_queue.py",
+    "null_model": "label_shuffle",
+    "shuffle_iterations": 1000,
+    "seed": 260813,
+    "metric": "reciprocal_rank vs shuffled labels",
+    "fcg_derivation_node": "counter_perturbation_ranking_method"
+  },
+  "limitation": "Full morphology pipeline requires external CPJUMP1 profiles not held locally; evaluation.json shuffle block is independently reproducible from admitted script + ranking CSV",
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS; null benchmark did not outperform shuffle (enrichment < 1)",
+  "negative_finding": "Known pair rank 28/50; observed reciprocal rank below shuffle mean; disclosed miss not suppressed"
+}
