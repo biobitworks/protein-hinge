@@ -5,7 +5,7 @@
   "branch": "paper/newinml-fcg-20260828",
   "WAVE2_SHA": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
   "WAVE3_BOOTSTRAP_SHA": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
-  "closeout_git_head": "PENDING_COMMIT",
+  "closeout_git_head": "d1fb81b",
   "closure_semantics": {
     "closure_subject_sha": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
     "closure_semantics": "SNAPSHOT_OF_PRIOR_COMMIT",
