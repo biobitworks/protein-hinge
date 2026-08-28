@@ -1,97 +1,131 @@
 {
-  "receipt_id": "WAVE3-CLOSEOUT-RECEIPT-v1",
-  "generated_at_utc": "2026-08-28T07:35:00Z",
-  "hostname": "magicSTUDIObox.local",
-  "branch": "paper/newinml-fcg-20260828",
-  "WAVE2_SHA": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
-  "WAVE3_BOOTSTRAP_SHA": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
-  "closeout_git_head": "d1fb81b",
-  "closure_semantics": {
-    "closure_subject_sha": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
-    "closure_semantics": "SNAPSHOT_OF_PRIOR_COMMIT",
-    "receipt_commit_sha": null,
-    "v2_canonical_baseline_sha": "40256c628903185a37eeddce3635b4573c1c4d54",
-    "content_added": 21,
-    "content_changed": 5,
-    "content_unchanged": 205,
-    "content_removed": 0,
-    "metadata_added": 21,
-    "metadata_changed": 231,
-    "metadata_unchanged": 0,
-    "metadata_removed": 0,
-    "invariant": "content_state uses exact-byte SHA-256; metadata_state tracks git/provenance fields",
-    "N_discovered": 233,
-    "discovered_count_note": "233 at WAVE2_SHA git ls-tree snapshot (prior 238 cited working-tree v1 discovery)"
-  },
-  "REQ-006": {
-    "status": "PASS",
-    "template_source": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
-    "template_archive_sha256": "82473931e3ef710fcd3f4a8cd4119b9de32e56825f90f9e5a6d55f2d01b817d9",
-    "neurips_2026_sty_sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
-    "dblblindworkshop": true,
-    "compile_result": "PASS",
-    "smoke_pdf_sha256": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
-    "artifacts": "paper/newinml2026/manuscript/"
+  "CFMO": {
+    "cfmo_expansion_explicit": false,
+    "classification": "HISTORICAL_IMPLEMENTATION_UNVERIFIED_CANONICALITY",
+    "paper_role": "infrastructure context only"
   },
   "EXP-003": {
-    "status": "COMPLETE_NEGATIVE",
     "classification": "PROVENANCE_RECOVERY",
-    "historical_values_disposition": "NOT_FOUND (all candidate counts)",
-    "742_accounting": "NOT_APPLICABLE",
-    "missing_100_cause": "UNKNOWN",
     "exp003_1_rerun": "NOT_EXECUTED",
-    "terminology_ceiling": "unsupported attribution rate / gene-level evidence contamination",
-    "promotion_recommended": false
-  },
-  "MMR": {
-    "classification": "VERIFIED_MMR",
-    "implementation_repo": "/Users/byron/projects/active/fractal-custody-objects",
-    "implementation_sha": "9c8e2026d81e820d52b91785c191c06f04f8424b",
-    "note": "Recipe schism documented; witness_peak.py verifier for recipe B"
-  },
-  "CFMO": {
-    "classification": "HISTORICAL_IMPLEMENTATION_UNVERIFIED_CANONICALITY",
-    "hydradg_runner_sha256": "92e53db111106b44809b6017bf7030ca01e0f3dabe97d3ff82d543f2cd564d8c",
-    "cfmo_expansion_explicit": false,
-    "executable_now": false,
-    "reference_reproducible": true,
-    "protein_hinge_status": "NOT_FOUND"
-  },
-  "SEEDGRAPH": {
-    "local_import_status": "MANIFEST_VALIDATED_DEFERRED",
-    "live_mutation_status": "DEFERRED",
-    "N_manifest_rows": 233,
-    "IMPORTED_CONTENT": 214,
-    "IMPORTED_REFERENCE": 14,
-    "UNAVAILABLE": 2,
-    "FAILED": 0,
-    "seedgraph_head": "6807b1960dd1e981afbf13e79c2f29c3d803b79a"
+    "promotion_recommended": false,
+    "status": "COMPLETE_NEGATIVE_PROVENANCE",
+    "unverified_claims_artifact": "experiments/EXP-003/UNVERIFIED_HISTORICAL_CLAIMS.json"
   },
   "EXP-005": {
     "lock_intact": true,
     "outcome_exposure": "NO",
     "status": "PREREGISTERED_LOCKED"
   },
+  "MMR": {
+    "recipe_schism_documented": true,
+    "repo_wide_verified_mmr_claim": false,
+    "scoped_classifications": [
+      {
+        "classification": "VERIFIED_MMR_CONSTRUCTION",
+        "recipe_id": "FCO_FRACTALIZE_RECIPE_A"
+      },
+      {
+        "classification": "VERIFIED_MMR_CONSTRUCTION",
+        "recipe_id": "WITNESS_PEAK_RECIPE_B"
+      },
+      {
+        "classification": "PARTIAL_MMR",
+        "recipe_id": "SEAL_APP_FCG_HEAD"
+      }
+    ]
+  },
+  "REQ-006": {
+    "compile_result": "PASS",
+    "neurips_2026_sty_sha256": "44ee9e90fe8e37cf7bb350ed5eb0bbdbfc3cae7573b610463af9f3c1181717fc",
+    "smoke_pdf_sha256": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
+    "status": "PASS",
+    "template_source": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip"
+  },
+  "SEEDGRAPH": {
+    "accounting": {
+      "EXCLUDED": 2,
+      "FAILED": 0,
+      "IMPORTED_CONTENT": 215,
+      "IMPORTED_REFERENCE": 14,
+      "N_manifest_rows": 233,
+      "QUARANTINED": 0,
+      "UNAVAILABLE": 2,
+      "closure_subject_sha": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
+      "generated_at_utc": "2026-08-28T07:27:16Z",
+      "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+      "hostname": "magicSTUDIObox.local",
+      "invariant_ok": true,
+      "live_writeback_executed": false,
+      "neo4j_mutated": false,
+      "note": "Local manifest + accounting only; uv run seedgraph import not executed (DEFERRED)",
+      "paper_manifest": "paper/newinml2026/provenance/PAPER_SOURCE_MANIFEST.v3.jsonl",
+      "schema": "protein_hinge.seedgraph.import_accounting.v3",
+      "seedgraph_head": "6807b1960dd1e981afbf13e79c2f29c3d803b79a",
+      "seedgraph_repo": "/Users/byron/projects/active/seedgraph"
+    },
+    "local_import_status": "MANIFEST_VALIDATED_DEFERRED",
+    "neo4j_mutated": false
+  },
   "THESIS": {
-    "current": "THESIS-001",
-    "successor_proposed": false,
-    "evidence_deltas": ["EVIDENCE_DELTA_EXP003.json"]
+    "claim_promotions": "none",
+    "current": "THESIS-001"
   },
-  "work_units": {
-    "W3-00": "COMPLETE",
-    "W3-01": "COMPLETE",
-    "W3-02": "COMPLETE_NEGATIVE",
-    "W3-03": "SKIPPED",
-    "W3-04": "COMPLETE",
-    "W3-05": "COMPLETE",
-    "W3-06": "COMPLETE"
+  "WAVE2_SHA": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
+  "WAVE3_BOOTSTRAP_SHA": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "WAVE3_SHA": "73c30d66e7102af9516d4a7be02e02dd245cc1e1",
+  "aug13_paths_modified": false,
+  "branch": "paper/newinml-fcg-20260828",
+  "claim_promotions": "none",
+  "closure_v3_opening": {
+    "N_discovered": 233,
+    "closure_subject_sha": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
+    "content_added": 21,
+    "metadata_changed": 231
   },
-  "BLOCKERS": [
-    "REQ-002 anonymous submission (identity URLs in non-manuscript artifacts)",
-    "REQ-007 OpenReview profile operator attestation",
-    "G2 source corpus NOT_FOUND for EXP-003.1",
-    "CUDA/SGLang EXP-007 deferred"
-  ],
-  "NEXT_DAISY_STEP": "Operator: G1 external pointer or biocustody.zip custody; else manuscript anonymous projection for REQ-002",
-  "claim_ceiling": "REPURPOSING_HYPOTHESIS"
+  "critical_file_sha256": {
+    "paper/newinml2026/experiments/EXP-003/UNVERIFIED_HISTORICAL_CLAIMS.json": "3da99d847d5e39eb030503b03d4e502aa5f496bb4d508abe012ac4d274107d9c",
+    "paper/newinml2026/experiments/EXP-003/provenance_recovery.json": "325cc813ccc746b494d6945141d61d0afa8863dca7294bdccfe3f439a3eed60f",
+    "paper/newinml2026/experiments/EXP-005/prereg.json": "9150723755acc3a9a0f1e1dfc17e58ba8b1c0c401339866f77512addd25dbd46",
+    "paper/newinml2026/manuscript/BUILD_RECEIPT.json": "44ee9e90fe8e37cf7bb350ed5eb0bbdbfc3cae7573b610463af9f3c1181717fc",
+    "paper/newinml2026/manuscript/main_smoke.pdf": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
+    "paper/newinml2026/seedgraph/SEEDGRAPH_IMPORT_ACCOUNTING.v3.json": "a5aff6953c5c10a1d81366de9320217a03f5409c8e1bc8d6bf8f4b7edb696bc9",
+    "paper/newinml2026/submission/NEWINML_REQUIREMENTS_MATRIX.json": "d1a859aa9fdbde397ee99dba074c6534b650da64962b23c9bb14d37e3239821d",
+    "paper/newinml2026/thesis/CFMO_MMR_DERIVATION_CONTRACT.v2.json": "bced8b1c7c51e6f47f8c173ca21437a43da98681b7469bf23445fd296b6fbbc6",
+    "paper/newinml2026/thesis/EVIDENCE_DELTA_EXP003.json": "8bbf2714dc85c50201ed2ec62d28b33f8f7eef651ac242d74486c325c7c2589a",
+    "paper/newinml2026/thesis/THESIS-001.json": "d27c864f8c01eb2cefb2f66e023215ca11f829d70d506dce2c56087982030348"
+  },
+  "generated_at_utc": "2026-08-28T07:32:18Z",
+  "historical_artifacts_modified": false,
+  "hostname": "magicSTUDIObox.local",
+  "receipt_id": "WAVE3-CLOSEOUT-RECEIPT-v1",
+  "schema": "protein_hinge.wave3_closeout_receipt.v1",
+  "wave3_commit_paths": [
+    "paper/newinml2026/experiments/EXP-003/PROVENANCE_REPORT.md",
+    "paper/newinml2026/experiments/EXP-003/provenance_candidates.jsonl",
+    "paper/newinml2026/experiments/EXP-003/provenance_recovery.json",
+    "paper/newinml2026/experiments/EXPERIMENT_MATRIX.md",
+    "paper/newinml2026/manuscript/BUILD_RECEIPT.json",
+    "paper/newinml2026/manuscript/README.md",
+    "paper/newinml2026/manuscript/TEMPLATE_SOURCE.json",
+    "paper/newinml2026/manuscript/build.sh",
+    "paper/newinml2026/manuscript/main.tex",
+    "paper/newinml2026/manuscript/main_smoke.pdf",
+    "paper/newinml2026/manuscript/neurips_2026.sty",
+    "paper/newinml2026/manuscript/references.bib",
+    "paper/newinml2026/manuscript/sections/.gitkeep",
+    "paper/newinml2026/provenance/PAPER_IMPORT_ACCOUNTING.v3.json",
+    "paper/newinml2026/provenance/PAPER_OBJECT_HASHES.v3.sha256",
+    "paper/newinml2026/provenance/PAPER_SOURCE_MANIFEST.v3.jsonl",
+    "paper/newinml2026/receipts/PAPER_CLOSURE_RECEIPT.v3.json",
+    "paper/newinml2026/receipts/WAVE3_CLOSEOUT_RECEIPT.json",
+    "paper/newinml2026/scripts/bootstrap_paper_closure_v3.py",
+    "paper/newinml2026/scripts/seedgraph_v3_local_import.py",
+    "paper/newinml2026/seedgraph/SEEDGRAPH_FAILED_OBJECTS.v3.jsonl",
+    "paper/newinml2026/seedgraph/SEEDGRAPH_IMPORT_ACCOUNTING.v3.json",
+    "paper/newinml2026/seedgraph/SEEDGRAPH_IMPORT_MANIFEST.v3.jsonl",
+    "paper/newinml2026/seedgraph/SEEDGRAPH_LOCAL_IMPORT_RECEIPT.v3.json",
+    "paper/newinml2026/submission/NEWINML_REQUIREMENTS_MATRIX.json",
+    "paper/newinml2026/thesis/CFMO_MMR_DERIVATION_CONTRACT.v2.json",
+    "paper/newinml2026/thesis/EVIDENCE_DELTA_EXP003.json"
+  ]
 }

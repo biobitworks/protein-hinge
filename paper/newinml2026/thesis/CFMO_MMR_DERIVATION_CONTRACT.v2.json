@@ -1,68 +1,75 @@
 {
   "contract_id": "CFMO_MMR_DERIVATION_CONTRACT",
-  "schema_version": "v2",
-  "generated_at_utc": "2026-08-28T07:26:00Z",
-  "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
-  "mmr_merkle_mountain_range": {
-    "classification": "VERIFIED_MMR",
-    "note": "Project MMR = Merkle Mountain Range only; not SIGIR reranking",
-    "implementations": [
-      {
-        "repo": "/Users/byron/projects/active/fractal-custody-objects",
-        "git_sha": "9c8e2026d81e820d52b91785c191c06f04f8424b",
-        "paths": [
-          "scripts/fractalize_fco.py",
-          "scripts/witness_peak.py"
-        ],
-        "recipe_a": {
-          "leaf": "sha256(0x00 || atom_bytes)",
-          "parent": "sha256(0x01 || left_hex + right_hex ASCII)",
-          "bagging": "peaks right-to-left",
-          "receipt": "FRACTAL_INDEX.json / app_fcg_manifest"
-        },
-        "recipe_b": {
-          "leaf": "sha256(0x00 || sha256(content))",
-          "parent": "sha256(0x01 || raw_left || raw_right bytes)",
-          "bagging": "peaks left-to-right ascending",
-          "receipt": "WITNESS_ANCHOR.json schema fco.mmr_witness_anchor.v1",
-          "verifier": "witness_peak.py --verify"
-        },
-        "schism": "Recipe A (hex-ASCII parents) vs Recipe B (raw digest parents) are intentionally different"
-      }
-    ],
-    "partial_at_head": {
-      "path": "scripts/seal_app_fcg.py",
-      "status": "PARTIAL_MMR",
-      "note": "Truncated at HEAD; full sealer at git 71bf05d"
+  "schema_version": "v2.1",
+  "generated_at_utc": "2026-08-28T07:40:00Z",
+  "mmr_scope_note": "Do not claim repo-wide single canonical MMR; recipes are incompatible across constructions",
+  "mmr_recipes": [
+    {
+      "recipe_id": "FCO_FRACTALIZE_RECIPE_A",
+      "classification": "VERIFIED_MMR_CONSTRUCTION",
+      "repo": "/Users/byron/projects/active/fractal-custody-objects",
+      "implementation_sha": "9c8e2026d81e820d52b91785c191c06f04f8424b",
+      "paths": ["scripts/fractalize_fco.py"],
+      "construction_scope": "figure/paper/app FCO atom MMR",
+      "leaf_recipe": "sha256(0x00 || atom_bytes)",
+      "parent_recipe": "sha256(0x01 || left_hex + right_hex ASCII concat)",
+      "peak_bagging": "stack merge; bag peaks right-to-left",
+      "root_semantics": "fractal_root / app_fcg_root (recipe-specific composite)",
+      "verifier_scope": "recompute FRACTAL_INDEX.json or app_fcg_manifest root",
+      "compatibility": ["seal_app_fcg.py at git 71bf05d (full version)"],
+      "incompatibility": ["witness_peak.py recipe B", "training/fco_train/custody.py Merkle tree"]
     },
-    "signing_only": {
-      "path": "scripts/fcg_sign.py",
-      "role": "Ed25519 on app_fcg_root; not MMR proof verifier"
+    {
+      "recipe_id": "WITNESS_PEAK_RECIPE_B",
+      "classification": "VERIFIED_MMR_CONSTRUCTION",
+      "repo": "/Users/byron/projects/active/fractal-custody-objects",
+      "implementation_sha": "9c8e2026d81e820d52b91785c191c06f04f8424b",
+      "paths": ["scripts/witness_peak.py"],
+      "construction_scope": "append-only session/daisy JSONL log MMR",
+      "leaf_recipe": "sha256(0x00 || sha256(content))",
+      "parent_recipe": "sha256(0x01 || raw_left_bytes || raw_right_bytes)",
+      "peak_bagging": "stack merge; bag peaks left-to-right ascending",
+      "root_semantics": "bagged anchor root; empty log GENESIS=sha256(0x02)",
+      "verifier_scope": "witness_peak.py --verify WITNESS_ANCHOR.json",
+      "compatibility": ["training custody raw-digest variant documented as distinct"],
+      "incompatibility": ["fractalize_fco.py recipe A hex-ASCII parents"]
     },
-    "non_mmr_labeled": [
-      "MMR_SCORER_FROZEN.json (SIGIR-style labels)",
-      "training/fco_train/custody.py (sorted Merkle tree)"
-    ]
+    {
+      "recipe_id": "SEAL_APP_FCG_HEAD",
+      "classification": "PARTIAL_MMR",
+      "repo": "/Users/byron/projects/active/fractal-custody-objects",
+      "implementation_sha": "9c8e2026d81e820d52b91785c191c06f04f8424b",
+      "paths": ["scripts/seal_app_fcg.py"],
+      "construction_scope": "HEAD truncated to validation stub only",
+      "historical_full_implementation_sha": "71bf05d",
+      "root_semantics": "app_fcg_root when full sealer executed",
+      "verifier_scope": "full sealer recompute at historical revision",
+      "note": "Do not interchange roots with recipe B"
+    }
+  ],
+  "signing_only": {
+    "path": "scripts/fcg_sign.py",
+    "role": "Ed25519 on app_fcg_root; not MMR inclusion verifier"
   },
+  "non_mmr_labeled": [
+    "MMR_SCORER_FROZEN.json (SIGIR reranking labels)",
+    "training/fco_train/custody.py (sorted Merkle tree, not MMR)"
+  ],
   "mmr_maximal_marginal_relevance_reranking": {
     "status": "DESIGN_CITATION_ONLY",
     "implemented_in_protein_hinge": false
   },
   "cfmo": {
     "classification": "HISTORICAL_IMPLEMENTATION_UNVERIFIED_CANONICALITY",
+    "paper_role": "historical project-derived context / future scoring infrastructure only",
+    "cfmo_expansion_explicit": false,
     "vithia_lane": {
       "repo": "/Users/byron/projects/active/hydradg",
       "git_sha": "94059bbd09907a12d5bb193c9705ad8fc7dd6572",
-      "runner": "HydraDG_DaisyTrain_v0.3.7/scripts/run_vithia_cfmo_instrumented.py",
       "runner_sha256": "92e53db111106b44809b6017bf7030ca01e0f3dabe97d3ff82d543f2cd564d8c",
-      "reference_distribution": "HydraDG_DaisyTrain_v0.3.7/eval/vithia_cfmo_baseline_v0.1/CFMO_REFERENCE_DISTRIBUTION.json",
       "reference_sha256": "10eca348694b7aac1c6a829dc5253e1a6b3c9558f534ba811489a3723d7f2d08",
-      "cfmo_expansion_explicit": false,
       "executable_now": false,
-      "executable_blocker": "transformers module missing",
-      "reference_reproducible": true,
-      "repro_script": "compute_cfmo_reference_basin.py",
-      "canonicality_note": "Tracked in hydradg as vithia CFMO baseline v0.1; separate from HydraLamp CFMOStore oracle expansion"
+      "reference_reproducible": true
     },
     "protein_hinge_status": "NOT_FOUND"
   },

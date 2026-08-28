@@ -2,41 +2,30 @@
   "experiment_id": "EXP-003",
   "title": "G2 CNV attribution — point-of-origin recovery",
   "classification": "PROVENANCE_RECOVERY",
-  "status": "COMPLETE_NEGATIVE",
+  "status": "COMPLETE_NEGATIVE_PROVENANCE",
+  "terminal_classification_note": "Historical G2 source corpus, derivation code, and candidate counts could not be recovered from admitted protein-hinge Git/source custody; no scientifically admissible retrospective rerun was executed.",
   "completed_at_utc": "2026-08-28T07:25:00Z",
   "hostname": "magicSTUDIObox.local",
   "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
   "WAVE3_BOOTSTRAP_SHA": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "unverified_historical_claims_artifact": "experiments/EXP-003/UNVERIFIED_HISTORICAL_CLAIMS.json",
   "historical_claim_candidates": {
-    "note": "Mission-brief values only; NOT accepted until located in custody with derivation code",
-    "N_fetched": 742,
-    "N_summarized_downstream": 642,
-    "N_missing": 100,
-    "multi_gene_cnv": "287/642",
-    "gene_level_transitions": {
-      "PHB2": "46 -> 0",
-      "CHCHD3": "32 -> 0",
-      "PGS1": "14 -> 0",
-      "CRLS1": "33 -> 3",
-      "TAFAZZIN": "237 -> 100",
-      "HADHA": "267 -> 251"
-    },
-    "terminology_ceiling": "Use 'unsupported attribution rate' or 'gene-level evidence contamination' until wrongness predicate established; do not label silent_error without predicate"
+    "label": "UNVERIFIED_HISTORICAL_CLAIM",
+    "note": "Numeric candidates relocated to UNVERIFIED_HISTORICAL_CLAIMS.json; do not cite as results",
+    "promotion_status": "FORBIDDEN"
   },
   "search_scope": [
     "protein-hinge tree @ 38c8c15",
     "full git history (all branches)",
-    "git pickaxe -S for 742, 642, 287, 100, TAFAZZIN, PHB2, CHCHD3, PGS1, CRLS1, HADHA",
-    "deleted files (none with G2 counts)",
+    "git pickaxe for G2 count literals and gene symbols",
+    "deleted files",
     "gap/, fcg/, fto/, db/biocustody.db, scripts/",
-    "paper/newinml2026 (bootstrap references only)",
     "biocustody.zip external pointer UNAVAILABLE"
   ],
   "accounting_invariant_target": "N_fetched == N_admitted + N_excluded + N_abstained + N_failed",
   "accounting_invariant_status": "NOT_APPLICABLE",
-  "accounting_invariant_reason": "No fetch corpus or row-level ledger located; cannot reconstruct 742-record flow",
-  "missing_100_cause": "UNKNOWN",
-  "missing_100_note": "TAFAZZIN 237->100 hypothesis not supported by any located artifact",
+  "accounting_invariant_reason": "No fetch corpus or row-level ledger located",
+  "missing_batch_discrepancy_cause": "UNKNOWN",
   "exp003_1_rerun": "NOT_EXECUTED",
   "exp003_1_reason": "Insufficient canonical source corpus and G2 guard code in protein-hinge custody",
   "provenance_summary": {
@@ -48,128 +37,60 @@
   },
   "provenance_records": [
     {
-      "claim_component": "N_fetched=742",
+      "claim_component": "G2 batch accounting corpus",
       "disposition": "NOT_FOUND",
       "confidence": "high_absence_in_repo",
-      "search_evidence": "git pickaxe -S742 returns only SHA-256 substring collisions and paper bootstrap commits; no ClinVar/CNV batch count",
+      "search_evidence": "No ClinVar/CNV batch ledger or derivation code in protein-hinge history",
       "candidate_sources": []
     },
     {
-      "claim_component": "N_summarized=642",
+      "claim_component": "multi-gene CNV rate",
       "disposition": "NOT_FOUND",
       "confidence": "high_absence_in_repo",
-      "search_evidence": "No downstream summary table with 642 rows or aggregate",
+      "search_evidence": "No multi-gene CNV computation located",
       "candidate_sources": []
     },
     {
-      "claim_component": "N_missing=100",
+      "claim_component": "gene-level attribution transitions",
       "disposition": "NOT_FOUND",
       "confidence": "high_absence_in_repo",
-      "search_evidence": "742-642 arithmetic not recorded in any committed artifact",
-      "candidate_sources": []
-    },
-    {
-      "claim_component": "multi_gene_cnv=287/642",
-      "disposition": "NOT_FOUND",
-      "confidence": "high_absence_in_repo",
-      "search_evidence": "287 literal absent except hash substrings; no multi-gene CNV rate computation in repo",
-      "candidate_sources": []
-    },
-    {
-      "claim_component": "PHB2 46->0",
-      "disposition": "NOT_FOUND",
-      "confidence": "high_absence_in_repo",
-      "search_evidence": "PHB2 symbol in fto/registry_digests.json and fcg atoms without CNV attribution counts",
+      "search_evidence": "Gene symbols in fto/registry only; no G2 guard outputs",
       "candidate_sources": [
         {
           "path": "fto/registry_digests.json",
-          "commit": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
-          "sha256": "partial_gene_registry_only",
-          "relationship": "gene symbol registry, not G2 guard output"
+          "relationship": "symbol registry context only"
         }
       ]
     },
     {
-      "claim_component": "CHCHD3 32->0",
-      "disposition": "NOT_FOUND",
-      "confidence": "high_absence_in_repo",
-      "search_evidence": "Symbol in registry only",
-      "candidate_sources": []
-    },
-    {
-      "claim_component": "PGS1 14->0",
-      "disposition": "NOT_FOUND",
-      "confidence": "high_absence_in_repo",
-      "search_evidence": "Symbol in registry only",
-      "candidate_sources": []
-    },
-    {
-      "claim_component": "CRLS1 33->3",
-      "disposition": "NOT_FOUND",
-      "confidence": "high_absence_in_repo",
-      "search_evidence": "Symbol in registry only",
-      "candidate_sources": []
-    },
-    {
-      "claim_component": "TAFAZZIN 237->100",
-      "disposition": "NOT_FOUND",
-      "confidence": "high_absence_in_repo",
-      "search_evidence": "TAFAZZIN in fto/registry and narrative atoms; no batch count 237 or 100",
-      "candidate_sources": []
-    },
-    {
-      "claim_component": "HADHA 267->251",
-      "disposition": "NOT_FOUND",
-      "confidence": "high_absence_in_repo",
-      "search_evidence": "Symbol in registry only",
-      "candidate_sources": []
-    },
-    {
-      "claim_component": "multi-gene CNV concept",
+      "claim_component": "multi-gene knockout axis (design)",
       "disposition": "LOCATED_PARTIAL",
       "confidence": "design_only",
-      "search_evidence": "fto/FTO_DESIGN.md mentions multi-gene knockout axis; no CNV attribution pipeline",
-      "candidate_sources": [
-        {
-          "path": "fto/FTO_DESIGN.md",
-          "commit": "b23af48",
-          "relationship": "design prose only"
-        }
-      ]
+      "search_evidence": "fto/FTO_DESIGN.md design prose",
+      "candidate_sources": [{"path": "fto/FTO_DESIGN.md", "commit": "b23af48"}]
     },
     {
       "claim_component": "ClinVar/CNV ingestion code",
       "disposition": "NOT_FOUND",
       "confidence": "high_absence_in_repo",
-      "search_evidence": "No ClinVar or copy-number modules in protein-hinge history",
+      "search_evidence": "No ClinVar or copy-number modules in history",
       "candidate_sources": []
     },
     {
       "claim_component": "G2 guard ON/OFF pipeline",
       "disposition": "NOT_FOUND",
       "confidence": "high_absence_in_repo",
-      "search_evidence": "No G2 guard implementation; gap lane covers different semantic accounting",
+      "search_evidence": "GAP lane covers different semantic accounting",
       "candidate_sources": []
     },
     {
       "claim_component": "biocustody.zip handoff corpus",
       "disposition": "UNAVAILABLE",
       "confidence": "external_pointer",
-      "search_evidence": "PAPER_IMPORT_ACCOUNTING external pointer; file absent from /Users/byron/Downloads/",
+      "search_evidence": "External pointer absent from Downloads",
       "candidate_sources": []
-    },
-    {
-      "claim_component": "gene symbols PHB2,CHCHD3,PGS1,CRLS1,TAFAZZIN,HADHA",
-      "disposition": "LOCATED_PARTIAL",
-      "confidence": "registry_context_only",
-      "search_evidence": "fto/registry_digests.json lists symbols as FTO registry entries, not G2 outputs",
-      "candidate_sources": [
-        {
-          "path": "fto/registry_digests.json",
-          "commit": "38c8c15b12ef2773f0614a7995245dd2d19a0f40"
-        }
-      ]
     }
   ],
-  "terminal_state": "NEGATIVE"
+  "terminology_ceiling": "unsupported attribution rate / gene-level evidence contamination until wrongness predicate established",
+  "terminal_state": "COMPLETE_NEGATIVE_PROVENANCE"
 }

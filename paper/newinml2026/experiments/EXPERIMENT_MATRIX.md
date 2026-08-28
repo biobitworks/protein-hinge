@@ -17,7 +17,7 @@
 | EXP-GAP-ACCOUNTING-001.1 | GAP accounting repaired rerun | REPLICATION | PREREGISTERED | LOCAL | EXP-001 findings |
 | EXP-001 | Alias for EXP-GAP-ACCOUNTING-001 | EXPLORATORY | COMPLETE | LOCAL | same |
 | EXP-002 | G1 sequence/residue verification — provenance recovery | EXPLORATORY | COMPLETE_NEGATIVE | LOCAL | all historical counts NOT_FOUND; rerun blocked |
-| EXP-003 | G2 CNV attribution ablation | EXPLORATORY | COMPLETE_NEGATIVE | LOCAL | provenance recovery; no source corpus located |
+| EXP-003 | G2 CNV attribution ablation | EXPLORATORY | COMPLETE_NEGATIVE_PROVENANCE | LOCAL | provenance recovery; no admissible source corpus |
 | EXP-004 | G3 identity-resolution ablation | EXPLORATORY | NOT_STARTED | LOCAL | raw vs canonical ID join |
 | EXP-005 | Frozen-corpus independent replication | REPLICATION | PREREGISTERED_LOCKED | LOCAL | outcome_exposure=NO |
 | EXP-006 | Morphology/null reproduction | REPLICATION | NOT_STARTED | LOCAL | frozen CPJUMP1 inputs |

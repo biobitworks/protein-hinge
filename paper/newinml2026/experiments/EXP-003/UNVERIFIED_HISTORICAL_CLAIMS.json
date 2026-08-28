@@ -1,0 +1,22 @@
+{
+  "schema": "protein_hinge.exp003.unverified_historical_claims.v1",
+  "label": "UNVERIFIED_HISTORICAL_CLAIM",
+  "warning": "Mission-brief audit record only. NOT paper results. NOT located in protein-hinge custody.",
+  "experiment_id": "EXP-003",
+  "candidates": {
+    "N_fetched": 742,
+    "N_summarized_downstream": 642,
+    "N_missing": 100,
+    "multi_gene_cnv_rate_candidate": "287/642",
+    "gene_level_transition_candidates": {
+      "PHB2": "46 -> 0",
+      "CHCHD3": "32 -> 0",
+      "PGS1": "14 -> 0",
+      "CRLS1": "33 -> 3",
+      "TAFAZZIN": "237 -> 100",
+      "HADHA": "267 -> 251"
+    }
+  },
+  "disposition": "NOT_FOUND_IN_REPO_CUSTODY",
+  "promotion_status": "FORBIDDEN"
+}
