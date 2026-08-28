@@ -1,0 +1,16 @@
+{
+  "N_discovered": 328,
+  "N_duplicate": 20,
+  "N_imported": 306,
+  "N_unavailable": 2,
+  "biocustody_zip_admitted": true,
+  "branch": "paper/newinml-fcg-20260828",
+  "closure_semantics": "CURRENT_TREE_PLUS_EXTERNAL_POINTERS",
+  "closure_subject_sha": "8a34f472b937aa324b40e018b5d6215f2bd36f48",
+  "generated_at_utc": "2026-08-28T07:55:56Z",
+  "hostname": "magicSTUDIObox.local",
+  "invariant_ok": true,
+  "receipt_commit_sha": "8a34f472b937aa324b40e018b5d6215f2bd36f48",
+  "schema": "protein_hinge.paper.import_accounting.v6",
+  "supersedes": "PAPER_IMPORT_ACCOUNTING.v5.json"
+}
