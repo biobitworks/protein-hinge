@@ -1,0 +1,12 @@
+{
+  "claim_ceiling": "provenance only",
+  "experiments": [
+    "EXP-002-PROV.1",
+    "EXP-003-PROV.1"
+  ],
+  "generated_at_utc": "2026-08-28T07:58:07Z",
+  "source_objects": [
+    "/Users/byron/projects/inbox/biocustody-stateshift-aws-bootstrap-v0.2.0.zip"
+  ],
+  "wave_id": "W01"
+}

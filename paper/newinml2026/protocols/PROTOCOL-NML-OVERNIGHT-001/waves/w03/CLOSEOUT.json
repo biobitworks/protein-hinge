@@ -1,0 +1,27 @@
+{
+  "closed_at_utc": "2026-08-28T07:58:07Z",
+  "executed": false,
+  "readiness": "PREREG_INCOMPLETE",
+  "reason": [
+    {
+      "actual": "TBD at corpus freeze",
+      "blocks": true,
+      "condition": "primary_metric",
+      "required": "Declared before any outcome file is opened"
+    },
+    {
+      "actual": "Not completed; no inputs/ freeze receipt",
+      "blocks": true,
+      "condition": "corpus_freezing_procedure",
+      "required": "Independent corpus snapshotted to experiments/EXP-005/inputs/ with SHA-256 manifest"
+    },
+    {
+      "actual": "Independent corpus not identified or frozen",
+      "blocks": true,
+      "condition": "source_acquisition_rule",
+      "required": "Sources with LOCAL_CUSTODY or IMPORTED in manifest v2"
+    }
+  ],
+  "terminal": "SKIPPED",
+  "wave_id": "W03"
+}

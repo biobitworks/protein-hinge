@@ -1,0 +1,46 @@
+protocol_id: PROTOCOL-NML-OVERNIGHT-001
+waves:
+  W00:
+    name: bootstrap
+    depends_on: []
+    optional: false
+  W01:
+    name: biocustody_provenance
+    depends_on: [W00]
+    optional: false
+  W02:
+    name: terminology_citations
+    depends_on: [W00]
+    optional: false
+  W03:
+    name: exp005_replication
+    depends_on: [W00, W02]
+    optional: false
+  W04:
+    name: exp006_null_reproduction
+    depends_on: [W00, W01]
+    optional: false
+  W05:
+    name: claim_gap_repair
+    depends_on: [W03, W04]
+    optional: false
+  W06:
+    name: exp007_sglang
+    depends_on: [W05]
+    optional: true
+  W07:
+    name: thesis_claim_audit
+    depends_on: [W03, W04, W05, W06]
+    optional: false
+  W08:
+    name: manuscript
+    depends_on: [W07]
+    optional: false
+  W09:
+    name: anonymous_submission
+    depends_on: [W08]
+    optional: false
+  W10:
+    name: final_fcg_closeout
+    depends_on: [W09]
+    optional: false
