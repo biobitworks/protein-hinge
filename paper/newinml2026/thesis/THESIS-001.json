@@ -1,0 +1,36 @@
+{
+  "thesis_id": "THESIS-001",
+  "version": 1,
+  "created_at_utc": "2026-08-28T06:56:00Z",
+  "parent_thesis": "THESIS-000",
+  "supersedes": "THESIS-000",
+  "superseded_by": null,
+  "evidence_delta": "EXP-GAP-ACCOUNTING-001.1 demonstrates repaired GAP ingest can derive abstention summary from graded rows with zero accounting violations.",
+  "statement": "Protein Hinge custody architecture can enforce verify-or-abstain semantic accounting when abstention summaries are derived from terminal row states rather than hardcoded; the August 13 prescripted run remains immutable evidence of the prior defect.",
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS",
+  "supporting_fcos": [
+    "gap/runs/2026-08-28-accounting-repair/receipt.json",
+    "paper/newinml2026/experiments/EXP-GAP-ACCOUNTING-001.1/results.json"
+  ],
+  "contradicting_fcos": [
+    "gap/runs/2026-08-13/abstentions.json"
+  ],
+  "null_negative_fcos": [],
+  "unresolved_blockers": [
+    "HACKDAY_STATE.yaml unavailable",
+    "Origin biocustody.zip not under repo SHA-256 custody",
+    "Live Convoke/Open Targets not wired",
+    "SeedGraph live import not verified",
+    "SGLang CUDA stress lane not executed",
+    "EXP-002 through EXP-006 not started"
+  ],
+  "cfmo": { "status": "not_configured", "version": null },
+  "mmr": { "status": "design_citation_only", "version": null },
+  "human_decisions": [
+    {
+      "timestamp_utc": "2026-08-28T06:56:00Z",
+      "actor": "execution_controller",
+      "decision": "Promote THESIS-001 after EXP-GAP-ACCOUNTING-001.1 validation.success=true; do not rewrite 2026-08-13 artifacts"
+    }
+  ]
+}

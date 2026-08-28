@@ -1,0 +1,79 @@
+schema: protein_hinge.project_control.v1
+status: PROPOSED
+created_at_utc: "2026-08-28T06:55:00Z"
+branch: paper/newinml-fcg-20260828
+base_sha: "94f8949f1bbcb63d8e80baadd0c5f380f01b9f92"
+
+canonical_controller:
+  hostname: magicSTUDIObox.local
+  architecture: arm64
+  role: evidence_authority
+  cuda_capable: false
+
+git:
+  origin: https://github.com/biobitworks/protein-hinge.git
+  identity:
+    name: biobitworks
+    email: byron@biobitworks.com
+
+paper:
+  id: newinml2026
+  root: paper/newinml2026
+  thesis_current: THESIS-001
+  claim_ceiling_default: REPURPOSING_HYPOTHESIS
+
+lanes:
+  science: fcg/
+  fto: fto/
+  gap: gap/
+  paper_fcg: paper/newinml2026/
+
+compute_routing:
+  local_preferred_for:
+    - hashing
+    - git_analysis
+    - seedgraph_ingest
+    - fco_fcg_bookkeeping
+    - statistics
+    - manuscript_build
+  cuda_remote_only: true
+  remote_hosts:
+    kaggle:
+      status: config_present
+      auth: ~/.kaggle/kaggle.json
+    daytona:
+      status: env_unset
+      auth: DAYTONA_API_KEY
+
+seedgraph:
+  repo: /Users/byron/projects/active/seedgraph
+  live_container: seedgraph-neo4j
+  writeback: deferred_local_first
+
+cloudflare_os:
+  status: not_pinned
+  role: agent_workspace_ui_only
+  canonical_truth: magicSTUDIObox
+
+governance:
+  immutable_history: true
+  force_push_main: forbidden
+  squash_before_provenance: forbidden
+  overwrite_thesis: forbidden
+
+acceptance_gates:
+  source_accounting: pending
+  experiment_accounting: pending
+  hash_custody: in_progress
+  contributor_provenance: in_progress
+  reproducibility: pending
+  claim_closure: pending
+  negative_evidence: in_progress
+  remote_compute: not_started
+  seedgraph_ingest: pending
+  paper_projection: not_started
+
+next_daisy_step:
+  role: SWE
+  action: execute EXP-GAP-ACCOUNTING-001.1 repaired rerun locally
+  blocked_by: []

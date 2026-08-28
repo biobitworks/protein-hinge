@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "protein_hinge.paper.object.v1",
+  "title": "NewInML 2026 Paper FCO Object Schema",
+  "type": "object",
+  "required": [
+    "object_id",
+    "type",
+    "source_uri",
+    "sha256",
+    "byte_count",
+    "evidence_class",
+    "attribution_class",
+    "claim_ceiling",
+    "source_status",
+    "seedgraph_status",
+    "terminal_state"
+  ],
+  "properties": {
+    "object_id": {
+      "type": "string",
+      "pattern": "^FCO-[A-Fa-f0-9]{16}$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "SOURCE_ARTIFACT",
+        "DATASET_SNAPSHOT",
+        "DATASET_MEMBER",
+        "CODE_SNAPSHOT",
+        "CONTRIBUTOR_EVIDENCE",
+        "EXTERNAL_CITATION",
+        "SUBMISSION_REQUIREMENT",
+        "EXPERIMENT_PREREGISTRATION",
+        "EXPERIMENT_RUN",
+        "EXPERIMENT_RESULT",
+        "NULL_RESULT",
+        "NEGATIVE_RESULT",
+        "FAILURE",
+        "CONTRADICTION",
+        "ABSTENTION",
+        "DERIVED_EVIDENCE",
+        "CLAIM",
+        "THESIS_VERSION",
+        "FIGURE",
+        "TABLE",
+        "MANUSCRIPT_SECTION",
+        "PAPER_VERSION",
+        "SUBMISSION_ARTIFACT",
+        "COMPUTE_ENVIRONMENT",
+        "MODEL_RUNTIME",
+        "TOOL_RUNTIME",
+        "DOCUMENT"
+      ]
+    },
+    "source_uri": { "type": "string" },
+    "source_repository": { "type": ["string", "null"] },
+    "git_commit_sha": { "type": ["string", "null"], "pattern": "^[a-f0-9]{40}$" },
+    "git_blob_sha": { "type": ["string", "null"], "pattern": "^[a-f0-9]{40}$" },
+    "sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+    "byte_count": { "type": ["integer", "null"], "minimum": 0 },
+    "media_type": { "type": "string" },
+    "relative_path": { "type": ["string", "null"] },
+    "creation_timestamp": { "type": ["string", "null"], "format": "date-time" },
+    "evidence_class": {
+      "type": "string",
+      "enum": [
+        "DIRECT_HUMAN_EVIDENCE",
+        "EXTERNALLY_RETRIEVED_EVIDENCE",
+        "DETERMINISTIC_COMPUTATION",
+        "PROBABILISTIC_MODEL_OUTPUT",
+        "INFERENCE",
+        "HYPOTHESIS",
+        "VERIFIED_EMPIRICAL_RESULT"
+      ]
+    },
+    "attribution_class": {
+      "type": "string",
+      "enum": [
+        "DIRECT_HUMAN_ASSERTION",
+        "GIT_AUTHOR_METADATA",
+        "GIT_COMMITTER_METADATA",
+        "PR_AUTHOR_METADATA",
+        "DOCUMENT_ATTRIBUTION",
+        "TEXT_ATTRIBUTION",
+        "MODEL_GENERATED",
+        "INFERRED_ATTRIBUTION",
+        "UNKNOWN"
+      ]
+    },
+    "claim_ceiling": { "type": "string" },
+    "license_rights_state": { "type": "string" },
+    "source_status": { "type": "string" },
+    "seedgraph_status": {
+      "type": "string",
+      "enum": ["PENDING", "INGESTED", "FAILED", "QUARANTINED", "EXCLUDED"]
+    },
+    "terminal_state": {
+      "type": "string",
+      "enum": ["IMPORTED", "EXCLUDED", "DUPLICATE", "UNAVAILABLE", "FAILED", "QUARANTINED"]
+    },
+    "duplicate_of": { "type": ["string", "null"] },
+    "unavailable_reason": { "type": ["string", "null"] },
+    "fco_parents": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supersedes": { "type": ["string", "null"] },
+    "superseded_by": { "type": ["string", "null"] },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["relation", "target_object_id"],
+        "properties": {
+          "relation": {
+            "type": "string",
+            "enum": [
+              "originated_from",
+              "imported_from",
+              "exact_copy_of",
+              "authored_by_evidence",
+              "committed_by_evidence",
+              "transformed_by",
+              "derived_from",
+              "supports",
+              "contradicts",
+              "supersedes",
+              "reproduces",
+              "ablates",
+              "cites",
+              "executed_on",
+              "generated_by",
+              "reported_in",
+              "included_in",
+              "excluded_from",
+              "ingested_as"
+            ]
+          },
+          "target_object_id": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

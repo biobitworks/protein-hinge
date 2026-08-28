@@ -1,0 +1,10 @@
+{
+  "N_abstained": 3,
+  "N_admitted": 1,
+  "N_excluded": 0,
+  "N_failed": 0,
+  "N_input": 4,
+  "invariant_input_partition": true,
+  "invariant_summary_matches_rows": true,
+  "summary_ABSTAIN": 3
+}

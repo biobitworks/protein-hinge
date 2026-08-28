@@ -1,0 +1,11 @@
+{
+  "status": "NOT_PINNED",
+  "upstream_repo": null,
+  "upstream_commit": null,
+  "upstream_ref": null,
+  "pinned_at_utc": null,
+  "pinned_by": null,
+  "local_checkout_path": null,
+  "integration_status": "NOT_STARTED",
+  "note": "Bootstrap audit found no Cloudflare OS vendor tree in protein-hinge workspace. Pin required before adapter work."
+}

@@ -1,0 +1,14 @@
+{
+  "N_discovered": 190,
+  "N_duplicate": 12,
+  "N_excluded": 0,
+  "N_failed": 0,
+  "N_imported": 176,
+  "N_quarantined": 0,
+  "N_unavailable": 2,
+  "branch": "paper/newinml-fcg-20260828",
+  "generated_at_utc": "2026-08-28T06:54:51Z",
+  "git_head": "94f8949f1bbcb63d8e80baadd0c5f380f01b9f92",
+  "hostname": "magicSTUDIObox.local",
+  "invariant_ok": true
+}
