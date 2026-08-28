@@ -25,6 +25,7 @@ from bootstrap_paper_closure_v2 import (  # noqa: E402
 )
 
 WAVE2_SHA = "66979d6e20692bfb0b7b9cd8c2feb692a2efed39"
+V2_CLOSURE_SHA = "40256c628903185a37eeddce3635b4573c1c4d54"
 
 # v3 closure artifacts are excluded from the WAVE2 snapshot (anti-recursion).
 V3_SELF_EXCLUDE = {
@@ -140,6 +141,52 @@ def discover_at_commit(commit_sha: str) -> list[dict[str, Any]]:
     return objects
 
 
+def canonical_content_at_commit(commit_sha: str, rel_path: str) -> str | None:
+    try:
+        raw = subprocess.check_output(["git", "show", f"{commit_sha}:{rel_path}"], cwd=ROOT)
+        return hashlib.sha256(raw).hexdigest()
+    except subprocess.CalledProcessError:
+        return None
+
+
+def path_in_commit(commit_sha: str, rel_path: str) -> bool:
+    try:
+        git_run(["cat-file", "-e", f"{commit_sha}:{rel_path}"])
+        return True
+    except subprocess.CalledProcessError:
+        return False
+
+
+def load_v2_canonical_baseline(v2_closure_sha: str) -> dict[str, dict]:
+    """Rebuild v2 content identity from git at v2 closure commit, not working-tree manifest hashes."""
+    v2_path = PROV / "PAPER_SOURCE_MANIFEST.v2.jsonl"
+    baseline: dict[str, dict] = {}
+    if not v2_path.exists():
+        return baseline
+    for line in v2_path.read_text().splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        rel = row.get("relative_path")
+        if not rel:
+            continue
+        git_content = canonical_content_at_commit(v2_closure_sha, rel)
+        if git_content is not None:
+            content_sha256 = git_content
+            in_v2_git = True
+        else:
+            content_sha256 = row.get("content_sha256") or row.get("sha256")
+            in_v2_git = False
+        baseline[rel] = {
+            **row,
+            "content_sha256": content_sha256,
+            "sha256": content_sha256,
+            "in_v2_git_at_closure": in_v2_git,
+            "v2_closure_sha": v2_closure_sha,
+        }
+    return baseline
+
+
 def load_manifest(path: Path) -> dict[str, dict]:
     if not path.exists():
         return {}
@@ -170,6 +217,23 @@ def classify_transition(old: dict | None, new: dict | None) -> tuple[str, str]:
     return content_state, metadata_state
 
 
+def classify_v2_to_v3(old: dict | None, new: dict | None) -> tuple[str, str]:
+    """Compare canonical v2 git baseline to WAVE2 snapshot."""
+    if old is None and new is not None:
+        return "ADDED", "ADDED"
+    if old is not None and new is None:
+        return "REMOVED", "REMOVED"
+    assert old is not None and new is not None
+    if not old.get("in_v2_git_at_closure", True) and new is not None:
+        # Present in v2 working-tree manifest but absent from v2 git — treat as ADDED at Wave 2.
+        return "ADDED", "CHANGED"
+    old_content = old.get("content_sha256") or old.get("sha256")
+    new_content = new.get("content_sha256") or new.get("sha256")
+    content_state = "UNCHANGED" if old_content == new_content else "CHANGED"
+    metadata_state = "UNCHANGED" if metadata_tuple(old) == metadata_tuple(new) else "CHANGED"
+    return content_state, metadata_state
+
+
 def bump(counts: dict[str, int], key: str) -> None:
     counts[key] = counts.get(key, 0) + 1
 
@@ -178,8 +242,8 @@ def main() -> int:
     closure_subject = WAVE2_SHA
     objects = discover_at_commit(closure_subject)
 
-    # Annotate v2→v3 transitions per occurrence.
-    v2 = load_manifest(PROV / "PAPER_SOURCE_MANIFEST.v2.jsonl")
+    # Annotate v2→v3 transitions using canonical git baseline at v2 closure commit.
+    v2 = load_v2_canonical_baseline(V2_CLOSURE_SHA)
     v3_by_path = {o.get("relative_path") or o.get("source_uri"): o for o in objects}
     all_paths = sorted(set(v2) | set(v3_by_path))
 
@@ -190,7 +254,7 @@ def main() -> int:
 
     for path in all_paths:
         old, new = v2.get(path), v3_by_path.get(path)
-        cs, ms = classify_transition(old, new)
+        cs, ms = classify_v2_to_v3(old, new)
         bump(content_counts, cs)
         bump(metadata_counts, ms)
         if new is not None:
@@ -225,6 +289,8 @@ def main() -> int:
         "receipt_commit_sha": None,
         "WAVE2_SHA": closure_subject,
         "previous_closure_sha": v2_acct.get("current_head_sha"),
+        "v2_canonical_baseline_sha": V2_CLOSURE_SHA,
+        "discovered_count_note": "N_discovered at WAVE2_SHA git ls-tree snapshot; prior mission brief cited 238 from v1/working-tree discovery — canonical count is git-tree at closure_subject_sha",
         "previous_manifest_hash": v2_receipt.get("manifest_sha256"),
         "previous_N_discovered": v2_acct.get("N_discovered"),
         "N_discovered": discovered,
