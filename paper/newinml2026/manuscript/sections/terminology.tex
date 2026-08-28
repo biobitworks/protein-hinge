@@ -1,0 +1,15 @@
+We distinguish \emph{cryptographic custody} (hash-valid, content-addressed storage) from \emph{semantic verification} (terminal-state invariants, identity resolution, aggregate-row consistency).
+
+\textbf{Synthetic fixture.} An intentionally constructed input used to test deterministic software behavior.
+
+\textbf{Canonical contract fixture.} A project-defined synthetic or curated fixture whose expected output is fixed before execution and used to test a deterministic contract.
+
+\textbf{Observed source record.} An actual record retrieved from an identified external source rather than invented for testing. Evaluations using such records are \emph{observed-source evaluations}; they are not Real-World Evidence (RWE) unless regulatory RWD/RWE criteria are satisfied \cite{fda_rwe}.
+
+\textbf{External biological evidence.} A source-backed biological record or publication used as evidence for a biological assertion.
+
+\textbf{Abstention / reject option.} Following Chow \cite{chow1970} and selective-prediction literature \cite{geifman2017}, a pipeline may emit a terminal \textsc{Abstain} state rather than admit an under-supported record.
+
+\textbf{Closed-vocabulary identity resolution.} Map source strings to a frozen alias table with exact, mapped, or unresolved outcomes; unresolved inputs must not silently pass as canonical.
+
+\textbf{Provenance.} Origin and processing lineage of entities \cite{prov_dm}. Hash equality does not imply semantic consistency between derived artifacts.

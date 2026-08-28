@@ -4,7 +4,8 @@ ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$ROOT"
 mkdir -p build
 cp neurips_2026.sty build/
-cp main.tex references.bib build/
+cp main.tex references.bib checklist.tex build/
+cp -r sections build/
 cd build
 
 if command -v pdflatex >/dev/null 2>&1; then

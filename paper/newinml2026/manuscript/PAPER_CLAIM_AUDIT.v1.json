@@ -1,0 +1,21 @@
+{
+  "audit_id": "PAPER-CLAIM-AUDIT-v1",
+  "generated_at_utc": "2026-08-28T07:58:00Z",
+  "thesis": "THESIS-001",
+  "claims": [
+    {"id": "A", "text": "Custody alone does not ensure semantic consistency", "evidence": ["EXP-GAP-ACCOUNTING-001.1"], "ceiling": "semantic audit", "status": "SUPPORTED"},
+    {"id": "B", "text": "Invariant detected aggregate-row mismatch", "evidence": ["EXP-GAP-ACCOUNTING-001.1"], "ceiling": "semantic audit", "status": "SUPPORTED"},
+    {"id": "C", "text": "G3 deterministic contract passes", "evidence": ["EXP-004 Lane A"], "ceiling": "deterministic", "status": "SUPPORTED"},
+    {"id": "D", "text": "Historical G3 wiring defect reconcile(symbol,symbol)", "evidence": ["EXP-004 regression"], "ceiling": "wiring audit", "status": "SUPPORTED"},
+    {"id": "E", "text": "N=1 bypass unsupported identity admission", "evidence": ["EXP-004 Lane B"], "ceiling": "descriptive", "status": "SUPPORTED"},
+    {"id": "F", "text": "G1/G2 historical numbers unrecoverable", "evidence": ["EXP-002", "EXP-003", "EXP-002-PROV.1", "EXP-003-PROV.1"], "ceiling": "audit only", "status": "SUPPORTED"},
+    {"id": "G", "text": "Morphology null cached negative", "evidence": ["EXP-006"], "ceiling": "repurposing hypothesis", "status": "SUPPORTED"}
+  ],
+  "excluded_from_manuscript": [
+    "G1 counts 355/239/113/126/123/28",
+    "G2 counts 742/642/287/100",
+    "population biomedical error rates",
+    "RWE / clinical utility / therapeutic efficacy"
+  ],
+  "closure_status": "PASS"
+}
