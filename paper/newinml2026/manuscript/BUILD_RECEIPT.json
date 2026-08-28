@@ -1,0 +1,31 @@
+{
+  "receipt_id": "NEWINML-MANUSCRIPT-BUILD-v1",
+  "generated_at_utc": "2026-08-28T07:23:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "compile_command": "./build.sh (Docker texlive/texlive:latest pdflatex x3 + bibtex)",
+  "latex_engine": "pdfTeX",
+  "latex_version": "TeX Live 2026 (Docker texlive/texlive:latest)",
+  "package_mode": "dblblindworkshop",
+  "workshop_title": "New in Machine Learning (NewInML) at NeurIPS 2026",
+  "output_pdf": "paper/newinml2026/manuscript/main_smoke.pdf",
+  "output_pdf_sha256": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
+  "page_count": 1,
+  "page_size_points": "612 x 792",
+  "page_size_inches": "8.5 x 11 (US Letter)",
+  "font_embed_check": "PARTIAL",
+  "font_embed_note": "pdffonts not run; log shows Type1 fonts (helvetic, times, cm-super)",
+  "compile_warnings": [
+    "natbib: Empty thebibliography environment",
+    "hyperref: Token not allowed in PDF strings (Anonymous title)"
+  ],
+  "compile_errors": [],
+  "compile_result": "PASS",
+  "anonymous_checks": {
+    "author_names": false,
+    "affiliations": false,
+    "acknowledgments": false,
+    "identity_github_urls": false,
+    "personal_paths_in_tex": false
+  }
+}

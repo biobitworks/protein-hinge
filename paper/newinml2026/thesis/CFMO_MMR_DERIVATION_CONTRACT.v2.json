@@ -1,0 +1,70 @@
+{
+  "contract_id": "CFMO_MMR_DERIVATION_CONTRACT",
+  "schema_version": "v2",
+  "generated_at_utc": "2026-08-28T07:26:00Z",
+  "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "mmr_merkle_mountain_range": {
+    "classification": "VERIFIED_MMR",
+    "note": "Project MMR = Merkle Mountain Range only; not SIGIR reranking",
+    "implementations": [
+      {
+        "repo": "/Users/byron/projects/active/fractal-custody-objects",
+        "git_sha": "9c8e2026d81e820d52b91785c191c06f04f8424b",
+        "paths": [
+          "scripts/fractalize_fco.py",
+          "scripts/witness_peak.py"
+        ],
+        "recipe_a": {
+          "leaf": "sha256(0x00 || atom_bytes)",
+          "parent": "sha256(0x01 || left_hex + right_hex ASCII)",
+          "bagging": "peaks right-to-left",
+          "receipt": "FRACTAL_INDEX.json / app_fcg_manifest"
+        },
+        "recipe_b": {
+          "leaf": "sha256(0x00 || sha256(content))",
+          "parent": "sha256(0x01 || raw_left || raw_right bytes)",
+          "bagging": "peaks left-to-right ascending",
+          "receipt": "WITNESS_ANCHOR.json schema fco.mmr_witness_anchor.v1",
+          "verifier": "witness_peak.py --verify"
+        },
+        "schism": "Recipe A (hex-ASCII parents) vs Recipe B (raw digest parents) are intentionally different"
+      }
+    ],
+    "partial_at_head": {
+      "path": "scripts/seal_app_fcg.py",
+      "status": "PARTIAL_MMR",
+      "note": "Truncated at HEAD; full sealer at git 71bf05d"
+    },
+    "signing_only": {
+      "path": "scripts/fcg_sign.py",
+      "role": "Ed25519 on app_fcg_root; not MMR proof verifier"
+    },
+    "non_mmr_labeled": [
+      "MMR_SCORER_FROZEN.json (SIGIR-style labels)",
+      "training/fco_train/custody.py (sorted Merkle tree)"
+    ]
+  },
+  "mmr_maximal_marginal_relevance_reranking": {
+    "status": "DESIGN_CITATION_ONLY",
+    "implemented_in_protein_hinge": false
+  },
+  "cfmo": {
+    "classification": "HISTORICAL_IMPLEMENTATION_UNVERIFIED_CANONICALITY",
+    "vithia_lane": {
+      "repo": "/Users/byron/projects/active/hydradg",
+      "git_sha": "94059bbd09907a12d5bb193c9705ad8fc7dd6572",
+      "runner": "HydraDG_DaisyTrain_v0.3.7/scripts/run_vithia_cfmo_instrumented.py",
+      "runner_sha256": "92e53db111106b44809b6017bf7030ca01e0f3dabe97d3ff82d543f2cd564d8c",
+      "reference_distribution": "HydraDG_DaisyTrain_v0.3.7/eval/vithia_cfmo_baseline_v0.1/CFMO_REFERENCE_DISTRIBUTION.json",
+      "reference_sha256": "10eca348694b7aac1c6a829dc5253e1a6b3c9558f534ba811489a3723d7f2d08",
+      "cfmo_expansion_explicit": false,
+      "executable_now": false,
+      "executable_blocker": "transformers module missing",
+      "reference_reproducible": true,
+      "repro_script": "compute_cfmo_reference_basin.py",
+      "canonicality_note": "Tracked in hydradg as vithia CFMO baseline v0.1; separate from HydraLamp CFMOStore oracle expansion"
+    },
+    "protein_hinge_status": "NOT_FOUND"
+  },
+  "invariant": "derived_evidence_only_no_thesis_or_source_mutation"
+}

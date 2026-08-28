@@ -1,0 +1,12 @@
+{"claim_component":"N_fetched=742","disposition":"NOT_FOUND","repository":"protein-hinge","search_method":"git pickaxe -S742","confidence":"high_absence_in_repo"}
+{"claim_component":"N_summarized=642","disposition":"NOT_FOUND","repository":"protein-hinge","search_method":"git pickaxe -S642","confidence":"high_absence_in_repo"}
+{"claim_component":"multi_gene_cnv=287/642","disposition":"NOT_FOUND","repository":"protein-hinge","search_method":"git pickaxe -S287 + CNV grep","confidence":"high_absence_in_repo"}
+{"claim_component":"N_missing=100","disposition":"NOT_FOUND","repository":"protein-hinge","search_method":"arithmetic candidate only","confidence":"high_absence_in_repo"}
+{"claim_component":"PHB2 46->0","disposition":"NOT_FOUND","repository":"protein-hinge","partial_context":"fto/registry_digests.json symbol only","confidence":"high_absence_in_repo"}
+{"claim_component":"CHCHD3 32->0","disposition":"NOT_FOUND","repository":"protein-hinge","partial_context":"fto/registry_digests.json symbol only","confidence":"high_absence_in_repo"}
+{"claim_component":"PGS1 14->0","disposition":"NOT_FOUND","repository":"protein-hinge","partial_context":"fto/registry_digests.json symbol only","confidence":"high_absence_in_repo"}
+{"claim_component":"CRLS1 33->3","disposition":"NOT_FOUND","repository":"protein-hinge","partial_context":"fto/registry_digests.json symbol only","confidence":"high_absence_in_repo"}
+{"claim_component":"TAFAZZIN 237->100","disposition":"NOT_FOUND","repository":"protein-hinge","partial_context":"narrative atoms only","confidence":"high_absence_in_repo"}
+{"claim_component":"HADHA 267->251","disposition":"NOT_FOUND","repository":"protein-hinge","partial_context":"fto/registry_digests.json symbol only","confidence":"high_absence_in_repo"}
+{"claim_component":"multi-gene knockout axis","disposition":"LOCATED_PARTIAL","source_path":"fto/FTO_DESIGN.md","commit":"b23af48","relationship":"design prose not CNV pipeline","confidence":"design_only"}
+{"claim_component":"biocustody.zip","disposition":"UNAVAILABLE","source_path":"/Users/byron/Downloads/biocustody.zip","relationship":"external handoff pointer","confidence":"external_pointer"}

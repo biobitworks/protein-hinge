@@ -1,0 +1,97 @@
+{
+  "receipt_id": "WAVE3-CLOSEOUT-RECEIPT-v1",
+  "generated_at_utc": "2026-08-28T07:35:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "branch": "paper/newinml-fcg-20260828",
+  "WAVE2_SHA": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
+  "WAVE3_BOOTSTRAP_SHA": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "closeout_git_head": "PENDING_COMMIT",
+  "closure_semantics": {
+    "closure_subject_sha": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
+    "closure_semantics": "SNAPSHOT_OF_PRIOR_COMMIT",
+    "receipt_commit_sha": null,
+    "v2_canonical_baseline_sha": "40256c628903185a37eeddce3635b4573c1c4d54",
+    "content_added": 21,
+    "content_changed": 5,
+    "content_unchanged": 205,
+    "content_removed": 0,
+    "metadata_added": 21,
+    "metadata_changed": 231,
+    "metadata_unchanged": 0,
+    "metadata_removed": 0,
+    "invariant": "content_state uses exact-byte SHA-256; metadata_state tracks git/provenance fields",
+    "N_discovered": 233,
+    "discovered_count_note": "233 at WAVE2_SHA git ls-tree snapshot (prior 238 cited working-tree v1 discovery)"
+  },
+  "REQ-006": {
+    "status": "PASS",
+    "template_source": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
+    "template_archive_sha256": "82473931e3ef710fcd3f4a8cd4119b9de32e56825f90f9e5a6d55f2d01b817d9",
+    "neurips_2026_sty_sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+    "dblblindworkshop": true,
+    "compile_result": "PASS",
+    "smoke_pdf_sha256": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
+    "artifacts": "paper/newinml2026/manuscript/"
+  },
+  "EXP-003": {
+    "status": "COMPLETE_NEGATIVE",
+    "classification": "PROVENANCE_RECOVERY",
+    "historical_values_disposition": "NOT_FOUND (all candidate counts)",
+    "742_accounting": "NOT_APPLICABLE",
+    "missing_100_cause": "UNKNOWN",
+    "exp003_1_rerun": "NOT_EXECUTED",
+    "terminology_ceiling": "unsupported attribution rate / gene-level evidence contamination",
+    "promotion_recommended": false
+  },
+  "MMR": {
+    "classification": "VERIFIED_MMR",
+    "implementation_repo": "/Users/byron/projects/active/fractal-custody-objects",
+    "implementation_sha": "9c8e2026d81e820d52b91785c191c06f04f8424b",
+    "note": "Recipe schism documented; witness_peak.py verifier for recipe B"
+  },
+  "CFMO": {
+    "classification": "HISTORICAL_IMPLEMENTATION_UNVERIFIED_CANONICALITY",
+    "hydradg_runner_sha256": "92e53db111106b44809b6017bf7030ca01e0f3dabe97d3ff82d543f2cd564d8c",
+    "cfmo_expansion_explicit": false,
+    "executable_now": false,
+    "reference_reproducible": true,
+    "protein_hinge_status": "NOT_FOUND"
+  },
+  "SEEDGRAPH": {
+    "local_import_status": "MANIFEST_VALIDATED_DEFERRED",
+    "live_mutation_status": "DEFERRED",
+    "N_manifest_rows": 233,
+    "IMPORTED_CONTENT": 214,
+    "IMPORTED_REFERENCE": 14,
+    "UNAVAILABLE": 2,
+    "FAILED": 0,
+    "seedgraph_head": "6807b1960dd1e981afbf13e79c2f29c3d803b79a"
+  },
+  "EXP-005": {
+    "lock_intact": true,
+    "outcome_exposure": "NO",
+    "status": "PREREGISTERED_LOCKED"
+  },
+  "THESIS": {
+    "current": "THESIS-001",
+    "successor_proposed": false,
+    "evidence_deltas": ["EVIDENCE_DELTA_EXP003.json"]
+  },
+  "work_units": {
+    "W3-00": "COMPLETE",
+    "W3-01": "COMPLETE",
+    "W3-02": "COMPLETE_NEGATIVE",
+    "W3-03": "SKIPPED",
+    "W3-04": "COMPLETE",
+    "W3-05": "COMPLETE",
+    "W3-06": "COMPLETE"
+  },
+  "BLOCKERS": [
+    "REQ-002 anonymous submission (identity URLs in non-manuscript artifacts)",
+    "REQ-007 OpenReview profile operator attestation",
+    "G2 source corpus NOT_FOUND for EXP-003.1",
+    "CUDA/SGLang EXP-007 deferred"
+  ],
+  "NEXT_DAISY_STEP": "Operator: G1 external pointer or biocustody.zip custody; else manuscript anonymous projection for REQ-002",
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS"
+}

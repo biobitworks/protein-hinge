@@ -48,10 +48,16 @@
       "affected": "manuscript/format",
       "hard_gate": true,
       "quotation": "Excluding submissions that are not serious: blank pages, topics not in ML, papers not following format.",
-      "remediation": "Template conformance check pending style zip capture",
+      "remediation": null,
       "requirement_id": "REQ-006",
-      "source_artifact": "submission/sources/newinml2026_cfp.html",
-      "status": "PARTIAL"
+      "source_artifact": "paper/newinml2026/manuscript/BUILD_RECEIPT.json",
+      "status": "PASS",
+      "validation": {
+        "template_source": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
+        "dblblindworkshop": true,
+        "smoke_pdf_sha256": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
+        "compile_result": "PASS"
+      }
     },
     {
       "affected": "submission/openreview_profile",
@@ -66,12 +72,11 @@
   "summary": {
     "FAIL": 1,
     "NOT_APPLICABLE": 1,
-    "PARTIAL": 3,
-    "PASS": 2,
+    "PARTIAL": 2,
+    "PASS": 3,
     "captured_count": 2,
     "hard_blockers": [
       "REQ-002",
-      "REQ-006",
       "REQ-007"
     ]
   }
