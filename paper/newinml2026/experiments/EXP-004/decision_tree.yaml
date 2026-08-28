@@ -1,0 +1,26 @@
+experiment: EXP-004
+title: G3 identity resolution
+lanes:
+  lane_a:
+    id: DETERMINISTIC_CONTRACT_TEST
+    inputs: gap/alias_table.json, gap/normalize.py self-test fixtures
+    terminals: [EXACT, MAPPED, UNRESOLVED]
+    may_establish: [contract_behavior, fail_closed]
+    may_not_establish: [population_error_rate, biomedical_prevalence]
+  lane_b:
+    id: REAL_SOURCE_IDENTIFIER_AUDIT
+    search: admitted gap runs, programs.csv target_raw vs target_symbol
+    if_no_pairs: COMPLETE_NEGATIVE_PROVENANCE
+  ablation:
+    precondition: lane_b.N_pairs > 0
+    C0: G3 ON
+    C1: G3 BYPASSED
+  wiring_defect:
+    historical: reconcile(symbol, symbol) in ingest_gap.py
+    label: EVALUATION_WIRING_DEFECT
+    regression_required: true
+closeout_terminals:
+  - COMPLETE_CONTRACT_ONLY
+  - COMPLETE_ABLATION
+  - COMPLETE_NEGATIVE_PROVENANCE
+  - BLOCKED

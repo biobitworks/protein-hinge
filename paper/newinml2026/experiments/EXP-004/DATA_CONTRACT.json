@@ -1,0 +1,23 @@
+{
+  "experiment_id": "EXP-004",
+  "title": "G3 closed-vocabulary identity resolution",
+  "classification_lane_a": "DETERMINISTIC_CONTRACT_TEST",
+  "classification_lane_b": "REAL_SOURCE_IDENTIFIER_AUDIT",
+  "frozen_vocabulary": {
+    "path": "gap/alias_table.json",
+    "schema": "protein_hinge.gap.alias_table.v1",
+    "policy": "closed_mapping_no_fuzzy_matching"
+  },
+  "implementation": {
+    "path": "gap/normalize.py",
+    "function": "reconcile(open_targets_symbol, program_target)"
+  },
+  "allowed_terminals": ["EXACT", "MAPPED", "UNRESOLVED", "INVALID"],
+  "forbidden": ["fuzzy_matching", "embedding_similarity", "model_repair", "llm_judgment"],
+  "historical_wiring": {
+    "path": "gap/ingest_gap.py",
+    "pattern": "reconcile(target_symbol, target_symbol)",
+    "label": "EVALUATION_WIRING_DEFECT"
+  },
+  "successor_pattern": "reconcile(canonical, raw_source_string) using admitted raw fields"
+}

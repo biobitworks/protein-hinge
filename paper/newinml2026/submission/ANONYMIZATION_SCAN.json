@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-08-28T07:31:19Z",
+  "targets": [
+    "paper/newinml2026/submission/anonymous"
+  ],
+  "N_findings": 0,
+  "N_blocking": 0,
+  "findings": [],
+  "terminal": "CLEAN"
+}

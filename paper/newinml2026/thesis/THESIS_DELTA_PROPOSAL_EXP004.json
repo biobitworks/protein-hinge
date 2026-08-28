@@ -1,0 +1,14 @@
+{
+  "proposal_id": "THESIS_DELTA_PROPOSAL_EXP004",
+  "prior_thesis_id": "THESIS-001",
+  "generated_at_utc": "2026-08-28T07:46:00Z",
+  "promotion_recommended": false,
+  "proposed_claim_ceiling": "EXECUTABLE_CONTRACT_AND_WIRING_DEFECT_ONLY",
+  "proposed_text": "The closed-vocabulary identity guard is executable, deterministic, and fail-closed under its frozen contract, while the historical GAP evaluation wiring (reconcile(symbol,symbol)) did not genuinely exercise source-versus-canonical reconciliation.",
+  "explicitly_not_claimed": [
+    "population silent semantic error reduction",
+    "real-world biomedical prevalence",
+    "generalization beyond admitted N=1 source pair"
+  ],
+  "successor_thesis_id": null
+}

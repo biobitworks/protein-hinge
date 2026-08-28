@@ -1,0 +1,26 @@
+{
+  "experiment_id": "EXP-004",
+  "title": "G3 closed-vocabulary identity resolution audit and matched ablation",
+  "status": "PREREGISTERED",
+  "registered_at_utc": "2026-08-28T07:45:00Z",
+  "classification": "EXPLORATORY",
+  "lane_a": {
+    "name": "DETERMINISTIC_CONTRACT_TEST",
+    "purpose": "Verify exact/map/unresolved/fail-closed under frozen alias table"
+  },
+  "lane_b": {
+    "name": "REAL_SOURCE_IDENTIFIER_AUDIT",
+    "purpose": "Audit admitted source raw vs canonical pairs without manufacturing differences"
+  },
+  "matched_ablation": {
+    "C0": "G3 ON — reconcile then grade",
+    "C1": "G3 BYPASSED — raw admitted without guard",
+    "precondition": "Lane B admissible pairs only"
+  },
+  "metric_ceiling": {
+    "silent_semantic_error": "requires independent frozen identity truth predicate",
+    "allowed_without_predicate": ["unsupported_identity_admission", "unresolved_identity_admission"]
+  },
+  "historical_preservation": "Do not modify gap/runs/2026-08-13/",
+  "outcome_exposure": "YES"
+}

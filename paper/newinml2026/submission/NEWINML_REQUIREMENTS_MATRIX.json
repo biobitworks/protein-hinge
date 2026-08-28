@@ -17,8 +17,13 @@
       "quotation": "Review process: Double-blind via OpenReview. Submissions must be fully anonymized.",
       "remediation": "Remove author-identifying GitHub URLs and git metadata from anonymous PDF; use OpenReview profile",
       "requirement_id": "REQ-002",
-      "source_artifact": "submission/sources/newinml2026_cfp.html",
-      "status": "FAIL"
+      "source_artifact": "submission/ANONYMIZATION_RECEIPT.json",
+      "status": "PASS",
+      "validation": {
+        "anonymous_package": "submission/anonymous/",
+        "scan_terminal": "CLEAN",
+        "N_blocking": 0
+      }
     },
     {
       "affected": "submission/venue_policy",
@@ -70,13 +75,12 @@
     }
   ],
   "summary": {
-    "FAIL": 1,
+    "FAIL": 0,
     "NOT_APPLICABLE": 1,
-    "PARTIAL": 2,
-    "PASS": 3,
+    "PARTIAL": 1,
+    "PASS": 4,
     "captured_count": 2,
     "hard_blockers": [
-      "REQ-002",
       "REQ-007"
     ]
   }

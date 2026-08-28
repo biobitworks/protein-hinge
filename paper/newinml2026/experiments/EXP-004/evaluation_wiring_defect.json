@@ -1,0 +1,14 @@
+{
+  "label": "EVALUATION_WIRING_DEFECT",
+  "historical_invocation": "gap/ingest_gap.py reconcile(row['target_symbol'], row['target_symbol'])",
+  "claim": "Self-comparison forces EXACT for any nonempty equal strings; cannot detect raw-vs-canonical mismatch",
+  "test_symbols_checked": [
+    "TAZ",
+    "PDCD1",
+    "CFB",
+    "UNKNOWN_GENE"
+  ],
+  "all_exact_under_self_compare": true,
+  "successor": "Use separate raw_source_string field (see gap/runs/2026-08-13/programs.csv target_raw)",
+  "regression_test": "PASS"
+}
