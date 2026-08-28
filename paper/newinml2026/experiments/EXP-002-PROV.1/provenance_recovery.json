@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-002-PROV.1",
+  "classification": "PROVENANCE_RECOVERY",
+  "status": "COMPLETE_NEGATIVE_PROVENANCE",
+  "generated_at_utc": "2026-08-28T07:53:38Z",
+  "source_artifact_sha256": "d78d9f006655920a25baf98e300dcb1c2bdca4899f7e3be112d4e29cdf420a20",
+  "historical_components": {
+    "355": "NOT_FOUND",
+    "239": "NOT_FOUND",
+    "113": "LOCATED_PARTIAL",
+    "126": "LOCATED_PARTIAL",
+    "123": "LOCATED_PARTIAL",
+    "3": "LOCATED_PARTIAL",
+    "28": "LOCATED_PARTIAL"
+  },
+  "derivation_chain_recovered": false,
+  "exp_002_1_admissible": false,
+  "exp_002_1_reason": "No input corpus \u2192 filter \u2192 row ledger \u2192 aggregate chain located; package is repurposing bootstrap not G1 residue audit",
+  "candidate_count": 3732,
+  "candidate_candidate_count": 950
+}
