@@ -3,6 +3,7 @@ name: NewInML final seal
 on:
   push:
     branches:
+      - main
       - automation/newinml-final-seal-20260829
   pull_request:
     branches:
@@ -32,6 +33,8 @@ jobs:
           pdffonts -v 2>&1 | head -1
 
       - name: Build anonymous paper
+        env:
+          SOURCE_DATE_EPOCH: "1756425600"
         run: |
           bash paper/newinml2026/manuscript/build.sh
           test -s paper/newinml2026/manuscript/main_smoke.pdf
@@ -69,17 +72,19 @@ jobs:
           checklist_page = None
           for p in range(1, total + 1):
               text = subprocess.check_output(['pdftotext','-f',str(p),'-l',str(p),'-layout',str(pdf),'-'], text=True, errors='replace')
-              if refs_page is None and re.search(r'(?mi)^\s*References\s*$', text):
+              if refs_page is None and re.search(r'(?mi)^\s*(?:\d+\s+)?References\s*$', text):
                   refs_page = p
-              if checklist_page is None and re.search(r'(?mi)^\s*(NeurIPS\s+Paper\s+Checklist|Paper\s+Checklist)\s*$', text):
+              if checklist_page is None and re.search(r'(?mi)(?:NeurIPS\s+Paper\s+Checklist|Paper\s+Checklist)', text):
                   checklist_page = p
-          status = 'PASS' if refs_page is not None and refs_page <= 8 else 'BLOCKED_VALIDATION'
+          content_pages = (refs_page - 1) if refs_page else None
+          status = 'PASS' if refs_page is not None and content_pages is not None and 2 <= content_pages <= 8 else 'BLOCKED_VALIDATION'
           receipt = {
               'schema': 'protein_hinge.newinml.page_gate.v1',
               'pages_total': total,
               'references_first_page': refs_page,
               'checklist_first_page': checklist_page,
-              'conservative_rule': 'references_first_page <= 8',
+              'content_pages_excluding_references': content_pages,
+              'page_limit_rule': '2-8 content pages excluding references',
               'status': status,
           }
           Path('/tmp/page_gate.json').write_text(json.dumps(receipt, indent=2) + '\n')

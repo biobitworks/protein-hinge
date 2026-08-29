@@ -1,0 +1,21 @@
+{
+  "schema": "protein_hinge.final_submission_fco_receipt.v1",
+  "recorded_at_utc": "2026-08-29T06:05:10Z",
+  "source_git_sha": "24d8edbaf35ec98fb4c2651262890bdb989566f7",
+  "final_pdf_sha256": "0437b6e6c8a08908584a832794ae5ed058471f531f10e1ad8a5b738e90f830ef",
+  "final_pdf_bytes": 168126,
+  "reproducible_build_gate": "PASS",
+  "build_sha256_run1": "0437b6e6c8a08908584a832794ae5ed058471f531f10e1ad8a5b738e90f830ef",
+  "build_sha256_run2": "0437b6e6c8a08908584a832794ae5ed058471f531f10e1ad8a5b738e90f830ef",
+  "anonymous_bundle_sha256": "ece71ead9c1c372bca3e17b862d9b1c9bdb8d655c3540dae5cb81d648b34c0bf",
+  "anonymous_manifest_sha256": "93cadaedc54a4ded88022ee503875099b87526c9d752ef0d4aa9daf2243f7830",
+  "paper_pdf_leaf_sha256": "0437b6e6c8a08908584a832794ae5ed058471f531f10e1ad8a5b738e90f830ef",
+  "seeds_graph_hash": "a1c9aa1008a0d9878450d8cc1eaf253f3b6b0c8d06610393f1dbe9ebe8a3c923",
+  "page_gate": "PASS",
+  "content_pages_excluding_references": 3,
+  "font_gate": "PASS",
+  "anonymity_gate": "PASS",
+  "citation_gate": "PASS",
+  "FINAL_SUBMISSION_SEAL": "READY_FOR_OPERATOR_SUBMISSION",
+  "operator_author_metadata": "OPERATOR_INFORMATION_REQUIRED"
+}

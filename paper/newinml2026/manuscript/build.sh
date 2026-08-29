@@ -8,6 +8,9 @@ cp main.tex references.bib checklist.tex build/
 cp -r sections build/
 cd build
 
+# Fixed epoch for byte-identical PDF rebuilds (2026-08-29T00:00:00Z).
+export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-1756425600}"
+
 if command -v pdflatex >/dev/null 2>&1; then
   pdflatex -interaction=nonstopmode main.tex
   bibtex main || true
