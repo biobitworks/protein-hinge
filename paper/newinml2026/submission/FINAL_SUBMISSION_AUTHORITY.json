@@ -1,0 +1,22 @@
+{
+  "schema": "protein_hinge.final_submission_authority.v1",
+  "authority_rule": "LATEST_SUCCESSFUL_FINAL_SEAL_CI_RUNTIME_RECEIPT",
+  "committed_local_receipt": {
+    "path": "paper/newinml2026/submission/FINAL_SUBMISSION_FCO_RECEIPT.json",
+    "status": "LOCAL_REPRODUCIBILITY_EVIDENCE_ONLY",
+    "openreview_upload_authority": false
+  },
+  "ci_runtime_receipt": {
+    "artifact": "newinml-internal-source-binding/FINAL_CI_OPERATOR_RECEIPT.json",
+    "paper_artifact": "newinml-anonymous-paper",
+    "reviewer_bundle_artifact": "newinml-anonymous-reviewer-bundle",
+    "openreview_upload_authority": true,
+    "selection_rule": "same latest successful final-seal run after all repairs"
+  },
+  "artifact_digest_semantics": {
+    "github_actions_artifact_digest": "wrapper archive identity",
+    "reviewer_bundle_sha256": "inner deterministic reviewer ZIP identity",
+    "paper_pdf_sha256": "exact PDF leaf identity"
+  },
+  "final_submission_seal": "OPERATOR_INFORMATION_REQUIRED_UNTIL_OPENREVIEW_RECEIPT"
+}
