@@ -12,6 +12,10 @@ __MACOSX/
 .playwright-cli/
 node_modules/
 
+# Generated NewInML submission seal outputs (authoritative copies live in CI artifacts).
+paper/newinml2026/submission/dist/
+paper/newinml2026/submission/_repro_build_run1.pdf
+
 # Nothing under fcg/store/ is ignored, on purpose. The whole store is 532K,
 # the atoms are 37K, and those atoms are the difference between RECOMPUTED and
 # COMMITTED: without the bytes, a reader can only take the digests on trust.
