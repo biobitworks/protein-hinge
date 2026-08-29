@@ -1,0 +1,10 @@
+{"experiment_id": "EXP-GAP-ACCOUNTING-001", "preregistered": false, "scope": "TEAM_CORE", "terminal": "COMPLETE_POSITIVE"}
+{"experiment_id": "EXP-002", "preregistered": false, "scope": "TEAM_CORE", "terminal": "COMPLETE_NEGATIVE"}
+{"experiment_id": "EXP-003", "preregistered": false, "scope": "TEAM_CORE", "terminal": "COMPLETE_NEGATIVE"}
+{"experiment_id": "EXP-004", "preregistered": false, "scope": "TEAM_CORE", "terminal": "COMPLETE_BOUNDED"}
+{"experiment_id": "EXP-005", "preregistered": true, "scope": "TEAM_CORE", "terminal": "BLOCKED"}
+{"experiment_id": "EXP-006", "preregistered": true, "scope": "TEAM_CORE", "terminal": "NOT_EXECUTED"}
+{"experiment_id": "EXP-007", "preregistered": true, "scope": "FUTURE_DIRECTION", "terminal": "NOT_EXECUTED"}
+{"experiment_id": "AUD-FCG-DOCUMENT-LATTICE-001", "note": "136/136 structural", "scope": "TEAM_IMPORTED_DEPENDENCY", "terminal": "COMPLETE_POSITIVE"}
+{"experiment_id": "AUD-FCG-ATOM-SOT-SEMANTIC-003", "note": "YELLOW conformance", "scope": "TEAM_IMPORTED_DEPENDENCY", "terminal": "UNDERPOWERED"}
+{"classification": "EXPERIMENTAL_COMPARATOR", "experiment_id": "ANTIGENCE-B4-COMPARATOR", "scope": "TEAM_IMPORTED_DEPENDENCY", "terminal": "COMPLETE_BOUNDED"}

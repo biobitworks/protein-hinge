@@ -1,0 +1,9 @@
+{
+  "B4": "EXPERIMENTAL_COMPARATOR \u2014 anomaly != semantic disposition",
+  "NOT_ESTABLISHED": [
+    "SOT-008",
+    "SOT-014"
+  ],
+  "default_ceiling": "REPURPOSING_HYPOTHESIS",
+  "inferential": "UNDERPOWERED at mutation N=13"
+}

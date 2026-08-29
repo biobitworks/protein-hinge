@@ -1,0 +1,44 @@
+{
+  "experiments": [
+    {
+      "EXPERIMENT_ID": "PROC-ANTIGENCE-DASHBOARD",
+      "classification": "UNRELATED",
+      "note": "antigence uvicorn :5055 since Aug 6 \u2014 service daemon",
+      "required_for_paper": false,
+      "safe_to_defer": true
+    },
+    {
+      "EXPERIMENT_ID": "PROC-OLLARMA-SERVE",
+      "classification": "UNRELATED",
+      "required_for_paper": false,
+      "safe_to_defer": true
+    },
+    {
+      "EXPERIMENT_ID": "PROC-WATCHTOWER",
+      "classification": "UNRELATED",
+      "required_for_paper": false,
+      "safe_to_defer": true
+    },
+    {
+      "EXPERIMENT_ID": "PROC-HYDRADG-BEST-USE",
+      "classification": "UNRELATED",
+      "required_for_paper": false,
+      "safe_to_defer": true,
+      "scope": "SOLO_RESEARCH_PROGRAM"
+    },
+    {
+      "EXPERIMENT_ID": "PROC-XENODISORDER-DAISY",
+      "classification": "UNRELATED",
+      "required_for_paper": false,
+      "safe_to_defer": true
+    },
+    {
+      "EXPERIMENT_ID": "DOCKER-SEEDGRAPH-NEO4J-AUDIT",
+      "classification": "COMPLETE",
+      "note": "isolated audit container up; not production writeback",
+      "required_for_paper": false,
+      "safe_to_defer": true
+    }
+  ],
+  "generated_at_utc": "2026-08-29T15:55:04Z"
+}

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "CHK-001",
+      "label": "Scope boundary reviewed",
+      "status": "PENDING_TEAM"
+    },
+    {
+      "id": "CHK-002",
+      "label": "No solo cascade claimed as executed",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-003",
+      "label": "Antigence B4 classified experimental",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-004",
+      "label": "OpenReview operator upload",
+      "status": "PENDING_OPERATOR"
+    }
+  ]
+}

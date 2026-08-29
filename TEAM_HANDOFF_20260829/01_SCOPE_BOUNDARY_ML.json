@@ -1,0 +1,42 @@
+{
+  "classifications": {
+    "EXCLUDED_FROM_TEAM_CLAIMS": [
+      "therapeutic efficacy",
+      "clinical utility",
+      "FTO_OPINION"
+    ],
+    "FUTURE_DIRECTION": [
+      "EXP-007 SGLang CUDA",
+      "production SeedGraph writeback",
+      "EXP-005 unlock"
+    ],
+    "SHARED_PREEXISTING_INFRASTRUCTURE": [
+      "Neo4j OrbStack",
+      "GettingScienceDone gsigmad contracts"
+    ],
+    "SOLO_RESEARCH_PROGRAM": [
+      "L0-L5 adaptive cascade",
+      "AntiCube",
+      "Delta-G",
+      "HydraDG best-use server",
+      "xenodisorder continuous daisy"
+    ],
+    "TEAM_CONTRIBUTED": [
+      "team_review merge PR #2",
+      "reference integrity PR #5"
+    ],
+    "TEAM_CORE": [
+      "fcg/store hash-pinned evidence ledger",
+      "paper/newinml2026 team review corpus",
+      "EXP-GAP-ACCOUNTING-001",
+      "document lattice 136/136 structural roundtrip",
+      "AUD-FCG-ATOM-SOT-SEMANTIC-003 conformance gates"
+    ],
+    "TEAM_IMPORTED_DEPENDENCY": [
+      "biocustody audits (portable FCG atom/SOT pipeline)",
+      "Antigence B4 comparator artifacts",
+      "SeedGraph isolated import receipts"
+    ]
+  },
+  "generated_at_utc": "2026-08-29T15:55:04Z"
+}

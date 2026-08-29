@@ -1,0 +1,43 @@
+{
+  "antigence_git_sha": "1f12b3c2b2f7df90e11753f74443e4add48d5b46",
+  "artifacts": {
+    "ANTIGENCE_COMPARISON_RECEIPT.json": {
+      "bytes": 1425,
+      "sha256": "4fd2988c9feb0786880d82bc9d48ca55db07b9120b918b046b17aba096228e10"
+    },
+    "ANTIGENCE_FCG_BINDINGS.jsonl": {
+      "bytes": 13703,
+      "sha256": "902b3a766b64e5c4ceaededfc5765cfaea0791efbac23a02b32f35e70534d62d"
+    },
+    "ANTIGENCE_MODEL_MANIFEST.json": {
+      "bytes": 8337,
+      "sha256": "b3e2d79b3cac5ba5dd2ea1870cf87391ba4f3afefcc763811b416e98a1cdf69a"
+    },
+    "ANTIGENCE_MUTATION_RESULTS.jsonl": {
+      "bytes": 16479,
+      "sha256": "947d17b2595cdc8645b104d44ea3e8f8209b9dcf6c77e4452314cd1582063396"
+    },
+    "BOOTSTRAP_RESULTS_B4.json": {
+      "bytes": 382,
+      "sha256": "2df02730d2bb09913194424126ed4cdbb4216ed81bdc9107c73f198beecc2c39"
+    },
+    "GEE_SENSITIVITY_RESULTS_B4.json": {
+      "bytes": 677,
+      "sha256": "103f4ead6714418f306641676f346648ff40688ffe34382be7f0e291eefc9c92"
+    },
+    "PIPELINE_RESULTS_B4.jsonl": {
+      "bytes": 34823,
+      "sha256": "7d6930c845b66fcf5964dea16989939d6bf975c3d49d2bc6aa74164888b7bbac"
+    }
+  },
+  "classification": "TEAM_IMPORTED_DEPENDENCY",
+  "comparator": "EXPERIMENTAL_COMPARATOR",
+  "do_not_retrain": true,
+  "preserved_statistics": {
+    "B3_semantic_disposition": "100%",
+    "B4_semantic_disposition": "38.5%",
+    "CONFIRMATORY_SIGNIFICANCE": false,
+    "DESCRIPTIVE_DIFFERENCE": true,
+    "holm_p_B3_vs_B4": 0.266
+  }
+}

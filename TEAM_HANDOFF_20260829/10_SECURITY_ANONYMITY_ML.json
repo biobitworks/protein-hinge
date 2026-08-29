@@ -1,0 +1,61 @@
+{
+  "SECRET_BYTES_COMMITTED_IN_NEW_WORK": 0,
+  "SECRET_BYTES_EXPORTED": 0,
+  "SECRET_BYTES_LOGGED": 0,
+  "anonymity": "PASS_WITH_OPERATOR_GATES",
+  "generated_at_utc": "2026-08-29T15:55:04Z",
+  "gitleaks": "REVIEW_REQUIRED",
+  "gitleaks_note": "generic-api-key fingerprint in PAPER_OBJECT_HASHES.vNext.json line 11 \u2014 likely hash false positive; operator review",
+  "hard_path_hits_in_public_surfaces": 0,
+  "hard_path_hits_total_scanned": 83,
+  "machine_name_hits": [
+    {
+      "path": "AGENTS.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "data/partner/README.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/cloudflareos/INTEGRATION.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/cloudflareos/CLOUDFLARE_OS_INTEGRATION.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/experiments/SGLANG_GRAPH_BREAK_PREREG.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/experiments/EXPERIMENT_MATRIX.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/seedgraph/SEEDGRAPH_IMPORT_PLAN.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/contributors/ATTRIBUTION_LIMITATIONS.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/compute/COMPUTE_ROUTING_POLICY.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/control/PAPER_FCG_PLAN.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/protocols/PROTOCOL-NML-OVERNIGHT-001/ORIGINAL_CONTROLLER_PROMPT.md",
+      "pattern": "magicSTUDIObox"
+    },
+    {
+      "path": "paper/newinml2026/compute/test-stack/DISK_CLEANUP_OPERATOR_PLAN.md",
+      "pattern": "magicSTUDIObox"
+    }
+  ]
+}

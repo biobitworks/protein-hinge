@@ -1,0 +1,5 @@
+{"script":"db/build_db.py","receipt":"TEAM_HANDOFF_20260829/RECEIPTS/build_db.RECEIPT.json","scope":"TEAM_CORE","terminal":"ADMITTED"}
+{"script":"node site/verify_test.js","scope":"TEAM_CORE","terminal":"ADMITTED"}
+{"script":"scripts/generate_team_handoff_20260829.py","scope":"TEAM_CORE","terminal":"ADMITTED"}
+{"script":"../biocustody/scripts/run_atom_sot_semantic_003.py","scope":"TEAM_IMPORTED_DEPENDENCY","terminal":"REFERENCE"}
+{"script":"../biocustody/scripts/run_antigence_b4_comparator.py","scope":"TEAM_IMPORTED_DEPENDENCY","terminal":"REFERENCE"}

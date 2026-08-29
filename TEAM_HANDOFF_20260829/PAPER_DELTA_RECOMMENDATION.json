@@ -1,0 +1,27 @@
+{
+  "CURRENT_PAPER_SHA": "4a372a5c459ad60cd23b850709011cbfd0e516b4",
+  "generated_at_utc": "2026-08-29T15:55:04Z",
+  "recommendations": [
+    {
+      "change": "Add bounded Antigence B4 comparator footnote",
+      "class": "OPTIONAL"
+    },
+    {
+      "change": "State L0-L5 cascade as future work only",
+      "class": "REQUIRED_CORRECTION if implied executed"
+    },
+    {
+      "change": "Preserve SOT-008/SOT-014 NOT_ESTABLISHED",
+      "class": "REQUIRED_CORRECTION"
+    },
+    {
+      "change": "Do not claim B4 significance (Holm p=0.266)",
+      "class": "REQUIRED_CORRECTION"
+    },
+    {
+      "change": "Full adaptive cascade in Results",
+      "class": "DO_NOT_ADD"
+    }
+  ],
+  "reopen_manuscript": "OPTIONAL \u2014 only if operator approves bounded delta"
+}

@@ -1,0 +1,12 @@
+{
+  "authoritative_pdf": "CI runtime receipt per FINAL_SUBMISSION_AUTHORITY.json \u2014 not main_smoke.pdf",
+  "top_decisions": [
+    "Operator author roster + OpenReview upload",
+    "Whether to merge PR #3 final-seal automation",
+    "Optional bounded paper delta for B4/Antigence",
+    "EXP-005 corpus freeze",
+    "Defer production SeedGraph writeback"
+  ],
+  "what_team_built": "FCG ledger, NewInML paper corpus, team review merges, imported biocustody audits",
+  "what_we_claim": "Cryptographic custody necessary but not sufficient; verify-or-abstain pipeline improves disposition descriptively"
+}

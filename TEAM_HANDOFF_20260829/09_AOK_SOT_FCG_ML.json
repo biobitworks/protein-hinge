@@ -1,0 +1,13 @@
+{
+  "SEMANTIC_SUPPORT_STATE": "evaluated in biocustody AUD-003 \u2014 not lexical-only VERIFIED",
+  "SOT_NOT_ESTABLISHED": [
+    "SOT-008",
+    "SOT-014"
+  ],
+  "SOT_total": 21,
+  "TRACEABILITY_STATE": "LINKED where composition exists",
+  "fcg_leaves": 83,
+  "generated_at_utc": "2026-08-29T15:55:04Z",
+  "seedgraph_isolated_import": "91/91 AUD-003",
+  "structural_lattice": "136/136 IDENTICAL"
+}
