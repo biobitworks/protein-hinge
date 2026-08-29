@@ -1,0 +1,13 @@
+{
+  "schema": "protein_hinge.paper.build_receipt.team_review",
+  "generated_at_utc": "2026-08-29T00:44:00Z",
+  "template": "neurips_2026 dblblindworkshop",
+  "pdf_path": "paper/newinml2026/manuscript/main_smoke.pdf",
+  "pdf_sha256": "4b4cf595c15f9141de900cec6a0ee86205458ae755a18ca2adc72f9a2769203a",
+  "pages_total_including_checklist": 10,
+  "content_pages_note": "Checklist follows references and is excluded from NeurIPS page limit per venue rules",
+  "unresolved_references": false,
+  "type3_fonts": false,
+  "checklist_present": true,
+  "anonymization_scan": "PASS"
+}

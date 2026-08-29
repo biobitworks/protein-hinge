@@ -1,0 +1,49 @@
+{
+  "schema": "protein_hinge.hackathon_timeline_provenance.vNext",
+  "recorded_at_utc": "2026-08-28T22:50:00Z",
+  "boundaries": [
+    {
+      "phase": "BioCustody_predecessor",
+      "evidence": "paper/newinml2026/sources/biocustody_v0.2.0/EMBEDDED_GIT_PROVENANCE.json",
+      "note": "Zip-ingested predecessor state"
+    },
+    {
+      "phase": "Protein_Hinge_initial_main",
+      "git_commit": "b23af48",
+      "message": "Publish Protein Hinge evidence ledger demo"
+    },
+    {
+      "phase": "hackathon_development",
+      "git_commit": "e79d358",
+      "message": "Integrate Elvis GAP lane and agent FCOs"
+    },
+    {
+      "phase": "first_public_team_presentation",
+      "git_commit": "be2be0f",
+      "message": "Add Protein Hinge recording bundle"
+    },
+    {
+      "phase": "HealthOmics_team_branch",
+      "git_commit": "6e47dbe",
+      "branch": "ElvisHan2022/protein-hinge:healthomics-lane",
+      "message": "Rewrite the paper as declarative prose; add the concerns doc for review"
+    },
+    {
+      "phase": "ClinVar_successor_lane",
+      "artifact": "data/healthomics/clinvar_provenance.json",
+      "experiment": "EXP-003-SUCCESSOR-001"
+    },
+    {
+      "phase": "FASTA_successor_lane",
+      "artifact": "data/fasta/fasta_provenance.json",
+      "experiment": "EXP-002-SUCCESSOR-001"
+    },
+    {
+      "phase": "NewInML_paper_work",
+      "git_commit": "fc79ae854a83014e21a7b99eda919d02d7696ac3",
+      "branch": "paper/newinml-fcg-20260828",
+      "message": "test-stack: record Q38 local baseline freeze SHA receipt"
+    }
+  ],
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}
