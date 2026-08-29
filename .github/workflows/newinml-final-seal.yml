@@ -99,7 +99,7 @@ jobs:
           python3 paper/newinml2026/scripts/build_anonymous_submission.py
           python3 paper/newinml2026/scripts/anonymization_scan.py
 
-      - name: Strict extracted-PDF anonymity gate
+      - name: Strict extracted-PDF anonymity and checklist gate
         run: |
           PDF=paper/newinml2026/manuscript/main_smoke.pdf
           pdftotext "$PDF" /tmp/final_pdf.txt
@@ -108,8 +108,12 @@ jobs:
             grep -Ein '(Byron|biobitworks|ElvisHan2022|\belvish\b|\bShannon\b|\byassachk\b|Discord|\bHAIL\b|/Users/|github\.com/|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})' /tmp/final_pdf.txt || true
             exit 1
           fi
+          if grep -Fqi 'Delete this instruction block' /tmp/final_pdf.txt; then
+            echo "NeurIPS checklist instruction block leaked into submission PDF" >&2
+            exit 1
+          fi
 
-      - name: Construct DRM-free anonymous FCO reviewer bundle
+      - name: Construct DRM-free anonymous submission seal
         env:
           SOURCE_SHA: ${{ github.sha }}
         run: |
@@ -118,8 +122,26 @@ jobs:
           cp paper/newinml2026/manuscript/main_smoke.pdf dist/reviewer_bundle/payload/paper.pdf
           cp -R paper/newinml2026/submission/anonymous/. dist/reviewer_bundle/payload/
           cp /tmp/page_gate.json dist/reviewer_bundle/payload/PAGE_GATE.json
+
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          pdf=Path('dist/reviewer_bundle/payload/paper.pdf')
+          page_gate=json.loads(Path('/tmp/page_gate.json').read_text())
+          receipt={
+              'schema':'protein_hinge.anonymous_build_receipt.v1',
+              'paper_pdf_sha256':hashlib.sha256(pdf.read_bytes()).hexdigest(),
+              'paper_pdf_bytes':pdf.stat().st_size,
+              'page_gate':page_gate,
+              'font_gate':'PASS_NO_TYPE3',
+              'metadata_gate':'PASS_PDFINFO',
+              'source_identity_in_receipt':False,
+          }
+          Path('dist/reviewer_bundle/payload/ANONYMOUS_BUILD_RECEIPT.json').write_text(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
+          PY
+
           cat > dist/reviewer_bundle/VERIFY.md <<'EOF'
-          # Reviewer verification — DRM-free FCO seal
+          # Reviewer verification — DRM-free anonymous submission seal
 
           This bundle is content-addressed, not encrypted and not access-controlled.
           Verification does not require network access.
@@ -127,15 +149,45 @@ jobs:
           1. Run `python3 verify.py` from this directory.
           2. The verifier recomputes SHA-256 for every payload leaf listed in
              `FCO_PAYLOAD_MANIFEST.sha256`.
-          3. It then recomputes the SHA-256 of the manifest itself and compares it
+          3. It recomputes the SHA-256 of the manifest itself and compares it
              with `FCO_SEAL.json`.
           4. `payload/paper.pdf` is the exact anonymous paper leaf sealed by this bundle.
 
-          The seal proves byte identity and manifest closure only. It does not prove
-          biological truth, therapeutic efficacy, or correctness of every scientific inference.
+          This is a minimal anonymous submission profile. It does not claim an
+          Ed25519 signature, Merkle/MMR construction, or conformance with any
+          separately published FCO protocol version. The seal proves byte identity
+          and manifest closure only; it does not prove biological truth, therapeutic
+          efficacy, or correctness of every scientific inference.
           EOF
+
+          # Fail closed on identity-bearing text before hashes make the payload immutable.
           python3 - <<'PY'
-          import hashlib, json
+          import re
+          from pathlib import Path
+          root=Path('dist/reviewer_bundle')
+          text_suffixes={'.py','.md','.json','.csv','.tex','.bib','.yaml','.yml','.sh','.txt'}
+          patterns={
+              'identity_name':re.compile(r'Byron|biobitworks|ElvisHan2022|\belvish\b|\bShannon\b|\byassachk\b|Discord|\bHAIL\b',re.I),
+              'email':re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'),
+              'local_path':re.compile(r'/Users/'),
+              'identifying_repo_url':re.compile(r'github\.com/biobitworks',re.I),
+              'git_sha40':re.compile(r'(?<![0-9a-f])[0-9a-f]{40}(?![0-9a-f])',re.I),
+              'git_identity_key':re.compile(r'"(?:git_head|git_commit_sha|source_git_sha)"\s*:',re.I),
+          }
+          failures=[]
+          for p in sorted(x for x in root.rglob('*') if x.is_file() and x.suffix.lower() in text_suffixes):
+              text=p.read_text(errors='replace')
+              for label,rx in patterns.items():
+                  if rx.search(text):
+                      failures.append(f'{label}: {p.relative_to(root)}')
+          if failures:
+              print('\n'.join(failures))
+              raise SystemExit('anonymous reviewer bundle contains source identity')
+          print('ANONYMOUS_BUNDLE_TEXT_SCAN=PASS')
+          PY
+
+          python3 - <<'PY'
+          import hashlib, json, os
           from pathlib import Path
           root = Path('dist/reviewer_bundle')
           payload = root / 'payload'
@@ -155,16 +207,21 @@ jobs:
               'manifest_sha256':mh,
               'paper_pdf_sha256':pdfh,
               'git_identity_in_anonymous_bundle':False,
+              'signature_claim':False,
+              'merkle_mmr_claim':False,
+              'fco_protocol_conformance_claim':False,
           }
           (root/'FCO_SEAL.json').write_text(json.dumps(seal,indent=2,sort_keys=True)+'\n')
           internal={
-              'schema':'protein_hinge.internal_final_seal_ci.v1',
-              'source_git_sha':__import__('os').environ['SOURCE_SHA'],
+              'schema':'protein_hinge.internal_final_seal_ci.v2',
+              'source_git_sha':os.environ['SOURCE_SHA'],
               'anonymous_manifest_sha256':mh,
               'anonymous_pdf_sha256':pdfh,
+              'page_gate':json.loads(Path('/tmp/page_gate.json').read_text()),
           }
           Path('dist/internal/CI_SOURCE_BINDING.json').write_text(json.dumps(internal,indent=2,sort_keys=True)+'\n')
           PY
+
           cat > dist/reviewer_bundle/verify.py <<'PY'
           #!/usr/bin/env python3
           import hashlib, json
@@ -199,6 +256,9 @@ jobs:
           (cd dist/reviewer_bundle && python3 verify.py)
 
       - name: Deterministically zip anonymous reviewer bundle
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -215,6 +275,53 @@ jobs:
           print(out, out.stat().st_size)
           PY
           sha256sum dist/newinml_anonymous_reviewer_bundle.zip | tee dist/internal/REVIEWER_BUNDLE.sha256
+          python3 - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          pdf=Path('dist/reviewer_bundle/payload/paper.pdf')
+          bundle=Path('dist/newinml_anonymous_reviewer_bundle.zip')
+          seal=json.loads(Path('dist/reviewer_bundle/FCO_SEAL.json').read_text())
+          page_gate=json.loads(Path('/tmp/page_gate.json').read_text())
+          receipt={
+              'schema':'protein_hinge.final_ci_operator_receipt.v1',
+              'workflow_run_id':os.environ['RUN_ID'],
+              'source_git_sha':os.environ['SOURCE_SHA'],
+              'paper_pdf_sha256':hashlib.sha256(pdf.read_bytes()).hexdigest(),
+              'paper_pdf_bytes':pdf.stat().st_size,
+              'anonymous_manifest_sha256':seal['manifest_sha256'],
+              'anonymous_bundle_sha256':hashlib.sha256(bundle.read_bytes()).hexdigest(),
+              'anonymous_bundle_bytes':bundle.stat().st_size,
+              'page_gate':page_gate,
+              'font_gate':'PASS_NO_TYPE3',
+              'metadata_gate':'PASS_PDFINFO',
+              'anonymity_gate':'PASS',
+              'fco_seal_verify':'PASS',
+              'openreview_supplement_field':'OPERATOR_VERIFY_LIVE_FORM',
+              'final_submission_seal':'READY_FOR_OPERATOR_SUBMISSION',
+          }
+          Path('dist/internal/FINAL_CI_OPERATOR_RECEIPT.json').write_text(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
+          Path('dist/internal/OPENREVIEW_UPLOAD_PACKET.runtime.md').write_text(
+              '# OpenReview Upload Packet — CI authoritative\n\n'
+              f"- Workflow run: {receipt['workflow_run_id']}\n"
+              f"- Source SHA: {receipt['source_git_sha']}\n"
+              f"- Paper SHA-256: {receipt['paper_pdf_sha256']}\n"
+              f"- Paper bytes: {receipt['paper_pdf_bytes']}\n"
+              f"- Reviewer bundle SHA-256: {receipt['anonymous_bundle_sha256']}\n"
+              f"- Manifest SHA-256: {receipt['anonymous_manifest_sha256']}\n"
+              '- Upload the exact CI paper bytes as the main paper.\n'
+              '- Upload the reviewer bundle only if the live NewInML form exposes a supplementary-material field.\n'
+              '- Author metadata remains an operator-only gate.\n'
+          )
+          print(json.dumps(receipt,indent=2,sort_keys=True))
+          PY
+
+      - name: Upload exact anonymous paper artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: newinml-anonymous-paper
+          path: paper/newinml2026/manuscript/main_smoke.pdf
+          if-no-files-found: error
+          retention-days: 30
 
       - name: Upload anonymous reviewer artifact
         uses: actions/upload-artifact@v4
