@@ -1,0 +1,64 @@
+{
+  "schema": "protein_hinge.final_corpus_exhaustiveness_delta.v1",
+  "generated_at_utc": "2026-08-29T06:29:50Z",
+  "successor_of": "FINAL_CORPUS_AUDIT=PASS_WITH_OPERATOR_GATES",
+  "base_git_sha": "1542176674f4535ffdfd06d1f2262bc61fc601e0",
+  "terminal_state": "PASS_WITH_DECLARED_SCOPE",
+  "seal_profile_name": "DRM-free anonymous submission seal/profile",
+  "seal_profile_note": "SHA-256 leaf hashes + manifest hash + offline verifier; not Ed25519/MMR/FCO-v3 conformant",
+  "scientific_blocks_retained": {
+    "SOT-008": "NOT_ESTABLISHED",
+    "SOT-014": "NOT_ESTABLISHED",
+    "G2_382_746": "exclusion_unsupported_attribution_only",
+    "structure_prediction": "NOT_EXECUTED",
+    "EXP-005": "NOT_EXECUTED"
+  },
+  "table_fco_v2": {
+    "substantive_table_cells_total": 37,
+    "traceable_cells": 37,
+    "excluded_nonpropositional_cells": 11,
+    "unresolved_cells": 0,
+    "FULL_TABLE_FCO_CLOSURE": "PASS"
+  },
+  "figure_fco_v2": {
+    "elements_total": 12,
+    "propositional_elements": 7,
+    "FULL_FIGURE_FCO_CLOSURE": "PASS"
+  },
+  "publication_store_delta": {
+    "terminal": "NO_ADDITIONAL_STORES",
+    "manuscript_citation_keys": [
+      "prov_dm",
+      "chow1970",
+      "geifman2017",
+      "nas2019",
+      "fda_rwe",
+      "hgnc2021",
+      "uniprot2023",
+      "stodden2016"
+    ],
+    "local_stores_checked": [
+      "/Users/byron/projects/papers",
+      "/Users/byron/projects/active/protein-hinge/paper/newinml2026/sources"
+    ],
+    "note": "Only references.bib and in-repo sources inventoried; no extra publication DB beyond bibliography",
+    "result_hash": "06022726fd5e546dfc54cd84e75802fa22ff56383c281efd97c3d09b94626187"
+  },
+  "sources_searched": [
+    "seedgraph-neo4j (read-only scoped)",
+    "overwatch-db Arango (read-only)",
+    "prothub Arango (read-only)",
+    "fractal-waves-db Arango (read-only)",
+    "overwatch repo text (read-only)",
+    "biocustody repo (lineage terminology)",
+    "fractal-custody-objects repo (lineage terminology)",
+    "references.bib / in-repo sources"
+  ],
+  "explicit_exclusions": [
+    "broad fuzzy biomedical retrieval",
+    "live SeedGraph writeback",
+    "Overwatch as scientific measurement authority",
+    "folding/biosurveillance/biosecurity/hackathon claims into Results"
+  ],
+  "PUBLICATION_STORE_DELTA": "NO_ADDITIONAL_STORES"
+}
