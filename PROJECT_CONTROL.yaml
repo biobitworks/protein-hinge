@@ -1,8 +1,21 @@
 schema: protein_hinge.project_control.v1
-status: PROPOSED
-created_at_utc: "2026-08-28T06:55:00Z"
-branch: paper/newinml-fcg-20260828
-base_sha: "94f8949f1bbcb63d8e80baadd0c5f380f01b9f92"
+
+# Current derived state (recomputed at each corpus audit — authoritative for operations)
+current_state:
+  status: TEAM_REVIEW_MERGED_AWAITING_OPERATOR_SEAL
+  branch: main
+  CANONICAL_PAPER_SOURCE_SHA: "2ba0d923082200b135f17216a1d315a50564c60d"
+  FINAL_CORPUS_AUDIT_BASE_SHA: "2ba0d923082200b135f17216a1d315a50564c60d"
+  PR1: OPEN_HASH_ADMITTED_ONLY
+  FINAL_SUBMISSION_SEAL: OPERATOR_INFORMATION_REQUIRED
+  updated_at_utc: "2026-08-29T05:30:00Z"
+
+# Historical bootstrap snapshot (immutable — do not interpret as current submission state)
+historical_bootstrap:
+  status: PROPOSED
+  created_at_utc: "2026-08-28T06:55:00Z"
+  branch: paper/newinml-fcg-20260828
+  base_sha: "94f8949f1bbcb63d8e80baadd0c5f380f01b9f92"
 
 canonical_controller:
   hostname: magicSTUDIObox.local
@@ -39,11 +52,11 @@ compute_routing:
   cuda_remote_only: true
   remote_hosts:
     kaggle:
-      status: config_present
-      auth: ~/.kaggle/kaggle.json
+      status: auth_verified
+      note: "2026-08-29 capability receipt on hydradg kaggle lane"
     daytona:
-      status: env_unset
-      auth: DAYTONA_API_KEY
+      status: auth_verified_h200_blocked
+      note: "H200 provision blocked; not current paper blocker"
 
 seedgraph:
   repo: /Users/byron/projects/active/seedgraph
@@ -54,13 +67,11 @@ cloudflare_os:
   status: pinned
   upstream: https://github.com/cloudflare/cloudflare-os.git
   upstream_commit: "14fea8592a6dbc59769d592c0752bbf6a465fa84"
-  local_checkout: /Users/byron/projects/external/cloudflare-os
   role: agent_workspace_ui_only
   canonical_truth: magicSTUDIObox
 
 seedgraph_resolution:
   repo: /Users/byron/projects/active/seedgraph
-  head: "6807b1960dd1e981afbf13e79c2f29c3d803b79a"
   entrypoint: "uv run seedgraph"
   live_writeback: DEFERRED
 
@@ -70,7 +81,21 @@ governance:
   squash_before_provenance: forbidden
   overwrite_thesis: forbidden
 
-acceptance_gates:
+# Derived acceptance gates — see final_corpus_audit/FINAL_CORPUS_AUDIT_REPORT.json
+acceptance_gates_derived:
+  source_accounting: pass_vNext_manifest
+  experiment_accounting: pass_successor_receipts
+  hash_custody: pass
+  contributor_provenance: operator_required
+  reproducibility: partial_exp005_blocked
+  claim_closure: pass_with_bounded_claims
+  negative_evidence: pass
+  remote_compute: not_in_manuscript_scope
+  seedgraph_ingest: local_pass_production_deferred
+  paper_projection: team_review_merged
+
+# Historical acceptance gates (early paper wave — archival only)
+acceptance_gates_historical:
   source_accounting: pending
   experiment_accounting: pending
   hash_custody: in_progress
@@ -83,9 +108,9 @@ acceptance_gates:
   paper_projection: not_started
 
 next_daisy_step:
-  role: SWE
-  action: operator supply G1 external pointer or biocustody.zip hash; else EXP-003 G2 CNV attribution recovery
+  role: OPERATOR
+  action: supply author roster, contributor roles, prior-work anonymity choice, OpenReview metadata
   blocked_by:
-    - G1 provenance NOT_FOUND
-    - Cloudflare OS upstream NOT_LOCATED
-    - NewInML hard gates REQ-002 REQ-006 REQ-007
+    - FINAL_SUBMISSION_SEAL OPERATOR_INFORMATION_REQUIRED
+    - SOT-008 +30 offset row proof
+    - SOT-020 contributor roster

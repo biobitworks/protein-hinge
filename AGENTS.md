@@ -82,7 +82,7 @@ python3 db/serve.py 8787   # http://localhost:8787
 
 # NewInML 2026 — Agent Control Plane (PROPOSAL)
 
-**Status:** PROPOSED on branch `paper/newinml-fcg-20260828`  
+**Status:** MERGED to `main` (NewInML 2026 team-review + audit wave); submission seal **OPERATOR_INFORMATION_REQUIRED**  
 **Canonical controller:** magicSTUDIObox (`magicSTUDIObox.local`, arm64)  
 **Evidence authority:** local git + SHA-256 custody under `paper/newinml2026/`
 

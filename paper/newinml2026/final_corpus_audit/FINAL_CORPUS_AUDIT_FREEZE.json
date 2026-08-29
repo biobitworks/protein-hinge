@@ -1,0 +1,41 @@
+{
+  "schema": "protein_hinge.final_corpus_audit_freeze.v1",
+  "recorded_at_utc": "2026-08-29T05:27:03Z",
+  "hostname": "magicSTUDIObox.local",
+  "FINAL_CORPUS_AUDIT_BASE_SHA": "2ba0d923082200b135f17216a1d315a50564c60d",
+  "CANONICAL_PAPER_SOURCE_SHA": "2ba0d923082200b135f17216a1d315a50564c60d",
+  "PR1": "OPEN_HASH_ADMITTED_ONLY",
+  "FINAL_SUBMISSION_SEAL": "OPERATOR_INFORMATION_REQUIRED",
+  "repo_heads": {
+    "protein_hinge": "2ba0d923082200b135f17216a1d315a50564c60d",
+    "seedgraph": "6807b1960dd1e981afbf13e79c2f29c3d803b79a",
+    "overwatch": "62d76b1549cf5c6b9e64d695736315f9e32c8cfc",
+    "hydradg": "7ec0199b2195164da27c5468dfecc438f99fe307",
+    "ollarma": "ba1f4db8068a8e28b27daad3286b78cdb5b2bca6",
+    "gettingsciencedone": "5ee5cff90cba62e2dd32edfb3861af17dd644692"
+  },
+  "seedgraph_neo4j": {
+    "backend": "neo4j",
+    "container": "seedgraph-neo4j",
+    "mutation_policy": "READ_ONLY",
+    "total_node_count": "1035010",
+    "protein_hinge_scoped_search": "DEFERRED_LOCAL_MANIFEST_IMPORT",
+    "shared_production_writeback": "DEFERRED"
+  },
+  "source_roots_included": [
+    "/Users/byron/projects/active/protein-hinge",
+    "/Users/byron/projects/active/protein-hinge/paper/newinml2026",
+    "/Users/byron/projects/active/seedgraph",
+    "/Users/byron/projects/active/overwatch",
+    "/Users/byron/projects/active/hydradg",
+    "/Users/byron/projects/active/ollarma",
+    "/Users/byron/projects/active/gettingsciencedone"
+  ],
+  "source_roots_excluded": [
+    "Gmail",
+    "Google Drive",
+    "Google Calendar",
+    "unrelated portfolio repos"
+  ],
+  "freeze_object_sha256": "85b5095e4f56812b72f001b9fa38b2e641c913d939ddba410f280ac654d913df"
+}
