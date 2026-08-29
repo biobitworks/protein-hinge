@@ -2,13 +2,13 @@ schema: protein_hinge.project_control.v1
 
 # Current derived state (recomputed at each corpus audit — authoritative for operations)
 current_state:
-  status: TEAM_REVIEW_MERGED_AWAITING_OPERATOR_SEAL
-  branch: main
-  CANONICAL_PAPER_SOURCE_SHA: "2ba0d923082200b135f17216a1d315a50564c60d"
+  status: TEAM_GREEN_YELLOW_CLOSEOUT_20260829
+  branch: audit/newinml-team-green-yellow-20260829
+  CANONICAL_PAPER_SOURCE_SHA: "4a372a5c459ad60cd23b850709011cbfd0e516b4"
   FINAL_CORPUS_AUDIT_BASE_SHA: "2ba0d923082200b135f17216a1d315a50564c60d"
   PR1: OPEN_HASH_ADMITTED_ONLY
-  FINAL_SUBMISSION_SEAL: OPERATOR_INFORMATION_REQUIRED
-  updated_at_utc: "2026-08-29T05:30:00Z"
+  FINAL_SUBMISSION_SEAL: TEAM_APPROVAL_PENDING
+  updated_at_utc: "2026-08-29T16:55:00Z"
 
 # Historical bootstrap snapshot (immutable — do not interpret as current submission state)
 historical_bootstrap:

@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-08-29T16:57:25Z",
+  "content_pages": "2-8",
+  "deadline_authority": "OPENREVIEW_LIVE_FORM",
+  "note": "Operator must verify live OpenReview form before upload; prior audit found deadline may have passed.",
+  "observed_deadline_utc": "2026-08-30T07:59:00Z",
+  "operational_classification": "YELLOW_OPERATOR_EXTERNAL_GATE",
+  "references_excluded_from_limit": true,
+  "submission_state": "NOT_VERIFIABLE",
+  "template": "neurips_2026 dblblindworkshop",
+  "workshop": "NeurIPS.cc/2026/Workshop/NewInML"
+}
