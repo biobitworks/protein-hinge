@@ -1,0 +1,14 @@
+{"claim_ceiling": "REPURPOSING_HYPOTHESIS", "classification": "TEAM_CORE", "sentence_id": "S001", "text": "Hash-valid custody is necessary but insufficient."}
+{"classification": "TEAM_CORE", "experiment": "EXP-GAP-ACCOUNTING-001.1", "sentence_id": "S002", "text": "GAP historical aggregate reported zero abstentions; row-level contained three."}
+{"classification": "TEAM_CORE", "experiment": "EXP-002-SUCCESSOR-001", "sentence_id": "S003", "text": "G1 successor on ClinVar N=364: 98 emitted, 266 abstained."}
+{"classification": "TEAM_CORE", "experiment": "EXP-003-SUCCESSOR-001", "sentence_id": "S004", "text": "G2 successor 746=364+382+0 contemporary fetch accounting."}
+{"classification": "TEAM_CORE", "experiment": "EXP-004", "limitation": "UNDERPOWERED_N1", "sentence_id": "S005", "text": "G3 identity guard Lane B N=1 observed-source pair."}
+{"classification": "TEAM_CORE", "experiment": "EXP-006", "sentence_id": "S006", "text": "Morphology null benchmark rank 28/50; enrichment vs shuffle <1."}
+{"classification": "SHARED_PREEXISTING_INFRASTRUCTURE", "sentence_id": "S007", "text": "FCO/FCG custody graph stores preregistrations and SHA-256 manifests."}
+{"classification": "TEAM_IMPORTED_DEPENDENCY", "sentence_id": "S008", "text": "BioCustody portable audit package imported for atom/SOT conformance."}
+{"classification": "FUTURE_DIRECTION", "note": "NOT_IN_CURRENT_MANUSCRIPT", "sentence_id": "S009", "text": "Antigence B0-B4 mutation comparator."}
+{"classification": "SOLO_RESEARCH_PROGRAM", "sentence_id": "S010", "text": "HydraDG adaptive routing."}
+{"classification": "SOLO_RESEARCH_PROGRAM", "sentence_id": "S011", "text": "AntiCube / Delta-G."}
+{"classification": "FUTURE_DIRECTION", "sentence_id": "S012", "text": "L0-L5 adaptive model cascade."}
+{"classification": "FUTURE_DIRECTION", "sentence_id": "S013", "terminal": "NOT_EXECUTED", "text": "EXP-005 frozen replication."}
+{"classification": "SHARED_PREEXISTING_INFRASTRUCTURE", "sentence_id": "S014", "terminal": "DEFERRED", "text": "SeedGraph production writeback."}

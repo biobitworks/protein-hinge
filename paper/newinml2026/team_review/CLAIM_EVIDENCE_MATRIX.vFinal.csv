@@ -1,0 +1,22 @@
+claim_id,claim_text,support_state,claim_ceiling,sot_id
+SOT-001,"Historical GAP aggregate/row abstention inconsistency",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-001
+SOT-002,"Successor GAP accounting repair",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-002
+SOT-003,"Custody does not imply semantic consistency",SUPPORTED_BOUNDED,REPURPOSING_HYPOTHESIS,SOT-003
+SOT-004,"G3 closed-vocabulary identity contract",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-004
+SOT-005,"Historical G3 reconcile(symbol,symbol) wiring defect",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-005
+SOT-006,"Observed-source G3 bypass N=1",SUPPORTED_BOUNDED,REPURPOSING_HYPOTHESIS,SOT-006
+SOT-007,"G1 successor 364=98+266",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-007
+SOT-008,"16/114 TAFAZZIN mismatch; +30 offset requires row proof",NOT_ESTABLISHED,REPURPOSING_HYPOTHESIS,SOT-008
+SOT-009,"No folding experiment in admitted evidence",SUPPORTED_BOUNDED,REPURPOSING_HYPOTHESIS,SOT-009
+SOT-010,"G2 successor 746=364+382+0",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-010
+SOT-011,"100-ID ESummary JSON ceiling mechanism recovered",SUPPORTED_BOUNDED,REPURPOSING_HYPOTHESIS,SOT-011
+SOT-012,"382/746 is multi-gene/CNV exclusion rate, not silent-error rate",SUPPORTED_BOUNDED,REPURPOSING_HYPOTHESIS,SOT-012
+SOT-013,"EXP-006 negative independently reproduced",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-013
+SOT-014,"G1 measurement correction chain incomplete in row artifacts",NOT_ESTABLISHED,REPURPOSING_HYPOTHESIS,SOT-014
+SOT-015,"Manuscript citations chow1970/geifman2017 verified in references.bib",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-015
+SOT-016,"Bare MMR prohibited; use scoped identifiers",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-016
+SOT-017,"No therapeutic efficacy/clinical utility claim ceiling",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-017
+SOT-018,"Submission conformance pending operator gates",PARTIAL_SUPPORT,REPURPOSING_HYPOTHESIS,SOT-018
+SOT-019,"Corpus audit base SHA 2ba0d923082200b135f17216a1d315a50564c60d",SUPPORTED_EXACT,REPURPOSING_HYPOTHESIS,SOT-019
+SOT-020,"Contributor/authorship roster requires operator confirmation",PARTIAL_SUPPORT,REPURPOSING_HYPOTHESIS,SOT-020
+SOT-PR1,"PR1 OPEN hash-admitted-only; team bytes valid by content hash",SUPPORTED_BOUNDED,REPURPOSING_HYPOTHESIS,SOT-PR1

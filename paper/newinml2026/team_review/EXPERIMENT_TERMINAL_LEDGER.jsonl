@@ -1,0 +1,8 @@
+{"experiment_id": "EXP-GAP-ACCOUNTING-001.1", "reproduction": "python3 paper/newinml2026/experiments/EXP-GAP-ACCOUNTING-001.1/repair_ingest_gap.py", "scope": "TEAM_CORE", "terminal_state": "COMPLETE"}
+{"N": 364, "experiment_id": "EXP-002-SUCCESSOR-001", "receipt": "paper/newinml2026/experiments/EXP-002-SUCCESSOR-001/EXPERIMENT_RECEIPT.json", "scope": "TEAM_CORE", "terminal_state": "COMPLETE_RETROSPECTIVE"}
+{"N": 746, "experiment_id": "EXP-003-SUCCESSOR-001", "receipt": "paper/newinml2026/experiments/EXP-003-SUCCESSOR-001/EXPERIMENT_RECEIPT.json", "scope": "TEAM_CORE", "terminal_state": "COMPLETE_RETROSPECTIVE"}
+{"N": 1, "experiment_id": "EXP-004", "receipt": "paper/newinml2026/experiments/EXP-004/matched_ablation_results.json", "scope": "TEAM_CORE", "terminal_state": "COMPLETE_UNDERPOWERED_N1"}
+{"experiment_id": "EXP-005", "reproduction": "BLOCKED \u2014 corpus/metric incomplete", "scope": "TEAM_CORE", "terminal_state": "NOT_EXECUTED"}
+{"experiment_id": "EXP-006", "limitation": "Full CPJUMP1 pipeline not held locally", "receipt": "paper/newinml2026/experiments/EXP-006/EXPERIMENT_RECEIPT.json", "scope": "TEAM_CORE", "terminal_state": "CACHED_NEGATIVE_EVIDENCE"}
+{"experiment_id": "B0-B4", "note": "Antigence comparator lane only", "scope": "OUTSIDE_CURRENT_PAPER", "terminal_state": "FUTURE_DIRECTION"}
+{"experiment_id": "EXP-007", "scope": "FUTURE_DIRECTION", "terminal_state": "NOT_EXECUTED"}

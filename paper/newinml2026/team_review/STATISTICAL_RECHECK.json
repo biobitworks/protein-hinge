@@ -1,0 +1,41 @@
+{
+  "B0_B4_CURRENT_PAPER_BLOCKER": "NO",
+  "B0_B4_HOLM_STATE": "NOT_ESTABLISHED",
+  "EXP006": {
+    "classification": "CACHED_NEGATIVE_EVIDENCE",
+    "enrichment_vs_shuffle": 0.24638253360287107,
+    "known_pair_rank": 28,
+    "reciprocal_rank": 0.03571428571428571,
+    "shuffle_iterations": 1000
+  },
+  "G1_accounting": {
+    "abstained": 266,
+    "classification": "DETERMINISTIC_CONFORMANCE",
+    "emitted": 98,
+    "records_in": 364,
+    "sum_check": "364=98+266"
+  },
+  "G2_accounting": {
+    "classification": "DETERMINISTIC_CONFORMANCE",
+    "excluded": 382,
+    "ids_fetched": 746,
+    "kept": 364,
+    "no_summary": 0,
+    "sum_check": "746=364+382+0"
+  },
+  "G3_matched_N1": {
+    "N": 1,
+    "classification": "UNDERPOWERED_DESCRIPTIVE"
+  },
+  "GAP_accounting": {
+    "N_abstained": 3,
+    "N_admitted": 1,
+    "N_input": 4,
+    "classification": "DETERMINISTIC_CONFORMANCE",
+    "invariants_pass": true
+  },
+  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "manuscript_CIs": "NONE_CLAIMED",
+  "manuscript_p_values": "NONE_CLAIMED",
+  "terminal": "PASS"
+}

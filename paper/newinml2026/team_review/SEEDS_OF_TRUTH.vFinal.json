@@ -1,0 +1,113 @@
+{
+  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "seeds": [
+    {
+      "seed_id": "SOT-001",
+      "statement": "Historical GAP aggregate/row abstention inconsistency",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-002",
+      "statement": "Successor GAP accounting repair",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-003",
+      "statement": "Custody does not imply semantic consistency",
+      "status": "VERIFIED_BOUNDED"
+    },
+    {
+      "seed_id": "SOT-004",
+      "statement": "G3 closed-vocabulary identity contract",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-005",
+      "statement": "Historical G3 reconcile(symbol,symbol) wiring defect",
+      "status": "VERIFIED"
+    },
+    {
+      "N": 1,
+      "seed_id": "SOT-006",
+      "statement": "Observed-source G3 bypass N=1",
+      "status": "DESCRIPTIVE"
+    },
+    {
+      "historical_exact_reproduction": "NO",
+      "seed_id": "SOT-007",
+      "statement": "G1 successor 364=98+266",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-008",
+      "statement": "16/114 TAFAZZIN mismatch; +30 offset requires row proof",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "seed_id": "SOT-009",
+      "statement": "No folding experiment in admitted evidence",
+      "status": "VERIFIED_NEGATIVE_BOUNDARY"
+    },
+    {
+      "seed_id": "SOT-010",
+      "statement": "G2 successor 746=364+382+0",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-011",
+      "statement": "100-ID ESummary JSON ceiling mechanism recovered",
+      "status": "VERIFIED_BOUNDED"
+    },
+    {
+      "seed_id": "SOT-012",
+      "statement": "382/746 is multi-gene/CNV exclusion rate, not silent-error rate",
+      "status": "VERIFIED_BOUNDED"
+    },
+    {
+      "seed_id": "SOT-013",
+      "statement": "EXP-006 negative independently reproduced",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-014",
+      "statement": "G1 measurement correction chain incomplete in row artifacts",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "seed_id": "SOT-015",
+      "statement": "Manuscript citations chow1970/geifman2017 verified in references.bib",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-016",
+      "statement": "Bare MMR prohibited; use scoped identifiers",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-017",
+      "statement": "No therapeutic efficacy/clinical utility claim ceiling",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-018",
+      "statement": "Submission conformance pending operator gates",
+      "status": "OPERATOR_REQUIRED"
+    },
+    {
+      "seed_id": "SOT-019",
+      "statement": "Corpus audit base SHA 2ba0d923082200b135f17216a1d315a50564c60d",
+      "status": "VERIFIED"
+    },
+    {
+      "seed_id": "SOT-020",
+      "statement": "Contributor/authorship roster requires operator confirmation",
+      "status": "OPERATOR_REQUIRED"
+    },
+    {
+      "seed_id": "SOT-PR1",
+      "statement": "PR1 OPEN hash-admitted-only; team bytes valid by content hash",
+      "status": "VERIFIED_BOUNDED"
+    }
+  ],
+  "source_sha": "ab23f43df3e494fe3abbf32d8805081461112cef"
+}
