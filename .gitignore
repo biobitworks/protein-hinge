@@ -14,6 +14,10 @@ node_modules/
 
 # Generated NewInML submission seal outputs (authoritative copies live in CI artifacts).
 paper/newinml2026/submission/dist/
+paper/newinml2026/submission/seedgraph_delta/content_store/
+paper/newinml2026/submission/seedgraph_delta/ledger.db
+paper/newinml2026/submission/seedgraph_delta/neo4j-fallback/
+paper/newinml2026/submission/seedgraph_delta/reingest_bypass_*.json
 paper/newinml2026/submission/_repro_build_run1.pdf
 
 # Nothing under fcg/store/ is ignored, on purpose. The whole store is 532K,

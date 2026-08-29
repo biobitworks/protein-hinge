@@ -1,0 +1,14 @@
+{"atom_id": "REQ-TEMPLATE-001", "subject": "manuscript", "predicate": "template", "object": "NeurIPS 2026", "authority": "organizer_notice+template"}
+{"atom_id": "REQ-TEMPLATE-002", "subject": "workshop submission", "predicate": "review_mode", "object": "double blind", "authority": "newinml_cfp"}
+{"atom_id": "REQ-TEMPLATE-003", "subject": "main.tex", "predicate": "package_option", "object": "dblblindworkshop", "authority": "neurips_2026.sty"}
+{"atom_id": "REQ-TEMPLATE-004", "subject": "workshop paper", "predicate": "requires", "object": "workshoptitle", "authority": "neurips_2026.sty"}
+{"atom_id": "REQ-PAGES-001", "subject": "NewInML main paper", "predicate": "maximum_content_pages", "object": "8", "authority": "organizer_notice"}
+{"atom_id": "REQ-PAGES-002", "subject": "references", "predicate": "page_limit_treatment", "object": "excluded_from_main_limit", "authority": "organizer_notice"}
+{"atom_id": "REQ-PAGES-003", "subject": "appendix", "predicate": "page_limit_treatment", "object": "excluded_from_main_limit", "authority": "organizer_notice"}
+{"atom_id": "REQ-ANON-001", "subject": "submission", "predicate": "anonymization", "object": "fully_anonymous", "authority": "newinml_cfp"}
+{"atom_id": "REQ-REF-001", "subject": "every bibliography entry", "predicate": "publication_identity", "object": "independently_verified", "authority": "organizer_notice"}
+{"atom_id": "REQ-REF-002", "subject": "every DOI", "predicate": "resolution_metadata_match", "object": "required", "authority": "organizer_notice"}
+{"atom_id": "REQ-REF-003", "subject": "every in-text citation", "predicate": "bibliography_target", "object": "exactly_one_valid_entry", "authority": "organizer_notice"}
+{"atom_id": "REQ-REF-004", "subject": "every cited reference", "predicate": "proposition_support", "object": "explicitly_mapped", "authority": "organizer_notice"}
+{"atom_id": "REQ-OPENREVIEW-001", "subject": "final submission", "predicate": "destination", "object": "NewInML OpenReview venue", "authority": "openreview_public"}
+{"atom_id": "REQ-OPENREVIEW-002", "subject": "live_form_fields", "predicate": "validation_state", "object": "OPERATOR_VERIFY_LIVE_FORM", "authority": "operator_gate"}

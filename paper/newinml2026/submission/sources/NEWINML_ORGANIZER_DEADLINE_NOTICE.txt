@@ -1,0 +1,9 @@
+@everyone - a couple of important things to consider while we're close to the deadline:
+
+(1) Please make sure you are using the NeurIPS 2026 Template. It's very important. I see a very few submitted papers used different format, which is absolutely not accepted. I'm unsure if they are here and see this message, but please make sure you will respect the format. Any other format will be immediately desk-rejected.
+
+(2) Please make sure you won't exceed the maximum 8 pages limit. You have unlimited number of pages for references and appendix, but the main part of the paper must be within maximum 8 pages. If your submission has 9 pages, it will be desk-rejected.
+
+(3) Finally, and more importantly, please make sure your references are NOT hallucinated. We understand that most of you use AI/LLMs to generate the references, but always double-check and make sure you are citing the actual and real publications. If any hallucinated references are discovered, your submission will be desk-rejected.
+
+We wish you success in your final push and hope to receive and review your valuable submissions.

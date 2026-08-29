@@ -1,0 +1,2 @@
+{"atom_id": "REQ-PAGES-001", "rule": "workshop_specific_over_generic", "result": "NEWINML_MAX_MAIN_PAGES=8"}
+{"atom_id": "REQ-PAGES-001", "derived_from": "organizer_notice_sentence_2"}
