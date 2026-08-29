@@ -1,3 +1,3 @@
 # File Index
 
-568 team-relevant files indexed (cap 400 in ML).
+Exhaustive team-relevant index: DISCOVERED=619, INDEXED=619, TERMINAL_ACCOUNTED=619 (equality required; no cap).

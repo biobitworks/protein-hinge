@@ -1,8 +1,10 @@
 {
-  "checked_at_utc": "2026-08-29T15:55:04Z",
+  "checked_at_utc": "2026-08-29T16:57:25Z",
   "deadline_displayed": "OPERATOR_VERIFY_LIVE",
-  "note": "Human operator must verify live deadline before upload",
+  "deadline_observed_externally": "2026-08-30T07:59:00Z",
+  "deadline_observed_local_pdt": "2026-08-30 00:59 PDT",
+  "note": "Observed deadline is not eternal truth; operator must verify live form immediately before upload",
   "seal_state": "READY_FOR_OPERATOR_SUBMISSION",
   "source_url": "https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/NewInML",
-  "submission_form_open": "UNKNOWN_FETCH_BLOCKED"
+  "submission_form_open": "OPERATOR_VERIFY_LIVE"
 }

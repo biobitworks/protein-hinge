@@ -30,14 +30,21 @@
       "sha256": "7d6930c845b66fcf5964dea16989939d6bf975c3d49d2bc6aa74164888b7bbac"
     }
   },
+  "biocustody_audit_branch": "audit/fcg-atom-sot-semantic-003-20260829",
+  "biocustody_audit_sha": "297ebadf37574b9792cfa37a8928aced4b64825f",
   "classification": "TEAM_IMPORTED_DEPENDENCY",
   "comparator": "EXPERIMENTAL_COMPARATOR",
   "do_not_retrain": true,
+  "git_reproducible": true,
   "preserved_statistics": {
-    "B3_semantic_disposition": "100%",
-    "B4_semantic_disposition": "38.5%",
+    "B3_false_claim_acceptance": "0%",
+    "B3_semantic_disposition": "13/13",
+    "B4_false_claim_acceptance": "0%",
+    "B4_semantic_disposition": "5/13",
     "CONFIRMATORY_SIGNIFICANCE": false,
     "DESCRIPTIVE_DIFFERENCE": true,
+    "gee_sensitivity_reason": "perfect_separation_or_unstable_gee_at_N=13",
+    "gee_sensitivity_status": "NOT_ESTIMABLE",
     "holm_p_B3_vs_B4": 0.266
   }
 }

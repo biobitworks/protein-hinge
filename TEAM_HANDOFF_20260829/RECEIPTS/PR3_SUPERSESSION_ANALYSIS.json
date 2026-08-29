@@ -1,0 +1,33 @@
+{
+  "classification": "SUPERSEDED",
+  "conflicts": [],
+  "features_already_on_main": [
+    "newinml-final-seal workflow",
+    "anonymous paper build",
+    "page gate",
+    "font gate",
+    "anonymity gate",
+    "FCO seal construction",
+    "reviewer bundle zip"
+  ],
+  "features_improved_on_main": [
+    "push trigger on main branch",
+    "SOURCE_DATE_EPOCH deterministic build",
+    "texlive-fonts-extra package",
+    "Type3 font awk gate (not grep substring)",
+    "2-8 content pages excluding references page gate",
+    "NeurIPS checklist instruction block leak gate",
+    "ANONYMOUS_BUILD_RECEIPT.json",
+    "FINAL_CI_OPERATOR_RECEIPT.json internal artifact",
+    "CI_SOURCE_BINDING.json"
+  ],
+  "features_missing_from_main": [],
+  "features_unique_to_pr3": [],
+  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "main_workflow": ".github/workflows/newinml-final-seal.yml",
+  "pr_branch": "automation/newinml-final-seal-20260829",
+  "pr_number": 3,
+  "pr_state": "OPEN",
+  "recommendation": "Close PR #3 as superseded by main; do not merge",
+  "unique_required_functionality": []
+}

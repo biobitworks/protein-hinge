@@ -1,6 +1,8 @@
 {
+  "B3_semantic_disposition": "13/13",
   "B3_semantic_disposition_rate": 1.0,
-  "B3_vs_B4_holm_p": 0.265625,
+  "B3_vs_B4_holm_p": 0.266,
+  "B4_semantic_disposition": "5/13",
   "B4_semantic_disposition_rate": 0.38461538461538464,
   "CONFIRMATORY_SIGNIFICANCE": false,
   "DESCRIPTIVE_DIFFERENCE": true,
@@ -41,7 +43,7 @@
       "Perfect separation or prediction detected, parameter may not be identified"
     ]
   },
-  "generated_at_utc": "2026-08-29T15:55:04Z",
+  "generated_at_utc": "2026-08-29T16:57:25Z",
   "hypothesis_results": {
     "H0-ABSTENTION-NO-VALUE": {
       "comparison": {

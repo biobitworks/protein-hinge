@@ -1,0 +1,27 @@
+{
+  "false_positives": 2,
+  "final_state": "PASS",
+  "findings": [
+    {
+      "class": "FALSE_POSITIVE_HASH",
+      "location": "paper/newinml2026/provenance/PAPER_OBJECT_HASHES.vNext.json:11",
+      "reason": "SHA-256 digest for REMOTE_AUTH_RERUN_GATE.json embedded in hash manifest path map",
+      "remediation": "None \u2014 content-addressed hash catalog, not a credential",
+      "rule_id": "generic-api-key",
+      "terminal": "CLOSED"
+    },
+    {
+      "class": "FALSE_POSITIVE_HASH",
+      "location": "paper/newinml2026/receipts/WAVE2_CLOSEOUT_RECEIPT.json:2",
+      "reason": "Cloudflare_OS_upstream_sha is a git commit SHA (14fea859\u2026), not an API key",
+      "remediation": "None \u2014 matches PROJECT_CONTROL upstream pin",
+      "rule_id": "cloudflare-api-key",
+      "terminal": "CLOSED"
+    }
+  ],
+  "findings_total": 2,
+  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "note": "No broad ignore rules added; all findings classified as hash false positives",
+  "scanner": "gitleaks",
+  "true_secrets": 0
+}

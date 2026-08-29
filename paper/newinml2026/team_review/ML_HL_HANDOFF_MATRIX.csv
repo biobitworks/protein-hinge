@@ -1,0 +1,4 @@
+ML_PATH,HL_PATH,PURPOSE,CLAIM_CEILING
+paper/newinml2026/experiments/EXP-GAP-ACCOUNTING-001.1/results.json,team_review/EXPERIMENT_SUMMARY.md,GAP repair accounting,REPURPOSING_HYPOTHESIS
+paper/newinml2026/final_corpus_audit/SEEDS_OF_TRUTH.final.json,team_review/SEEDS_OF_TRUTH.vFinal.json,Claim seeds,varies
+TEAM_HANDOFF_20260829/RECEIPTS/FINAL_CI_AUTHORITY.json,TEAM_HANDOFF_20260829/00_START_HERE_HL.md,Authoritative PDF hash,N/A

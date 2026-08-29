@@ -1,7 +1,14 @@
 {
-  "FINAL_SUBMISSION_SEAL": "OPERATOR_INFORMATION_REQUIRED",
+  "FINAL_SUBMISSION_SEAL": "READY_FOR_OPERATOR_SUBMISSION",
   "antigence_sha": "1f12b3c2b2f7df90e11753f74443e4add48d5b46",
   "biocustody_audit_branch": "audit/fcg-atom-sot-semantic-003-20260829",
-  "main_sha": "4a372a5c459ad60cd23b850709011cbfd0e516b4",
-  "status": "TEAM_HANDOFF_FROZEN"
+  "biocustody_audit_sha": "297ebadf37574b9792cfa37a8928aced4b64825f",
+  "current_handoff": "CURRENT_HANDOFF_PR_OPEN",
+  "frozen_manuscript_main_sha": "4a372a5c459ad60cd23b850709011cbfd0e516b4",
+  "handoff_branch": "handoff/newinml-team-review-20260829",
+  "handoff_head_sha": "ab23f43df3e494fe3abbf32d8805081461112cef",
+  "pr6_merged": false,
+  "pr6_url": "https://github.com/biobitworks/protein-hinge/pull/6",
+  "status": "TEAM_HANDOFF_FROZEN",
+  "team_review_state": "PRIOR_TEAM_REVIEW_MERGES_COMPLETE"
 }

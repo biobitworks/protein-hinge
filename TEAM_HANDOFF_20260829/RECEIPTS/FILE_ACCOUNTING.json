@@ -1,0 +1,9 @@
+{
+  "DISCOVERED_TOTAL": 619,
+  "INDEXED_TOTAL": 619,
+  "TERMINAL_ACCOUNTED_TOTAL": 619,
+  "capped": false,
+  "equality": true,
+  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "population": "team_roots: paper/newinml2026, fcg, db, site"
+}

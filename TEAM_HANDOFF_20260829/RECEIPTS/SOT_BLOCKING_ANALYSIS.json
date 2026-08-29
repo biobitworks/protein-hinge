@@ -1,0 +1,28 @@
+{
+  "SOT-008": {
+    "DOES_CURRENT_MANUSCRIPT_DEPEND_ON_STRONGER_CLAIM": "NO",
+    "blocking_submission": false,
+    "manuscript_evidence": "No TAFAZZIN, +30, or 16/114 references in main.tex",
+    "statement": "16/114 TAFAZZIN mismatch; +30 offset requires row proof",
+    "status": "NOT_ESTABLISHED",
+    "terminal": "NOT_ESTABLISHED"
+  },
+  "SOT-014": {
+    "DOES_CURRENT_MANUSCRIPT_DEPEND_ON_STRONGER_CLAIM": "NO",
+    "blocking_submission": false,
+    "manuscript_evidence": "G1 successor bounded; explicitly not exact historical reproduction",
+    "statement": "G1 measurement correction chain incomplete in row artifacts",
+    "status": "NOT_ESTABLISHED",
+    "terminal": "NOT_ESTABLISHED"
+  },
+  "SOT-020": {
+    "DOES_CURRENT_MANUSCRIPT_DEPEND_ON_STRONGER_CLAIM": "NO",
+    "blocking_openreview_upload": true,
+    "blocking_submission": false,
+    "statement": "Contributor/authorship roster requires operator confirmation",
+    "status": "OPERATOR_REQUIRED",
+    "terminal": "OPERATOR_REQUIRED"
+  },
+  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "manuscript_path": "paper/newinml2026/manuscript/main.tex"
+}
