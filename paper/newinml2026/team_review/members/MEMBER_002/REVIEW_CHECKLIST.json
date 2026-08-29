@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "checked": false,
+      "id": "CHK-1",
+      "label": "Reviewed exact candidate PDF hash"
+    },
+    {
+      "checked": false,
+      "id": "CHK-2",
+      "label": "Reviewed team claims"
+    },
+    {
+      "checked": false,
+      "id": "CHK-3",
+      "label": "Reviewed contribution/role"
+    },
+    {
+      "checked": false,
+      "id": "CHK-4",
+      "label": "No solo work laundered"
+    },
+    {
+      "checked": false,
+      "id": "CHK-5",
+      "label": "Reviewed negative/blocked states"
+    },
+    {
+      "checked": false,
+      "id": "CHK-6",
+      "label": "Reviewed citations/resources"
+    },
+    {
+      "checked": false,
+      "id": "CHK-7",
+      "label": "Reviewed anonymity separation"
+    },
+    {
+      "checked": false,
+      "id": "CHK-8",
+      "label": "Approve author metadata (operator)"
+    },
+    {
+      "checked": false,
+      "id": "CHK-9",
+      "label": "Approve submission bytes"
+    }
+  ],
+  "member_id": "MEMBER_002"
+}
