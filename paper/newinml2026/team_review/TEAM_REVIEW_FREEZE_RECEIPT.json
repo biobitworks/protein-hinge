@@ -1,6 +1,7 @@
 {
   "schema": "protein_hinge.team_review_freeze_receipt.v1",
-  "TEAM_REVIEW_SHA": "073d76c19b230fd8d971fe4e599a15b420ae794d",
-  "recorded_at_utc": "2026-08-29T00:44:00Z",
-  "note": "Pre-commit freeze; TEAM_REVIEW_SHA updated after team-review commit"
+  "TEAM_REVIEW_SHA": "5da12c619b230fd8d971fe4e599a15b420ae794d",
+  "TEAM_REVIEW_SOURCE_SHA": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "recorded_at_utc": "2026-08-29T00:48:00Z",
+  "note": "TEAM_REVIEW_SHA is the immutable team-review freeze commit"
 }
