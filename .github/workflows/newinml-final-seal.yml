@@ -1,0 +1,227 @@
+name: NewInML final seal
+
+on:
+  push:
+    branches:
+      - automation/newinml-final-seal-20260829
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+
+      - name: Install deterministic build and inspection tools
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            texlive-latex-base texlive-latex-extra texlive-fonts-recommended \
+            texlive-bibtex-extra poppler-utils zip jq
+          python3 --version
+          pdflatex --version | head -1
+          pdfinfo -v 2>&1 | head -1
+          pdffonts -v 2>&1 | head -1
+
+      - name: Build anonymous paper
+        run: |
+          bash paper/newinml2026/manuscript/build.sh
+          test -s paper/newinml2026/manuscript/main_smoke.pdf
+
+      - name: Fail on unresolved references or citations
+        run: |
+          LOG=paper/newinml2026/manuscript/build/main.log
+          test -f "$LOG"
+          if grep -E "LaTeX Warning: (There were undefined references|Citation .* undefined|Reference .* undefined)" "$LOG"; then
+            echo "Unresolved LaTeX reference/citation" >&2
+            exit 1
+          fi
+
+      - name: Check fonts and PDF metadata
+        run: |
+          PDF=paper/newinml2026/manuscript/main_smoke.pdf
+          pdfinfo "$PDF" > /tmp/pdfinfo.txt
+          pdffonts "$PDF" > /tmp/pdffonts.txt
+          cat /tmp/pdfinfo.txt
+          cat /tmp/pdffonts.txt
+          if grep -qi "Type 3" /tmp/pdffonts.txt; then
+            echo "Type 3 fonts detected" >&2
+            exit 1
+          fi
+
+      - name: Conservative page-limit gate
+        run: |
+          python3 - <<'PY'
+          import json, re, subprocess
+          from pathlib import Path
+          pdf = Path('paper/newinml2026/manuscript/main_smoke.pdf')
+          info = subprocess.check_output(['pdfinfo', str(pdf)], text=True)
+          total = int(re.search(r'^Pages:\s+(\d+)', info, re.M).group(1))
+          refs_page = None
+          checklist_page = None
+          for p in range(1, total + 1):
+              text = subprocess.check_output(['pdftotext','-f',str(p),'-l',str(p),'-layout',str(pdf),'-'], text=True, errors='replace')
+              if refs_page is None and re.search(r'(?mi)^\s*References\s*$', text):
+                  refs_page = p
+              if checklist_page is None and re.search(r'(?mi)^\s*(NeurIPS\s+Paper\s+Checklist|Paper\s+Checklist)\s*$', text):
+                  checklist_page = p
+          status = 'PASS' if refs_page is not None and refs_page <= 8 else 'BLOCKED_VALIDATION'
+          receipt = {
+              'schema': 'protein_hinge.newinml.page_gate.v1',
+              'pages_total': total,
+              'references_first_page': refs_page,
+              'checklist_first_page': checklist_page,
+              'conservative_rule': 'references_first_page <= 8',
+              'status': status,
+          }
+          Path('/tmp/page_gate.json').write_text(json.dumps(receipt, indent=2) + '\n')
+          print(json.dumps(receipt, indent=2))
+          if status != 'PASS':
+              raise SystemExit(1)
+          PY
+
+      - name: Build anonymous reproduction subset
+        run: |
+          python3 paper/newinml2026/scripts/build_anonymous_submission.py
+          python3 paper/newinml2026/scripts/anonymization_scan.py
+
+      - name: Strict extracted-PDF anonymity gate
+        run: |
+          PDF=paper/newinml2026/manuscript/main_smoke.pdf
+          pdftotext "$PDF" /tmp/final_pdf.txt
+          if grep -Eqi '(Byron|biobitworks|ElvisHan2022|\belvish\b|\bShannon\b|\byassachk\b|Discord|\bHAIL\b|/Users/|github\.com/|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})' /tmp/final_pdf.txt; then
+            echo "Potential identity leak in extracted PDF text" >&2
+            grep -Ein '(Byron|biobitworks|ElvisHan2022|\belvish\b|\bShannon\b|\byassachk\b|Discord|\bHAIL\b|/Users/|github\.com/|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})' /tmp/final_pdf.txt || true
+            exit 1
+          fi
+
+      - name: Construct DRM-free anonymous FCO reviewer bundle
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          rm -rf dist
+          mkdir -p dist/reviewer_bundle/payload dist/internal
+          cp paper/newinml2026/manuscript/main_smoke.pdf dist/reviewer_bundle/payload/paper.pdf
+          cp -R paper/newinml2026/submission/anonymous/. dist/reviewer_bundle/payload/
+          cp /tmp/page_gate.json dist/reviewer_bundle/payload/PAGE_GATE.json
+          cat > dist/reviewer_bundle/VERIFY.md <<'EOF'
+          # Reviewer verification — DRM-free FCO seal
+
+          This bundle is content-addressed, not encrypted and not access-controlled.
+          Verification does not require network access.
+
+          1. Run `python3 verify.py` from this directory.
+          2. The verifier recomputes SHA-256 for every payload leaf listed in
+             `FCO_PAYLOAD_MANIFEST.sha256`.
+          3. It then recomputes the SHA-256 of the manifest itself and compares it
+             with `FCO_SEAL.json`.
+          4. `payload/paper.pdf` is the exact anonymous paper leaf sealed by this bundle.
+
+          The seal proves byte identity and manifest closure only. It does not prove
+          biological truth, therapeutic efficacy, or correctness of every scientific inference.
+          EOF
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          root = Path('dist/reviewer_bundle')
+          payload = root / 'payload'
+          rows=[]
+          for p in sorted(x for x in payload.rglob('*') if x.is_file()):
+              h=hashlib.sha256(p.read_bytes()).hexdigest()
+              rows.append((p.relative_to(root).as_posix(), h, p.stat().st_size))
+          manifest=''.join(f'{h}  {path}\n' for path,h,_ in rows)
+          (root/'FCO_PAYLOAD_MANIFEST.sha256').write_text(manifest)
+          mh=hashlib.sha256(manifest.encode()).hexdigest()
+          pdfh=next(h for path,h,_ in rows if path=='payload/paper.pdf')
+          seal={
+              'schema':'protein_hinge.anonymous_fco_seal.v1',
+              'algorithm':'SHA-256',
+              'seal_semantics':'sha256(manifest_bytes); DRM-free content identity only',
+              'payload_leaf_count':len(rows),
+              'manifest_sha256':mh,
+              'paper_pdf_sha256':pdfh,
+              'git_identity_in_anonymous_bundle':False,
+          }
+          (root/'FCO_SEAL.json').write_text(json.dumps(seal,indent=2,sort_keys=True)+'\n')
+          internal={
+              'schema':'protein_hinge.internal_final_seal_ci.v1',
+              'source_git_sha':__import__('os').environ['SOURCE_SHA'],
+              'anonymous_manifest_sha256':mh,
+              'anonymous_pdf_sha256':pdfh,
+          }
+          Path('dist/internal/CI_SOURCE_BINDING.json').write_text(json.dumps(internal,indent=2,sort_keys=True)+'\n')
+          PY
+          cat > dist/reviewer_bundle/verify.py <<'PY'
+          #!/usr/bin/env python3
+          import hashlib, json
+          from pathlib import Path
+          root=Path(__file__).resolve().parent
+          manifest_path=root/'FCO_PAYLOAD_MANIFEST.sha256'
+          seal=json.loads((root/'FCO_SEAL.json').read_text())
+          failures=[]
+          for line in manifest_path.read_text().splitlines():
+              expected, rel=line.split('  ',1)
+              p=root/rel
+              if not p.is_file():
+                  failures.append(f'MISSING {rel}')
+                  continue
+              actual=hashlib.sha256(p.read_bytes()).hexdigest()
+              if actual != expected:
+                  failures.append(f'HASH_MISMATCH {rel}')
+          manifest_hash=hashlib.sha256(manifest_path.read_bytes()).hexdigest()
+          if manifest_hash != seal['manifest_sha256']:
+              failures.append('MANIFEST_HASH_MISMATCH')
+          pdf_hash=hashlib.sha256((root/'payload/paper.pdf').read_bytes()).hexdigest()
+          if pdf_hash != seal['paper_pdf_sha256']:
+              failures.append('PAPER_HASH_MISMATCH')
+          if failures:
+              print('\n'.join(failures))
+              raise SystemExit(1)
+          print('FCO_SEAL_VERIFY=PASS')
+          print('manifest_sha256='+manifest_hash)
+          print('paper_pdf_sha256='+pdf_hash)
+          PY
+          chmod +x dist/reviewer_bundle/verify.py
+          (cd dist/reviewer_bundle && python3 verify.py)
+
+      - name: Deterministically zip anonymous reviewer bundle
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          root=Path('dist/reviewer_bundle')
+          out=Path('dist/newinml_anonymous_reviewer_bundle.zip')
+          with zipfile.ZipFile(out,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+              for p in sorted(x for x in root.rglob('*') if x.is_file()):
+                  rel=p.relative_to(root).as_posix()
+                  info=zipfile.ZipInfo(rel, date_time=(1980,1,1,0,0,0))
+                  info.compress_type=zipfile.ZIP_DEFLATED
+                  info.external_attr=0o100644 << 16
+                  z.writestr(info,p.read_bytes(),compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+          print(out, out.stat().st_size)
+          PY
+          sha256sum dist/newinml_anonymous_reviewer_bundle.zip | tee dist/internal/REVIEWER_BUNDLE.sha256
+
+      - name: Upload anonymous reviewer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: newinml-anonymous-reviewer-bundle
+          path: dist/newinml_anonymous_reviewer_bundle.zip
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload internal source-binding receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: newinml-internal-source-binding
+          path: dist/internal/
+          if-no-files-found: error
+          retention-days: 30
