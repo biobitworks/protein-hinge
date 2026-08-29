@@ -1,0 +1,17 @@
+{
+  "executed": true,
+  "rows": [
+    {
+      "raw_source_string": "TAZ/cardiolipin module",
+      "canonical_string": "TAZ",
+      "C0_state": "UNRESOLVED",
+      "C1_state": "BYPASS_ADMITTED",
+      "C0_downstream_grade": "ABSTAIN",
+      "C1_downstream_grade": "GAP_LOW",
+      "C0_admissible": false,
+      "C1_admissible": true,
+      "metric_label": "unsupported_identity_admission"
+    }
+  ],
+  "N_bypass_admitted": 1
+}

@@ -1,0 +1,10 @@
+{
+  "wave_id": "W00",
+  "terminal": "COMPLETE",
+  "closed_at_utc": "2026-08-28T08:02:00Z",
+  "head_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5",
+  "branch": "paper/newinml-fcg-20260828",
+  "remote_parity": true,
+  "prompt_sha256": "5e19f51e1371b2cf237b24d9196a43513caded677101cdf5f601d0011f169049",
+  "note": "Repaired after psutil import fix; bootstrap authority verified"
+}

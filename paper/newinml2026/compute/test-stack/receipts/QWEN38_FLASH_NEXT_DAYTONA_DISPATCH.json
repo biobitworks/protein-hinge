@@ -1,0 +1,50 @@
+{
+  "dispatch_id": "QWEN38_FLASH_NEXT_DAYTONA_DISPATCH_v1",
+  "schema": "protein_hinge.remote_model_dispatch.v1",
+  "generated_at_utc": "2026-08-28T17:30:00Z",
+  "execution_state": "BLOCKED_REMOTE_COMPUTE",
+  "credential_env": "DAYTONA_API_KEY",
+  "credential_state": "ABSENT",
+  "model_tag": "qwen3.8-flash-next:125b-a6b-nvfp4",
+  "ollama_version_target": "0.33.0",
+  "preferred_gpu": "NVIDIA H200",
+  "gpu_alternatives_blocked_without_separate_condition": ["H100"],
+  "quantization_substitution_allowed": false,
+  "sandbox_state": "NONE",
+  "destroy_state": "N/A",
+  "flash_next_pull_status": "NOT_ATTEMPTED",
+  "local_canary_reference": {
+    "receipt": "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json",
+    "prompt_sha256": "23a0a3110682f984b4f5153450fc904332cc8ad5271cffd532c135f136a7f7f5",
+    "verifier_hash": "q38_canary_validator.v1",
+    "canary_value": "Q38_CANARY_OK"
+  },
+  "inference_settings": {
+    "temperature": 0,
+    "thinking": false,
+    "context_ceiling_tokens": 32768,
+    "settings_sha256": "b3deadc6484bd67b8d962838321a198a858a9bd08072f43361c14e5e66bbd895"
+  },
+  "task_hashes": {
+    "canary_prompt_sha256": "23a0a3110682f984b4f5153450fc904332cc8ad5271cffd532c135f136a7f7f5",
+    "panel_contract": "compute/test-stack/MODEL_PANEL_QWEN38_SUCCESSOR_V1.json"
+  },
+  "output_schema": "protein_hinge.model_canary.v2",
+  "artifacts_to_return": [
+    "QWEN38_FLASH_NEXT_DAYTONA_CANARY_RECEIPT.json",
+    "remote_model_digest",
+    "raw_output_sha256",
+    "latency_sec",
+    "gpu_class",
+    "sandbox_receipt"
+  ],
+  "experimental_design": {
+    "primary_comparison_host": "Daytona",
+    "condition_a": "qwen3.8:27b",
+    "condition_b": "qwen3.8-flash-next:125b-a6b-nvfp4",
+    "matched_factors": ["sandbox_class", "GPU", "Ollama_version", "prompts", "context_budget", "temperature", "verifier"],
+    "studio_q38_role": "CROSS_HOST_REPLICATION_ONLY",
+    "forbidden_primary_comparison": "Studio_Q38_vs_Daytona_FlashNext"
+  },
+  "note": "Dispatch manifest only. No remote execution until Daytona auth passes."
+}

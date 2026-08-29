@@ -1,0 +1,30 @@
+{
+  "schema": "protein_hinge.team_update_pull.v1",
+  "receipt_id": "TEAM_UPDATE_PULL_RECEIPT",
+  "recorded_at_utc": "2026-08-29T00:00:00Z",
+  "host": "magicSTUDIObox.local",
+  "branch": "paper/newinml-fcg-20260828",
+  "git_commit": "40e35abbb9d8bc3d25f26efadb822ebb31c76799",
+  "fetch": "git fetch --all --prune --tags",
+  "pr1": {
+    "repo": "biobitworks/protein-hinge#1",
+    "fork": "ElvisHan2022/protein-hinge",
+    "branch": "healthomics-lane",
+    "head": "6e47dbe367d9223c15c80ef27ca2634b50054035",
+    "merged": false,
+    "review_worktree": "/Users/byron/projects/active/protein-hinge-pr1-review-20260828",
+    "manifest": "paper/newinml2026/provenance/TEAM_PR1_CONTRIBUTION_MANIFEST.jsonl"
+  },
+  "q38_state": "CLOSED_INFRASTRUCTURE_EVIDENCE",
+  "successor_experiments": ["EXP-002-SUCCESSOR-001", "EXP-003-SUCCESSOR-001"],
+  "historical_exact_reproduction": "NO",
+  "g2_mechanism_recovered": "YES",
+  "seedgraph_vnext": [
+    "PAPER_SOURCE_MANIFEST.vNext.jsonl",
+    "PAPER_IMPORT_ACCOUNTING.vNext.json",
+    "PAPER_OBJECT_HASHES.vNext.json",
+    "PAPER_CLOSURE_RECEIPT.vNext.json",
+    "SEEDS_OF_TRUTH.json"
+  ],
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

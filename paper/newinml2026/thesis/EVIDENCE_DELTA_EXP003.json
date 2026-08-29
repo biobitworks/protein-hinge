@@ -1,0 +1,13 @@
+{
+  "evidence_delta_id": "EVIDENCE_DELTA_EXP003",
+  "experiment_id": "EXP-003",
+  "generated_at_utc": "2026-08-28T07:26:00Z",
+  "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "prior_thesis_id": "THESIS-001",
+  "status": "COMPLETE_NEGATIVE_PROVENANCE",
+  "summary": "G2 CNV historical counts (742/642/287/100 and gene-level transitions) not located in protein-hinge custody",
+  "promotion_recommended": false,
+  "thesis_mutation": "NONE",
+  "provenance_recovery_hash": "3c99a88901c2e8567cc7e88a71cfdeeb3d5f11739c62398f3c1cebb1a29e33ef",
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS"
+}

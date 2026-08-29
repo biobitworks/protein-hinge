@@ -1,0 +1,12 @@
+{
+  "schema": "protein_hinge.seedgraph.final_import_accounting.v1",
+  "generated_at_utc": "2026-08-29T00:44:00Z",
+  "closure_subject_sha": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "IMPORTED_CONTENT": 214,
+  "IMPORTED_REFERENCE": 4,
+  "EXCLUDED": 11,
+  "UNAVAILABLE": 0,
+  "FAILED": 0,
+  "LOCAL_IMPORT_VALIDATION": "PASS",
+  "LIVE_PRODUCTION_WRITEBACK": "DEFERRED"
+}

@@ -1,0 +1,38 @@
+{
+  "experiment_id": "EXP-GAP-ACCOUNTING-001.1",
+  "parent_experiment": "EXP-GAP-ACCOUNTING-001",
+  "version": "1.1.0",
+  "classification": "REPLICATION",
+  "created_at_utc": "2026-08-28T06:55:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "94f8949f1bbcb63d8e80baadd0c5f380f01b9f92",
+  "h0": "Repaired ingest derives abstention summary; summary.ABSTAIN != row ABSTAIN count",
+  "h1": "Repaired ingest derives abstention summary; summary.ABSTAIN == row ABSTAIN count",
+  "statistical_test": "exact_count_equality",
+  "alpha": 0.05,
+  "mesi": "N/A — deterministic accounting",
+  "sample_size_rationale": "N=4 prescripted validation rows (fixed corpus)",
+  "multiple_comparison_correction": "none — single invariant",
+  "decision_tree": {
+    "pass": "ingest and verify invariants; emit successor run under gap/runs/2026-08-28-accounting-repair/",
+    "fail": "record FAILURE FCO; do not mutate 2026-08-13 artifacts"
+  },
+  "data_contract": {
+    "inputs": ["gap/elvis_prescripted_demo.json", "gap/rules.py", "gap/normalize.py"],
+    "outputs": ["candidates.csv", "abstentions.json", "receipt.json", "accounting.json"]
+  },
+  "failure_indeterminate_branch": "QUARANTINE new run; preserve historical run",
+  "source_snapshot": "gap/runs/2026-08-13/ (read-only reference)",
+  "code_snapshot": "paper/newinml2026/experiments/EXP-GAP-ACCOUNTING-001.1/repair_ingest_gap.py",
+  "environment_snapshot": "python3 local magicSTUDIObox",
+  "mandatory_invariants": [
+    "summary.ABSTAIN == count(row.grade == ABSTAIN)",
+    "N_input == N_admitted + N_excluded + N_abstained + N_failed"
+  ],
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS",
+  "status": "COMPLETE",
+  "completed_at_utc": "2026-08-28T06:56:00Z",
+  "validation_success": true,
+  "successor_run": "gap/runs/2026-08-28-accounting-repair/",
+  "receipt_merkle_root": "sha256:09c5f44df6e93f454c110f060564502ae84fe00b7259067f030a7703477ab795"
+}

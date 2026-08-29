@@ -1,0 +1,21 @@
+{
+  "scorecard_id": "SUBMISSION-READINESS-v1",
+  "generated_at_utc": "2026-08-28T07:58:00Z",
+  "terminal_readiness": "PARTIAL",
+  "requirements": {
+    "REQ-001": {"label": "page count", "status": "PASS", "note": "Content within 8 pages excluding checklist"},
+    "REQ-002": {"label": "anonymity", "status": "PASS", "note": "Manuscript scan clean"},
+    "REQ-003": {"label": "anonymous supplement", "status": "PASS", "note": "submission/anonymous package exists from Wave 4"},
+    "REQ-004": {"label": "abstract", "status": "PASS", "note": "Single paragraph abstract present"},
+    "REQ-005": {"label": "workshop mode", "status": "PASS", "note": "dblblindworkshop + NewInML title"},
+    "REQ-006": {"label": "formatting", "status": "PASS", "note": "PDF build PASS"},
+    "REQ-007": {"label": "OpenReview/operator", "status": "OPERATOR_REQUIRED", "note": "REQ007_OPERATOR_CHECKLIST.md pending attestation"},
+    "REQ-008": {"label": "eligibility", "status": "OPERATOR_REQUIRED", "note": "Operator must confirm NewInML eligibility"},
+    "REQ-009": {"label": "checklist", "status": "PARTIAL", "note": "Present; answers not finalized"},
+    "REQ-010": {"label": "PDF QA", "status": "PASS", "note": "Build receipt recorded"},
+    "REQ-011": {"label": "claim-evidence closure", "status": "PASS", "note": "PAPER_CLAIM_AUDIT.v1.json"},
+    "REQ-012": {"label": "experiment reproducibility", "status": "PASS", "note": "EXP-006 shuffle block exact-reproduced; EXP-005 prereg incomplete not executed"}
+  },
+  "counts": {"PASS": 9, "PARTIAL": 1, "FAIL": 0, "OPERATOR_REQUIRED": 2},
+  "hard_blockers": ["REQ-007 operator attestation", "REQ-008 eligibility confirmation"]
+}

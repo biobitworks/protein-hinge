@@ -1,0 +1,68 @@
+{
+  "schema": "protein_hinge.remote_auth_rerun_gate.v1",
+  "receipt_id": "REMOTE_AUTH_RERUN_GATE",
+  "recorded_at_utc": "2026-08-29T00:10:00Z",
+  "host": "magicSTUDIObox.local",
+  "paper_branch": "paper/newinml-fcg-20260828",
+  "paper_sha": "26b75b3e723a8e165c0ec33e3a68602fb7ce3f93",
+  "GO_FORWARD": false,
+  "auth_matrix": {
+    "DAYTONA": {
+      "CLI_PRESENT": true,
+      "AUTH_PASS": false,
+      "LIST_PASS": false,
+      "terminal": "OPERATOR_REQUIRED"
+    },
+    "KAGGLE": {
+      "CLI_PRESENT": true,
+      "AUTH_PASS": true,
+      "READ_PROBE_PASS": true,
+      "GPU_CANARY_PASS": false,
+      "SGLANG_SUCCESSOR_COMPLETE": false
+    }
+  },
+  "daytona_blockers": [
+    "No active Daytona CLI profile or DAYTONA_API_KEY in shell/launchctl",
+    "Operator must run: daytona login (browser path) or inject DAYTONA_API_KEY into launchd/session without committing secret"
+  ],
+  "daytona_experimental_design": {
+    "primary_comparison": "MATCHED_ON_DAYTONA",
+    "condition_a": "qwen3.8:27b",
+    "condition_b": "qwen3.8-flash-next:125b-a6b-nvfp4",
+    "studio_q38_role": "CROSS_HOST_REPLICATION_ONLY",
+    "confounders_avoided": ["hardware", "provider", "OS", "runtime"]
+  },
+  "kaggle_blockers": [
+    "GPU provider canary notebook not executed this wave",
+    "Successor kernel HYDRADG_SGLANG_KAGGLE_BCG_STRESS_R1_20260828 not pushed/run",
+    "Flash-Next lane correctly excluded (P100/T4 insufficient for ~105GB artifact)"
+  ],
+  "protein_hinge": {
+    "Q38_closed": true,
+    "EXP-002-SUCCESSOR_recompute": "PASS",
+    "EXP-003-SUCCESSOR_recompute": "PASS",
+    "recompute_class": "ARTIFACT_RECOMPUTE_PASS",
+    "manuscript_ready": false,
+    "manuscript_blocker": "Remote auth/rerun gate not closed"
+  },
+  "hydradg_reference": {
+    "reconcile_branch": "reconcile/qwen38-successor-20260828",
+    "reconcile_sha": "e5e1e1e4478ad69ae7cbc1f4f34e9669be66542e",
+    "Q38-EXP008-R": "PARTIAL",
+    "Q38-EXP008-R_cells": "24/150",
+    "Q38-EXP009-R": "NOT_STARTED",
+    "EXP-010": "BLOCKED"
+  },
+  "required_before_next_wave": [
+    "DAYTONA AUTH + LIST_PASS",
+    "Daytona GPU sandbox provisioned with >=125GB free",
+    "Daytona qwen3.8:27b canary PASS",
+    "Daytona qwen3.8-flash-next canary PASS",
+    "Q38-EXP008-R COMPLETE",
+    "Q38-EXP009-R COMPLETE or formal SKIP",
+    "Kaggle GPU canary PASS",
+    "Kaggle SGLang successor rerun COMPLETE or formal BLOCKED"
+  ],
+  "no_secret_leak": true,
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

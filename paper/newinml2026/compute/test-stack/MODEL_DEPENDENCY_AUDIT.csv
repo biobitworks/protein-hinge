@@ -1,0 +1,11 @@
+experiment_id,model_dependent,notes
+EXP-GAP-ACCOUNTING-001,false,deterministic GAP accounting
+EXP-001,false,GAP alias
+EXP-002,false,G1 sequence/residue verification — deterministic guards
+EXP-003,false,G2 CNV attribution — deterministic guards
+EXP-004,false,G3 identity resolution — deterministic guards
+EXP-005,false,frozen-corpus replication — deterministic
+EXP-006,false,shuffle/null reproduction — deterministic unless LLM in scored path
+EXP-007,true,SGLang CUDA graph-break — remote GPU model path
+EXP-Q38-COMP-001,true,model panel comparison — local canary only until Daytona unblocked
+hydradg LOCAL_LIVE_MODEL,true,historical qwen3.8:27b live probe — prompt/digest not frozen

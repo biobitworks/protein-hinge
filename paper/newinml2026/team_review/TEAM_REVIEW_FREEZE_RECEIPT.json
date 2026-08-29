@@ -1,0 +1,13 @@
+{
+  "schema": "protein_hinge.team_review_freeze_receipt.v1",
+  "recorded_at_utc": "2026-08-29T05:17:00Z",
+  "TEAM_REVIEW_CONTENT_COMMIT_SHA": "5da12c65dfdb724d1b51e659a4c1ed20ccb879d0",
+  "TEAM_REVIEW_RECEIPT_COMMIT_SHA": "18a2915991e20b444136d05d029756beb7334261",
+  "TEAM_REVIEW_SOURCE_SHA": "5da12c65dfdb724d1b51e659a4c1ed20ccb879d0",
+  "sha_validation": {
+    "5da12c65dfdb724d1b51e659a4c1ed20ccb879d0": "commit",
+    "3d4a6ada2654acce9b2591a51c30ff3bf5e4cc88": "commit",
+    "18a2915991e20b444136d05d029756beb7334261": "commit"
+  },
+  "note": "Content freeze names team-review package commit; receipt commit recorded after audit-wave push; no self-referential receipt-in-same-commit without receipt commit field"
+}

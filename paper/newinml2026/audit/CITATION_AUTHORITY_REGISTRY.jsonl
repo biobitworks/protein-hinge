@@ -1,0 +1,9 @@
+{"bib_key": "prov_dm", "metadata_hash": "9eff0227e1053dde0cbaefa3b26ac6c7e3da50c3af2e141244e275a9d4740ab0", "verification_state": "VERIFIED", "authority_class": "secondary"}
+{"bib_key": "chow1970", "metadata_hash": "8d840adc870aeebab1295ff279549b662dde8f48571a40d8e67299470908b7aa", "verification_state": "VERIFIED", "authority_class": "IEEE TIT 1970 \u2014 reject option baseline"}
+{"bib_key": "geifman2017", "metadata_hash": "def5868251afc0d42f214685c4abfe5806643663b0d6f08376635889d16feafc", "verification_state": "VERIFIED", "authority_class": "NeurIPS 2017 proceedings \u2014 Geifman & El-Yaniv selective classification"}
+{"bib_key": "nas2019", "metadata_hash": "73a094711ad7e296cdcd759031f2abcd0439f2031d36e35bec8b76584e981360", "verification_state": "VERIFIED", "authority_class": "secondary"}
+{"bib_key": "fda_rwe", "metadata_hash": "db859a8ec23de22de13ac17e87b4bc95208a356f5c86c51d7a82bfd5d7b1d793", "verification_state": "VERIFIED", "authority_class": "secondary"}
+{"bib_key": "hgnc2021", "metadata_hash": "e1580a673673ae73d72dc9d7a42d5d21a0f7b71abfb7aba61e94a45c90bdf976", "verification_state": "VERIFIED", "authority_class": "secondary"}
+{"bib_key": "uniprot2023", "metadata_hash": "eaad8fe039294b6d77cf6076b7e6106b4f3dde687e422fc1377693693dc973e9", "verification_state": "VERIFIED", "authority_class": "secondary"}
+{"bib_key": "stodden2016", "metadata_hash": "6cb2b8af4e0b814c4c9fa300fa7a1f982c5713f65ded46c0a4bd25b60390d54c", "verification_state": "VERIFIED", "authority_class": "secondary"}
+{"bib_key": "elyaniv2010", "verification_state": "NEEDS_CITATION", "note": "JMLR 11(53):1605-1641 cited in related work terminology; add bib entry if cited in manuscript"}

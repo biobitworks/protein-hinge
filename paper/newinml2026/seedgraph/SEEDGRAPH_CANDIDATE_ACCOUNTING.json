@@ -1,0 +1,74 @@
+{
+  "duplicate_occurrences": 14,
+  "duplicate_paths": [
+    {
+      "canonical": "FCO-d197113efa30f042",
+      "path": "gap/runs/2026-08-28-accounting-repair/candidates.csv"
+    },
+    {
+      "canonical": "FCO-96ec18affb0a7e37",
+      "path": "site/assets/agent_fanout_latest.json"
+    },
+    {
+      "canonical": "FCO-ec97a84dabf90b61",
+      "path": "site/assets/aws_hackathon_context.json"
+    },
+    {
+      "canonical": "FCO-dba4742ebb396f1f",
+      "path": "site/assets/aws_preflight.json"
+    },
+    {
+      "canonical": "FCO-b99adc349a72d578",
+      "path": "site/assets/cell_perturbation_restoration.png"
+    },
+    {
+      "canonical": "FCO-ec9b8b892e401e29",
+      "path": "site/assets/deferred_writeback_packet.json"
+    },
+    {
+      "canonical": "FCO-b61e28b96c84d1cb",
+      "path": "site/assets/elvis_prescripted_demo.json"
+    },
+    {
+      "canonical": "FCO-853d9910b3f522a6",
+      "path": "site/assets/model_trace.json"
+    },
+    {
+      "canonical": "FCO-ae87a179935ea00e",
+      "path": "site/assets/null_hypothesis_comparison.png"
+    },
+    {
+      "canonical": "FCO-f45d4abfe8fe0e19",
+      "path": "site/assets/regulatory_coverage.json"
+    },
+    {
+      "canonical": "FCO-b3adc81f1e264582",
+      "path": "site/assets/regulatory_source_surfaces.json"
+    },
+    {
+      "canonical": "FCO-0823eb19a3dbb993",
+      "path": "site/biocustody.db"
+    },
+    {
+      "canonical": "FCO-ca4c770ac1f3d809",
+      "path": "paper/newinml2026/cloudflareos/INTEGRATION.md"
+    },
+    {
+      "canonical": "FCO-13373d683c15c09b",
+      "path": "paper/newinml2026/experiments/EXP-GAP-ACCOUNTING-001.1/results.json"
+    }
+  ],
+  "explanation": "188 pending rows (v1) = N_imported + N_duplicate from source closure, excluding N_unavailable external pointers. SeedGraph receives unique_content_objects as evidence seeds plus reference_objects as exact_copy_of edges \u2014 not independent scientific duplicates.",
+  "ingest_candidates": 229,
+  "invariant": "source_objects == unique_content_objects + duplicate_occurrences + unavailable \u2192 231 == 215 + 14 + 2 \u2192 True",
+  "reference_objects": 14,
+  "reference_policy": "DUPLICATE terminal \u2192 REFERENCE/ALIAS object with exact_copy_of edge to canonical FCO",
+  "source_objects": 231,
+  "terminal_breakdown": {
+    "DUPLICATE": 14,
+    "IMPORTED": 215,
+    "UNAVAILABLE": 2
+  },
+  "unavailable": 2,
+  "unique_content_objects": 215
+}

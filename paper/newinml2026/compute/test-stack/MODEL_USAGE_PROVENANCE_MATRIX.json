@@ -1,0 +1,11 @@
+{
+  "schema": "protein_hinge.model_usage_provenance.v1",
+  "generated_at_utc": "2026-08-28T16:00:00Z",
+  "searched_projects": ["hydradg", "ollarma", "protein-hinge", "cloudmer", "biocustody"],
+  "qwen3_8_flash_next_historical_execution": false,
+  "rows": [
+    {"project": "ollarma", "classification": "MODEL_INVENTORY_ONLY", "model": "qwen3.8:27b", "digest": "22130167c4c2"},
+    {"project": "hydradg", "classification": "CANARY_EXECUTED", "model": "qwen3.8:27b", "receipt": "hydradg/eval/vercel_public_closeout_20260827/LOCAL_LIVE_MODEL_RECEIPT.json", "note": "FRESH_INFERENCE PASS without prompt/output/digest"},
+    {"project": "protein-hinge", "classification": "CANARY_EXECUTED", "model": "qwen3.8:27b", "digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643", "receipt": "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json", "verifier": "PASS"}
+  ]
+}

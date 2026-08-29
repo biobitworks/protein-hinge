@@ -1,0 +1,34 @@
+{
+  "schema": "protein_hinge.provider_auth_restoration.v1",
+  "receipt_id": "KAGGLE_AUTH_RESTORATION_RECEIPT",
+  "recorded_at_utc": "2026-08-29T00:10:00Z",
+  "host": "magicSTUDIObox.local",
+  "host_scoped": true,
+  "provider": "Kaggle",
+  "cli_version": "2.2.4",
+  "cli_present": true,
+  "cli_path_class": "isolated_venv",
+  "cli_install_path_redacted": "~/.local/venvs/kaggle-cli/bin/kaggle",
+  "auth_method_class": "kaggle_json_access_token",
+  "credential_checks": {
+    "kaggle_json_present": true,
+    "kaggle_json_mode": "600",
+    "KAGGLE_USERNAME_in_file": true,
+    "KAGGLE_KEY_in_file": true,
+    "KAGGLE_USERNAME_env_present": false,
+    "KAGGLE_KEY_env_present": false
+  },
+  "account_identifier_non_secret": "biobitworks",
+  "authenticated": true,
+  "read_probes": {
+    "competitions_list": {"exit_code": 0, "result": "PASS"},
+    "kernels_list_mine": {"exit_code": 0, "result": "PASS"},
+    "historical_kernel": {
+      "ref": "biobitworks/hydradg-sglang-bcg-stress-20260826",
+      "visible": true,
+      "last_status": "KernelWorkerStatus.ERROR"
+    }
+  },
+  "no_secret_leak": true,
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

@@ -1,0 +1,44 @@
+protocol_id: PROTOCOL-NML-OVERNIGHT-001
+version: "1.0.0"
+project: Protein Hinge → NewInML @ NeurIPS 2026
+branch: paper/newinml-fcg-20260828
+canonical_controller: magicSTUDIObox.local
+repo: /Users/byron/projects/active/protein-hinge
+paper_root: paper/newinml2026
+
+immutable_checkpoints:
+  WAVE2_SHA: "66979d6e20692bfb0b7b9cd8c2feb692a2efed39"
+  WAVE3_SHA: "2453a9bdb400f00c17de36d9e4831fb60f312e83"
+  WAVE4_SHA: "eed2f4c4333c0b2b9894cbe2b79dbd4bbfa2e3d1"
+  protocol_entry_sha: null  # set at W00 bootstrap
+
+roles:
+  - PI
+  - PM
+  - SWE
+  - ARBITER
+
+terminal_states:
+  - COMPLETE
+  - COMPLETE_NEGATIVE
+  - BLOCKED
+  - OPERATOR_REQUIRED
+  - QUARANTINED
+  - SKIPPED
+
+science_rules:
+  immutable_history: true
+  negative_results_first_class: true
+  no_retroactive_preregistration: true
+  claim_ceiling_enforced: true
+  infrastructure_not_validation: true
+
+commit_policy:
+  branch: paper/newinml-fcg-20260828
+  force_push: forbidden
+  push_after_wave: true
+
+compute_routing:
+  local_host: magicSTUDIObox.local
+  cuda_capable: false
+  remote_preference: [kaggle, daytona]

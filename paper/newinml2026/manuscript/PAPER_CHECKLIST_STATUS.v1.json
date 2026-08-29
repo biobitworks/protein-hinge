@@ -1,0 +1,9 @@
+{
+  "checklist_id": "PAPER-CHECKLIST-STATUS-v1",
+  "generated_at_utc": "2026-08-28T07:58:00Z",
+  "checklist_present": true,
+  "checklist_path": "paper/newinml2026/manuscript/checklist.tex",
+  "template_macros_valid": true,
+  "status": "PRESENT_UNFILLED",
+  "note": "Checklist included per NeurIPS requirement; operator should complete answer macros before final submission"
+}

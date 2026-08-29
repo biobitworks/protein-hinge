@@ -1,0 +1,15 @@
+{
+  "schema": "protein_hinge.team_review_source_freeze.v1",
+  "recorded_at_utc": "2026-08-29T00:44:00Z",
+  "TEAM_REVIEW_SOURCE_SHA": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "source_branch": "paper/newinml-fcg-20260828",
+  "hostname": "magicSTUDIObox.local",
+  "admitted_team_objects": {
+    "fork": "ElvisHan2022/protein-hinge",
+    "branch": "healthomics-lane",
+    "head": "6e47dbe367d9223c15c80ef27ca2634b50054035",
+    "pr1_merged": false
+  },
+  "successor_recompute": "paper/newinml2026/compute/receipts/PROTEIN_HINGE_SUCCESSOR_RECOMPUTE_RECEIPT.json",
+  "q38_closeout": "paper/newinml2026/compute/test-stack/Q38_TEST_STACK_CLOSEOUT.json"
+}

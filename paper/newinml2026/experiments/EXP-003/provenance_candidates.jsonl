@@ -1,0 +1,5 @@
+{"claim_component":"G2 batch accounting corpus","disposition":"NOT_FOUND","repository":"protein-hinge","search_method":"git pickaxe + CNV grep","confidence":"high_absence_in_repo","label":"UNVERIFIED_HISTORICAL_CLAIM archived separately"}
+{"claim_component":"multi_gene_cnv rate","disposition":"NOT_FOUND","repository":"protein-hinge","confidence":"high_absence_in_repo"}
+{"claim_component":"gene-level attribution transitions","disposition":"NOT_FOUND","repository":"protein-hinge","partial_context":"fto/registry symbols only","confidence":"high_absence_in_repo"}
+{"claim_component":"multi-gene knockout axis","disposition":"LOCATED_PARTIAL","source_path":"fto/FTO_DESIGN.md","relationship":"design prose not CNV pipeline","confidence":"design_only"}
+{"claim_component":"biocustody.zip","disposition":"UNAVAILABLE","source_path":"/Users/byron/Downloads/biocustody.zip","relationship":"external handoff pointer","confidence":"external_pointer"}

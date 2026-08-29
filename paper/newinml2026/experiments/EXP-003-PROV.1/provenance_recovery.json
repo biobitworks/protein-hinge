@@ -1,0 +1,28 @@
+{
+  "experiment_id": "EXP-003-PROV.1",
+  "classification": "PROVENANCE_RECOVERY",
+  "status": "COMPLETE_NEGATIVE_PROVENANCE",
+  "generated_at_utc": "2026-08-28T07:58:07Z",
+  "source_artifact_sha256": "d78d9f006655920a25baf98e300dcb1c2bdca4899f7e3be112d4e29cdf420a20",
+  "historical_components": {
+    "742": "NUMERIC_ONLY",
+    "642": "NOT_FOUND",
+    "287": "NUMERIC_ONLY",
+    "100": "LOCATED_PARTIAL",
+    "TAZ": "NOT_FOUND",
+    "TAFAZZIN": "NOT_FOUND",
+    "PHB2": "NOT_FOUND",
+    "CHCHD3": "NOT_FOUND",
+    "PGS1": "NOT_FOUND",
+    "CRLS1": "NOT_FOUND",
+    "HADHA": "NOT_FOUND"
+  },
+  "ledger_742_found": false,
+  "ledger_642_found": false,
+  "derivation_287_found": false,
+  "discrepancy_100_cause": "NOT_ESTABLISHED",
+  "derivation_chain_recovered": false,
+  "exp_003_1_admissible": false,
+  "exp_003_1_reason": "No ClinVar/CNV acquisition ledger; 742/642/287 hits are CSV float noise or unrelated counts",
+  "candidate_count": 93
+}

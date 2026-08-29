@@ -1,0 +1,596 @@
+[
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/manuscript/PAPER_CLAIM_AUDIT.v1.json",
+    "line": 16,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/ELVIS_DISCORD_GITHUB_CROSSWALK.json",
+    "line": 38,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/ELVIS_DISCORD_GITHUB_CROSSWALK.json",
+    "line": 41,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 57,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 66,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 201,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 219,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 246,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 255,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 264,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 273,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 282,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "22.8%",
+    "semantic_quantity": "G1 historical percent",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 75,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "22.8%",
+    "semantic_quantity": "G1 historical percent",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 84,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "22.8%",
+    "semantic_quantity": "G1 historical percent",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 291,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "287/642",
+    "semantic_quantity": "G2 historical CNV fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 93,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "287/642",
+    "semantic_quantity": "G2 historical CNV fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 102,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "287/642",
+    "semantic_quantity": "G2 historical CNV fraction",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 237,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "44.7%",
+    "semantic_quantity": "G2 historical percent",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 111,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 3,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 120,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 129,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 192,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 210,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 228,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 12,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 21,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 30,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 39,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 48,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 138,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 147,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 156,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 165,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 174,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+    "line": 183,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/ELVIS_METHODS_VERSION_DELTA.md",
+    "line": 5,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/ELVIS_METHODS_VERSION_DELTA.json",
+    "line": 8,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/audit/ELVIS_METHODS_VERSION_DELTA.json",
+    "line": 11,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 24,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 181,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "22.8%",
+    "semantic_quantity": "G1 historical percent",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 25,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "22.8%",
+    "semantic_quantity": "G1 historical percent",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 181,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "287/642",
+    "semantic_quantity": "G2 historical CNV fraction",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 26,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "287/642",
+    "semantic_quantity": "G2 historical CNV fraction",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 181,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "44.7%",
+    "semantic_quantity": "G2 historical percent",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 27,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 28,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 181,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 29,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 189,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 190,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 301,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 301,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "24.6%",
+    "semantic_quantity": "G1 superseded measurement",
+    "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "line": 311,
+    "allowed_context": "PROHIBITED_CURRENT_RESULT",
+    "successor_value": "16/114=14.0%",
+    "reason_changed": "residue check preceded variant-class assignment"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/scripts/biocustody_provenance_recovery.py",
+    "line": 205,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/thesis/THESIS_DELTA_PROPOSAL_EXP002.json",
+    "line": 12,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/thesis/EVIDENCE_DELTA_EXP003.json",
+    "line": 8,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/control/KNOWN_GAPS.md",
+    "line": 19,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "742/642",
+    "semantic_quantity": "G2 historical fetch/keep",
+    "document": "paper/newinml2026/experiments/EXP-003-PROV.1/provenance_recovery.json",
+    "line": 26,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "287/642",
+    "semantic_quantity": "G2 historical CNV fraction",
+    "document": "paper/newinml2026/experiments/EXP-003/UNVERIFIED_HISTORICAL_CLAIMS.json",
+    "line": 10,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/experiments/EXP-002/provenance_recovery.json",
+    "line": 18,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/experiments/EXP-002/provenance_recovery.json",
+    "line": 24,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/experiments/EXP-002/provenance_recovery.json",
+    "line": 77,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/experiments/EXP-002/provenance_recovery.json",
+    "line": 88,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "28/123",
+    "semantic_quantity": "G1 historical fraction",
+    "document": "paper/newinml2026/experiments/EXP-002/provenance_recovery.json",
+    "line": 91,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  },
+  {
+    "pattern": "22.8%",
+    "semantic_quantity": "G1 historical percent",
+    "document": "paper/newinml2026/experiments/EXP-002/provenance_recovery.json",
+    "line": 18,
+    "allowed_context": "HISTORICAL_ONLY",
+    "successor_value": null,
+    "reason_changed": "historical unverified claim"
+  }
+]

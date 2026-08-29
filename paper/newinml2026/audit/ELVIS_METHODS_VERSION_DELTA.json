@@ -1,0 +1,14 @@
+{
+  "uploaded_methods_blob": "0de731382cc023631f96ace9831f0e8ad99026a3",
+  "current_github_methods_blob": "4622e2abe067fc56df35209fcf78dd8861d15296",
+  "content_equal": false,
+  "relationship": "SUCCESSOR_OF",
+  "stale_occurrences_detected": [
+    {
+      "pattern": "24.6%",
+      "line": 180,
+      "description": "G1 superseded measurement",
+      "context": "**4.3 Results.** The table (G1 24.6%; G2 51.2% of records, three genes from"
+    }
+  ]
+}

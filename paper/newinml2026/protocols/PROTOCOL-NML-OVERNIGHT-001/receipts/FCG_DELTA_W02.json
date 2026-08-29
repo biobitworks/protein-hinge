@@ -1,0 +1,11 @@
+{
+  "artifacts": [
+    "paper/newinml2026/provenance/TERMINOLOGY_AUTHORITY_MATRIX.csv",
+    "paper/newinml2026/provenance/DATA_SOURCE_ADMISSIBILITY_MATRIX.csv",
+    "paper/newinml2026/manuscript/RELATED_WORK_MATRIX.csv",
+    "paper/newinml2026/manuscript/CITATION_EVIDENCE_MAP.csv",
+    "paper/newinml2026/manuscript/references.bib"
+  ],
+  "generated_at_utc": "2026-08-28T07:58:07Z",
+  "wave_id": "W02"
+}

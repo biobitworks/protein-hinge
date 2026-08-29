@@ -1,0 +1,13 @@
+{"event": "wave_start", "ts_utc": "2026-08-28T07:57:48Z", "wave": "W00"}
+{"error": "No module named 'psutil'", "event": "wave_error", "ts_utc": "2026-08-28T07:57:48Z", "wave": "W00"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:57:48Z", "wave": "W01"}
+{"terminal": "COMPLETE_NEGATIVE", "ts_utc": "2026-08-28T07:58:07Z", "wave": "W01"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:07Z", "wave": "W02"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:07Z", "wave": "W03"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:07Z", "wave": "W04"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:09Z", "wave": "W05"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:09Z", "wave": "W06"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:09Z", "wave": "W07"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:09Z", "wave": "W08"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:12Z", "wave": "W09"}
+{"event": "wave_start", "ts_utc": "2026-08-28T07:58:12Z", "wave": "W10"}

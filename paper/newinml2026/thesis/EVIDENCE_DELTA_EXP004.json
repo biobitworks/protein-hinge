@@ -1,0 +1,11 @@
+{
+  "evidence_delta_id": "EVIDENCE_DELTA_EXP004",
+  "experiment_id": "EXP-004",
+  "generated_at_utc": "2026-08-28T07:46:00Z",
+  "prior_thesis_id": "THESIS-001",
+  "terminal_classification": "COMPLETE_ABLATION",
+  "summary": "G3 closed-vocabulary guard is deterministic under frozen alias contract; historical ingest_gap self-comparison is EVALUATION_WIRING_DEFECT; one admitted programs.csv pair shows UNRESOLVED under guard vs bypass admission",
+  "promotion_recommended": false,
+  "thesis_mutation": "NONE",
+  "claim_ceiling": "No population-level silent semantic error claim; N=1 real source pair only"
+}

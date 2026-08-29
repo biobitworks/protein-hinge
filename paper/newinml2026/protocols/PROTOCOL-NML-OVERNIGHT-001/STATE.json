@@ -1,0 +1,21 @@
+{
+  "protocol_id": "PROTOCOL-NML-OVERNIGHT-001",
+  "created_at_utc": "2026-08-28T08:00:00Z",
+  "current_wave": "W10",
+  "terminal": "COMPLETE",
+  "protocol_entry_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5",
+  "completed_at_utc": "2026-08-28T07:58:15Z",
+  "waves": {
+    "W00": {"terminal": "COMPLETE", "head_sha": "9f6d6be0e3bf2ecce22aa56bf51647aa79045da5"},
+    "W01": {"terminal": "COMPLETE_NEGATIVE"},
+    "W02": {"terminal": "COMPLETE"},
+    "W03": {"terminal": "SKIPPED", "readiness": "PREREG_INCOMPLETE"},
+    "W04": {"terminal": "COMPLETE", "exact_match": true},
+    "W05": {"terminal": "SKIPPED", "reason": "SKIPPED_NO_REQUIRED_GAP"},
+    "W06": {"terminal": "SKIPPED", "reason": "SKIPPED_NOT_REQUIRED_FOR_CORE_THESIS"},
+    "W07": {"terminal": "COMPLETE", "thesis": "THESIS-001"},
+    "W08": {"terminal": "COMPLETE", "pdf_sha256": "4b4cf595c15f9141de900cec6a0ee86205458ae755a18ca2adc72f9a2769203a"},
+    "W09": {"terminal": "COMPLETE"},
+    "W10": {"terminal": "COMPLETE"}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "lane": "B",
+  "classification": "REAL_SOURCE_IDENTIFIER_AUDIT",
+  "N_pairs": 1,
+  "pairs": [
+    {
+      "raw_source_string": "TAZ/cardiolipin module",
+      "canonical_string": "TAZ",
+      "raw_source_object_id": "gap/runs/2026-08-13/programs.csv",
+      "canonical_source_object_id": "gap/alias_table.json + OpenTargets canonical",
+      "alias_evidence": "gap/alias_table.json",
+      "expected_terminal": "UNRESOLVED",
+      "provenance_quality": "admitted_aug13_program_row"
+    }
+  ],
+  "status": "COMPLETE"
+}

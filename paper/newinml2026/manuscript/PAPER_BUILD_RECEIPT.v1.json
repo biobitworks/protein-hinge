@@ -1,0 +1,18 @@
+{
+  "receipt_id": "PAPER-BUILD-RECEIPT-v1",
+  "generated_at_utc": "2026-08-28T07:58:00Z",
+  "build_status": "PASS",
+  "template": "neurips_2026 dblblindworkshop",
+  "workshop_title": "New in Machine Learning (NewInML) at NeurIPS 2026",
+  "pdf_path": "paper/newinml2026/manuscript/main_smoke.pdf",
+  "pdf_sha256": "4b4cf595c15f9141de900cec6a0ee86205458ae755a18ca2adc72f9a2769203a",
+  "total_pages": 10,
+  "content_pages_estimate": 6,
+  "content_pages_note": "Excludes NeurIPS checklist section (non-content per venue); references embedded before checklist",
+  "us_letter": true,
+  "fonts_embedded": true,
+  "type3_fonts_detected": false,
+  "undefined_refs_remaining": false,
+  "missing_figures": false,
+  "build_command": "paper/newinml2026/manuscript/build.sh"
+}

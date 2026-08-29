@@ -1,0 +1,9 @@
+{
+  "experiment_id": "EXP-006",
+  "classification": "REPLICATION",
+  "reproducibility_classification": "EXACT_REPRODUCTION_POSSIBLE",
+  "terminal": "COMPLETE",
+  "exact_match_cached": true,
+  "negative_finding": "known_pair_rank=28; enrichment_vs_shuffle<1",
+  "generated_at_utc": "2026-08-28T07:58:09Z"
+}

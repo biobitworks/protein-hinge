@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP-004",
+  "classification": "PROVENANCE_RECOVERY_AND_CONTRACT_AUDIT",
+  "canonical_implementation": {
+    "path": "gap/normalize.py",
+    "disposition": "LOCATED_EXACT",
+    "commit": "current",
+    "algorithm": "closed-vocabulary reconcile"
+  },
+  "historical_evaluation_wiring": {
+    "path": "gap/ingest_gap.py",
+    "line_pattern": "reconcile(row.get('target_symbol'), row.get('target_symbol'))",
+    "disposition": "EVALUATION_WIRING_DEFECT",
+    "note": "Production demo run did not exercise source-vs-canonical reconciliation"
+  },
+  "lane_b_sources": [
+    {
+      "path": "gap/runs/2026-08-13/programs.csv",
+      "disposition": "LOCATED_EXACT",
+      "pairs_found": 1,
+      "note": "target_raw vs target_symbol for elamipretide row"
+    }
+  ],
+  "aug13_modified": false
+}

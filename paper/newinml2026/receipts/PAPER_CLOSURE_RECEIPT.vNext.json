@@ -1,0 +1,9 @@
+{
+  "schema": "protein_hinge.paper.closure_receipt.vNext",
+  "receipt_id": "PAPER-CLOSURE-RECEIPT-vNext",
+  "generated_at_utc": "2026-08-29T00:44:00Z",
+  "closure_subject_sha": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "team_review_closeout": true,
+  "historical_exact_reproduction_disclaimed": true,
+  "pr1_merged": false
+}

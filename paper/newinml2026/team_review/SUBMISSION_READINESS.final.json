@@ -1,0 +1,17 @@
+{
+  "schema": "protein_hinge.submission_readiness.final",
+  "generated_at_utc": "2026-08-29T00:44:00Z",
+  "TEAM_REVIEW_SOURCE_SHA": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "overall": "TEAM_REVIEW_CANDIDATE",
+  "REQ-001": {"label": "anonymous_pdf", "status": "PASS"},
+  "REQ-002": {"label": "anonymization_scan", "status": "PASS"},
+  "REQ-008": {"label": "page_limit", "status": "PASS", "note": "10 pages total; checklist excluded from content limit"},
+  "REQ-009": {"label": "checklist", "status": "PASS"},
+  "REQ-010": {"label": "abstract_one_paragraph", "status": "PASS"},
+  "operator_gates": [
+    "Internal team review PR",
+    "Author list after anonymized review",
+    "EXP-005 corpus freeze",
+    "Live SeedGraph Neo4j writeback deferred"
+  ]
+}

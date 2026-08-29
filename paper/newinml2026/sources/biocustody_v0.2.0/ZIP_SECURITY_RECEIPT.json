@@ -1,0 +1,311 @@
+{
+  "receipt_id": "BIOCUSTODY-ZIP-SECURITY-v1",
+  "generated_at_utc": "2026-08-28T07:57:50Z",
+  "execution_allowed": false,
+  "contents_executed": false,
+  "archive_mutated": false,
+  "issues_count": 117,
+  "issues_sample": [
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/logs/run_biocustody_travel_worker.sh",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/scripts/list_cpjump1.sh",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/networkx/generators/atlas.dat.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/networkx/generators/._atlas.dat.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/dateutil/zoneinfo/._dateutil-zoneinfo.tar.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/altair/datasets/_metadata/metadata.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/altair/datasets/_metadata/._metadata.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/w64-arm.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/._w64-arm.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/w32.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/._w32.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/t32.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/._t32.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/w64.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/._w64.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/t64-arm.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/._t64-arm.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/t64.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/pip/_vendor/distlib/._t64.exe",
+      "issues": [
+        "EXECUTABLE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/sklearn/datasets/data/digits.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/sklearn/datasets/data/._digits.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/sklearn/datasets/data/diabetes_target.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/sklearn/datasets/data/._diabetes_target.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/sklearn/datasets/data/diabetes_data_raw.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/sklearn/datasets/data/._diabetes_data_raw.csv.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np16.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.9.2_compressed_pickle_py27_np16.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.9.2_compressed_pickle_py35_np19.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.9.2_compressed_pickle_py35_np19.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.10.0_pickle_py27_np17.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np17.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.9.2_compressed_pickle_py27_np17.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.9.2_compressed_pickle_py34_np19.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.9.2_compressed_pickle_py34_np19.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.11.0_pickle_py36_np111.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.10.0_compressed_pickle_py33_np18.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.10.0_compressed_pickle_py33_np18.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.10.0_pickle_py33_np18.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.8.4_compressed_pickle_py27_np17.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.8.4_compressed_pickle_py27_np17.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.11.0_compressed_pickle_py36_np111.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.11.0_compressed_pickle_py36_np111.gz",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.10.0_pickle_py35_np19.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    },
+    {
+      "path": "__MACOSX/biocustody-stateshift-aws-bootstrap-v0.2.0/.venv/lib/python3.12/site-packages/joblib/test/data/._joblib_0.10.0_pickle_py34_np19.pkl.bz2",
+      "issues": [
+        "NESTED_ARCHIVE"
+      ]
+    }
+  ],
+  "status": "PASS_WITH_EXCLUSIONS"
+}

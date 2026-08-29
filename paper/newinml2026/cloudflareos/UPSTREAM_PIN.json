@@ -1,0 +1,23 @@
+{
+  "status": "PINNED",
+  "upstream_repo": "/Users/byron/projects/external/cloudflare-os",
+  "upstream_url": "https://github.com/cloudflare/cloudflare-os.git",
+  "upstream_commit": "14fea8592a6dbc59769d592c0752bbf6a465fa84",
+  "upstream_ref": "HEAD",
+  "commit_date": "2026-08-27T16:34:08Z",
+  "commit_subject": "Bound test task hangs (#359)",
+  "pinned_at_utc": "2026-08-28T07:03:00Z",
+  "pinned_by": "execution_controller",
+  "local_incorporated_control_files": [],
+  "incorporated_file_hashes": {},
+  "acquisition_date": "2026-08-28",
+  "role": "CONTROL_UI_AGENT_WORKSPACE_GATEKEEPERS",
+  "not_role": [
+    "SCIENTIFIC_SOURCE_OF_TRUTH",
+    "FCG_AUTHORITY",
+    "EXPERIMENT_RESULT_STORE"
+  ],
+  "health_status": "NOT_CHECKED",
+  "integration_status": "PIN_ONLY",
+  "note": "Upstream located and pinned; no control files vendored into protein-hinge this wave"
+}

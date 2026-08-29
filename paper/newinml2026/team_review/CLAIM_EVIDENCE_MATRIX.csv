@@ -1,0 +1,8 @@
+claim_id,claim,evidence,status,ceiling
+A,Hash-valid custody can be semantically inconsistent,EXP-GAP-001.1,SUPPORTED
+B,Terminal-state invariant prevented recurrence,EXP-GAP-001.1,SUPPORTED
+C,G3 deterministic contract passes,EXP-004 Lane A,SUPPORTED
+D,"G3 wiring reconcile(symbol,symbol)",EXP-004,SUPPORTED
+E,N=1 bypass unsupported identity admission,EXP-004 Lane B,SUPPORTED
+F,G1/G2 historical counts unverified,EXP-002/003/PROV,SUPPORTED
+G,Morphology null shuffle reproduction,EXP-006,SUPPORTED

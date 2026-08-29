@@ -1,0 +1,10 @@
+concept,proposed_source,source_authority,source_type,canonical_identifier,version/date,acquisition_method,licensing_or_usage_notes,provenance_quality,suitable_for_identity_truth,suitable_for_sequence_truth,suitable_for_variant_truth,suitable_for_clinical_claim,claim_ceiling,citation
+human gene symbol,HGNC Gene Nomenclature Committee,HGNC,controlled vocabulary,https://www.genenames.org/,2024-08,public download/API,HGNC CC BY 4.0,HIGH,yes,partial,no,no,IDENTIFIER_NORMALIZATION,HGNC guidelines
+protein sequence,UniProtKB,UniProt Consortium,sequence database,UniProt accession,2024-08,public FTP/API,UniProt license,HIGH,partial,yes,no,no,SEQUENCE_REFERENCE,UniProt accessions help
+variant clinical assertion,ClinVar,NCBI,database record,ClinVar Variation ID,2024-08,public API/FTP,NCBI terms of use,MEDIUM,no,no,yes,no,VARIANT_RECORD_NOT_CLINICAL_EVIDENCE,ClinVar overview
+real-world data,FDA RWE framework,U.S. FDA,regulatory guidance,RWE Program,2021,policy document,public domain policy,HIGH,no,no,no,no,TERMINOLOGY_BOUNDARY_ONLY,FDA RWE page
+observed morphology ranking,CPJUMP1 partner CSV,pinned digest,cached output,candidate_ranking.csv SHA256,2026-08-13,HTTP GET + hash verify,collaborator artifact pinned not adopted,MEDIUM,no,no,no,no,REPURPOSING_HYPOTHESIS,data/partner/README.md
+synthetic GAP candidates,project fixture,local,synthetic fixture,EXP-GAP-ACCOUNTING-001.1,2026-08-27,generated in repo,repo license,HIGH,no,no,no,no,DETERMINISTIC_CONTRACT,EXP-GAP-ACCOUNTING-001.1
+G1 historical corpus,unknown / unavailable,none,missing,UNRECOVERED,—,not in admitted custody,—,NONE,no,no,no,no,UNVERIFIED_HISTORICAL_CLAIM,EXP-002
+G2 historical corpus,unknown / unavailable,none,missing,UNRECOVERED,—,not in admitted custody,—,NONE,no,no,no,no,UNVERIFIED_HISTORICAL_CLAIM,EXP-003
+biocustody bootstrap zip,operator inbox,external package,bootstrap archive,d78d9f00…,v0.2.0,operator handoff,not executed during intake,MEDIUM,no,no,no,no,SOURCE_ARTIFACT_ONLY,BIOCUSTODY_HANDOFF_RECEIPT.json

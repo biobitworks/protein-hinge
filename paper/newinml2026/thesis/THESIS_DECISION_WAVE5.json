@@ -1,0 +1,19 @@
+{
+  "decision_id": "THESIS-DECISION-WAVE5-v1",
+  "generated_at_utc": "2026-08-28T07:54:00Z",
+  "current_thesis": "THESIS-001",
+  "thesis_002_proposed": false,
+  "promotion_recommended": false,
+  "arbiter_verification_required": true,
+  "rationale": "Wave 5 adds provenance recovery (EXP-002-PROV.1, EXP-003-PROV.1) confirming G1/G2 historical corpora remain unrecoverable from admitted biocustody package. EXP-005 not executed (prereg incomplete). EXP-006 null evidence remains cached with reproducible shuffle spec. Existing claims A–F unchanged.",
+  "supporting_evidence": [
+    "EXP-GAP-ACCOUNTING-001.1",
+    "EXP-004",
+    "EXP-002 COMPLETE_NEGATIVE_PROVENANCE",
+    "EXP-003 COMPLETE_NEGATIVE_PROVENANCE",
+    "EXP-002-PROV.1 COMPLETE_NEGATIVE_PROVENANCE",
+    "EXP-003-PROV.1 COMPLETE_NEGATIVE_PROVENANCE"
+  ],
+  "bounded_successor_thesis_candidate": "Evidence pipelines require semantic verification in addition to cryptographic custody: explicit terminal-state and identity invariants expose failure modes that otherwise remain syntactically valid and admissible.",
+  "candidate_status": "ALIGNED_WITH_THESIS-001; insufficient new replication evidence for promotion"
+}

@@ -1,0 +1,8 @@
+{
+  "receipt_id": "FINAL-FCG-RECEIPT-v1",
+  "manifest": "provenance/PAPER_SOURCE_MANIFEST.v6.jsonl",
+  "accounting": "provenance/PAPER_IMPORT_ACCOUNTING.v6.json",
+  "cfmo": "SKIPPED_UNVERIFIED_CANONICALITY",
+  "seedgraph_live_mutation": false,
+  "generated_at_utc": "2026-08-28T07:58:15Z"
+}

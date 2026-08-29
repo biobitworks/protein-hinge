@@ -1,0 +1,10 @@
+{
+  "schema": "protein_hinge.fcg.final_receipt.team_review",
+  "receipt_id": "FINAL-FCG-RECEIPT-TEAM-REVIEW",
+  "generated_at_utc": "2026-08-29T00:47:00Z",
+  "TEAM_REVIEW_SOURCE_SHA": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "closure_receipt": "paper/newinml2026/receipts/PAPER_CLOSURE_RECEIPT.vNext.json",
+  "seedgraph_validation": "LOCAL_IMPORT/VALIDATION=PASS; LIVE_PRODUCTION_WRITEBACK=DEFERRED",
+  "historical_exact_reproduction_disclaimed": true,
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

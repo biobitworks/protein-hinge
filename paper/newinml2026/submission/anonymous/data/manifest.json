@@ -1,0 +1,34 @@
+{
+  "objects": [
+    {
+      "anonymous_path": "methods/normalize.py",
+      "content_sha256": "20a92c759942306d8487beb218b9662b1b73f67128301cd4f2087377398ffd1d",
+      "source_class": "sanitized_export"
+    },
+    {
+      "anonymous_path": "methods/alias_table.json",
+      "content_sha256": "8c4dc1a0fae530e2eec58d7312a01187b03d2071dde51995411ac775a2c2d01b",
+      "source_class": "sanitized_export"
+    },
+    {
+      "anonymous_path": "methods/rules.py",
+      "content_sha256": "f74815891aac1900de062985bae1c96a28cd372eb88d5689309818f251a2ff07",
+      "source_class": "sanitized_export"
+    },
+    {
+      "anonymous_path": "methods/DATA_CONTRACT.json",
+      "content_sha256": "f0e84462d099648ec8f2e0887e4d5d4f430c008857f46948f50501a0c7ad2aa5",
+      "source_class": "sanitized_export"
+    },
+    {
+      "anonymous_path": "receipts/main_smoke.pdf",
+      "content_sha256": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
+      "source_class": "sanitized_export"
+    },
+    {
+      "anonymous_path": "receipts/BUILD_RECEIPT.json",
+      "content_sha256": "dbf66ef9c98f8ee7ce671eeef75b16b6e2ba56cddc1e8cc9fbe1ee44b5a572e2",
+      "source_class": "sanitized_export"
+    }
+  ]
+}

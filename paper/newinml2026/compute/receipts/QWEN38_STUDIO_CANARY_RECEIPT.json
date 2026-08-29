@@ -1,0 +1,47 @@
+{
+  "receipt_id": "QWEN38_STUDIO_CANARY_RECEIPT",
+  "schema": "protein_hinge.model_canary.v1",
+  "generated_at_utc": "2026-08-28T15:58:07Z",
+  "execution_path": "Ollama_API_direct_fallback",
+  "ollarma_blocked": true,
+  "ollarma_status": "blocked",
+  "ollarma_reason_code": "LOCAL_INFERENCE_TIMEOUT",
+  "host": "magicSTUDIObox.local",
+  "provider": "Ollama",
+  "model_requested": "qwen3.8:27b",
+  "model_effective": "qwen3.8:27b",
+  "model_digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+  "parameter_size": "27.3B",
+  "quantization_level": "Q4_K_M",
+  "capabilities": [
+    "completion",
+    "tools",
+    "thinking",
+    "vision"
+  ],
+  "installation_status": "CURRENTLY_INSTALLED",
+  "prompt_sha256": "23a0a3110682f984b4f5153450fc904332cc8ad5271cffd532c135f136a7f7f5",
+  "settings_sha256": "b3deadc6484bd67b8d962838321a198a858a9bd08072f43361c14e5e66bbd895",
+  "start_utc": "2026-08-28T15:55:47Z",
+  "end_utc": "2026-08-28T15:58:07Z",
+  "latency_sec": 139.984,
+  "raw_output": "{\"model\":\"claude\",\"canary\":\"Q38_CANARY_OK\",\"answer\":\"OK\"}",
+  "raw_output_sha256": "d04edf53a40064b5d7f4a945500e8417ac5e019c0d265d8195588c9e5ee2d74e",
+  "parsed_output": {
+    "model": "claude",
+    "canary": "Q38_CANARY_OK",
+    "answer": "OK"
+  },
+  "output_class": "PROBABILISTIC_MODEL_OUTPUT",
+  "verifier_version": "q38_canary_validator.v1",
+  "verifier_verdict": "PASS",
+  "verifier_reason": "PASS",
+  "token_counts": {
+    "prompt_tokens": 72,
+    "completion_tokens": 111
+  },
+  "swap_pages_before": {},
+  "swap_pages_after": {},
+  "tokens_per_sec": 0.79,
+  "verifier_reprocessed_utc": "2026-08-28T15:58:18Z"
+}

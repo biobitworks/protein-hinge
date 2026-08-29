@@ -1,0 +1,46 @@
+{
+  "lane": "A",
+  "classification": "DETERMINISTIC_CONTRACT_TEST",
+  "fixture_source": "gap/normalize.py _self_test cases + alias_table.json",
+  "alias_table_sha256": "8c4dc1a0fae530e2eec58d7312a01187b03d2071dde51995411ac775a2c2d01b",
+  "N_total": 5,
+  "N_pass": 5,
+  "rows": [
+    {
+      "canonical_string": "TTR",
+      "raw_source_string": "TTR",
+      "C0_outcome": "EXACT",
+      "expected": "EXACT",
+      "pass": true
+    },
+    {
+      "canonical_string": "PDCD1",
+      "raw_source_string": "PD-1",
+      "C0_outcome": "MAPPED",
+      "expected": "MAPPED",
+      "pass": true
+    },
+    {
+      "canonical_string": "TAZ",
+      "raw_source_string": "tafazzin",
+      "C0_outcome": "UNRESOLVED",
+      "expected": "UNRESOLVED",
+      "pass": true
+    },
+    {
+      "canonical_string": "CFB",
+      "raw_source_string": "factor c",
+      "C0_outcome": "UNRESOLVED",
+      "expected": "UNRESOLVED",
+      "pass": true
+    },
+    {
+      "canonical_string": "PARP1",
+      "raw_source_string": "",
+      "C0_outcome": "UNRESOLVED",
+      "expected": "UNRESOLVED",
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "EXP-003",
+  "title": "G2 CNV attribution — point-of-origin recovery",
+  "classification": "PROVENANCE_RECOVERY",
+  "status": "COMPLETE_NEGATIVE_PROVENANCE",
+  "terminal_classification_note": "Historical G2 source corpus, derivation code, and candidate counts could not be recovered from admitted protein-hinge Git/source custody; no scientifically admissible retrospective rerun was executed.",
+  "completed_at_utc": "2026-08-28T07:25:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "WAVE3_BOOTSTRAP_SHA": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "unverified_historical_claims_artifact": "experiments/EXP-003/UNVERIFIED_HISTORICAL_CLAIMS.json",
+  "historical_claim_candidates": {
+    "label": "UNVERIFIED_HISTORICAL_CLAIM",
+    "note": "Numeric candidates relocated to UNVERIFIED_HISTORICAL_CLAIMS.json; do not cite as results",
+    "promotion_status": "FORBIDDEN"
+  },
+  "search_scope": [
+    "protein-hinge tree @ 38c8c15",
+    "full git history (all branches)",
+    "git pickaxe for G2 count literals and gene symbols",
+    "deleted files",
+    "gap/, fcg/, fto/, db/biocustody.db, scripts/",
+    "biocustody.zip external pointer UNAVAILABLE"
+  ],
+  "accounting_invariant_target": "N_fetched == N_admitted + N_excluded + N_abstained + N_failed",
+  "accounting_invariant_status": "NOT_APPLICABLE",
+  "accounting_invariant_reason": "No fetch corpus or row-level ledger located",
+  "missing_batch_discrepancy_cause": "UNKNOWN",
+  "exp003_1_rerun": "NOT_EXECUTED",
+  "exp003_1_reason": "Insufficient canonical source corpus and G2 guard code in protein-hinge custody",
+  "provenance_summary": {
+    "LOCATED_EXACT": 0,
+    "LOCATED_PARTIAL": 7,
+    "CONFLICTING": 0,
+    "UNAVAILABLE": 1,
+    "NOT_FOUND": 10
+  },
+  "provenance_records": [
+    {
+      "claim_component": "G2 batch accounting corpus",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No ClinVar/CNV batch ledger or derivation code in protein-hinge history",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "multi-gene CNV rate",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No multi-gene CNV computation located",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "gene-level attribution transitions",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "Gene symbols in fto/registry only; no G2 guard outputs",
+      "candidate_sources": [
+        {
+          "path": "fto/registry_digests.json",
+          "relationship": "symbol registry context only"
+        }
+      ]
+    },
+    {
+      "claim_component": "multi-gene knockout axis (design)",
+      "disposition": "LOCATED_PARTIAL",
+      "confidence": "design_only",
+      "search_evidence": "fto/FTO_DESIGN.md design prose",
+      "candidate_sources": [{"path": "fto/FTO_DESIGN.md", "commit": "b23af48"}]
+    },
+    {
+      "claim_component": "ClinVar/CNV ingestion code",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No ClinVar or copy-number modules in history",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "G2 guard ON/OFF pipeline",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "GAP lane covers different semantic accounting",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "biocustody.zip handoff corpus",
+      "disposition": "UNAVAILABLE",
+      "confidence": "external_pointer",
+      "search_evidence": "External pointer absent from Downloads",
+      "candidate_sources": []
+    }
+  ],
+  "terminology_ceiling": "unsupported attribution rate / gene-level evidence contamination until wrongness predicate established",
+  "terminal_state": "COMPLETE_NEGATIVE_PROVENANCE"
+}

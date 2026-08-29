@@ -1,0 +1,24 @@
+{
+  "schema": "protein_hinge.q38_test_stack_closeout.v1",
+  "recorded_at_utc": "2026-08-28T22:50:00Z",
+  "branch": "paper/newinml-fcg-20260828",
+  "git_commit": "40e35abbb9d8bc3d25f26efadb822ebb31c76799",
+  "baseline_freeze_sha": "fc79ae854a83014e21a7b99eda919d02d7696ac3",
+  "terminal_state": "CLOSED_INFRASTRUCTURE_EVIDENCE",
+  "Q38_LANE_STATE": "CLOSED",
+  "model": "qwen3.8:27b",
+  "digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+  "governed_local_pass": true,
+  "flash_next_executed": false,
+  "comparison_established": false,
+  "newinml_thesis_impact": "NONE",
+  "primary_receipts": [
+    "compute/test-stack/receipts/Q38_LOCAL_BASELINE_RECEIPT.json",
+    "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json",
+    "compute/test-stack/receipts/QWEN38_OLLARMA_GOVERNED_RECEIPT.json",
+    "compute/test-stack/experiments/EXP-Q38-COMP-001/EXPERIMENT_RECEIPT.json"
+  ],
+  "claim_ceiling": "TEST_STACK_INFRASTRUCTURE",
+  "note": "No further Q38 trials for Protein Hinge; lane closed as infrastructure evidence only",
+  "SIGNATURE_STATE": "NOT_SIGNED"
+}

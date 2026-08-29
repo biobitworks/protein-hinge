@@ -1,0 +1,56 @@
+{
+  "schema": "protein_hinge.seeds_of_truth.team_review",
+  "generated_at_utc": "2026-08-29T00:44:00Z",
+  "TEAM_REVIEW_SOURCE_SHA": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "generated_from_graph_hash": "888be9013f91bc8fd62741953a2d9f13f3d231db61c84b46dcd899fb9a9692e5",
+  "seeds": [
+    {
+      "seed_id": "GAP_HISTORICAL_AGGREGATE_INCONSISTENCY",
+      "claim": "Historical aggregate reported zero abstentions while row ledger contained three",
+      "admissible_wording": "evidence-consistent within declared audit scope",
+      "prohibited_wording": "population error rate"
+    },
+    {
+      "seed_id": "GAP_SUCCESSOR_ACCOUNTING_REPAIR",
+      "claim": "Successor derived aggregates restore row-level invariant consistency",
+      "source": "EXP-GAP-ACCOUNTING-001.1"
+    },
+    {
+      "seed_id": "G1_SUCCESSOR_SEQUENCE_GUARD",
+      "source": "EXP-002-SUCCESSOR-001",
+      "claim": "Contemporary corpus: 364 in, 98 emitted, 266 abstained",
+      "historical_exact_reproduction": "NO",
+      "classification": "RETROSPECTIVE_SUCCESSOR_EVALUATION"
+    },
+    {
+      "seed_id": "G2_SUCCESSOR_CNV_ACCOUNTING",
+      "source": "EXP-003-SUCCESSOR-001",
+      "claim": "746 = 364 + 382 + 0 contemporary ClinVar accounting",
+      "historical_exact_reproduction": "NO"
+    },
+    {
+      "seed_id": "G2_TAFAZZIN_API_FAILURE_MECHANISM",
+      "claim": "ESummary JSON conversion ceiling recovered via split-and-retry",
+      "historical_failure_mechanism_recovered": "YES"
+    },
+    {
+      "seed_id": "G3_OBSERVED_SOURCE_ABLATION",
+      "source": "EXP-004",
+      "claim": "Single observed-source pair under identity bypass"
+    },
+    {
+      "seed_id": "EXP006_MORPHOLOGY_NULL",
+      "source": "EXP-006",
+      "claim": "Cached morphology null benchmark retained"
+    },
+    {
+      "seed_id": "Q38_INFRASTRUCTURE_CLOSEOUT",
+      "source": "compute/test-stack/Q38_TEST_STACK_CLOSEOUT.json",
+      "newinml_results": false
+    },
+    {
+      "seed_id": "SUBMISSION_CONFORMANCE",
+      "claim": "Anonymous package and checklist under team-review freeze"
+    }
+  ]
+}

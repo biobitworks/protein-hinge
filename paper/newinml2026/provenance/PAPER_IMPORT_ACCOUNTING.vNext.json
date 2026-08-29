@@ -1,0 +1,13 @@
+{
+  "schema": "protein_hinge.paper.import_accounting.vNext",
+  "generated_at_utc": "2026-08-29T00:44:00Z",
+  "closure_subject_sha": "073d76c19b230fd8d971fe4e599a15b420ae794d",
+  "IMPORTED": 223,
+  "DUPLICATE": 6,
+  "UNAVAILABLE": 0,
+  "EXCLUDED": 0,
+  "FAILED": 0,
+  "QUARANTINED": 0,
+  "total_objects": 229,
+  "invariant": "IMPORTED + DUPLICATE + UNAVAILABLE + EXCLUDED + FAILED + QUARANTINED == total_objects"
+}

@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[dblblindworkshop]{neurips_2026}
+\workshoptitle{New in Machine Learning (NewInML) at NeurIPS 2026}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\title{Verify-or-Abstain Evidence Pipelines:\\When Cryptographic Custody Is Necessary but Not Sufficient}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Scientific evidence pipelines increasingly rely on content-addressed custody and hash-valid artifacts, yet syntactically valid objects can remain semantically inconsistent. We present an evidence-pipeline reliability study centered on explicit terminal states, row-level accounting invariants, and closed-vocabulary identity guards. Preregistered audits show that (i) a historical aggregate reported zero abstentions while row-level data contained three; (ii) a successor implementation with derived aggregates restores invariant consistency; (iii) a deterministic identity contract passes under synthetic fixtures but a single observed-source pair admits downstream passage when a guard is bypassed; and (iv) historical sequence and copy-number corpora could not be recovered from admitted provenance. A morphology null benchmark is retained as disclosed negative cached evidence. We do not claim therapeutic efficacy, clinical utility, population-level biomedical error rates, or real-world evidence.
+\end{abstract}
+
+\section{Introduction}
+Machine-learning systems for biomedical hypothesis generation must separate \emph{what was computed} from \emph{what may be claimed}. Content-addressed storage and hash verification establish integrity of bytes, not meaning: aggregates can disagree with row ledgers, evaluation wiring can fail to exercise intended disagreements, and missing corpora can leave historical numbers unverified. We frame this work as an evidence-pipeline control problem: normalize, validate, admit or abstain, derive results, and attach claim ceilings before projection to manuscripts \cite{prov_dm,stodden2016}.
+
+\section{Related Work and Terminology}
+Selective prediction and reject options allow models to abstain under uncertainty \cite{chow1970,geifman2017}. Workflow and data provenance standards document lineage without guaranteeing semantic correctness \cite{prov_dm}. Biomedical identifier normalization relies on authorities such as HGNC and UniProt \cite{hgnc2021,uniprot2023}. Reproducibility guidance distinguishes replication from reproducibility and encourages reporting null results \cite{nas2019}. Regulatory Real-World Evidence frameworks define boundaries we do not claim here \cite{fda_rwe}.
+
+\input{sections/terminology}
+
+\section{Verify-or-Abstain Architecture}
+Figure~\ref{fig:pipeline} sketches the pipeline: \textsc{Source} $\rightarrow$ normalize/validate $\rightarrow$ admit or abstain $\rightarrow$ derived result $\rightarrow$ claim with ceiling $\rightarrow$ frozen custody graph. Semantic verification (terminal states, invariants, identity guards) complements cryptographic custody.
+
+\begin{figure}[t]
+  \centering
+  \fbox{\parbox{0.92\linewidth}{\small
+  \textbf{Source} $\rightarrow$ \textbf{Normalize / Validate} $\rightarrow$ \textbf{Admit} $|$ \textbf{Abstain} $\rightarrow$ \textbf{Derived artifact} $\rightarrow$ \textbf{Claim (ceiling)} $\rightarrow$ \textbf{FCG custody}\\[0.4em]
+  \emph{Cryptographic layer:} SHA-256 / content address \hfill
+  \emph{Semantic layer:} row invariants, identity contract}}
+  \caption{Verify-or-abstain evidence pipeline. Custody without semantic checks can admit inconsistent aggregates.}
+  \label{fig:pipeline}
+\end{figure}
+
+\section{Experimental Design}
+Experiments are preregistered where noted; August~13 historical runs are preserved and not retroactively relabeled. EXP-GAP-ACCOUNTING-001.1 repairs aggregate derivation from rows. EXP-004 ablates a closed-vocabulary identity guard (Lane~A: contract; Lane~B: $N{=}1$ observed-source pair). EXP-002/003 provenance audits and external recovery (EXP-002-PROV.1, EXP-003-PROV.1) search admitted custody without rerunning frozen closeouts. EXP-005 preregistration remains locked but corpus/metric incomplete (not executed). EXP-006 documents a cached morphology null benchmark.
+
+\section{Results}
+Table~\ref{tab:results} summarizes terminal classifications and claim ceilings from machine-readable receipts.
+
+\begin{table}[t]
+  \centering
+  \small
+  \begin{tabular}{@{}llllrp{0.22\linewidth}@{}}
+    \toprule
+    Experiment & Unit & Guard & Condition & $N$ & Ceiling \\
+    \midrule
+    GAP accounting repair & row & aggregate invariant & successor run & 4 & semantic audit \\
+    G3 contract & fixture & identity & Lane A & synth. & deterministic \\
+    G3 source ablation & pair & identity bypass & Lane B & 1 & descriptive \\
+    G1 successor eval & record & sequence guard & contemporary & 364 & retrospective \\
+    G2 successor eval & record & CNV/accounting & contemporary & 746 & retrospective \\
+    G1 provenance & corpus & --- & not recovered & --- & audit only \\
+    G2 provenance & corpus & --- & not recovered & --- & audit only \\
+    Morphology null & ranking & shuffle null & cached & 50 & repurposing hyp. \\
+    \bottomrule
+  \end{tabular}
+  \caption{Primary results from frozen experiment artifacts. Historical G1/G2 counts are excluded.}
+  \label{tab:results}
+\end{table}
+
+\textbf{GAP accounting.} Historical summary reported zero abstentions; row-level candidates contained three \textsc{Abstain} terminals. Successor run: $N_{\text{input}}{=}4$, $N_{\text{admitted}}{=}1$, $N_{\text{abstained}}{=}3$, summary abstain count $=3$; invariants pass.
+
+\textbf{Identity guard.} Lane~A: deterministic closed-vocabulary contract passes. Lane~B: one observed source/canonical pair (\texttt{TAZ/cardiolipin module} $\rightarrow$ \texttt{TAZ}) yields \textsc{Abstain} under guard and downstream admission under bypass (\emph{unsupported identity admission}); not a population error rate. Historical evaluation invoked \texttt{reconcile(symbol, symbol)}; regression confirms the wiring defect.
+
+\textbf{G1 successor evaluation.} On the admitted contemporary ClinVar subset ($N{=}364$), a retrospective successor sequence guard emitted 98 records and abstained 266 ($364{=}98{+}266$): frameshift 131, no protein notation 118, residue mismatch 16, position out of range 1. This is \emph{not} exact historical reproduction.
+
+\textbf{G2 successor evaluation.} Contemporary fetch accounting: 746 IDs fetched, 364 kept, 382 excluded for large CNV, 0 without summary ($746{=}364{+}382{+}0$). A historical 100-ID ESummary failure ($\sim$16.5\,MB XML vs.\ 10\,MB JSON ceiling) is recovered via split-and-retry; the contemporary 746-row corpus does not reproduce a historical 742-row corpus.
+
+\textbf{Provenance recovery.} Admitted external bootstrap package (206\,MB, SHA-256 verified) does not contain recoverable G1/G2 derivation chains; numeric substring matches in unrelated CSV fields are rejected as evidence.
+
+\textbf{Null benchmark.} Cached evaluation: known-pair rank 28/50, reciprocal-rank enrichment vs.\ shuffle $<1$; disclosed miss not suppressed.
+
+\section{Discussion and Limitations}
+Scope is intentionally small: $N{=}1$ observed-source ablation; G1/G2 inputs not recovered; same designers performed parts of evaluation; no therapeutic efficacy, biological rescue, clinical utility, RWE, or population prevalence claims; EXP-005 replication not executed pending corpus freeze; infrastructure integrity does not establish semantic correctness.
+
+\section{Reproducibility and Provenance}
+Artifacts, preregistrations, and SHA-256 manifests reside in the project Frozen Custody Graph. Anonymous supplementary materials omit identifying metadata. Historical unverified counts remain quarantined as \texttt{UNVERIFIED\_HISTORICAL\_CLAIM}.
+
+\section{Conclusion}
+Hash-valid custody is necessary but insufficient for trustworthy evidence pipelines. Explicit terminal states and invariants surface failure modes that remain syntactically admissible---a prerequisite before any biomedical performance claim.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\input{checklist}
+
+\end{document}

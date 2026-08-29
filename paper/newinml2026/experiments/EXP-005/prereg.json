@@ -1,0 +1,43 @@
+{
+  "experiment_id": "EXP-005",
+  "version": "1.0.0",
+  "classification": "REPLICATION",
+  "status": "PREREGISTERED_LOCKED",
+  "locked_at_utc": "2026-08-28T07:02:00Z",
+  "outcome_exposure": "NO",
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "40256c628903185a37eeddce3635b4573c1c4d54",
+  "h0": "Independent frozen corpus replication yields aggregate metrics statistically indistinguishable from preregistered primary metric under declared test",
+  "h1": "Independent frozen corpus replication yields aggregate metrics outside preregistered equivalence bounds for primary metric",
+  "mesi": "Minimum effect size interest: 5 percentage-point shift in primary accounting invariant rate (if applicable) or Cohen's d=0.5 for continuous metrics",
+  "primary_metric": "TBD at corpus freeze — must be declared before any outcome file is opened",
+  "statistical_test": "Two-one-sided-tests (TOST) equivalence if bounds pre-specified; otherwise two-sample permutation test with 10,000 permutations",
+  "alpha": 0.05,
+  "power_sample_size_rationale": "Determined at corpus freeze based on available independent records; if N<30, use exact/permutation methods only",
+  "multiple_comparison_correction": "Benjamini-Hochberg FDR across secondary metrics if k>1",
+  "decision_tree": {
+    "pass": "Replication within equivalence bounds → REPLICATION_SUCCESS FCO",
+    "fail": "Outside bounds → CONTRADICTION FCO linked to THESIS; do not suppress",
+    "indeterminate": "Corpus not independent or N insufficient → REPLICATION_PREREGISTERED_NOT_EXECUTED"
+  },
+  "missing_data_policy": "ABSTAIN per record with explicit reason; exclude from aggregate only via preregistered rule logged before inspection",
+  "terminal_accounting": {
+    "invariant": "N_input == N_valid + N_excluded + N_abstained + N_loud_failure",
+    "aggregates_derived_from_rows": true
+  },
+  "corpus_freezing_procedure": [
+    "Identify genuinely independent corpus source distinct from prescripted GAP/FCG demo paths",
+    "Snapshot bytes to experiments/EXP-005/inputs/ with SHA-256 manifest",
+    "Lock analysis plan JSON before opening any outcome CSV/JSON",
+    "Record acquisition timestamp and license"
+  ],
+  "source_acquisition_rule": "Only sources with LOCAL_CUSTODY or IMPORTED terminal state in PAPER_SOURCE_MANIFEST.v2.jsonl",
+  "stopping_rule": "Single pre-registered analysis pass; no optional peeking; sensitivities pre-listed only",
+  "sensitivity_analyses": [
+    "Alternate isoform policy if sequence data involved",
+    "Stricter abstention threshold for GAP-like joins"
+  ],
+  "failure_indeterminate_branch": "If no independent corpus before deadline → emit REPLICATION_PREREGISTERED_NOT_EXECUTED; do not substitute retrospective corpus",
+  "execution_status": "NOT_STARTED",
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS"
+}

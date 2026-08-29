@@ -1,0 +1,15 @@
+{
+  "schema": "protein_hinge.manuscript.template_source.v1",
+  "acquired_at_utc": "2026-08-28T07:22:00Z",
+  "authoritative_source": {
+    "primary_url": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
+    "cfp_overleaf_link": "https://www.overleaf.com/latex/templates/formatting-instructions-for-neurips-2026/bjdwqfdkyftc",
+    "cfp_html_artifact": "paper/newinml2026/submission/sources/newinml2026_cfp.html",
+    "note": "Direct media.neurips.cc zip path differs from failed 404 URL neurips_2026.zip; CFP Overleaf link is secondary discovery surface"
+  },
+  "template_archive_sha256": "82473931e3ef710fcd3f4a8cd4119b9de32e56825f90f9e5a6d55f2d01b817d9",
+  "neurips_2026_sty_sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+  "dblblindworkshop_supported": true,
+  "workshoptitle_supported": true,
+  "evidence": "neurips_2026.sty lines 81-92 declare workshoptitle and dblblindworkshop option"
+}

@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-08-29T05:16:11Z",
+  "git_version": {
+    "status": "PASS",
+    "observed": "git version 2.54.0",
+    "command": "git --version"
+  },
+  "repository_head": "3d4a6ada2654acce9b2591a51c30ff3bf5e4cc88",
+  "branch": "paper/newinml-fcg-20260828",
+  "elvis_fork_head": "6e47dbe367d9223c15c80ef27ca2634b50054035",
+  "python_version": {
+    "status": "PASS",
+    "observed": "Python 3.14.7",
+    "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 --version"
+  },
+  "entry_points": [
+    "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+    "paper/newinml2026/scripts/anonymization_scan.py",
+    "paper/newinml2026/manuscript/build.sh"
+  ]
+}

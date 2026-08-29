@@ -1,0 +1,72 @@
+[
+  {
+    "line": 30,
+    "trigger": "silent error",
+    "validation_state": "OVERCLAIM",
+    "note": "Requires independent semantic-wrongness predicate",
+    "snippet": "\\title{Enforced Abstention Prevents Silent Errors in Biomedical Evidence"
+  },
+  {
+    "line": 42,
+    "trigger": "dominant failure mode",
+    "validation_state": "OVERCLAIM",
+    "note": "Require dominance evidence or weaken to 'a failure mode'",
+    "snippet": "dominant failure mode. A \\emph{silent error} is an output that is wrong,"
+  },
+  {
+    "line": 42,
+    "trigger": "silent error",
+    "validation_state": "OVERCLAIM",
+    "note": "Requires independent semantic-wrongness predicate",
+    "snippet": "dominant failure mode. A \\emph{silent error} is an output that is wrong,"
+  },
+  {
+    "line": 72,
+    "trigger": "silent error",
+    "validation_state": "OVERCLAIM",
+    "note": "Requires independent semantic-wrongness predicate",
+    "snippet": "failure mode is the \\emph{silent error}: an output that is (i)~wrong,"
+  },
+  {
+    "line": 83,
+    "trigger": "silent error",
+    "validation_state": "OVERCLAIM",
+    "note": "Requires independent semantic-wrongness predicate",
+    "snippet": "class of silent error. We make three contributions."
+  },
+  {
+    "line": 137,
+    "trigger": "silent error",
+    "validation_state": "OVERCLAIM",
+    "note": "Requires independent semantic-wrongness predicate",
+    "snippet": "We report the \\emph{silent error rate}: the fraction of outputs the unguarded"
+  },
+  {
+    "line": 154,
+    "trigger": "silent error",
+    "validation_state": "OVERCLAIM",
+    "note": "Requires independent semantic-wrongness predicate",
+    "snippet": "\\caption{Silent errors prevented. Rates are over what the unguarded pipeline"
+  },
+  {
+    "line": 162,
+    "trigger": "structure-prediction",
+    "validation_state": "CONTRADICTED",
+    "note": "No folding experiment in admitted evidence (SOT-009)",
+    "snippet": "built from real residues, and a structure-prediction tool accepts it without"
+  },
+  {
+    "line": 172,
+    "trigger": "honest zero",
+    "validation_state": "OVERCLAIM",
+    "note": "Replace with scoped accounting language",
+    "snippet": "to an honest zero. The unguarded pipeline reports all three as supported, and"
+  },
+  {
+    "line": 185,
+    "trigger": "silent error",
+    "validation_state": "OVERCLAIM",
+    "note": "Requires independent semantic-wrongness predicate",
+    "snippet": "A trivial policy that declines everything also achieves a zero silent error"
+  }
+]

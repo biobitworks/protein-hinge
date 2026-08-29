@@ -1,0 +1,19 @@
+{
+  "resolved_at_utc": "2026-08-28T07:02:00Z",
+  "SEEDGRAPH_REPO": "/Users/byron/projects/active/seedgraph",
+  "SEEDGRAPH_HEAD": "6807b1960dd1e981afbf13e79c2f29c3d803b79a",
+  "SEEDGRAPH_VERSION": "0.1.0",
+  "SEEDGRAPH_ENTRYPOINT": "cd /Users/byron/projects/active/seedgraph && uv run seedgraph",
+  "SEEDGRAPH_ENVIRONMENT": "uv managed venv (Python >=3.12,<3.13 per pyproject.toml)",
+  "cli_commands_observed": [
+    "uv run seedgraph version",
+    "uv run seedgraph import --type evidence <paths>",
+    "uv run seedgraph pack-lint <manifest>",
+    "uv run seedgraph verify-proof",
+    "uv run seedgraph publication-reingest (dry-run gate per docs/PUBLICATION_REINGEST_GATE.md)"
+  ],
+  "live_container": "seedgraph-neo4j (OrbStack)",
+  "LIVE_WRITEBACK": "DEFERRED",
+  "deferral_reason": "protein-hinge deferred_writeback_candidates.jsonl policy; no operator approval for Neo4j promotion",
+  "local_validation_path": "manifest schema validation + entrypoint resolution (this session); full import deferred"
+}

@@ -1,0 +1,45 @@
+{
+  "crosswalk": [
+    {
+      "artifact_id": "uploaded_main_tex",
+      "upload_blob_sha": "ec00728acee80d5f3f9824e706cbc642cd085e70",
+      "upload_content_sha256": "e8e631d5a36f34cf74a6f960f6d5cc2e7b9c8245f05dc312d664b779fe596b3b",
+      "github_path": "paper/main.tex",
+      "github_blob_sha": "ec00728acee80d5f3f9824e706cbc642cd085e70",
+      "relationship": "EXACT_COPY_OF",
+      "byte_size": 14656
+    },
+    {
+      "artifact_id": "uploaded_concerns",
+      "upload_blob_sha": "0ee0da4d9b6f8b97500ab897798b2e72ea27dc53",
+      "upload_content_sha256": "1d1cbe47a2712fbbfdab0570b1a3e21de8c47b25f1c9d60fad7684d03b379e19",
+      "github_path": "docs/PAPER_CONCERNS_FOR_BYRON.md",
+      "github_blob_sha": "0ee0da4d9b6f8b97500ab897798b2e72ea27dc53",
+      "relationship": "EXACT_COPY_OF",
+      "byte_size": 9345
+    },
+    {
+      "artifact_id": "uploaded_methods",
+      "upload_blob_sha": "0de731382cc023631f96ace9831f0e8ad99026a3",
+      "upload_content_sha256": "a8750f2bb51d9b7bf550f334e9e5c757629328afdda5c245c3ed986795923822",
+      "github_path": "docs/PAPER_METHODS_OUTLINE.md",
+      "github_blob_sha": "4622e2abe067fc56df35209fcf78dd8861d15296",
+      "relationship": "SUCCESSOR_OF",
+      "byte_size": 9257
+    }
+  ],
+  "methods_delta": {
+    "uploaded_methods_blob": "0de731382cc023631f96ace9831f0e8ad99026a3",
+    "current_github_methods_blob": "4622e2abe067fc56df35209fcf78dd8861d15296",
+    "content_equal": false,
+    "relationship": "SUCCESSOR_OF",
+    "stale_occurrences_detected": [
+      {
+        "pattern": "24.6%",
+        "line": 180,
+        "description": "G1 superseded measurement",
+        "context": "**4.3 Results.** The table (G1 24.6%; G2 51.2% of records, three genes from"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "proposal_id": "THESIS_DELTA_PROPOSAL_EXP002",
+  "created_at_utc": "2026-08-28T07:02:00Z",
+  "parent_thesis": "THESIS-001",
+  "proposed_successor": null,
+  "promotion_recommended": false,
+  "reason": "G1 provenance NOT_FOUND/UNAVAILABLE — insufficient evidence to strengthen guard-ablation thesis statement",
+  "evidence_delta_ref": "EVIDENCE_DELTA_EXP002",
+  "operator_actions_suggested": [
+    "Hash and ingest biocustody.zip if G1 artifacts expected there",
+    "Supply external pointer if G1 lived in another repo (xenodisorder/cloudmer lane, etc.)",
+    "Do not recreate 28/123 without located canonical corpus"
+  ],
+  "current_thesis_remains": "THESIS-001"
+}

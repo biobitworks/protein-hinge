@@ -1,0 +1,12 @@
+{
+  "ABSTAIN": 3,
+  "derived_from": "candidates.csv grade column",
+  "diseases_with_no_target_above_threshold": 3,
+  "lookups_that_failed": 0,
+  "reasons": [
+    "G001_NO_TARGET:3"
+  ],
+  "schema": "protein_hinge.gap.abstentions.v2",
+  "supersedes_run": "2026-08-13",
+  "targets_whose_names_did_not_reconcile": 0
+}

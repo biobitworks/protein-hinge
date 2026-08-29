@@ -1,0 +1,29 @@
+{
+  "receipt_id": "CURSOR_CLOUD_ENVIRONMENT_RECEIPT",
+  "schema": "protein_hinge.environment_validation.v1",
+  "classification": "ENVIRONMENT_VALIDATION_ONLY",
+  "execution_host": "cursor",
+  "hostname_scope": "Cursor Cloud agent",
+  "os": "Linux",
+  "arch": "x86_64",
+  "repo_path": "/workspace",
+  "branch": "main",
+  "head_at_execution": "94f8949",
+  "python": "3.12.3",
+  "node": "22.14.0",
+  "checks": {
+    "db_build_db_py": "PASS",
+    "site_verify_test_js": "PASS",
+    "fto_fto_py_refusal": "PASS",
+    "dashboard_http": 200,
+    "browser_merkle_verification": "MATCH"
+  },
+  "scope_boundary": {
+    "must_not_merge_into": [
+      "magicSTUDIObox.local Qwen execution",
+      "paper/newinml-fcg-20260828 Qwen evidence",
+      "NewInML scientific claims"
+    ]
+  },
+  "scientific_claim_promotion": false
+}

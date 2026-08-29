@@ -1,0 +1,12 @@
+neighborhood,concept,primary_citation,doi_or_url,supported_proposition
+abstention,reject option,chow1970,10.1109/TIT.1970.1054470,Classification with abstention region
+abstention,selective prediction,geifman2017,,Coverage-quality tradeoff in prediction
+provenance,data provenance,prov_dm,https://www.w3.org/TR/prov-dm/,Entity lineage and activities
+provenance,reproducible pipelines,stodden2016,10.1126/science.aah6168,Computational reproducibility practices
+validation,semantic consistency,prov_dm,,Provenance does not guarantee semantic agreement
+validation,fail-closed abstention,chow1970,,Reject under uncertainty
+identifiers,HGNC gene symbols,hgnc2021,10.1093/nar/gkaa980,Human gene symbol authority
+identifiers,UniProt accessions,uniprot2023,10.1093/nar/gkac1052,Protein sequence reference
+reproducibility,replication vs reproduction,nas2019,10.17226/25303,Distinction and reporting norms
+reproducibility,negative results,nas2019,,Null findings as first-class evidence
+regulatory,RWD/RWE boundaries,fda_rwe,https://www.fda.gov/...,This paper does not claim RWE

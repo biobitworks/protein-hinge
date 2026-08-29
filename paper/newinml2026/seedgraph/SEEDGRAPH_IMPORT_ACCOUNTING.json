@@ -1,0 +1,9 @@
+{
+  "N_manifest_rows": 229,
+  "N_pending": 229,
+  "N_ingested": 0,
+  "N_failed": 0,
+  "N_quarantined": 0,
+  "live_writeback_executed": false,
+  "note": "Local manifest only; live Neo4j import not executed"
+}

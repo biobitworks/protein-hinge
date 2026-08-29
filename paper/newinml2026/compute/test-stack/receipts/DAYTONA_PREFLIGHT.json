@@ -1,0 +1,14 @@
+{
+  "preflight_id": "DAYTONA-Q38-PREFLIGHT-v1",
+  "recorded_at_utc": "2026-08-28T16:00:00Z",
+  "credential_state": "ABSENT",
+  "env_var": "DAYTONA_API_KEY",
+  "terminal": "BLOCKED_REMOTE_COMPUTE",
+  "preferred_gpu": "NVIDIA H200",
+  "rationale": "qwen3.8-flash-next:125b-a6b-nvfp4 (~105GB) requires remote GPU; not feasible on 32GB Studio",
+  "h100_sufficiency": "INSUFFICIENT_FOR_FULL_DEVICE_RESIDENCY",
+  "cpu_offload_valid_for_matched_comparison": false,
+  "quantization_substitution_allowed": false,
+  "flash_next_pull_status": "NOT_ATTEMPTED",
+  "destroy_state": "N/A"
+}

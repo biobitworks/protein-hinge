@@ -1,0 +1,87 @@
+{
+  "generated_at_utc": "2026-08-28T07:02:53Z",
+  "git_head": "40256c628903185a37eeddce3635b4573c1c4d54",
+  "hostname": "magicSTUDIObox.local",
+  "requirements": [
+    {
+      "affected": "manuscript/page_limit",
+      "quotation": "Format: 2\u20138 pages (excluding references) using the NeurIPS 2026 workshop template.",
+      "remediation": "Obtain and hash NeurIPS 2026 workshop LaTeX template when URL resolves",
+      "requirement_id": "REQ-001",
+      "source_artifact": "submission/sources/newinml2026_cfp.html",
+      "status": "PARTIAL"
+    },
+    {
+      "affected": "submission/anonymous_artifact",
+      "hard_gate": true,
+      "quotation": "Review process: Double-blind via OpenReview. Submissions must be fully anonymized.",
+      "remediation": "Remove author-identifying GitHub URLs and git metadata from anonymous PDF; use OpenReview profile",
+      "requirement_id": "REQ-002",
+      "source_artifact": "submission/ANONYMIZATION_RECEIPT.json",
+      "status": "PASS",
+      "validation": {
+        "anonymous_package": "submission/anonymous/",
+        "scan_terminal": "CLEAN",
+        "N_blocking": 0
+      }
+    },
+    {
+      "affected": "submission/venue_policy",
+      "quotation": "Non-archival: Work may be submitted to or published at other venues concurrently.",
+      "remediation": null,
+      "requirement_id": "REQ-003",
+      "source_artifact": "submission/sources/newinml2026_cfp.html",
+      "status": "PASS"
+    },
+    {
+      "affected": "submission/eligibility",
+      "quotation": "Eligibility: Open to anyone who has not yet published at a top ML conference.",
+      "remediation": "Operator attestation required",
+      "requirement_id": "REQ-004",
+      "source_artifact": "submission/sources/newinml2026_cfp.html",
+      "status": "NOT_APPLICABLE"
+    },
+    {
+      "affected": "submission/deadline",
+      "quotation": "Paper Submission Deadline: August 29, 2026",
+      "remediation": null,
+      "requirement_id": "REQ-005",
+      "source_artifact": "submission/sources/newinml2026_cfp.html",
+      "status": "PASS"
+    },
+    {
+      "affected": "manuscript/format",
+      "hard_gate": true,
+      "quotation": "Excluding submissions that are not serious: blank pages, topics not in ML, papers not following format.",
+      "remediation": null,
+      "requirement_id": "REQ-006",
+      "source_artifact": "paper/newinml2026/manuscript/BUILD_RECEIPT.json",
+      "status": "PASS",
+      "validation": {
+        "template_source": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
+        "dblblindworkshop": true,
+        "smoke_pdf_sha256": "60ff796d2a468a59a7598269c26aec546df4d6b8cb3d4933a104e3a4a281347b",
+        "compile_result": "PASS"
+      }
+    },
+    {
+      "affected": "submission/openreview_profile",
+      "hard_gate": true,
+      "quotation": "OpenReview profile must be up to date with publications and affiliations before submission.",
+      "remediation": "Operator must verify OpenReview profile current; not automatable here",
+      "requirement_id": "REQ-007",
+      "source_artifact": "submission/sources/openreview_venues.html",
+      "status": "PARTIAL"
+    }
+  ],
+  "summary": {
+    "FAIL": 0,
+    "NOT_APPLICABLE": 1,
+    "PARTIAL": 1,
+    "PASS": 4,
+    "captured_count": 2,
+    "hard_blockers": [
+      "REQ-007"
+    ]
+  }
+}

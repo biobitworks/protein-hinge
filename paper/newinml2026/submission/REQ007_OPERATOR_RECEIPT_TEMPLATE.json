@@ -1,0 +1,22 @@
+{
+  "receipt_id": "REQ-007-OPERATOR-RECEIPT",
+  "requirement": "REQ-007",
+  "status": "OPERATOR_PENDING",
+  "generated_at_utc": "2026-08-28T07:56:00Z",
+  "attestation": {
+    "operator_name": null,
+    "operator_utc": null,
+    "openreview_username": null,
+    "openreview_profile_active": null,
+    "author_name_correct": null,
+    "affiliation_correct": null,
+    "conflicts_complete": null,
+    "newinml_eligibility_confirmed": null,
+    "deadline_verified_utc": null,
+    "anonymous_pdf_verified": null,
+    "anonymous_supplement_verified": null,
+    "evidence_notes": null
+  },
+  "checklist_path": "submission/REQ007_OPERATOR_CHECKLIST.md",
+  "instruction": "Operator completes attestation fields with evidence; do not commit secrets or private emails to public repo"
+}

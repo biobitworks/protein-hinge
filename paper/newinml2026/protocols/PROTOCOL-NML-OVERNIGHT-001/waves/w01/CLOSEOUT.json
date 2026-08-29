@@ -1,0 +1,8 @@
+{
+  "closed_at_utc": "2026-08-28T07:58:07Z",
+  "g1_status": "COMPLETE_NEGATIVE_PROVENANCE",
+  "g2_status": "COMPLETE_NEGATIVE_PROVENANCE",
+  "terminal": "COMPLETE_NEGATIVE",
+  "wave_id": "W01",
+  "zip_sha256": "d78d9f006655920a25baf98e300dcb1c2bdca4899f7e3be112d4e29cdf420a20"
+}

@@ -1,0 +1,48 @@
+{
+  "receipt_id": "SEEDGRAPH-LOCAL-IMPORT-v3",
+  "generated_at_utc": "2026-08-28T07:27:16Z",
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+  "closure_subject_sha": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
+  "seedgraph_head": "6807b1960dd1e981afbf13e79c2f29c3d803b79a",
+  "entrypoint": "uv run seedgraph",
+  "actions": [
+    {
+      "action": "resolve_entrypoint",
+      "result": "PASS"
+    },
+    {
+      "action": "manifest_v3_row_validation",
+      "result": "PASS",
+      "N_rows": 233
+    },
+    {
+      "action": "live_neo4j_import",
+      "result": "SKIPPED",
+      "reason": "DEFERRED"
+    }
+  ],
+  "accounting": {
+    "schema": "protein_hinge.seedgraph.import_accounting.v3",
+    "generated_at_utc": "2026-08-28T07:27:16Z",
+    "hostname": "magicSTUDIObox.local",
+    "git_head": "38c8c15b12ef2773f0614a7995245dd2d19a0f40",
+    "closure_subject_sha": "66979d6e20692bfb0b7b9cd8c2feb692a2efed39",
+    "paper_manifest": "paper/newinml2026/provenance/PAPER_SOURCE_MANIFEST.v3.jsonl",
+    "seedgraph_repo": "/Users/byron/projects/active/seedgraph",
+    "seedgraph_head": "6807b1960dd1e981afbf13e79c2f29c3d803b79a",
+    "N_manifest_rows": 233,
+    "IMPORTED_CONTENT": 215,
+    "IMPORTED_REFERENCE": 14,
+    "UNAVAILABLE": 2,
+    "EXCLUDED": 2,
+    "FAILED": 0,
+    "QUARANTINED": 0,
+    "invariant_ok": true,
+    "live_writeback_executed": false,
+    "neo4j_mutated": false,
+    "note": "Local manifest + accounting only; uv run seedgraph import not executed (DEFERRED)"
+  },
+  "live_writeback_status": "DEFERRED",
+  "neo4j_mutated": false
+}

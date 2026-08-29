@@ -1,0 +1,39 @@
+{
+  "experiment_id": "EXP-GAP-ACCOUNTING-001",
+  "version": "1.0.0",
+  "classification": "EXPLORATORY",
+  "created_at_utc": "2026-08-28T06:55:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "94f8949f1bbcb63d8e80baadd0c5f380f01b9f92",
+  "hypothesis_exploratory": "Committed GAP abstention summary equals count of ABSTAIN terminal rows in candidates.csv",
+  "h0": null,
+  "h1": null,
+  "statistical_test": null,
+  "alpha": null,
+  "mesi": null,
+  "inputs": [
+    "gap/runs/2026-08-13/candidates.csv",
+    "gap/runs/2026-08-13/abstentions.json",
+    "gap/ingest_gap.py"
+  ],
+  "input_hashes": {
+    "candidates.csv": "sha256:d197113efa30f0425de3368b9a5e7ba325340b9511fbfa7b7c6e9abea6e727e6",
+    "abstentions.json": "sha256:ed1a0a955e05a08be12f69a62c9b66bc887aae7606b8c85f0b422691721020f9"
+  },
+  "terminal_accounting": {
+    "N_input": 4,
+    "N_admitted": 1,
+    "N_abstained": 3,
+    "N_excluded": 0,
+    "N_failed": 0,
+    "summary_reported_abstain": 0,
+    "invariant_summary_matches_rows": false
+  },
+  "primary_metric": "abstention_count_delta",
+  "primary_metric_value": 3,
+  "null_outcome": false,
+  "validation": { "success": true, "note": "Retrospective audit complete; mismatch confirmed" },
+  "earliest_divergent_dependency": "gap/ingest_gap.py:119-124",
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS",
+  "status": "COMPLETE"
+}

@@ -1,0 +1,57 @@
+{
+  "thesis_id": "THESIS-000",
+  "version": 0,
+  "created_at_utc": "2026-08-28T06:55:00Z",
+  "parent_thesis": null,
+  "supersedes": null,
+  "superseded_by": null,
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "94f8949f1bbcb63d8e80baadd0c5f380f01b9f92",
+  "statement": "Protein Hinge demonstrates that a hash-pinned FCO/FCG custody architecture can enforce verify-or-abstain semantic accounting across science (FCG), freedom-to-operate (FTO), and rare-disease gap (GAP) lanes for a Barth syndrome repurposing hypothesis, with claim ceiling REPURPOSING_HYPOTHESIS, without silently promoting therapeutic, legal, or unwired live-data claims.",
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS",
+  "supporting_fcos": [
+    "repo://protein-hinge/README.md",
+    "repo://protein-hinge/fcg/",
+    "repo://protein-hinge/fto/",
+    "repo://protein-hinge/gap/",
+    "repo://protein-hinge/docs/FCO_FCG_DESIGN_CITATIONS.md"
+  ],
+  "contradicting_fcos": [
+    "repo://protein-hinge/gap/runs/2026-08-13/abstentions.json",
+    "repo://protein-hinge/gap/runs/2026-08-13/candidates.csv"
+  ],
+  "null_negative_fcos": [],
+  "unresolved_blockers": [
+    "GAP abstention summary does not match candidate ABSTAIN rows (EXP-GAP-ACCOUNTING-001.1 pending)",
+    "HACKDAY_STATE.yaml unavailable for full ingest rebuild",
+    "Origin biocustody.zip not under repo SHA-256 custody",
+    "Live Convoke/Open Targets not wired",
+    "SeedGraph import not yet verified",
+    "SGLang CUDA stress lane not executed"
+  ],
+  "cfmo": {
+    "status": "not_configured",
+    "version": null,
+    "derivation_object_id": null
+  },
+  "mmr": {
+    "status": "design_citation_only",
+    "version": null,
+    "derivation_object_id": null,
+    "note": "MMR cited in FCO_FCG_DESIGN_CITATIONS.md; hackday ranking remains direct restoration-distance unless explicit second-stage score shown"
+  },
+  "human_decisions": [
+    {
+      "timestamp_utc": "2026-08-28T06:55:00Z",
+      "actor": "execution_controller",
+      "decision": "Bootstrap THESIS-000 on paper branch without mutating main; preserve Aug 13 artifacts as immutable history"
+    }
+  ],
+  "proposed_promotions": [],
+  "proposed_demotions": [
+    {
+      "claim_id": "CLAIM-003",
+      "reason": "Abstention accounting mismatch until EXP-GAP-ACCOUNTING-001.1 closes"
+    }
+  ]
+}

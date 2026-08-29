@@ -1,0 +1,11 @@
+{
+  "experiment_id": "EXP-004",
+  "terminal_classification": "COMPLETE_ABLATION",
+  "completed_at_utc": "2026-08-28T07:46:00Z",
+  "lane_a": {"status": "PASS", "classification": "DETERMINISTIC_CONTRACT_TEST"},
+  "lane_b": {"N_pairs": 1, "status": "COMPLETE"},
+  "evaluation_wiring_defect": {"label": "EVALUATION_WIRING_DEFECT", "regression_test": "PASS"},
+  "matched_ablation": {"executed": true, "N_bypass_admitted": 1},
+  "claim_ceiling": "Contract + wiring defect + single-pair descriptive ablation; no population silent-error claim",
+  "aug13_preserved": true
+}

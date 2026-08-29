@@ -1,0 +1,8 @@
+claim_id,claim_text,citation_key,supported_proposition,claim_ceiling
+A,Custody alone does not ensure semantic consistency between derived artifacts,prov_dm,Provenance documents lineage not meaning,semantic audit
+B,Terminal-state invariant detected aggregate-row mismatch,EXP-GAP-001.1,3 row abstains vs 0 historical summary,semantic audit
+C,G3 deterministic closed-vocabulary contract passes under fixtures,EXP-004 Lane A,Exact/mapped/unresolved contract,deterministic
+D,Historical G3 wiring used reconcile(symbol symbol),EXP-004 regression,Did not test source vs canonical disagreement,wiring audit
+E,Bypassing G3 changed abstention to admission for one pair,EXP-004 Lane B,N=1 unsupported identity admission,descriptive
+F,G1/G2 historical numbers unrecoverable,EXP-002/003/PROV,Negative provenance not biological result,audit only
+G,Morphology null did not beat shuffle benchmark,EXP-006 cached,RR enrichment < 1,repurposing hypothesis

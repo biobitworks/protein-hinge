@@ -1,0 +1,46 @@
+{
+  "experiment_id": "EXP-Q38-COMP-001",
+  "classification": "EXPLORATORY_MODEL_COMPARISON",
+  "status": "PARTIAL_BLOCKED_REMOTE",
+  "generated_at_utc": "2026-08-28T16:00:00Z",
+  "panel": "MODEL_PANEL_QWEN38_SUCCESSOR_V1",
+  "conditions": {
+    "Q38_LOCAL": {
+      "executed": true,
+      "tasks": 1,
+      "deterministic_pass_rate_lane_a": 1.0,
+      "receipt": "compute/test-stack/receipts/QWEN38_STUDIO_CANARY_RECEIPT.json"
+    },
+    "Q38FN_DAYTONA": {
+      "executed": false,
+      "blocked_reason": "DAYTONA_API_KEY_ABSENT",
+      "receipt": "compute/test-stack/receipts/QWEN38_FLASH_NEXT_DAYTONA_CANARY_RECEIPT.json"
+    }
+  },
+  "comparison_lane_a": {
+    "temperature": 0,
+    "thinking": false,
+    "context_ceiling_tokens": 32768,
+    "prompt_sha256": "23a0a3110682f984b4f5153450fc904332cc8ad5271cffd532c135f136a7f7f5"
+  },
+  "comparison_lane_b": {
+    "status": "NOT_EXECUTED",
+    "reason": "Remote condition blocked"
+  },
+  "result_classification": "DESCRIPTIVE_EXPLORATORY",
+  "inferential_statistics": "NOT_APPLICABLE",
+  "quality_metrics": {
+    "local_canary_pass": true,
+    "governed_path_pass": true,
+    "comparative_conclusion": "NONE until Flash-Next executes"
+  },
+  "system_metrics": {
+    "local_latency_sec": 450.435,
+    "local_tokens_per_sec": null,
+    "ollarma_pre_policy": "35s timeout → DEGRADED_TIMEOUT on qwen3.8:27b",
+    "ollarma_post_policy": "large_model_warm_timeout 480s → governed PASS",
+    "direct_ollama_historical_pass_sec": 139.984
+  },
+  "claim_ceiling": "TEST_STACK_INFRASTRUCTURE",
+  "newinml_paper_relevant": false
+}

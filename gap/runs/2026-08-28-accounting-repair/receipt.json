@@ -1,0 +1,27 @@
+{
+  "accounting": {
+    "N_abstained": 3,
+    "N_admitted": 1,
+    "N_excluded": 0,
+    "N_failed": 0,
+    "N_input": 4,
+    "invariant_input_partition": true,
+    "invariant_summary_matches_rows": true,
+    "summary_ABSTAIN": 3
+  },
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS",
+  "experiment_id": "EXP-GAP-ACCOUNTING-001.1",
+  "files": {
+    "abstentions.json": "sha256:afdecf16f68b5f1596af76471ef181acb05a16302d353ba4053dc1b54ceb5816",
+    "accounting.json": "sha256:03502a9931df3ed14edf646931f6e791da907f22ae042739cdf81cb4d6c9b50f",
+    "candidates.csv": "sha256:d197113efa30f0425de3368b9a5e7ba325340b9511fbfa7b7c6e9abea6e727e6"
+  },
+  "lane": "gap",
+  "merkle_root": "sha256:09c5f44df6e93f454c110f060564502ae84fe00b7259067f030a7703477ab795",
+  "run_date": "2026-08-27",
+  "schema": "protein_hinge.gap.receipt.v2",
+  "supersedes": "gap/runs/2026-08-13/receipt.json",
+  "validation": {
+    "success": true
+  }
+}

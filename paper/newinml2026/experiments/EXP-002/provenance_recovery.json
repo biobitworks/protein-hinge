@@ -1,0 +1,124 @@
+{
+  "experiment_id": "EXP-002",
+  "title": "G1 sequence/residue verification — point-of-origin recovery",
+  "classification": "EXPLORATORY_PROVENANCE_RECOVERY",
+  "status": "COMPLETE_NEGATIVE",
+  "completed_at_utc": "2026-08-28T07:02:00Z",
+  "hostname": "magicSTUDIObox.local",
+  "git_head": "40256c628903185a37eeddce3635b4573c1c4d54",
+  "historical_claim_candidates": {
+    "note": "Values from mission brief; NOT accepted as scientific results until located and reproduced",
+    "N_input": 355,
+    "N_protein_notation": 239,
+    "N_frameshift_not_reconstructable": 113,
+    "N_substitution_eligible": 126,
+    "N_naive_emits": 123,
+    "N_loud_array_bounds": 3,
+    "N_silent_wrong": 28,
+    "reported_fraction": "28/123 = 22.8%"
+  },
+  "search_scope": [
+    "protein-hinge current tree @ 40256c6",
+    "full git history (8 commits, main + paper branch)",
+    "all branches/tags (main, paper/newinml-fcg-20260828, origin/main)",
+    "git pickaxe -S for 355, 239, 113, 126, 123, 28/123, frameshift, array bounds, canonical sequence",
+    "deleted files summary (none found)",
+    "paper/newinml2026 materials",
+    "handoff docs: ORIGIN_REVIEW.md, docs/ELVIS_COMPONENT.md, gap/elvis_prescripted_demo.json",
+    "fcg/store, data/, scripts/, fco/"
+  ],
+  "provenance_records": [
+    {
+      "claim_component": "N_input=355",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No matching literal or aggregate in any committed file; pickaxe hits are SHA-256 substrings only",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "N_protein_notation=239",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No committed prose/table with this count; fto/registry byte sizes coincidental only",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "N_frameshift_not_reconstructable=113",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No frameshift terminology anywhere in repo history",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "N_substitution_eligible=126",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No substitution-eligible field or count in codebase",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "N_naive_emits=123",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No naive guard/OFF pipeline in protein-hinge",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "N_loud_array_bounds=3",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No array-bounds error taxonomy in repo",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "N_silent_wrong=28",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "28/123 appears only in bootstrap paper docs referencing this recovery task (commit 40256c6)",
+      "candidate_sources": [
+        {
+          "path": "paper/newinml2026/experiments/EXPERIMENT_MATRIX.md",
+          "commit_sha": "40256c628903185a37eeddce3635b4573c1c4d54",
+          "attribution": "GIT_COMMITTER_METADATA",
+          "why_not_origin": "Meta-reference to missing historical claim, not primary data/code"
+        }
+      ]
+    },
+    {
+      "claim_component": "reported_fraction=28/123",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "git log -S'28/123' → single hit: bootstrap commit 40256c6",
+      "candidate_sources": []
+    },
+    {
+      "claim_component": "G1 dataset",
+      "disposition": "UNAVAILABLE",
+      "confidence": "medium",
+      "search_evidence": "No FASTA/residue-verification corpus in protein-hinge; biocustody.zip origin UNAVAILABLE",
+      "candidate_sources": [
+        {
+          "path": "/Users/byron/Downloads/biocustody.zip",
+          "disposition": "UNAVAILABLE",
+          "note": "Not hashed under custody; may contain upstream G1 artifacts — operator recovery required"
+        }
+      ]
+    },
+    {
+      "claim_component": "G1 code (guard ON/OFF ablation)",
+      "disposition": "NOT_FOUND",
+      "confidence": "high_absence_in_repo",
+      "search_evidence": "No residue comparison, isoform policy, or guard/naive modules in tree",
+      "candidate_sources": []
+    }
+  ],
+  "partial_locates": [],
+  "conflicts": [],
+  "rerun_status": "NOT_EXECUTED",
+  "rerun_reason": "Insufficient canonical G1 source/data/code located under paper-scoped custody",
+  "validation": {
+    "success": true,
+    "note": "Negative provenance recovery is a valid terminal outcome"
+  },
+  "claim_ceiling": "REPURPOSING_HYPOTHESIS"
+}
