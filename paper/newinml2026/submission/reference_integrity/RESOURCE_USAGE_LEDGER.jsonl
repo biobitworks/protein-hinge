@@ -1,0 +1,7 @@
+{"bib_key": "clinvar2024", "doi": "10.1093/nar/gkae1090", "manuscript_location": "main.tex G1 + reproducibility", "resource_id": "clinvar", "terminal": "CITED_CANONICAL", "usage": "G1 successor evaluation subset N=364"}
+{"bib_key": "uniprot2023", "doi": "10.1093/nar/gkac1052", "manuscript_location": "related work + reproducibility", "resource_id": "uniprot", "terminal": "CITED_CANONICAL", "usage": "identifier normalization authority"}
+{"bib_key": "hgnc2021", "doi": "10.1093/nar/gkaa980", "manuscript_location": "related work", "resource_id": "hgnc", "terminal": "CITED_CANONICAL", "usage": "gene symbol authority"}
+{"bib_key": "cpjump1_2024", "doi": "10.1038/s41592-024-02241-6", "manuscript_location": "experimental design + null benchmark + reproducibility", "resource_id": "cpjump1", "terminal": "CITED_CANONICAL", "usage": "EXP-006 morphology null benchmark processed profiles"}
+{"bib_key": null, "manuscript_location": "provenance recovery paragraph", "note": "206MB verified package; not a publication citation", "resource_id": "biocustody_zip", "terminal": "ACKNOWLEDGED_WITH_JUSTIFICATION", "usage": "external bootstrap provenance search"}
+{"manuscript_location": "NOT_IN_MANUSCRIPT", "resource_id": "antigence_b4", "terminal": "NOT_PAPER_VISIBLE", "usage": "experimental comparator B0-B4"}
+{"manuscript_location": "NOT_IN_MANUSCRIPT", "resource_id": "seedgraph", "terminal": "NOT_PAPER_VISIBLE", "usage": "isolated import validation"}
