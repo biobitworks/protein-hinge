@@ -1,0 +1,313 @@
+{
+  "generated_at_utc": "2026-08-29T05:16:11Z",
+  "derivation_hash": "65beabc87c96bf4fbdb825f6685b9726692c47d13b4e40d666cdec1e8ba8cb82",
+  "seeds": [
+    {
+      "seed_id": "SOT-001",
+      "status": "VERIFIED",
+      "statement": "Historical GAP aggregate/row inconsistency (3 abstain vs 0 aggregate)"
+    },
+    {
+      "seed_id": "SOT-002",
+      "status": "VERIFIED",
+      "statement": "Successor GAP accounting repair on N=4 fixture"
+    },
+    {
+      "seed_id": "SOT-003",
+      "status": "VERIFIED_BOUNDED",
+      "statement": "Custody does not imply semantic consistency"
+    },
+    {
+      "seed_id": "SOT-004",
+      "status": "VERIFIED",
+      "statement": "G3 closed-vocabulary identity contract"
+    },
+    {
+      "seed_id": "SOT-005",
+      "status": "VERIFIED",
+      "statement": "Historical G3 reconcile(symbol,symbol) wiring defect"
+    },
+    {
+      "seed_id": "SOT-006",
+      "status": "DESCRIPTIVE",
+      "statement": "Observed-source G3 bypass N=1",
+      "N": 1
+    },
+    {
+      "seed_id": "SOT-007",
+      "status": "VERIFIED",
+      "statement": "G1 successor accounting 364=98+266",
+      "historical_exact_reproduction": "NO"
+    },
+    {
+      "seed_id": "SOT-008",
+      "status": "VERIFY_FROM_ROW_ARTIFACTS",
+      "statement": "16/114 TAFAZZIN canonical mismatch case study; +30 offset requires row proof"
+    },
+    {
+      "seed_id": "SOT-009",
+      "status": "VERIFIED_NEGATIVE_BOUNDARY",
+      "statement": "No folding experiment executed"
+    },
+    {
+      "seed_id": "SOT-010",
+      "status": "VERIFIED",
+      "statement": "G2 successor 746=364+382+0"
+    },
+    {
+      "seed_id": "SOT-011",
+      "status": "VERIFIED_BOUNDED",
+      "statement": "100-ID ESummary JSON ceiling failure mechanism recovered"
+    },
+    {
+      "seed_id": "SOT-012",
+      "status": "BOUNDED",
+      "statement": "382/746 admissible as multi-gene/CNV exclusion; not silent errors without predicate"
+    },
+    {
+      "seed_id": "SOT-013",
+      "status": "VERIFIED_REPRODUCTION",
+      "statement": "EXP-006 negative reproduced"
+    },
+    {
+      "seed_id": "SOT-014",
+      "status": "VERIFY",
+      "statement": "G1 measurement correction 24.6%\u219214.0%; stale 24.6% in Elvis Methods \u00a74.3"
+    },
+    {
+      "seed_id": "SOT-015",
+      "status": "VERIFIED",
+      "statement": "Selective classification citations resolvable at authoritative sources"
+    },
+    {
+      "seed_id": "SOT-016",
+      "status": "VERIFIED_TERMINOLOGY_CONFLICT",
+      "statement": "Bare MMR prohibited; use MMR_RERANKING vs MMR_CUSTODY"
+    },
+    {
+      "seed_id": "SOT-017",
+      "status": "VERIFIED",
+      "statement": "No therapeutic efficacy/clinical utility claim ceiling"
+    },
+    {
+      "seed_id": "SOT-018",
+      "status": "VERIFY_AFTER_FIXES",
+      "statement": "Submission conformance pending PDF metadata + page audit"
+    },
+    {
+      "seed_id": "SOT-019",
+      "status": "REPAIR_IN_PROGRESS",
+      "statement": "Freeze integrity repaired in audit wave",
+      "evidence": [
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/ELVIS_DISCORD_GITHUB_CROSSWALK.json",
+          "line": 38,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/ELVIS_DISCORD_GITHUB_CROSSWALK.json",
+          "line": 41,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 12,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 21,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 30,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 39,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 48,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 138,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 147,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 156,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 165,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 174,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/STALE_NUMBER_REGISTRY.json",
+          "line": 183,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/ELVIS_METHODS_VERSION_DELTA.md",
+          "line": 5,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/ELVIS_METHODS_VERSION_DELTA.json",
+          "line": 8,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/audit/ELVIS_METHODS_VERSION_DELTA.json",
+          "line": 11,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+          "line": 29,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+          "line": 189,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+          "line": 190,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+          "line": 301,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+          "line": 301,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        },
+        {
+          "pattern": "24.6%",
+          "semantic_quantity": "G1 superseded measurement",
+          "document": "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+          "line": 311,
+          "allowed_context": "PROHIBITED_CURRENT_RESULT",
+          "successor_value": "16/114=14.0%",
+          "reason_changed": "residue check preceded variant-class assignment"
+        }
+      ]
+    },
+    {
+      "seed_id": "SOT-020",
+      "status": "OPERATOR_INFORMATION_REQUIRED",
+      "statement": "Contributor roster/authorship beyond Git metadata"
+    },
+    {
+      "seed_id": "SOT-ELVIS-STRUCT",
+      "status": "CONTRADICTED",
+      "statement": "Elvis draft structure-prediction acceptance claim lacks execution evidence"
+    }
+  ]
+}

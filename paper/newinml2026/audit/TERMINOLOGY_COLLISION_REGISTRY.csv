@@ -1,0 +1,5 @@
+bare_use_prohibited,bare_use_prohibited_in_manuscript,canonical_a,canonical_b,context_a,context_b,note,preferred,term
+True,,MMR_RERANKING,MMR_CUSTODY,Maximal Marginal Relevance,Merkle Mountain Range,,,MMR
+,True,,,,,Not claimed; use observed source records,,RWE
+,,,,,,Requires semantic-wrongness predicate for G2,multi-gene/CNV exclusion,silent error
+,,,,,,DisclosureIntegrityFCO required or remove,zero gene-specific records after G2 guard,honest
