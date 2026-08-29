@@ -1,0 +1,10 @@
+{
+  "status": "OPERATOR_INFORMATION_REQUIRED",
+  "fields": [
+    "full_name",
+    "github_handle",
+    "author_candidate",
+    "consent",
+    "author_order"
+  ]
+}

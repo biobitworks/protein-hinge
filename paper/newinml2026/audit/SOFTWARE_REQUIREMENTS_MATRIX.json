@@ -1,0 +1,52 @@
+{
+  "schema": "protein_hinge.software_requirements_matrix.v1",
+  "generated_at_utc": "2026-08-29T05:16:11Z",
+  "host": "magicSTUDIObox.local",
+  "GIT": {
+    "git_version": {
+      "status": "PASS",
+      "observed": "git version 2.54.0",
+      "command": "git --version"
+    },
+    "repository_head": "3d4a6ada2654acce9b2591a51c30ff3bf5e4cc88",
+    "branch": "paper/newinml-fcg-20260828",
+    "elvis_fork_head": "6e47dbe367d9223c15c80ef27ca2634b50054035"
+  },
+  "PYTHON": {
+    "python_version": {
+      "status": "PASS",
+      "observed": "Python 3.14.7",
+      "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 --version"
+    },
+    "entry_points": [
+      "paper/newinml2026/scripts/run_newinml_audit_wave.py",
+      "paper/newinml2026/scripts/anonymization_scan.py",
+      "paper/newinml2026/manuscript/build.sh"
+    ]
+  },
+  "LATEX": {
+    "build_command": "bash paper/newinml2026/manuscript/build.sh",
+    "neurips_sty_sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+    "pdflatex": {
+      "status": "FAIL",
+      "note": "uses docker texlive fallback in build.sh"
+    }
+  },
+  "PDF_QA": {
+    "pdfinfo": {
+      "status": "PASS",
+      "observed": "pdfinfo version 26.07.0",
+      "command": "pdfinfo -v"
+    },
+    "pdffonts": {
+      "status": "PASS",
+      "observed": "pdffonts version 26.07.0",
+      "command": "pdffonts -v"
+    }
+  },
+  "ANONYMIZATION": {
+    "scanner": "paper/newinml2026/scripts/anonymization_scan.py",
+    "fail_closed_pdf_metadata": true
+  },
+  "overall": "PASS"
+}

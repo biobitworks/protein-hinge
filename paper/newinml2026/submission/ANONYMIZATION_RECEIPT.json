@@ -1,8 +1,9 @@
 {
   "receipt_id": "ANONYMIZATION-RECEIPT-v1",
-  "generated_at_utc": "2026-08-29T00:43:51Z",
+  "generated_at_utc": "2026-08-29T05:16:11Z",
   "scan_terminal": "CLEAN",
   "REQ-002_status": "PASS",
   "N_blocking": 0,
-  "N_remediated": 0
+  "N_remediated": 0,
+  "pdf_metadata_inspected": true
 }

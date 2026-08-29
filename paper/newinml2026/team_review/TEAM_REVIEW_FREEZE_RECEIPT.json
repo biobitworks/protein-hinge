@@ -1,7 +1,12 @@
 {
   "schema": "protein_hinge.team_review_freeze_receipt.v1",
-  "TEAM_REVIEW_SHA": "5da12c619b230fd8d971fe4e599a15b420ae794d",
-  "TEAM_REVIEW_SOURCE_SHA": "073d76c19b230fd8d971fe4e599a15b420ae794d",
-  "recorded_at_utc": "2026-08-29T00:48:00Z",
-  "note": "TEAM_REVIEW_SHA is the immutable team-review freeze commit"
+  "recorded_at_utc": "2026-08-29T05:17:00Z",
+  "TEAM_REVIEW_CONTENT_COMMIT_SHA": "5da12c65dfdb724d1b51e659a4c1ed20ccb879d0",
+  "TEAM_REVIEW_RECEIPT_COMMIT_SHA": null,
+  "TEAM_REVIEW_SOURCE_SHA": "5da12c65dfdb724d1b51e659a4c1ed20ccb879d0",
+  "sha_validation": {
+    "5da12c65dfdb724d1b51e659a4c1ed20ccb879d0": "commit",
+    "3d4a6ada2654acce9b2591a51c30ff3bf5e4cc88": "commit"
+  },
+  "note": "Content freeze names team-review package commit; receipt commit recorded after audit-wave push; no self-referential receipt-in-same-commit without receipt commit field"
 }
