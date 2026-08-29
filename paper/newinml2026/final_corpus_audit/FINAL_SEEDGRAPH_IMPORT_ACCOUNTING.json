@@ -1,0 +1,13 @@
+{
+  "N_discovered": 292,
+  "N_imported": 274,
+  "N_duplicate": 18,
+  "N_reference": 0,
+  "N_excluded": 0,
+  "N_unavailable": 0,
+  "N_failed": 0,
+  "N_quarantined": 0,
+  "LOCAL_SEEDGRAPH_IMPORT": "PASS",
+  "SHARED_PRODUCTION_WRITEBACK": "DEFERRED",
+  "base_sha": "2ba0d923082200b135f17216a1d315a50564c60d"
+}

@@ -1,0 +1,1 @@
+{"backend": "neo4j", "container": "seedgraph-neo4j", "mutation_policy": "READ_ONLY", "total_node_count": "1035010", "protein_hinge_scoped_search": "DEFERRED_LOCAL_MANIFEST_IMPORT", "shared_production_writeback": "DEFERRED"}
