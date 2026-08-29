@@ -9,13 +9,17 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
-\usepackage{xcolor}
 \usepackage{hyperref}
 \hypersetup{
   pdftitle={Verify-or-Abstain Evidence Pipelines},
   pdfauthor={},
   pdfcreator={},
   pdfproducer={},
+}
+\AtBeginDocument{%
+  \renewcommand{\answerYes}[1][]{\textbf{[Yes]}#1}%
+  \renewcommand{\answerNo}[1][]{\textbf{[No]}#1}%
+  \renewcommand{\answerNA}[1][]{\textbf{[N/A]}#1}%
 }
 \usepackage{url}
 \usepackage{booktabs}

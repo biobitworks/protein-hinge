@@ -88,7 +88,7 @@ def page_gate(pdf: Path) -> dict:
 
 def font_gate(pdf: Path) -> dict:
     out = subprocess.check_output(["pdffonts", str(pdf)], text=True, errors="replace")
-    type3 = "Type 3" in out and bool(re.search(r"Type\s+3\b", out))
+    type3 = bool(re.search(r"^\S+\s+Type 3\s", out, re.M))
     return {"status": "FAIL" if type3 else "PASS", "type3_detected": type3}
 
 
