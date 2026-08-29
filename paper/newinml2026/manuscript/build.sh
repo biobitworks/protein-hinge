@@ -4,7 +4,16 @@ ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$ROOT"
 mkdir -p build
 cp neurips_2026.sty build/
-cp main.tex references.bib checklist.tex build/
+cp main.tex references.bib build/
+# NeurIPS explicitly requires deletion of the checklist instruction block while
+# retaining the checklist heading/questions/answers/guidelines. Preserve the
+# source template verbatim, but strip only the marked instruction block in the
+# submission build copy.
+awk '
+  /%%% BEGIN INSTRUCTIONS %%%/ { skip=1; next }
+  /%%% END INSTRUCTIONS %%%/   { skip=0; next }
+  !skip { print }
+' checklist.tex > build/checklist.tex
 cp -r sections build/
 cd build
 
