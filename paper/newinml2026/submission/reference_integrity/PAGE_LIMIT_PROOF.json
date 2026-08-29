@@ -1,0 +1,11 @@
+{
+  "schema": "protein_hinge.newinml.page_limit_proof.v1",
+  "pages_total": 10,
+  "references_first_page": 4,
+  "checklist_first_page": 4,
+  "appendix_first_page": null,
+  "main_content_pages": 3,
+  "newinml_max_main_pages": 8,
+  "status": "PASS",
+  "recorded_at_utc": "2026-08-29T07:47:42Z"
+}

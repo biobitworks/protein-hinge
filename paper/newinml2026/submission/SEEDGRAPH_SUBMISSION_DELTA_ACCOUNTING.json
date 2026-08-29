@@ -1,0 +1,12 @@
+{
+  "imported_content": 17,
+  "skipped": 0,
+  "failed": 0,
+  "duplicates": 0,
+  "excluded": 0,
+  "quarantined": 0,
+  "ACTUAL_LOCAL_SEEDGRAPH_IMPORT": "PASS",
+  "PRODUCTION_NEO4J_WRITEBACK": "DEFERRED",
+  "seedgraph_head": "6807b1960dd1e981afbf13e79c2f29c3d803b79a",
+  "isolated_target": "/Users/byron/projects/active/protein-hinge/paper/newinml2026/submission/seedgraph_delta"
+}

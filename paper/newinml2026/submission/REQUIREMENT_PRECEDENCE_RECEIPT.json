@@ -1,0 +1,8 @@
+{
+  "schema": "protein_hinge.requirement_precedence_receipt.v1",
+  "rule": "workshop_specific NewInML requirement > generic NeurIPS main-track requirement",
+  "NEWINML_MAX_MAIN_PAGES": 8,
+  "generic_neurips_main_track_pages_not_applied": 9,
+  "organizer_notice_sha256": "f921be804fedb30f868a235ac07115a122555ad81aa8e01d5b4b5292c4a390e4",
+  "recorded_at_utc": "2026-08-29T07:47:38Z"
+}

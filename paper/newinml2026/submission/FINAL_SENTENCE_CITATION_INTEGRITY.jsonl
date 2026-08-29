@@ -1,0 +1,9 @@
+{"citation_key": "prov_dm", "char_offset": 2600, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "stodden2016", "char_offset": 2600, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "chow1970", "char_offset": 2750, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "geifman2017", "char_offset": 2750, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "prov_dm", "char_offset": 2877, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "hgnc2021", "char_offset": 2976, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "uniprot2023", "char_offset": 2976, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "nas2019", "char_offset": 3115, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
+{"citation_key": "fda_rwe", "char_offset": 3212, "support_state": "SUPPORTED", "derivation_type": "DETERMINISTIC_COMPUTATION"}
