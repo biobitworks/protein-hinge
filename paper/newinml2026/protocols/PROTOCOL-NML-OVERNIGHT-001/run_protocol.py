@@ -480,9 +480,10 @@ See paper/newinml2026/manuscript/main_smoke.pdf
     (RECEIPTS / "FINAL_SUBMISSION_DOSSIER.md").write_text(dossier)
     wave_closeout("W10", {"terminal": "COMPLETE", "head_sha": head})
     state["waves"]["W10"] = {"terminal": "COMPLETE"}
-    state["terminal"] = "COMPLETE"
+    overall = derive_overall_terminal(state.get("waves", {}))
+    state["terminal"] = overall
     save_state(state)
-    return "COMPLETE"
+    return overall if overall != "IN_PROGRESS" else "COMPLETE"
 
 
 WAVE_RUNNERS = {
@@ -498,6 +499,26 @@ WAVE_RUNNERS = {
     "W09": run_w09,
     "W10": run_w10,
 }
+
+BLOCKING_TERMINALS = frozenset({"BLOCKED", "QUARANTINED", "FAILED", "OPERATOR_REQUIRED"})
+SUCCESS_TERMINALS = frozenset({"COMPLETE", "COMPLETE_NEGATIVE", "SKIPPED"})
+
+
+def derive_overall_terminal(waves: dict[str, Any]) -> str:
+    """Overall protocol terminal derived from child wave terminals only."""
+    terminals = [w.get("terminal") for w in waves.values() if w.get("terminal")]
+    if not terminals:
+        return "IN_PROGRESS"
+    for blocked in ("FAILED", "QUARANTINED", "BLOCKED", "OPERATOR_REQUIRED"):
+        if blocked in terminals:
+            return blocked
+    required = set(WAVE_RUNNERS)
+    seen = {wid for wid, w in waves.items() if w.get("terminal") in SUCCESS_TERMINALS | BLOCKING_TERMINALS}
+    if required - seen:
+        return "IN_PROGRESS"
+    if all(t in SUCCESS_TERMINALS for t in terminals):
+        return "COMPLETE"
+    return "IN_PROGRESS"
 
 
 def verify_protocol() -> bool:
@@ -536,8 +557,10 @@ def main() -> int:
             save_state(state)
             continue
         state = load_state()
-    state["terminal"] = "COMPLETE"
-    state["completed_at_utc"] = utc_now()
+    overall = derive_overall_terminal(state.get("waves", {}))
+    state["terminal"] = overall
+    if overall == "COMPLETE":
+        state["completed_at_utc"] = utc_now()
     save_state(state)
     print(json.dumps(state, indent=2))
     return 0
