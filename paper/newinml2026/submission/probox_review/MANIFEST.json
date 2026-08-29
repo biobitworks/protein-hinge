@@ -2,8 +2,8 @@
   "schema": "protein_hinge.probox_review_manifest.v1",
   "generated_at_utc": "2026-08-29T17:06:00Z",
   "host": "magicPRObox.local",
-  "source_git_sha": "590e788931ba2025e328ad84a2774f3cf65e8c47",
-  "ci_workflow_run_id": "33264775359",
+  "source_git_sha": "bc4b0d575d130af3f335b712ec1763c164d7d74b",
+  "ci_workflow_run_id": "33264903580",
   "final_submission_seal": "READY_FOR_OPERATOR_SUBMISSION",
   "operator_author_metadata": "OPERATOR_INFORMATION_REQUIRED",
   "submission_pdf": {

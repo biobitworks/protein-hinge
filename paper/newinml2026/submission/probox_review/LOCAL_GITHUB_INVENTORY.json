@@ -1,0 +1,35 @@
+{
+  "schema": "protein_hinge.local_github_inventory.v1",
+  "generated_at_utc": "2026-08-29T17:12:00Z",
+  "local_host": "magicPRObox.local",
+  "local_repo_root": "/Users/byron/projects/active/protein-hinge",
+  "github": {
+    "origin": "https://github.com/biobitworks/protein-hinge.git",
+    "branch": "main",
+    "head_sha": "bc4b0d575d130af3f335b712ec1763c164d7d74b",
+    "local_equals_remote": true
+  },
+  "ci_authority": {
+    "workflow_run_id": "33264903580",
+    "paper_pdf_sha256": "ded8f72e299642a7f8ed4fc0f5318b1e961c413b5640acaa6cda6d65880448ab",
+    "final_submission_seal": "READY_FOR_OPERATOR_SUBMISSION"
+  },
+  "surfaces": {
+    "team_review_github": {
+      "handoff": "TEAM_HANDOFF_20260829/",
+      "team_review": "paper/newinml2026/team_review/",
+      "team_review_access_doc": "paper/newinml2026/team_review/TEAM_REVIEW_ACCESS.md"
+    },
+    "local_probox_operator": {
+      "probox_review": "paper/newinml2026/submission/probox_review/",
+      "fcg_store": "fcg/store/",
+      "project_control": "PROJECT_CONTROL.yaml"
+    }
+  },
+  "gitignored_local_only": [
+    "paper/newinml2026/submission/dist/",
+    "paper/newinml2026/submission/seedgraph_delta/content_store/",
+    ".env"
+  ],
+  "team_pull_command": "git clone https://github.com/biobitworks/protein-hinge.git && cd protein-hinge && git checkout main"
+}
