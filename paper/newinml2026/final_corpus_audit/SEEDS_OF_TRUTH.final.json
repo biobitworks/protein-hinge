@@ -1,0 +1,114 @@
+{
+  "FINAL_CORPUS_AUDIT_BASE_SHA": "2ba0d923082200b135f17216a1d315a50564c60d",
+  "generated_at_utc": "2026-08-29T05:27:05Z",
+  "derivation_hash": "a1c9aa1008a0d9878450d8cc1eaf253f3b6b0c8d06610393f1dbe9ebe8a3c923",
+  "seeds": [
+    {
+      "seed_id": "SOT-001",
+      "status": "VERIFIED",
+      "statement": "Historical GAP aggregate/row abstention inconsistency"
+    },
+    {
+      "seed_id": "SOT-002",
+      "status": "VERIFIED",
+      "statement": "Successor GAP accounting repair"
+    },
+    {
+      "seed_id": "SOT-003",
+      "status": "VERIFIED_BOUNDED",
+      "statement": "Custody does not imply semantic consistency"
+    },
+    {
+      "seed_id": "SOT-004",
+      "status": "VERIFIED",
+      "statement": "G3 closed-vocabulary identity contract"
+    },
+    {
+      "seed_id": "SOT-005",
+      "status": "VERIFIED",
+      "statement": "Historical G3 reconcile(symbol,symbol) wiring defect"
+    },
+    {
+      "seed_id": "SOT-006",
+      "status": "DESCRIPTIVE",
+      "statement": "Observed-source G3 bypass N=1",
+      "N": 1
+    },
+    {
+      "seed_id": "SOT-007",
+      "status": "VERIFIED",
+      "statement": "G1 successor 364=98+266",
+      "historical_exact_reproduction": "NO"
+    },
+    {
+      "seed_id": "SOT-008",
+      "status": "NOT_ESTABLISHED",
+      "statement": "16/114 TAFAZZIN mismatch; +30 offset requires row proof"
+    },
+    {
+      "seed_id": "SOT-009",
+      "status": "VERIFIED_NEGATIVE_BOUNDARY",
+      "statement": "No folding experiment in admitted evidence"
+    },
+    {
+      "seed_id": "SOT-010",
+      "status": "VERIFIED",
+      "statement": "G2 successor 746=364+382+0"
+    },
+    {
+      "seed_id": "SOT-011",
+      "status": "VERIFIED_BOUNDED",
+      "statement": "100-ID ESummary JSON ceiling mechanism recovered"
+    },
+    {
+      "seed_id": "SOT-012",
+      "status": "VERIFIED_BOUNDED",
+      "statement": "382/746 is multi-gene/CNV exclusion rate, not silent-error rate"
+    },
+    {
+      "seed_id": "SOT-013",
+      "status": "VERIFIED",
+      "statement": "EXP-006 negative independently reproduced"
+    },
+    {
+      "seed_id": "SOT-014",
+      "status": "NOT_ESTABLISHED",
+      "statement": "G1 measurement correction chain incomplete in row artifacts"
+    },
+    {
+      "seed_id": "SOT-015",
+      "status": "VERIFIED",
+      "statement": "Manuscript citations chow1970/geifman2017 verified in references.bib"
+    },
+    {
+      "seed_id": "SOT-016",
+      "status": "VERIFIED",
+      "statement": "Bare MMR prohibited; use scoped identifiers"
+    },
+    {
+      "seed_id": "SOT-017",
+      "status": "VERIFIED",
+      "statement": "No therapeutic efficacy/clinical utility claim ceiling"
+    },
+    {
+      "seed_id": "SOT-018",
+      "status": "OPERATOR_REQUIRED",
+      "statement": "Submission conformance pending operator gates"
+    },
+    {
+      "seed_id": "SOT-019",
+      "status": "VERIFIED",
+      "statement": "Corpus audit base SHA 2ba0d923082200b135f17216a1d315a50564c60d"
+    },
+    {
+      "seed_id": "SOT-020",
+      "status": "OPERATOR_REQUIRED",
+      "statement": "Contributor/authorship roster requires operator confirmation"
+    },
+    {
+      "seed_id": "SOT-PR1",
+      "status": "VERIFIED_BOUNDED",
+      "statement": "PR1 OPEN hash-admitted-only; team bytes valid by content hash"
+    }
+  ]
+}
