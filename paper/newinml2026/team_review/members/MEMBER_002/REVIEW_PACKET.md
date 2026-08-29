@@ -2,7 +2,7 @@
 
 **TEAM_ROSTER=OPERATOR_REQUIRED** — replace MEMBER_ID with confirmed roster.
 
-- Source Git SHA: `ab23f43df3e494fe3abbf32d8805081461112cef`
+- Source Git SHA: `69fd1890bf7134ea95e296721effa5ace3ccc5e8`
 - Candidate PDF SHA256: `94c9e1f9c65c75443a907f6b22792f98f9a0824cc029442a4a302ab12c6de305`
 - Manuscript: Verify-or-Abstain Evidence Pipelines
 

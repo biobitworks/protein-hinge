@@ -1,11 +1,11 @@
 {
-  "created_at_utc": "2026-08-29T16:57:25Z",
+  "created_at_utc": "2026-08-29T16:58:07Z",
   "decision_state": "NOT_REVIEWED",
   "member_id": "MEMBER_003",
   "paper_sha256": "94c9e1f9c65c75443a907f6b22792f98f9a0824cc029442a4a302ab12c6de305",
   "review_checklist_sha256": "3860a1f1f62a41051e895dcb680c82f9f5815aa6505c684361325747ede31a47",
-  "review_packet_sha256": "25d4e35171e8dbdb37da19b0c9bbede7ed7d1772e2d8a8de537639ea1de2bec3",
+  "review_packet_sha256": "0170eaeb94fe575c251eae6c4403dee2ff102da32a61b48e427df38aa09f8206",
   "schema": "protein_hinge.review_seal.v1",
   "signature_state": "NOT_SIGNED",
-  "source_git_sha": "ab23f43df3e494fe3abbf32d8805081461112cef"
+  "source_git_sha": "69fd1890bf7134ea95e296721effa5ace3ccc5e8"
 }

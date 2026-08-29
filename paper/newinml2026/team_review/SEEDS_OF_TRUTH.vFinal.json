@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "generated_at_utc": "2026-08-29T16:58:07Z",
   "seeds": [
     {
       "seed_id": "SOT-001",
@@ -109,5 +109,5 @@
       "status": "VERIFIED_BOUNDED"
     }
   ],
-  "source_sha": "ab23f43df3e494fe3abbf32d8805081461112cef"
+  "source_sha": "69fd1890bf7134ea95e296721effa5ace3ccc5e8"
 }
