@@ -1,9 +1,9 @@
 # magicPRObox Review Index — NewInML 2026 Submission
 
 **Host:** magicPRObox.local  
-**Generated:** 2026-08-29T17:06:00Z  
-**Canonical source SHA:** `590e788931ba2025e328ad84a2774f3cf65e8c47`  
-**CI run (authoritative):** `33264775359`  
+**Generated:** 2026-08-29T17:12:00Z  
+**Canonical source SHA:** `bc4b0d575d130af3f335b712ec1763c164d7d74b` (see `LOCAL_GITHUB_INVENTORY.json` for live head)  
+**CI run (authoritative):** `33264903580`  
 **Final submission seal:** `READY_FOR_OPERATOR_SUBMISSION` (author metadata still operator-only)
 
 ## Start here
@@ -13,8 +13,10 @@
 | 1 | `NewInML2026_ProteinHinge_ANONYMOUS_SUBMISSION.pdf` | **Upload this exact PDF to OpenReview** |
 | 2 | `FINAL_CI_OPERATOR_RECEIPT.json` | SHA-256 authority for paper + reviewer bundle |
 | 3 | `OPENREVIEW_UPLOAD_PACKET.runtime.md` | Operator upload procedure from CI |
-| 4 | `../FINAL_OPERATOR_PREFLIGHT_20260829.md` | Remaining operator gates before upload |
-| 5 | `../REQ007_OPERATOR_CHECKLIST.md` | OpenReview profile / eligibility attestation |
+| 4 | `LOCAL_GITHUB_INVENTORY.json` | Local probox vs GitHub sync manifest |
+| 5 | `../../team_review/TEAM_REVIEW_ACCESS.md` | Team pull guide (GitHub = local for tracked files) |
+| 6 | `../FINAL_OPERATOR_PREFLIGHT_20260829.md` | Remaining operator gates before upload |
+| 7 | `../REQ007_OPERATOR_CHECKLIST.md` | OpenReview profile / eligibility attestation |
 
 ## Submission draft (CI-authoritative)
 
