@@ -6,6 +6,7 @@ Generated during the final corpus-audit window. This file is an operator control
 
 - Canonical branch: `main`
 - PR #2: merged
+- PR #4: merged (anonymous bundle/checklist seal repair)
 - PR #1 (`ElvisHan2022/healthomics-lane`): open / not merged; admitted team bytes remain provenance references only
 
 ## Live venue deadline authority
@@ -13,16 +14,25 @@ Generated during the final corpus-audit window. This file is an operator control
 The workshop website currently states:
 
 - paper submission date: August 29, 2026
-- all deadlines: 11:59 PM AoE
+- all deadlines: 11:59 PM Anywhere on Earth (AoE)
 
-The current OpenReview NewInML venue listing states:
+This maps, under strict AoE conversion, to:
 
-- `2026-08-29 08:59 UTC`
-- California: `2026-08-29 01:59 PDT`
+- `2026-08-30 11:59 UTC`
 
-Operational rule: treat the live OpenReview submission-system cutoff as authoritative for execution and submit before 01:59 PDT. Preserve the workshop-page AoE wording as a source conflict. Do not rely on the later theoretical AoE conversion.
+The current OpenReview NewInML venue listing now states:
 
-Correction note: an earlier preflight draft incorrectly recorded an Aug. 30 OpenReview cutoff. That value is RETRACTED and must not be used by any submission automation or operator checklist.
+- `2026-08-30 07:59 UTC`
+- California: `2026-08-30 00:59 PDT`
+
+Therefore:
+
+- OpenReview closes 4 hours before the strict AoE conversion.
+- Treat the live OpenReview cutoff as the executable deadline.
+- Preserve the workshop AoE statement as venue-policy context.
+- Do not assume the later strict-AoE timestamp can be used after the OpenReview form closes.
+
+The previously recorded `2026-08-29 08:59 UTC / 2026-08-29 01:59 PDT` cutoff is `SUPERSEDED_INCORRECT` and must not be used by submission automation or operator checklists.
 
 ## Confirmed automated gates already present
 
@@ -31,25 +41,26 @@ Repository evidence contains:
 - `dblblindworkshop` manuscript configuration
 - NewInML workshop title in `main.tex`
 - anonymization receipt: PASS / CLEAN at the latest audited candidate
-- checklist present and reported complete
-- no unresolved LaTeX references in the earlier build receipt
-- Type 3 fonts reported false in the earlier build receipt
+- checklist present
+- PR #4 strips the checklist instruction block from the built submission while retaining the checklist questions/answers/guidelines
+- unresolved-reference/citation gate in final-seal CI
+- Type 3 font gate in final-seal CI
+- recursive anonymous reviewer-bundle identity scan
 - G1 successor accounting: `364 = 98 + 266`
 - G2 successor accounting: `746 = 364 + 382 + 0`
 - final corpus audit: `PASS_WITH_OPERATOR_GATES`
 
-These checks MUST be rerun on the exact final post-audit PDF; prior receipts are evidence of earlier candidates, not authorization to skip final verification.
+These checks MUST pass on the exact final submission commit. Prior receipts are historical evidence only.
 
 ## Remaining machine-closeout items
 
-1. Project the final audited Seeds of Truth into canonical `main.tex` without importing NOT_ESTABLISHED claims.
-2. Replace broad abstract wording `Preregistered audits show` with evidence-class-accurate wording unless the final graph proves every referenced audit preregistered.
-3. Synchronize EXP-006 wording from `cached` to reproduced-negative language where supported by the reproduction receipt.
-4. In limitations, distinguish historical G1/G2 corpora from contemporary successor corpora (`historical ... not recovered`).
-5. Resolve `elyaniv2010`: add authoritative JMLR BibTeX entry if cited, otherwise remove the dangling dependency.
-6. Machine-compute and record the content-page gate; do not infer compliance from total pages alone.
-7. Regenerate final submission receipts against the exact final source bytes.
-8. Strict final anonymity scan must inspect extracted PDF text, PDF metadata, filenames, and recursive supplementary contents and fail closed if required tooling is unavailable.
+1. Complete any final read-only corpus delta explicitly requested by the operator (SeedGraph/Overwatch/FCO lineage stores); do not start new experiments.
+2. Complete substantive table/figure FCO mapping or explicitly classify non-propositional visual elements.
+3. Audit checklist answers against reviewer-visible support; weaken `Yes` to `No`/`N/A` rather than overclaiming.
+4. Run the final-seal CI on the exact final `main` SHA after all control/manuscript changes.
+5. Use only the exact CI-generated `newinml-anonymous-paper` and, if enabled by the live form, the same-run anonymous reviewer bundle.
+6. Capture `FINAL_CI_OPERATOR_RECEIPT.json` from that same run.
+7. Verify the live OpenReview form's supplementary-material field before deciding whether to upload the anonymous verification ZIP.
 
 ## Elvis review integration
 
@@ -64,18 +75,16 @@ Elvis's suggested material is evidence input, not an automatic manuscript replac
 
 ## Reviewer-facing FCO / FCG verification
 
-The final paper PDF itself should be treated as an FCO leaf with an exact SHA-256 content identity. A reviewer verification bundle, if the NewInML OpenReview form exposes a supplementary-material upload, should be a self-contained anonymous ZIP containing:
+The final paper PDF itself should be treated internally as an FCO leaf with exact SHA-256 content identity. The anonymous reviewer bundle uses a narrower DRM-free submission-seal profile:
 
-- the exact anonymous PDF
-- anonymous reproduction subset
-- anonymous claim/evidence map
-- SHA-256 payload manifest
-- FCO seal receipt
-- offline `VERIFY.md` and `verify.py`
+- SHA-256 payload leaf hashes
+- canonical payload manifest
+- SHA-256 manifest seal
+- offline `VERIFY.md` / `verify.py`
 
-The seal is DRM-free. It is content addressing and manifest closure, not encryption, licensing, or access control. "Unsealing" means recomputing all payload hashes and the manifest hash and confirming closure.
+Unless separately instantiated in the exact reviewer bundle, do not claim that this anonymous submission profile is Ed25519-signed, Merkle/MMR-backed, or fully FCO-v3 conformant.
 
-Do not include GitHub repository URLs, Git SHAs that can trivially deanonymize the authors, contributor identities, Discord handles, emails, local paths, or private graph metadata in the anonymous bundle.
+Do not include GitHub repository URLs, searchable Git SHAs, contributor identities, Discord handles, emails, local paths, hostnames, or private graph metadata in the anonymous bundle.
 
 If NewInML does not expose a supplementary-material field, do not link the public repository from the anonymous PDF. Retain the anonymous verification bundle for organizer request and/or camera-ready release.
 
@@ -98,27 +107,27 @@ Also resolve:
 
 ## Exact final artifact gate
 
-Before upload, create one immutable final packet containing at minimum:
+Before upload, require one successful final-seal CI run on the exact final `main` SHA and record:
 
 - exact internal final source Git SHA
-- exact anonymous PDF SHA-256
+- exact anonymous PDF SHA-256 and byte count
 - machine-recorded page-limit evidence
 - final anonymization receipt
 - final PDF metadata/font receipt
 - final citation-closure receipt
 - final Seeds-of-Truth graph hash
 - final claim-evidence closure state
-- anonymous FCO payload manifest + seal receipt
+- anonymous payload manifest + seal receipt
 - author metadata/operator attestation kept outside the anonymous artifact
 
-Only that exact PDF hash should be uploaded to OpenReview.
+Only the exact PDF bytes identified by the same-run CI receipt should be uploaded to OpenReview.
 
 ## Final terminal states
 
-Allowed:
+Allowed before upload:
 
 - `READY_FOR_OPERATOR_SUBMISSION`
 - `OPERATOR_INFORMATION_REQUIRED`
 - `BLOCKED_VALIDATION`
 
-Do not emit `FINAL_SUBMISSION_SEAL=PASS` from an earlier candidate receipt.
+After upload, record OpenReview submission/forum ID, submission timestamp, and exact uploaded PDF SHA-256. Only then may `FINAL_SUBMISSION_SEAL=PASS` be emitted.
