@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-29T06:07:32Z",
+  "generated_at_utc": "2026-08-29T16:05:26Z",
   "targets": [
     "paper/newinml2026/submission/anonymous"
   ],
@@ -13,15 +13,7 @@
       "command": "pdfinfo /Users/byron/projects/active/protein-hinge/paper/newinml2026/manuscript/main_smoke.pdf",
       "status": "PASS",
       "tool_version": "pdfinfo version 26.07.0",
-      "metadata_sha256": "626d0da15ed9447827098933808fec8ad203eb5c20b90b84fda92adcde00484f"
-    },
-    {
-      "tool": "pdfinfo",
-      "path": "/Users/byron/projects/active/protein-hinge/paper/newinml2026/submission/anonymous/receipts/main_smoke.pdf",
-      "command": "pdfinfo /Users/byron/projects/active/protein-hinge/paper/newinml2026/submission/anonymous/receipts/main_smoke.pdf",
-      "status": "PASS",
-      "tool_version": "pdfinfo version 26.07.0",
-      "metadata_sha256": "fcbdf29893fce501d4103edae2ba4f0f530d1124c4762ead88803af14bda7d33"
+      "metadata_sha256": "e77e0edf24a6e41bfd14c03b3885276cc858515186025453fe0ab90867bd759c"
     }
   ],
   "terminal": "CLEAN"

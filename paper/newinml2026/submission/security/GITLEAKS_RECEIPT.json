@@ -1,0 +1,7 @@
+{
+  "false_positives": 2,
+  "final_state": "PASS",
+  "generated_at_utc": "2026-08-29T16:57:25Z",
+  "scanner": "gitleaks",
+  "true_secrets": 0
+}
