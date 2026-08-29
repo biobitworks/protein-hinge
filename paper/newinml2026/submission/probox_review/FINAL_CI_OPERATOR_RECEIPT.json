@@ -1,0 +1,25 @@
+{
+  "anonymity_gate": "PASS",
+  "anonymous_bundle_bytes": 173742,
+  "anonymous_bundle_sha256": "c64812be34132242e166e862fe4197091de73abf56d32fc175d7424ad8cb20d8",
+  "anonymous_manifest_sha256": "4fe3bdf4e4af2a9f71a5493d5aebc06fcd8b1f4ef809c0be13880e816163edef",
+  "fco_seal_verify": "PASS",
+  "final_submission_seal": "READY_FOR_OPERATOR_SUBMISSION",
+  "font_gate": "PASS_NO_TYPE3",
+  "metadata_gate": "PASS_PDFINFO",
+  "openreview_supplement_field": "OPERATOR_VERIFY_LIVE_FORM",
+  "page_gate": {
+    "checklist_first_page": 4,
+    "content_pages_excluding_references": 3,
+    "page_limit_rule": "2-8 content pages excluding references",
+    "pages_total": 11,
+    "references_first_page": 4,
+    "schema": "protein_hinge.newinml.page_gate.v1",
+    "status": "PASS"
+  },
+  "paper_pdf_bytes": 168758,
+  "paper_pdf_sha256": "ded8f72e299642a7f8ed4fc0f5318b1e961c413b5640acaa6cda6d65880448ab",
+  "schema": "protein_hinge.final_ci_operator_receipt.v1",
+  "source_git_sha": "411d5816cf5724a0031d21d2fd5da8bbfe09a41b",
+  "workflow_run_id": "33264645705"
+}

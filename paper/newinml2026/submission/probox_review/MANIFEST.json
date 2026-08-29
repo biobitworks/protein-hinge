@@ -1,0 +1,36 @@
+{
+  "schema": "protein_hinge.probox_review_manifest.v1",
+  "generated_at_utc": "2026-08-29T17:06:00Z",
+  "host": "magicPRObox.local",
+  "source_git_sha": "411d5816cf5724a0031d21d2fd5da8bbfe09a41b",
+  "ci_workflow_run_id": "33264645705",
+  "final_submission_seal": "READY_FOR_OPERATOR_SUBMISSION",
+  "operator_author_metadata": "OPERATOR_INFORMATION_REQUIRED",
+  "submission_pdf": {
+    "path": "paper/newinml2026/submission/probox_review/NewInML2026_ProteinHinge_ANONYMOUS_SUBMISSION.pdf",
+    "sha256": "ded8f72e299642a7f8ed4fc0f5318b1e961c413b5640acaa6cda6d65880448ab",
+    "bytes": 168758,
+    "authority": "CI_FINAL_SEAL"
+  },
+  "reviewer_bundle": {
+    "path": "paper/newinml2026/submission/probox_review/newinml_anonymous_reviewer_bundle.zip",
+    "sha256": "c64812be34132242e166e862fe4197091de73abf56d32fc175d7424ad8cb20d8",
+    "bytes": 173742,
+    "upload_rule": "OPERATOR_VERIFY_LIVE_FORM"
+  },
+  "ci_receipt": {
+    "path": "paper/newinml2026/submission/probox_review/FINAL_CI_OPERATOR_RECEIPT.json",
+    "authority": true
+  },
+  "review_surfaces": {
+    "team_handoff": "TEAM_HANDOFF_20260829/00_START_HERE_ML.json",
+    "team_review": "paper/newinml2026/team_review/TEAM_REVIEW_PACKET.md",
+    "operator_preflight": "paper/newinml2026/submission/FINAL_OPERATOR_PREFLIGHT_20260829.md",
+    "openreview_checklist": "paper/newinml2026/submission/REQ007_OPERATOR_CHECKLIST.md"
+  },
+  "github_sync": {
+    "origin": "https://github.com/biobitworks/protein-hinge.git",
+    "branch": "main",
+    "local_equals_remote": true
+  }
+}
