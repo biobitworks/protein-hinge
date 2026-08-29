@@ -1,8 +1,8 @@
 # Final Team Operator Packet
 
-**Status:** `READY_FOR_OPERATOR_SUBMISSION` on canonical `main` @ `411d5816cf5724a0031d21d2fd5da8bbfe09a41b`
+**Status:** `READY_FOR_OPERATOR_SUBMISSION` on canonical `main` @ `590e788931ba2025e328ad84a2774f3cf65e8c47`
 
-Team GREEN/YELLOW closeout merged to `main`. Final-seal CI run `33264645705` passed.
+Team GREEN/YELLOW closeout merged to `main`. Final-seal CI run `33264775359` passed.
 
 ## magicPRObox review entry
 

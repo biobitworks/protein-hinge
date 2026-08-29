@@ -2,8 +2,8 @@
 
 **Host:** magicPRObox.local  
 **Generated:** 2026-08-29T17:06:00Z  
-**Canonical source SHA:** `411d5816cf5724a0031d21d2fd5da8bbfe09a41b`  
-**CI run (authoritative):** `33264645705`  
+**Canonical source SHA:** `590e788931ba2025e328ad84a2774f3cf65e8c47`  
+**CI run (authoritative):** `33264775359`  
 **Final submission seal:** `READY_FOR_OPERATOR_SUBMISSION` (author metadata still operator-only)
 
 ## Start here
