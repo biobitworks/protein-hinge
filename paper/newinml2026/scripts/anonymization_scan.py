@@ -20,7 +20,19 @@ PATTERNS = [
     ("/Users/", re.compile(r"/Users/")),
     ("github.com/biobitworks", re.compile(r"github\.com/biobitworks", re.I)),
     ("git_remote", re.compile(r"https://github\.com/", re.I)),
+    # A standalone 40-hex token is a likely Git object/commit identity. Do not
+    # match 64-hex SHA-256 values used by the anonymous FCO seal.
+    ("git_sha40", re.compile(r"(?<![0-9a-f])[0-9a-f]{40}(?![0-9a-f])", re.I)),
 ]
+
+BLOCKING_LABELS = {
+    "Byron",
+    "biobitworks",
+    "email",
+    "/Users/",
+    "github.com/biobitworks",
+    "git_sha40",
+}
 
 
 def utc_now() -> str:
@@ -41,7 +53,7 @@ def scan_file(path: Path) -> list[dict]:
                     "path": str(path.relative_to(ROOT)),
                     "offset": m.start(),
                     "snippet": text[max(0, m.start() - 20) : m.end() + 20].replace("\n", " "),
-                    "disposition": "BLOCKING_LEAK" if label in {"Byron", "biobitworks", "email", "/Users/", "github.com/biobitworks"} else "REMEDIATED",
+                    "disposition": "BLOCKING_LEAK" if label in BLOCKING_LABELS else "REMEDIATED",
                 }
             )
     return findings
@@ -70,15 +82,20 @@ def inspect_pdf_metadata(path: Path) -> tuple[list[dict], dict]:
     out = []
     for label, rx in PATTERNS:
         if rx.search(meta):
-            out.append({"pattern": label, "path": str(path.relative_to(ROOT)), "disposition": "BLOCKING_LEAK", "source": "pdf_metadata"})
+            out.append(
+                {
+                    "pattern": label,
+                    "path": str(path.relative_to(ROOT)),
+                    "disposition": "BLOCKING_LEAK" if label in BLOCKING_LABELS else "REMEDIATED",
+                    "source": "pdf_metadata",
+                }
+            )
     inspection["metadata_sha256"] = hashlib.sha256(meta.encode()).hexdigest()
     return out, inspection
 
 
 def main() -> int:
-    targets = [
-        SUB / "anonymous",
-    ]
+    targets = [SUB / "anonymous"]
     manuscript_files = [
         ROOT / "paper/newinml2026/manuscript/main.tex",
         ROOT / "paper/newinml2026/manuscript/references.bib",
