@@ -1,0 +1,53 @@
+{
+  "containers": [
+    {
+      "container": "biosimulators-platform-status",
+      "image": "ghcr.io/biosimulators/tellurium:latest",
+      "state": "running",
+      "ports": "",
+      "protein_hinge_relevance": "LOW",
+      "mutation_policy": "READ_ONLY_DISCOVERY"
+    },
+    {
+      "container": "seedgraph-neo4j",
+      "image": "neo4j:5.26",
+      "state": "running",
+      "ports": "0.0.0.0:7474->7474/tcp, [::]:7474->7474/tcp, 7473/tcp, 0.0.0.0:7687->7687/tcp, [::]:7687->7687/tcp",
+      "protein_hinge_relevance": "SEEDGRAPH_KG",
+      "mutation_policy": "READ_ONLY_DISCOVERY"
+    },
+    {
+      "container": "nemoclaw",
+      "image": "rancher/k3s:v1.35.3-k3s1",
+      "state": "running",
+      "ports": "0.0.0.0:6443->6443/tcp, [::]:6443->6443/tcp",
+      "protein_hinge_relevance": "LOW",
+      "mutation_policy": "READ_ONLY_DISCOVERY"
+    },
+    {
+      "container": "fractal-waves-db",
+      "image": "arangodb/arangodb:3.12",
+      "state": "running",
+      "ports": "0.0.0.0:8532->8529/tcp, [::]:8532->8529/tcp",
+      "protein_hinge_relevance": "LOW",
+      "mutation_policy": "READ_ONLY_DISCOVERY"
+    },
+    {
+      "container": "prothub",
+      "image": "arangodb/arangodb:3.12.4",
+      "state": "running",
+      "ports": "0.0.0.0:8529->8529/tcp, [::]:8529->8529/tcp",
+      "protein_hinge_relevance": "LOW",
+      "mutation_policy": "READ_ONLY_DISCOVERY"
+    },
+    {
+      "container": "overwatch-db",
+      "image": "arangodb/arangodb:3.12.4",
+      "state": "running",
+      "ports": "0.0.0.0:8531->8529/tcp, [::]:8531->8529/tcp",
+      "protein_hinge_relevance": "PORTFOLIO_STATE",
+      "mutation_policy": "READ_ONLY_DISCOVERY"
+    }
+  ],
+  "recorded_at_utc": "2026-08-29T05:27:05Z"
+}
