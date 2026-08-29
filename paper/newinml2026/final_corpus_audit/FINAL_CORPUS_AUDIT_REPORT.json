@@ -1,0 +1,12 @@
+{
+  "FINAL_CORPUS_AUDIT": "PASS_WITH_OPERATOR_GATES",
+  "FINAL_SUBMISSION_SEAL": "OPERATOR_INFORMATION_REQUIRED",
+  "FINAL_CORPUS_AUDIT_BASE_SHA": "2ba0d923082200b135f17216a1d315a50564c60d",
+  "fcg_leaves": 83,
+  "corpus_objects": 292,
+  "seeds_verified": 16,
+  "seeds_operator_required": 2,
+  "seeds_not_established": 2,
+        "anonymity": "PASS",
+  "PR1": "OPEN_HASH_ADMITTED_ONLY"
+}
