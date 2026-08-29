@@ -1,0 +1,24 @@
+{
+  "schema": "protein_hinge.newinml_deadline_authority.v1",
+  "recorded_at_utc": "2026-08-29T06:32:00Z",
+  "official_cfp_date": "2026-08-29",
+  "official_cfp_policy": "23:59_AOE",
+  "strict_aoe_utc": "2026-08-30T11:59:00Z",
+  "current_openreview_deadline_utc": "2026-08-30T07:59:00Z",
+  "current_openreview_deadline_pdt": "2026-08-30T00:59:00-07:00",
+  "openreview_vs_strict_aoe_delta_hours": -4,
+  "organizer_guidance": "CONSISTENT_WITH_LATER_AUG29_WINDOW",
+  "operational_deadline_authority": "OPENREVIEW_LIVE_FORM",
+  "operational_rule": "Submit before the live OpenReview cutoff even though strict AoE converts four hours later.",
+  "superseded": [
+    {
+      "value": "2026-08-29T08:59:00Z",
+      "classification": "SUPERSEDED_INCORRECT"
+    },
+    {
+      "value": "2026-08-29T01:59:00-07:00",
+      "classification": "SUPERSEDED_INCORRECT"
+    }
+  ],
+  "final_submission_seal_effect": "Deadline authority may be frozen now; final artifact hashes remain pending the last successful final-seal CI run on the exact final source commit."
+}
