@@ -37,6 +37,44 @@ def dump_jsonl(path: Path, rows: list[dict]) -> None:
     path.write_text("".join(json.dumps(r, sort_keys=True) + "\n" for r in rows), encoding="utf-8")
 
 
+# Map legacy audit terminals to control-plane vocabulary (AGENTS.md daisy chain).
+_LEGACY_TERMINAL_MAP: dict[str, tuple[str, str | None]] = {
+    "COMPLETE_POSITIVE": ("COMPLETE", "POSITIVE"),
+    "COMPLETE_NEGATIVE": ("NEGATIVE", None),
+    "COMPLETE_BOUNDED": ("COMPLETE", "BOUNDED"),
+    "UNDERPOWERED": ("COMPLETE", "UNDERPOWERED"),
+    "NOT_EXECUTED": ("SKIPPED", "NOT_EXECUTED"),
+    "SUPERSEDED": ("SKIPPED", "SUPERSEDED"),
+    "BLOCKED": ("BLOCKED", None),
+}
+
+
+def finalize_experiment(row: dict) -> dict:
+    ts = row["terminal_state"]
+    if ts in _LEGACY_TERMINAL_MAP:
+        new_ts, qualifier = _LEGACY_TERMINAL_MAP[ts]
+        row["terminal_state"] = new_ts
+        if qualifier:
+            row["outcome_qualifier"] = qualifier
+    return row
+
+
+def independent_experiments(exps: list[dict]) -> list[dict]:
+    return [e for e in exps if e.get("preregistration_state") != "ALIAS"]
+
+
+def write_sha256sums(out_dir: Path) -> str:
+    """Hash every audit artifact except the receipt (breaks hash cycle) and SHA256SUMS."""
+    exclude = {"SHA256SUMS", "FINAL_AUDIT_RECEIPT.json"}
+    rows: list[str] = []
+    for p in sorted(out_dir.iterdir()):
+        if p.is_file() and p.name not in exclude:
+            rows.append(f"{sha256_file(p)}  ./{p.name}")
+    content = "\n".join(rows) + "\n"
+    (out_dir / "SHA256SUMS").write_text(content, encoding="utf-8")
+    return sha256_text(content)
+
+
 NOW = "2026-08-30T02:20:00Z"
 REPO_HEAD = "a2550d589594ae6e440885bc68a618f3b852764d"
 CI_SOURCE = "bc4b0d575d130af3f335b712ec1763c164d7d74b"
@@ -1034,7 +1072,8 @@ def main() -> None:
     ga = git_authority()
     dump(OUT / "GIT_AUTHORITY.json", ga)
 
-    exps = experiments()
+    exps = [finalize_experiment(e) for e in experiments()]
+    counted_exps = independent_experiments(exps)
     dump_jsonl(OUT / "EXPERIMENT_INVENTORY.jsonl", exps)
 
     nums = numerical_claims()
@@ -1401,7 +1440,8 @@ def main() -> None:
         w.writerows(claims)
 
     # group effort metrics
-    terminals = [e["terminal_state"] for e in exps]
+    terminals = [e["terminal_state"] for e in counted_exps]
+    qualifiers = [e.get("outcome_qualifier") for e in counted_exps]
     ge = {
         "schema": "protein_hinge.group_effort_evidence_audit.v1",
         "proposition": (
@@ -1421,14 +1461,17 @@ def main() -> None:
             "prs_open": 1,
             "prs_closed_unmerged": 1,
             "admitted_source_objects_pr1_hash": "ADMIT_TO_PAPER paths hashed; bytes not in main tree",
-            "experiment_objects_inventoried": len(exps),
-            "positive_terminals": sum(1 for t in terminals if t == "COMPLETE_POSITIVE"),
-            "negative_null_terminals": sum(1 for t in terminals if t in {"COMPLETE_NEGATIVE", "COMPLETE_NULL"}),
-            "bounded_terminals": sum(1 for t in terminals if t == "COMPLETE_BOUNDED"),
-            "underpowered_terminals": sum(1 for t in terminals if t == "UNDERPOWERED"),
-            "blocked_terminals": sum(1 for t in terminals if t == "BLOCKED"),
-            "not_executed_terminals": sum(1 for t in terminals if t == "NOT_EXECUTED"),
-            "superseded_terminals": sum(1 for t in terminals if t == "SUPERSEDED"),
+            "experiment_objects_inventoried": len(counted_exps),
+            "experiment_aliases_excluded_from_total": len(exps) - len(counted_exps),
+            "terminal_state_COMPLETE": sum(1 for t in terminals if t == "COMPLETE"),
+            "terminal_state_NEGATIVE": sum(1 for t in terminals if t == "NEGATIVE"),
+            "terminal_state_BLOCKED": sum(1 for t in terminals if t == "BLOCKED"),
+            "terminal_state_SKIPPED": sum(1 for t in terminals if t == "SKIPPED"),
+            "outcome_qualifier_POSITIVE": sum(1 for q in qualifiers if q == "POSITIVE"),
+            "outcome_qualifier_BOUNDED": sum(1 for q in qualifiers if q == "BOUNDED"),
+            "outcome_qualifier_UNDERPOWERED": sum(1 for q in qualifiers if q == "UNDERPOWERED"),
+            "outcome_qualifier_NOT_EXECUTED": sum(1 for q in qualifiers if q == "NOT_EXECUTED"),
+            "outcome_qualifier_SUPERSEDED": sum(1 for q in qualifiers if q == "SUPERSEDED"),
             "corrected_results_visible": ["GAP 0 vs 3", "G1 24.6%->14.0% Elvis", "G2 742 not reproduced"],
             "contradictions_preserved": True,
             "operator_required_decisions": [
@@ -1496,16 +1539,20 @@ def main() -> None:
     dump(OUT / "AUDIT_STATE.json", audit_state)
 
     counts = {
-        "COMPLETE_POSITIVE": sum(1 for e in exps if e["terminal_state"] == "COMPLETE_POSITIVE"),
-        "COMPLETE_NEGATIVE": sum(1 for e in exps if e["terminal_state"] == "COMPLETE_NEGATIVE"),
-        "COMPLETE_BOUNDED": sum(1 for e in exps if e["terminal_state"] == "COMPLETE_BOUNDED"),
-        "UNDERPOWERED": sum(1 for e in exps if e["terminal_state"] == "UNDERPOWERED"),
-        "BLOCKED": sum(1 for e in exps if e["terminal_state"] == "BLOCKED"),
-        "NOT_EXECUTED": sum(1 for e in exps if e["terminal_state"] == "NOT_EXECUTED"),
-        "SUPERSEDED": sum(1 for e in exps if e["terminal_state"] == "SUPERSEDED"),
-        "total": len(exps),
+        "COMPLETE": sum(1 for e in counted_exps if e["terminal_state"] == "COMPLETE"),
+        "NEGATIVE": sum(1 for e in counted_exps if e["terminal_state"] == "NEGATIVE"),
+        "BLOCKED": sum(1 for e in counted_exps if e["terminal_state"] == "BLOCKED"),
+        "SKIPPED": sum(1 for e in counted_exps if e["terminal_state"] == "SKIPPED"),
+        "total": len(counted_exps),
     }
-    dump(OUT / "FINAL_AUDIT_RECEIPT.json", {
+    outcome_qualifiers = {
+        "POSITIVE": sum(1 for e in counted_exps if e.get("outcome_qualifier") == "POSITIVE"),
+        "BOUNDED": sum(1 for e in counted_exps if e.get("outcome_qualifier") == "BOUNDED"),
+        "UNDERPOWERED": sum(1 for e in counted_exps if e.get("outcome_qualifier") == "UNDERPOWERED"),
+        "NOT_EXECUTED": sum(1 for e in counted_exps if e.get("outcome_qualifier") == "NOT_EXECUTED"),
+        "SUPERSEDED": sum(1 for e in counted_exps if e.get("outcome_qualifier") == "SUPERSEDED"),
+    }
+    receipt_body = {
         "schema": "protein_hinge.final_team_evidence_audit.receipt.v1",
         "audit_id": "AUD-FINAL-TEAM-EVIDENCE-20260829",
         "recorded_at_utc": NOW,
@@ -1517,6 +1564,7 @@ def main() -> None:
         "CI_RUN_ID": CI_RUN,
         "gates": gates,
         "experiment_counts": counts,
+        "outcome_qualifiers": outcome_qualifiers,
         "missed_core_experiments": 0,
         "canonical_numerical_total": sum(1 for r in nums if r.get("in_canonical_manuscript")),
         "canonical_numerical_unresolved": sum(
@@ -1537,10 +1585,16 @@ def main() -> None:
         "ready_for_independent_chatgpt_review": "YES",
         "SIGNATURE_STATE": "NOT_SIGNED",
         "llm_in_science_leaf": False,
-    })
+    }
+    dump(OUT / "FINAL_AUDIT_RECEIPT.json", receipt_body)
+
+    sha256sums_sha256 = write_sha256sums(OUT)
+    receipt_body["sha256sums_sha256"] = sha256sums_sha256
+    dump(OUT / "FINAL_AUDIT_RECEIPT.json", receipt_body)
 
     print("wrote ledgers to", OUT)
     print("experiment_counts", counts)
+    print("sha256sums_sha256", sha256sums_sha256)
 
 
 if __name__ == "__main__":

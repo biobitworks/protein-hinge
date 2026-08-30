@@ -14,14 +14,11 @@ Machine copy: `GROUP_EFFORT_EVIDENCE_AUDIT.json`.
 | --- | --- |
 | Git contributors on relevant PRs | `biobitworks`, `ElvisHan2022` |
 | PRs 1–7 | 5 merged, 1 open (PR #1), 1 closed unmerged (PR #3, superseded by #4) |
-| Experiment objects inventoried | 19 |
-| COMPLETE_POSITIVE | 1 |
-| COMPLETE_NEGATIVE | 7 |
-| COMPLETE_BOUNDED | 4 |
-| UNDERPOWERED | 2 |
-| BLOCKED | 1 (out-of-scope canary) |
-| NOT_EXECUTED | 3 |
-| SUPERSEDED | 1 |
+| Experiment objects inventoried (aliases excluded) | 18 |
+| terminal_state COMPLETE | 7 (POSITIVE 1, BOUNDED 4, UNDERPOWERED 2) |
+| terminal_state NEGATIVE | 6 |
+| terminal_state BLOCKED | 1 (out-of-scope canary) |
+| terminal_state SKIPPED | 4 (NOT_EXECUTED 3, SUPERSEDED 1) |
 | Canonical scientific numbers with MANUAL_VALUE | 0 |
 | Canonical tables | 1 (receipt-matched, not generator-produced) |
 | Canonical figures | 1 CONCEPTUAL |

@@ -3,8 +3,6 @@
   "generated_at_utc": "2026-08-30T02:20:00Z",
   "metrics": {
     "admitted_source_objects_pr1_hash": "ADMIT_TO_PAPER paths hashed; bytes not in main tree",
-    "blocked_terminals": 1,
-    "bounded_terminals": 4,
     "canonical_figures": 1,
     "canonical_figures_classified": 1,
     "canonical_numerical_MANUAL_VALUE": 0,
@@ -23,9 +21,8 @@
       "G1 24.6%->14.0% Elvis",
       "G2 742 not reproduced"
     ],
-    "experiment_objects_inventoried": 19,
-    "negative_null_terminals": 7,
-    "not_executed_terminals": 3,
+    "experiment_aliases_excluded_from_total": 1,
+    "experiment_objects_inventoried": 18,
     "notebooks": 0,
     "operator_required_decisions": [
       "FINAL_SUBMISSION_SEAL OPERATOR_INFORMATION_REQUIRED",
@@ -33,13 +30,19 @@
       "SOT-020 contributor roster",
       "PR#1 merge/no-merge"
     ],
-    "positive_terminals": 1,
+    "outcome_qualifier_BOUNDED": 4,
+    "outcome_qualifier_NOT_EXECUTED": 3,
+    "outcome_qualifier_POSITIVE": 1,
+    "outcome_qualifier_SUPERSEDED": 1,
+    "outcome_qualifier_UNDERPOWERED": 2,
     "prs_closed_unmerged": 1,
     "prs_merged": 5,
     "prs_open": 1,
     "relevant_prs": 7,
-    "superseded_terminals": 1,
-    "underpowered_terminals": 2
+    "terminal_state_BLOCKED": 1,
+    "terminal_state_COMPLETE": 7,
+    "terminal_state_NEGATIVE": 6,
+    "terminal_state_SKIPPED": 4
   },
   "no_causality_or_population_validity_claimed": true,
   "not_a_controlled_human_subject_study": true,
