@@ -43,7 +43,13 @@ PR #1 (ElvisHan2022 `healthomics-lane`) is **OPEN** and **not merged**. Successo
 5. `CLAIM_EVIDENCE_AUDIT.md` — manuscript statements
 6. `GROUP_EFFORT_EVIDENCE_AUDIT.md` — bounded process finding
 7. `MINIMAL_MANUSCRIPT_DELTA.md` — recommendation only (manuscript not edited)
-8. `FINAL_AUDIT_RECEIPT.json`
+8. `PREPRINT_PRIOR_WORK_MATRIX.md` / `.csv` — prior-work classification
+9. `PREPRINT_PRIOR_WORK_SUGGESTIONS.md` — citation + novelty audit (review only)
+10. `PROPOSED_PRIOR_WORK_MANUSCRIPT_DELTA.md` — human-review diff proposals
+11. `SUBMISSION_CONTROL_CLARIFICATION_20260829.json` — SOT-008 +30 nonblocking clarification
+12. `FINAL_AUDIT_RECEIPT.json`
+
+Team-facing summary folder: `paper/newinml2026/TEAM_REVIEW_RETURN_20260829/`
 
 ## Gates (do not collapse)
 
