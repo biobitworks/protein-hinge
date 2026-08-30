@@ -1,0 +1,34 @@
+{
+  "CANONICAL_PAPER_SOURCE_SHA": "bc4b0d575d130af3f335b712ec1763c164d7d74b",
+  "CI_RUN_ID": "33264903580",
+  "FINAL_PDF_SHA256": "ded8f72e299642a7f8ed4fc0f5318b1e961c413b5640acaa6cda6d65880448ab",
+  "REPO_HEAD_SHA": "a2550d589594ae6e440885bc68a618f3b852764d",
+  "SIGNATURE_STATE": "NOT_SIGNED",
+  "audit_id": "AUD-FINAL-TEAM-EVIDENCE-20260829",
+  "daisy": "CLOSEOUT",
+  "gate_notes": {
+    "ANONYMITY_GATE": "CI receipt ANONYMITY_GATE PASS; this audit did not mutate anonymous bundle.",
+    "EXPERIMENT_ACCOUNTING_GATE": "EXPERIMENT_MATRIX.md and handoff 05_EXPERIMENT_INDEX_ML.jsonl stale vs receipts.",
+    "GIT_AUTHORITY_GATE": "Stale CANONICAL_PAPER_SOURCE.yaml (2ba0d923) vs live CI source bc4b0d5; cockpit Pro with Studio queried.",
+    "NOTEBOOK_PROVENANCE_GATE": "Zero notebooks.",
+    "NUMERICAL_CLAIM_GATE": "206 MB bootstrap PARTIAL_TRACE this session; G2 746 from frozen provenance not live refetch.",
+    "TABLE_PROVENANCE_GATE": "Canonical Table 1 hand-transcribed from receipts; Elvis Tables generated but not in canonical package. No independent Table 2-4 in NewInML main.tex."
+  },
+  "gates": {
+    "ANONYMITY_GATE": "PASS",
+    "CLAIM_EVIDENCE_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "EXPERIMENT_ACCOUNTING_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "FIGURE_PROVENANCE_GATE": "PASS",
+    "GIT_AUTHORITY_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "GROUP_EFFORT_AUDIT_GATE": "PASS",
+    "NOTEBOOK_PROVENANCE_GATE": "NOT_APPLICABLE",
+    "NUMERICAL_CLAIM_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "RERUN_LINEAGE_GATE": "PASS",
+    "TABLE_PROVENANCE_GATE": "YELLOW",
+    "TEAM_SCOPE_GATE": "PASS"
+  },
+  "generated_at_utc": "2026-08-30T02:20:00Z",
+  "llm_in_science_leaf": false,
+  "manuscript_modified": false,
+  "schema": "protein_hinge.final_team_evidence_audit.state.v1"
+}

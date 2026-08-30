@@ -1,0 +1,41 @@
+{
+  "schema": "protein_hinge.final_team_evidence_audit.g1_frozen_recompute.v1",
+  "receipt_id": "AUD-20260830-G1-FROZEN-RECOMPUTE",
+  "recorded_at_utc": "2026-08-30T02:13:00Z",
+  "cockpit_host": "magicPRObox.local",
+  "evidence_host_queried": "magicSTUDIObox.local",
+  "classification": "DETERMINISTIC_COMPUTATION",
+  "live_uniprot_fetch": false,
+  "method": "Replay apply_variant() from admitted scripts/build_fasta_lane.py against frozen consensus_genes.fasta + clinvar_subset.tsv. Canonical sequences taken from FASTA headers GN=*; no network.",
+  "inputs": {
+    "clinvar_subset.tsv_sha256": "3aa5e6723563a567fc2b77733a2ee1bd4707c5d254b2537192851c143c1fc2ec",
+    "consensus_genes.fasta_sha256": "98f31f1ce20f4f919e6463b026ab321ee3617acaf3c1e1e02a555ae289ed4565",
+    "variants.fasta_sha256": "355d8e96bc6123427d6e05f305bb017cc09acaf3f6bdfc1255874a6ad561cd9d",
+    "build_fasta_lane.py_sha256": "5e01e23d3af90cf2a6ff02f29be32b099e60ae18e73cdbfd43cedcc3ab449c59",
+    "source_git": "ElvisHan2022/protein-hinge@6e47dbe367d9223c15c80ef27ca2634b50054035",
+    "studio_worktree": "/Users/byron/projects/active/protein-hinge-pr1-review-20260828"
+  },
+  "result": {
+    "records_in": 364,
+    "emitted": 98,
+    "abstained": 266,
+    "accounting": "364 = 98 + 266",
+    "kinds": {
+      "no_protein_notation": 118,
+      "frameshift": 131,
+      "position_out_of_range": 1,
+      "residue_mismatch": 16,
+      "missense": 40,
+      "nonsense": 58
+    },
+    "residue_mismatch_by_gene": {"TAFAZZIN": 16},
+    "variants_fasta_headers": 98,
+    "naive_emits_elvis_definition": 114,
+    "naive_identity": "emitted + residue_mismatch = 98 + 16 = 114"
+  },
+  "matches_EXP-002-SUCCESSOR-001": true,
+  "matches_variants_fasta_hash": true,
+  "historical_exact_reproduction": false,
+  "SIGNATURE_STATE": "NOT_SIGNED",
+  "llm_in_science_leaf": false
+}
