@@ -1,0 +1,22 @@
+item,class
+fcg/store evidence ledger,TEAM_CORE
+verify-or-abstain architecture + NewInML manuscript,TEAM_CORE
+GAP accounting 001 / 001.1,TEAM_CORE
+EXP-002/003 provenance negatives,TEAM_CORE
+EXP-004 G3 ablation,TEAM_CORE
+EXP-005 locked not executed,TEAM_CORE
+EXP-006 cached null,TEAM_CORE
+PR#1 ClinVar/FASTA successor bytes (hash-admitted),TEAM_CONTRIBUTED
+PR#1 Elvis silent-error manuscript,TEAM_CONTRIBUTION_NOT_MERGED
+AUD-FCG document lattice / atom-SOT,TEAM_IMPORTED_DEPENDENCY
+Antigence B4 comparator,TEAM_IMPORTED_DEPENDENCY
+SeedGraph local import receipts,TEAM_IMPORTED_DEPENDENCY
+biocustody zip bootstrap,TEAM_IMPORTED_DEPENDENCY
+gsigmad / GettingScienceDone contracts,SHARED_PREEXISTING_INFRASTRUCTURE
+Neo4j OrbStack SeedGraph,SHARED_PREEXISTING_INFRASTRUCTURE
+HydraDG / L0-L5 / AntiCube / Delta-G,SOLO_RESEARCH_PROGRAM
+EXP-007 SGLang CUDA,FUTURE_DIRECTION
+production SeedGraph writeback,FUTURE_DIRECTION
+therapeutic efficacy / RWE / FTO_OPINION,REMOVE_FROM_TEAM_CLAIMS
+author roster / OpenReview metadata / +30 row proof,OPERATOR_INFORMATION_REQUIRED
+EXP-Q38 compute canary,OUT_OF_TEAM_SCOPE
