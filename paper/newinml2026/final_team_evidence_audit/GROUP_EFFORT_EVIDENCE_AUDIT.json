@@ -1,0 +1,49 @@
+{
+  "finding_bounded": "On this corpus, Git collaboration plus hash-admitted fork artifacts plus explicit negative/not-executed terminals did preserve contribution boundaries and most canonical numerical claims with machine paths. The observation is descriptive of protein-hinge NewInML 2026, not a generalizable causal result.",
+  "generated_at_utc": "2026-08-30T02:20:00Z",
+  "metrics": {
+    "admitted_source_objects_pr1_hash": "ADMIT_TO_PAPER paths hashed; bytes not in main tree",
+    "blocked_terminals": 1,
+    "bounded_terminals": 4,
+    "canonical_figures": 1,
+    "canonical_figures_classified": 1,
+    "canonical_numerical_MANUAL_VALUE": 0,
+    "canonical_numerical_claims_tracked": 11,
+    "canonical_tables": 1,
+    "canonical_tables_closed_or_bounded": 1,
+    "contradictions_preserved": true,
+    "contributor_deltas_admitted": "PR2-7 merged; PR1 hash-admitted not merged",
+    "contributor_deltas_not_admitted": "Elvis silent-error manuscript, UI screenshots, live post-6e47dbe tex hygiene",
+    "contributors_represented_git": [
+      "biobitworks",
+      "ElvisHan2022"
+    ],
+    "corrected_results_visible": [
+      "GAP 0 vs 3",
+      "G1 24.6%->14.0% Elvis",
+      "G2 742 not reproduced"
+    ],
+    "experiment_objects_inventoried": 19,
+    "negative_null_terminals": 7,
+    "not_executed_terminals": 3,
+    "notebooks": 0,
+    "operator_required_decisions": [
+      "FINAL_SUBMISSION_SEAL OPERATOR_INFORMATION_REQUIRED",
+      "SOT-008 +30",
+      "SOT-020 contributor roster",
+      "PR#1 merge/no-merge"
+    ],
+    "positive_terminals": 1,
+    "prs_closed_unmerged": 1,
+    "prs_merged": 5,
+    "prs_open": 1,
+    "relevant_prs": 7,
+    "superseded_terminals": 1,
+    "underpowered_terminals": 2
+  },
+  "no_causality_or_population_validity_claimed": true,
+  "not_a_controlled_human_subject_study": true,
+  "proposition": "A multi-contributor scientific software/paper workflow can preserve explicit provenance, deterministic derivation, abstention, negative results, and contribution boundaries across Git collaboration, experiment repair, manuscript generation, and submission review.",
+  "schema": "protein_hinge.group_effort_evidence_audit.v1",
+  "study_class": "SYSTEMS_PROCESS_OBSERVATION"
+}
