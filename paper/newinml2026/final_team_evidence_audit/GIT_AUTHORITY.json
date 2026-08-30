@@ -1,0 +1,61 @@
+{
+  "ANONYMOUS_BUNDLE_SHA256": "c64812be34132242e166e862fe4197091de73abf56d32fc175d7424ad8cb20d8",
+  "CANONICAL_PAPER_SOURCE_NOTE": "PROJECT_CONTROL.yaml current_state + CI run headSha. Distinct from stale paper/newinml2026/provenance/CANONICAL_PAPER_SOURCE.yaml which still lists PR#2 merge 2ba0d923.",
+  "CANONICAL_PAPER_SOURCE_SHA": "bc4b0d575d130af3f335b712ec1763c164d7d74b",
+  "CI_AUTHORITATIVE_PDF_SOURCE_SHA": "bc4b0d575d130af3f335b712ec1763c164d7d74b",
+  "CI_CONCLUSION": "success",
+  "CI_RUN_ID": "33264903580",
+  "CI_URL": "https://github.com/biobitworks/protein-hinge/actions/runs/33264903580",
+  "CI_WORKFLOW": "NewInML final seal",
+  "FINAL_PDF_SHA256": "ded8f72e299642a7f8ed4fc0f5318b1e961c413b5640acaa6cda6d65880448ab",
+  "HISTORICAL_TEAM_REVIEW_FREEZE_SHA": "2ba0d923082200b135f17216a1d315a50564c60d",
+  "REPO_HEAD_SHA": "a2550d589594ae6e440885bc68a618f3b852764d",
+  "SIGNATURE_STATE": "NOT_SIGNED",
+  "STALE_CANONICAL_PAPER_SOURCE_YAML": "2ba0d923082200b135f17216a1d315a50564c60d",
+  "backup_remote": "ssh://magicSTUDIObox.local/Volumes/magicDATAbox/git_backups/protein-hinge.git",
+  "branch_at_audit_start": "main",
+  "commits_after_ci_source": [
+    "003c579 Document local probox vs GitHub team review access paths.",
+    "a2550d5 Update probox review index with team GitHub access links."
+  ],
+  "execution": {
+    "cockpit_host": "magicPRObox.local",
+    "evidence_host_queried": "magicSTUDIObox.local",
+    "pr1_review_worktree": {
+      "head": "6e47dbe367d9223c15c80ef27ca2634b50054035",
+      "path": "/Users/byron/projects/active/protein-hinge-pr1-review-20260828",
+      "state": "detached HEAD, clean"
+    },
+    "requested_host": "magicSTUDIObox.local",
+    "studio_protein_hinge_head": "a2550d589594ae6e440885bc68a618f3b852764d",
+    "studio_unpushed_vs_origin_main": [],
+    "studio_worktree_clean": true
+  },
+  "live_github_refs_resolved": {
+    "ElvisHan2022/protein-hinge healthomics-lane": {
+      "actual": "d0e992be47f9a4cf858a5317d0111daf817943a6",
+      "admitted_snapshot_used_by_successors": "6e47dbe367d9223c15c80ef27ca2634b50054035",
+      "clinvar_tsv_unchanged_live_vs_admitted": true,
+      "elvis_main_tex_diverged": true,
+      "expected_approx": "d0e992be47f9a4cf858a5317d0111daf817943a6",
+      "live_diverged_from_admitted_snapshot": true
+    },
+    "audit/newinml-team-green-yellow-20260829": {
+      "actual": "411d5816cf5724a0031d21d2fd5da8bbfe09a41b",
+      "expected_approx": "411d5816cf5724a0031d21d2fd5da8bbfe09a41b",
+      "merged": true,
+      "pr": 7
+    },
+    "biobitworks/protein-hinge main": {
+      "actual": "a2550d589594ae6e440885bc68a618f3b852764d",
+      "expected_approx": "a2550d589594ae6e440885bc68a618f3b852764d",
+      "match": true
+    }
+  },
+  "manuscript_unchanged_after_ci_source": true,
+  "origin_main": "a2550d589594ae6e440885bc68a618f3b852764d",
+  "origin_url": "https://github.com/biobitworks/protein-hinge.git",
+  "recorded_at_utc": "2026-08-30T02:20:00Z",
+  "schema": "protein_hinge.final_team_evidence_audit.git_authority.v1",
+  "tags": []
+}
