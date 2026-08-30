@@ -1,0 +1,365 @@
+gene	accession	title	classification	review_status	conditions
+TAFAZZIN	VCV004853030	NC_000023.10:g.(?_153639874)_(153650066_?)del	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV004777750	NM_000116.5(TAFAZZIN):c.284+1G>A	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV004714487	NM_000116.5(TAFAZZIN):c.126del (p.Thr43fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV004713939	NM_000116.5(TAFAZZIN):c.238+1G>A	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV004527096	NM_000116.5(TAFAZZIN):c.109+1G>A	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV004294474	NM_000116.5(TAFAZZIN):c.235_236del (p.Trp79fs)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV004277483	NM_000116.5(TAFAZZIN):c.180del (p.Thr61fs)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV003776792	NM_000116.5(TAFAZZIN):c.583+3A>G	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV003774959	NM_000116.5(TAFAZZIN):c.647-2_649delinsTCCTGCACAG	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV003773817	NM_000116.5(TAFAZZIN):c.703del (p.Ile235fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV003629481	NM_000116.5(TAFAZZIN):c.350del (p.Lys117fs)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV003338754	NM_000116.5(TAFAZZIN):c.797T>C (p.Leu266Pro)	Likely pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV002760683	NM_000116.5(TAFAZZIN):c.700-1del	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002737444	NM_000116.5(TAFAZZIN):c.562G>T (p.Glu188Ter)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002661806	NM_000116.5(TAFAZZIN):c.284+28G>A	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV002580153	NM_000116.5(TAFAZZIN):c.215G>T (p.Cys72Phe)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506922	NM_000116.5(TAFAZZIN):c.238+2T>G	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506921	NM_000116.5(TAFAZZIN):c.236G>A (p.Trp79Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2; TAFAZZIN-related disorder
+TAFAZZIN	VCV002506920	NM_000116.5(TAFAZZIN):c.699+1G>T	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506914	NM_000116.5(TAFAZZIN):c.171del (p.Gly58fs)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506912	NM_000116.5(TAFAZZIN):c.747_748insCGGGCGCCGGCGGCTCTCC (p.Glu250fs)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506909	NM_000116.5(TAFAZZIN):c.280C>G (p.Arg94Gly)	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506908	NM_000116.5(TAFAZZIN):c.222C>A (p.Asp74Glu)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506905	NM_000116.5(TAFAZZIN):c.294delinsTTAAGGACCCCT (p.Ala98_Ala99insTer)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506904	NM_000116.5(TAFAZZIN):c.609T>A (p.Cys203Ter)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506903	NM_000116.5(TAFAZZIN):c.163G>T (p.Glu55Ter)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506902	NM_000116.5(TAFAZZIN):c.124del (p.His41_Leu42insTer)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506901	NM_000116.5(TAFAZZIN):c.51G>A (p.Trp17Ter)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506900	NM_000116.5(TAFAZZIN):c.748G>T (p.Glu250Ter)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506898	NM_000116.5(TAFAZZIN):c.285G>A (p.Trp95Ter)	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506894	NM_000116.5(TAFAZZIN):c.868_872dup (p.Arg292fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506893	NM_000116.5(TAFAZZIN):c.54_55del (p.Leu19fs)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506891	NM_000116.5(TAFAZZIN):c.497T>A (p.Leu166Ter)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506890	NM_000116.5(TAFAZZIN):c.329_334del (p.Ser110_His111del)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506887	NM_000116.5(TAFAZZIN):c.703dup (p.Ile235fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506886	NM_000116.5(TAFAZZIN):c.370G>C (p.Gly124Arg)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002506882	NM_000116.5(TAFAZZIN):c.541+1G>T	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002500766	NM_000116.5(TAFAZZIN):c.532T>A (p.Phe178Ile)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002138791	NM_000116.5(TAFAZZIN):c.536del (p.Pro179fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002127122	NM_000116.5(TAFAZZIN):c.575del (p.Phe192fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002112174	NM_000116.5(TAFAZZIN):c.153C>A (p.Tyr51Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV002103474	NM_000116.5(TAFAZZIN):c.580_583+10del	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001966105	NM_000116.5(TAFAZZIN):c.238+1del	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001953409	NM_000116.5(TAFAZZIN):c.584-1G>A	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001922509	NM_000116.5(TAFAZZIN):c.586del (p.Ile196fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001879779	NM_000116.5(TAFAZZIN):c.542-2A>T	Likely pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV001800451	NM_000116.5(TAFAZZIN):c.489dup (p.Phe164fs)	Pathogenic	criteria provided, single submitter	Cardiovascular phenotype
+TAFAZZIN	VCV001704478	NM_000116.5(TAFAZZIN):c.517del (p.Asp173fs)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001677501	NM_000116.5(TAFAZZIN):c.447_451del (p.Arg151fs)	Likely pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV001319559	NM_000116.5(TAFAZZIN):c.18_22dup (p.Pro8fs)	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV001202910	NM_000116.5(TAFAZZIN):c.281G>C (p.Arg94Pro)	Likely pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV001075571	NM_000116.5(TAFAZZIN):c.293_294insTTAGGACCCC (p.Ala98_Ala99insTer)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001073013	NM_000116.5(TAFAZZIN):c.109+5G>A	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001072332	NM_000116.5(TAFAZZIN):c.129del (p.Val44fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001070849	NC_000023.10:g.(?_153647872)_(153650075_?)del	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001070848	NC_000023.10:g.(?_153639844)_(153642537_?)del	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV001070847	NC_000023.10:g.(?_153640161)_(153649363_?)del	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000992964	NM_000116.5(TAFAZZIN):c.773C>A (p.Ser258Ter)	Likely pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000928890	NM_000116.5(TAFAZZIN):c.777+1G>A	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2; Cardiomyopathy
+TAFAZZIN	VCV000855841	NM_000116.5(TAFAZZIN):c.542-2A>G	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000855792	NM_000116.5(TAFAZZIN):c.528_541+7del	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000842542	NM_000116.5(TAFAZZIN):c.236_238+5del	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000807868	NM_000116.5(TAFAZZIN):c.774_777+1dup	Likely pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV000807698	NM_000116.5(TAFAZZIN):c.238G>C (p.Gly80Arg)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000691833	NM_000116.5(TAFAZZIN):c.355G>A (p.Val119Met)	Likely pathogenic	criteria provided, single submitter	Left ventricular noncompaction cardiomyopathy
+TAFAZZIN	VCV000662186	NM_000116.5(TAFAZZIN):c.697C>T (p.Gln233Ter)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000661106	NM_000116.5(TAFAZZIN):c.238+2_238+9del	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000653322	NM_000116.5(TAFAZZIN):c.281G>A (p.Arg94His)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000638931	NM_000116.5(TAFAZZIN):c.370G>T (p.Gly124Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000626857	NM_000116.5(TAFAZZIN):c.688del (p.Arg230fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2; Cardiomyopathy
+TAFAZZIN	VCV000560626	NM_000116.5(TAFAZZIN):c.367C>T (p.Arg123Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000559336	NM_000116.5(TAFAZZIN):c.583G>T (p.Gly195Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000559335	NM_000116.5(TAFAZZIN):c.207C>G (p.His69Gln)	Pathogenic	no assertion criteria provided	
+TAFAZZIN	VCV000531184	NM_000116.5(TAFAZZIN):c.238G>A (p.Gly80Arg)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000518893	NM_000116.5(TAFAZZIN):c.145del (p.Val49fs)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2; Cardiovascular phenotype
+TAFAZZIN	VCV000504385	NM_000116.5(TAFAZZIN):c.639G>A (p.Trp213Ter)	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV000503896	NM_000116.5(TAFAZZIN):c.487dup (p.Asp163fs)	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV000488616	NM_000116.5(TAFAZZIN):c.542-3C>G	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000440320	NM_000116.5(TAFAZZIN):c.483del (p.Met162fs)	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV000433548	NM_000116.5(TAFAZZIN):c.836del (p.Thr279fs)	Likely pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000426783	NM_000116.5(TAFAZZIN):c.646G>A (p.Gly216Arg)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000403954	NM_000116.5(TAFAZZIN):c.281G>T (p.Arg94Leu)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000373434	NM_000116.5(TAFAZZIN):c.699+1G>A	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV000237009	NM_000116.5(TAFAZZIN):c.227C>G (p.Pro76Arg)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000234475	NM_000116.5(TAFAZZIN):c.461-2A>G	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000202100	NM_000116.5(TAFAZZIN):c.526C>T (p.His176Tyr)	Pathogenic	criteria provided, single submitter	
+TAFAZZIN	VCV000202093	NM_000116.5(TAFAZZIN):c.582G>A (p.Trp194Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000202092	NM_000116.5(TAFAZZIN):c.280C>T (p.Arg94Cys)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000202091	NM_000116.5(TAFAZZIN):c.154G>T (p.Glu52Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000177990	NM_000116.5(TAFAZZIN):c.647G>T (p.Gly216Val)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2; Primary dilated cardiomyopathy
+TAFAZZIN	VCV000177908	NM_000116.5(TAFAZZIN):c.710_711del (p.Val237fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2; Primary dilated cardiomyopathy
+TAFAZZIN	VCV000177904	NC_000023.10:g.(?_153640181)_(153641904_?)del	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000042266	NM_000116.5(TAFAZZIN):c.718G>C (p.Gly240Arg)	Pathogenic	criteria provided, single submitter	Primary dilated cardiomyopathy
+TAFAZZIN	VCV000042265	NM_000116.5(TAFAZZIN):c.700-1G>A	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000042256	NM_000116.5(TAFAZZIN):c.307T>C (p.Cys103Arg)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000042254	NM_000116.5(TAFAZZIN):c.208C>T (p.Gln70Ter)	Likely pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000035505	NM_000116.5(TAFAZZIN):c.718G>A (p.Gly240Arg)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011112	NM_000116.5(TAFAZZIN):c.647-1G>C	Pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011111	NM_000116.5(TAFAZZIN):c.605_608del (p.Glu202fs)	Pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011110	NM_000116.5(TAFAZZIN):c.280C>A (p.Arg94Ser)	Pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011109	NM_000116.5(TAFAZZIN):c.110-2A>G	Pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011107	NM_000116.5(TAFAZZIN):c.284+110G>A	Pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011106	NM_000116.5(TAFAZZIN):c.109+5G>C	Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011105	NM_000116.5(TAFAZZIN):c.589G>A (p.Gly197Arg)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2; TAFAZZIN-related disorder
+TAFAZZIN	VCV000011104	NM_000116.5(TAFAZZIN):c.634del (p.Leu212fs)	Pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011103	NM_000116.5(TAFAZZIN):c.580dup (p.Trp194fs)	Pathogenic	criteria provided, single submitter	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011102	NM_000116.5(TAFAZZIN):c.239-1G>C	Pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011101	NM_000116.5(TAFAZZIN):c.153C>G (p.Tyr51Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	3-Methylglutaconic aciduria type 2
+TAFAZZIN	VCV000011100	NM_000116.5(TAFAZZIN):c.239-1G>A	Pathogenic	no assertion criteria provided	3-Methylglutaconic aciduria type 2
+CRLS1	VCV002443705	NM_019095.6(CRLS1):c.649C>T (p.Leu217Phe)	Pathogenic	no assertion criteria provided	Combined oxidative phosphorylation deficiency 57
+CRLS1	VCV002443704	NM_019095.6(CRLS1):c.515C>A (p.Ala172Asp)	Pathogenic	no assertion criteria provided	Combined oxidative phosphorylation deficiency 57
+CRLS1	VCV002443703	NM_019095.6(CRLS1):c.326T>A (p.Ile109Asn)	Pathogenic	no assertion criteria provided	Combined oxidative phosphorylation deficiency 57
+PTPMT1	VCV003899900	NM_175732.3(PTPMT1):c.255G>C (p.Gln85His)	Pathogenic	no assertion criteria provided	Neurodevelopmental disorder with ataxia and brain abnormalities
+HADHA	VCV004852411	NM_000182.5(HADHA):c.2132C>T (p.Pro711Leu)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817877	NM_000182.5(HADHA):c.811dup (p.Tyr271fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817876	NM_000182.5(HADHA):c.781_782del (p.Asp261fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817875	NM_000182.5(HADHA):c.36del (p.Ser14fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817874	NM_000182.5(HADHA):c.315-4_317delinsTGCAGCAAGG	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817873	NM_000182.5(HADHA):c.2132del (p.Pro711fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817872	NM_000182.5(HADHA):c.1791del (p.Lys597fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817871	NM_000182.5(HADHA):c.168_169del (p.Pro57fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817870	NM_000182.5(HADHA):c.1600A>T (p.Lys534Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817869	NM_000182.5(HADHA):c.1529A>G (p.Glu510Gly)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817868	NM_000182.5(HADHA):c.1498_1499del (p.Phe500fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817867	NM_000182.5(HADHA):c.1250dup (p.Thr418fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004817866	NM_000182.5(HADHA):c.1086-2_1089delinsTATTCTTTTCATCCTTGC	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004791042	NM_000182.5(HADHA):c.314+2T>C	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV004787201	NM_000182.5(HADHA):c.1885+2T>A	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV004785205	NM_000182.5(HADHA):c.1690-1G>A	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV004784257	NM_000182.5(HADHA):c.1586dup (p.Leu530fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV004081703	NM_000182.5(HADHA):c.1249_1259del (p.Ala416_Leu417insTer)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004081702	NM_000182.5(HADHA):c.315-1G>T	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004081701	NM_000182.5(HADHA):c.1885+2T>G	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004069008	NM_000182.5(HADHA):c.721del (p.Glu241fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV004069005	NM_000182.5(HADHA):c.446G>T (p.Gly149Val)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003899292	NM_000182.5(HADHA):c.370C>T (p.Gln124Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003895662	NM_000182.5(HADHA):c.1621-2A>G	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003754541	NM_000182.5(HADHA):c.1889del (p.Arg630fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV003751788	NM_000182.5(HADHA):c.479_482delinsAATA (p.Ile160_Ala161delinsLysTer)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV003751318	NM_000182.5(HADHA):c.1152del (p.Gly384_Leu385insTer)	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV003586250	NM_000182.5(HADHA):c.28del (p.Leu10fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586249	NM_000182.5(HADHA):c.68del	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586248	NM_000182.5(HADHA):c.191dup (p.Ser65fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586246	NM_000182.5(HADHA):c.317delinsAGG (p.Met106fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586245	NM_000182.5(HADHA):c.488_489del (p.Lys163fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586244	NM_000182.5(HADHA):c.1030del (p.His344fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586243	NM_000182.5(HADHA):c.1036C>T (p.Gln346Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586242	NM_000182.5(HADHA):c.1091_1128del	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003586240	NM_000182.5(HADHA):c.1689+1G>T	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003385116	NM_000182.5(HADHA):c.278C>G (p.Ser93Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003370419	NM_000182.5(HADHA):c.110-1G>A	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003362445	NM_000182.5(HADHA):c.1086-1_1088dup	Likely pathogenic	criteria provided, single submitter	Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV003254781	NM_000182.5(HADHA):c.302G>T (p.Gly101Val)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003247342	NC_000002.11:g.(?_26414119)_(26414517_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV003247341	NC_000002.11:g.(?_26423998)_(26424209_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV003247340	NC_000002.11:g.(?_26414119)_(26502265_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV003247331	NC_000002.11:g.(?_26426911)_(26512821_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV003241732	NM_000182.5(HADHA):c.1165del (p.Asp391fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003241731	NM_000182.5(HADHA):c.2081del (p.Leu694fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003241730	NM_000182.5(HADHA):c.531_532insT (p.Ala178fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003241729	NM_000182.5(HADHA):c.1653_1668del (p.Ala552fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003241728	NM_000182.5(HADHA):c.1351del (p.Asp451fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003241727	NM_000182.5(HADHA):c.1096_1097dup (p.Leu367fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV003241725	NM_000182.5(HADHA):c.573+2T>C	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002954233	NM_000182.5(HADHA):c.1689+2T>C	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002950320	NM_000182.5(HADHA):c.930_931del (p.Gly311fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002950171	NM_000182.5(HADHA):c.1921del (p.Glu641fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002948846	NM_000182.5(HADHA):c.799+1G>A	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV002948662	NM_000182.5(HADHA):c.637_638del (p.Lys213fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002947938	NM_000182.5(HADHA):c.944_956del (p.Gly315fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002947730	NM_000182.5(HADHA):c.677-2A>G	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002947613	NM_000182.5(HADHA):c.1249del (p.Ala416_Leu417insTer)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002943817	NM_000182.5(HADHA):c.2063_2087dup (p.Glu699fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002942406	NM_000182.5(HADHA):c.1183dup (p.Thr395fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002942354	NM_000182.5(HADHA):c.1002del (p.Glu335fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002941242	NM_000182.5(HADHA):c.2039_2040dup (p.Phe681fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002939655	NM_000182.5(HADHA):c.841C>T (p.Gln281Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002937105	NM_000182.5(HADHA):c.70dup (p.Tyr24fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002935068	NM_000182.5(HADHA):c.1261G>T (p.Glu421Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002934851	NM_000182.5(HADHA):c.815C>A (p.Ala272Asp)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002934638	NM_000182.5(HADHA):c.1231_1235del (p.Lys411fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002934549	NM_000182.5(HADHA):c.1220+1G>T	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002928078	NM_000182.5(HADHA):c.893del (p.Tyr298fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002927833	NM_000182.5(HADHA):c.1917T>A (p.Tyr639Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002922404	NM_000182.5(HADHA):c.573+1G>A	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002922371	NM_000182.5(HADHA):c.1361_1364dup (p.Lys455delinsAsnTer)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002921965	NM_000182.5(HADHA):c.878dup (p.Thr294fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002921383	NM_000182.5(HADHA):c.2011del (p.Glu671fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002675980	NM_000182.5(HADHA):c.67+1G>A	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675979	NM_000182.5(HADHA):c.181-1G>A	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675978	NM_000182.5(HADHA):c.314+1G>C	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002675977	NM_000182.5(HADHA):c.2183_2190del (p.Lys728fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675976	NM_000182.5(HADHA):c.2077del (p.Ile693fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675975	NM_000182.5(HADHA):c.2193_2194dup (p.Arg732fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675974	NM_000182.5(HADHA):c.874A>T (p.Lys292Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675973	NM_000182.5(HADHA):c.2064_2081delinsTGGCCTCTGA (p.Leu689_Leu694delinsGlyLeuTer)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675972	NM_000182.5(HADHA):c.976-2A>G	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675971	NM_000182.5(HADHA):c.1937_1940del (p.Lys646fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675970	NM_000182.5(HADHA):c.2090_2115del (p.Pro697fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675969	NM_000182.5(HADHA):c.959del (p.Tyr320fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675968	NM_000182.5(HADHA):c.1533dup (p.Ile512fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675967	NM_000182.5(HADHA):c.658C>T (p.Gln220Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675966	NM_000182.5(HADHA):c.315-2A>T	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002675965	NM_000182.5(HADHA):c.1221-2A>G	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV002675963	NM_000182.5(HADHA):c.1549del (p.Thr517fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002675962	NM_000182.5(HADHA):c.919-1G>A	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV002503898	NM_000182.5(HADHA):c.1759_1760del (p.Leu587fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV002440685	NM_000182.5(HADHA):c.2018del (p.Ile673fs)	Likely pathogenic	criteria provided, single submitter	
+HADHA	VCV002422549	NC_000002.11:g.(?_26414119)_(26462031_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002422548	NC_000002.11:g.(?_26416426)_(26418121_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002422547	NC_000002.11:g.(?_26455008)_(26457243_?)dup	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002179378	NM_000182.5(HADHA):c.2167_2168dup (p.Tyr724fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002178770	NM_000182.5(HADHA):c.314+2T>G	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002134388	NM_000182.5(HADHA):c.1209del (p.Val404fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002120942	NM_000182.5(HADHA):c.160del (p.Ile54fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002113521	NM_000182.5(HADHA):c.703_704dup (p.Thr236fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002107593	NM_000182.5(HADHA):c.469C>T (p.Gln157Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002101164	NM_000182.5(HADHA):c.2231del (p.Phe744fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002048816	NM_000182.5(HADHA):c.2020dup (p.Gln674fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV002046757	NM_000182.5(HADHA):c.1336G>T (p.Glu446Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002035761	NM_000182.5(HADHA):c.1029C>A (p.Tyr343Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002028098	NM_000182.5(HADHA):c.238del (p.Trp80fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002025539	NC_000002.12:g.26201318_26201321del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV002020384	NM_000182.5(HADHA):c.2010del (p.Asp670fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001994476	NM_000182.5(HADHA):c.156_157del (p.Arg53fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001994049	NM_000182.5(HADHA):c.2229_2233dup (p.Thr745fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001979591	NM_000182.5(HADHA):c.2000+1G>A	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV001912385	NM_000182.5(HADHA):c.1893del (p.Lys631fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001910397	NM_000182.5(HADHA):c.761_764del (p.Lys254fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV001726289	NM_000182.5(HADHA):c.1891A>T (p.Lys631Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001726239	NM_000182.5(HADHA):c.1432del (p.Ala478fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001725719	NM_000182.5(HADHA):c.761del (p.Lys254fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001725709	NM_000182.5(HADHA):c.717C>A (p.Tyr239Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001725512	NM_000182.5(HADHA):c.1844dup (p.Asn615fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001725500	NM_000182.5(HADHA):c.284_288del (p.Pro95fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001725474	NM_000182.5(HADHA):c.1519_1520insCTTT (p.Gln507fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001725386	NM_000182.5(HADHA):c.566_567delinsA (p.Pro189fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001725075	NM_000182.5(HADHA):c.1235_1236del (p.Val412fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001723963	NM_000182.5(HADHA):c.1944_1945del (p.Asn649fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001722335	NM_000182.5(HADHA):c.1633_1636delinsGGAAGGTCCTGG (p.Phe545fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001698513	NM_000182.5(HADHA):c.1844del (p.Asn615fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV001695860	NM_000182.5(HADHA):c.918+2T>A	Pathogenic	criteria provided, single submitter	
+HADHA	VCV001493594	NM_000182.5(HADHA):c.2198T>C (p.Leu733Pro)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001491269	NM_000182.5(HADHA):c.1480-1G>C	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001490688	NM_000182.5(HADHA):c.1086-2A>T	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001482399	NM_000182.5(HADHA):c.976-1G>T	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001460437	NC_000002.11:g.(?_26467378)_(26467464_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001459829	NM_000182.5(HADHA):c.1540del (p.Thr514fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001455936	NM_000182.5(HADHA):c.1491_1495dup (p.Tyr499fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001455608	NM_000182.5(HADHA):c.1204C>T (p.Gln402Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001454661	NC_000002.11:g.(?_26414109)_(26415303_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001452699	NM_000182.5(HADHA):c.387_388del (p.Lys129fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001452307	NM_000182.5(HADHA):c.1620+1del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001452124	NM_000182.5(HADHA):c.1554del (p.Asp520fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001452112	NM_000182.5(HADHA):c.2020C>T (p.Gln674Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001435055	NM_000182.5(HADHA):c.310dup (p.Ile104fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001427255	NM_000182.5(HADHA):c.2208T>A (p.Tyr736Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001420102	NM_000182.5(HADHA):c.966_967del (p.Cys322_Glu323delinsTer)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001408580	NM_000182.5(HADHA):c.352_353del (p.Gln118fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001390752	NM_000182.5(HADHA):c.2200A>T (p.Lys734Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001388408	NM_000182.5(HADHA):c.690del (p.Lys230fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001386792	NM_000182.5(HADHA):c.1654dup (p.Ala552fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001373566	NM_000182.5(HADHA):c.556C>T (p.Gln186Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV001163205	NM_000182.5(HADHA):c.1167dup (p.Lys390Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001075355	NM_000182.5(HADHA):c.1528G>T (p.Glu510Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001073572	NM_000182.5(HADHA):c.1319dup (p.Ala441fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001071670	NM_000182.5(HADHA):c.294del (p.Phe98fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001070607	NC_000002.11:g.(?_26416436)_(26418111_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001069908	NM_000182.5(HADHA):c.1523del (p.Leu508fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001069465	NM_000182.5(HADHA):c.1990_1993dup (p.Ser665Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV001065948	NM_000182.5(HADHA):c.2026C>T (p.Arg676Cys)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000984464	NM_000182.5(HADHA):c.1059del (p.Lys353fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000984355	NM_000182.5(HADHA):c.1513A>T (p.Lys505Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983873	NM_000182.5(HADHA):c.340C>T (p.Gln114Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000983872	NM_000182.5(HADHA):c.359C>A (p.Ser120Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983871	NM_000182.5(HADHA):c.439G>T (p.Gly147Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983591	NM_000182.5(HADHA):c.451G>T (p.Glu151Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983590	NM_000182.5(HADHA):c.474C>A (p.Tyr158Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983589	NM_000182.5(HADHA):c.640A>T (p.Lys214Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983588	NM_000182.5(HADHA):c.667G>T (p.Glu223Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983587	NM_000182.5(HADHA):c.859G>T (p.Glu287Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983586	NM_000182.5(HADHA):c.862G>T (p.Glu288Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983585	NM_000182.5(HADHA):c.960T>A (p.Tyr320Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000983584	NM_000182.5(HADHA):c.1168A>T (p.Lys390Ter)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000978225	NM_000182.5(HADHA):c.2134_2138dup (p.Gly715fs)	Pathogenic	criteria provided, single submitter	Mitochondrial trifunctional protein deficiency
+HADHA	VCV000952941	NM_000182.5(HADHA):c.1070del (p.Pro357fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000948895	NM_000182.5(HADHA):c.2027G>A (p.Arg676His)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000944315	NM_000182.5(HADHA):c.676+1G>A	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000848128	NM_000182.5(HADHA):c.1690-17_1690-2del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000845656	NM_000182.5(HADHA):c.1720_1721del (p.Leu574fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000835948	NM_000182.5(HADHA):c.574-2A>G	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000831608	NC_000002.12:g.(?_26236845)_(26239153_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000816540	NM_000182.5(HADHA):c.539C>T (p.Pro180Leu)	Likely pathogenic	criteria provided, single submitter	Mitochondrial trifunctional protein deficiency
+HADHA	VCV000801655	NM_000182.5(HADHA):c.1689+2T>G	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000689365	NM_000182.5(HADHA):c.1645A>G (p.Arg549Gly)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000661736	NC_000002.11:g.(?_26414109)_(26462021_?)del	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000651987	NM_000182.5(HADHA):c.1644del (p.Arg549fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000638987	NM_000182.5(HADHA):c.612dup (p.Arg205Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000579792	NM_000182.5(HADHA):c.6_24dup (p.Ile9fs)	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000558276	NM_000182.5(HADHA):c.1620+2_1620+6del	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000558129	NM_000182.5(HADHA):c.677-1G>A	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000557152	NM_000182.5(HADHA):c.2026del (p.Arg676fs)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000556957	NM_000182.5(HADHA):c.800-1_801del	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000556688	NM_000182.5(HADHA):c.64C>T (p.Arg22Ter)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000555246	NM_000182.5(HADHA):c.1493A>G (p.His498Arg)	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000554919	NM_000182.5(HADHA):c.2222del (p.Gly741fs)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000554431	NM_000182.5(HADHA):c.315-1G>A	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000554318	NM_000182.5(HADHA):c.2000+1G>C	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000553883	NM_000182.5(HADHA):c.2227_2228del (p.Gln743fs)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000553089	NM_000182.5(HADHA):c.3G>A (p.Met1Ile)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000552755	NM_000182.5(HADHA):c.129dup (p.Gly44fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000552748	NM_000182.5(HADHA):c.2059del (p.Met687fs)	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000552556	NM_000182.5(HADHA):c.2220T>A (p.Tyr740Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000552438	NM_000182.5(HADHA):c.72del (p.Gly23_Tyr24insTer)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000552402	NM_000182.5(HADHA):c.1479+1G>T	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000551571	NM_000182.5(HADHA):c.844_845insA (p.Val282fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000551505	NM_000182.5(HADHA):c.1959dup (p.Ser654Ter)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000550418	NM_000182.5(HADHA):c.1712T>C (p.Leu571Pro)	Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000550378	NM_000182.5(HADHA):c.800-1G>T	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000504151	NM_000182.5(HADHA):c.1814_1815del (p.Lys605fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000503510	NM_000182.5(HADHA):c.180_180+5delinsAT	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000495728	NM_000182.5(HADHA):c.676+2T>C	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000495727	NM_000182.5(HADHA):c.2225_2228dup (p.Phe744fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000449455	NM_000182.5(HADHA):c.1195C>T (p.Arg399Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000432660	NM_000182.5(HADHA):c.1427_1428del (p.Thr476fs)	Pathogenic	criteria provided, single submitter	
+HADHA	VCV000429373	NM_000182.5(HADHA):c.1885G>A (p.Gly629Ser)	Likely pathogenic	criteria provided, single submitter	
+HADHA	VCV000371639	NM_000182.5(HADHA):c.1A>G (p.Met1Val)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000371597	NM_000182.5(HADHA):c.1915_1918del (p.Tyr639fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000371450	NM_000182.5(HADHA):c.515del (p.Pro172fs)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000371259	NM_000182.5(HADHA):c.2071G>T (p.Glu691Ter)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000371204	NM_000182.5(HADHA):c.1202del (p.Gln401fs)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000371082	NM_000182.5(HADHA):c.1590del (p.Lys531fs)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000370742	NM_000182.5(HADHA):c.1344_1345del (p.Val448_Phe449insTer)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000370726	NM_000182.5(HADHA):c.1811del (p.Gly604fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000370523	NM_000182.5(HADHA):c.1052del (p.Lys351fs)	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000370401	NM_000182.5(HADHA):c.1237A>T (p.Lys413Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000370400	NM_000182.5(HADHA):c.1086-3_1092del	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000370347	NM_000182.5(HADHA):c.453+1G>A	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000370251	NM_000182.5(HADHA):c.2146+2T>C	Likely pathogenic	no assertion criteria provided	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000370220	NM_000182.5(HADHA):c.240G>A (p.Trp80Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000370098	NM_000182.5(HADHA):c.1221-1G>C	Likely pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHA	VCV000370079	NM_000182.5(HADHA):c.1690-2A>G	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000203747	NM_000182.5(HADHA):c.1668_1674dup (p.Ile559Ter)	Pathogenic	criteria provided, single submitter	
+HADHA	VCV000203746	NM_000182.5(HADHA):c.407C>G (p.Pro136Arg)	Likely pathogenic	criteria provided, single submitter	
+HADHA	VCV000203745	NM_000182.5(HADHA):c.1916_1919dup (p.Glu641fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1; See cases
+HADHA	VCV000197642	NM_000182.5(HADHA):c.403A>G (p.Lys135Glu)	Likely pathogenic	criteria provided, single submitter	
+HADHA	VCV000194917	NM_000182.5(HADHA):c.2146+1G>A	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000194808	NM_000182.5(HADHA):c.1918C>T (p.Gln640Ter)	Pathogenic	criteria provided, single submitter	
+HADHA	VCV000193564	NM_000182.5(HADHA):c.919-2A>G	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000189105	NM_000182.5(HADHA):c.274_278del (p.Ser92fs)	Pathogenic	criteria provided, multiple submitters, no conflicts	HADHA-related disorder; Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000189089	NM_000182.5(HADHA):c.1981_1999del (p.Leu661fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000188987	NM_000182.5(HADHA):c.703C>T (p.Arg235Trp)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000188962	NM_000182.5(HADHA):c.1793_1794del (p.His598fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000188712	NM_000182.5(HADHA):c.1967del (p.Ile655_Leu656insTer)	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000100085	NM_000182.5(HADHA):c.1528G>C (p.Glu510Gln)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	HADHA-related disorder; Inborn genetic diseases; Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Metabolic disease; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000092594	NM_000182.5(HADHA):c.157C>T (p.Arg53Ter)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000008737	NM_000182.5(HADHA):c.871C>T (p.Arg291Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	Inborn genetic diseases; Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000008736	NM_000182.5(HADHA):c.914T>A (p.Ile305Asn)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000008734	NM_000182.5(HADHA):c.1025T>C (p.Leu342Pro)	Pathogenic	no assertion criteria provided	Mitochondrial trifunctional protein deficiency
+HADHA	VCV000008733	NM_000182.5(HADHA):c.2132dup (p.Pro712fs)	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000008732	NM_000182.5(HADHA):c.1678C>T (p.Arg560Ter)	Pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000008731	NM_000182.5(HADHA):c.180+3A>G	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency; Mitochondrial trifunctional protein deficiency 1
+HADHA	VCV000008730	NM_000182.5(HADHA):c.180+1G>A	Pathogenic/Likely pathogenic	criteria provided, multiple submitters, no conflicts	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
+HADHA	VCV000008729	NM_000182.5(HADHA):c.1132C>T (p.Gln378Ter)	Pathogenic	criteria provided, single submitter	Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency; Mitochondrial trifunctional protein deficiency
