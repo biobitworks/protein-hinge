@@ -1,0 +1,51 @@
+{
+  "schema": "protein_hinge.submission_control_clarification.v1",
+  "audit_id": "AUD-PRIOR-WORK-RECONCILIATION-20260829",
+  "parent_audit": "AUD-FINAL-TEAM-EVIDENCE-20260829",
+  "recorded_at_utc": "2026-08-30T03:00:00Z",
+  "llm_in_science_leaf": false,
+  "note": "Successor clarification only. Does not modify historical receipts or AUDIT_STATE.json gate snapshots.",
+  "submission_axes": {
+    "TECHNICAL_SUBMISSION_ARTIFACT": {
+      "status": "READY",
+      "evidence": [
+        "CI_RUN_ID 33264903580",
+        "FINAL_PDF_SHA256 ded8f72e299642a7f8ed4fc0f5318b1e961c413b5640acaa6cda6d65880448ab",
+        "CANONICAL_PAPER_SOURCE_SHA bc4b0d575d130af3f335b712ec1763c164d7d74b"
+      ]
+    },
+    "SCIENTIFIC_TEAM_REVIEW": {
+      "status": "READY_WITH_BOUNDED_GAPS",
+      "bounded_gaps": [
+        "Prior-work FCO/FCG citations recommended (nonblocking hygiene)",
+        "TABLE_PROVENANCE_GATE YELLOW (hand-authored Table 1)",
+        "206 MB bootstrap zip PARTIAL_TRACE in prior session"
+      ]
+    },
+    "AUTHOR_METADATA": {
+      "status": "OPERATOR_REQUIRED",
+      "items": [
+        "OpenReview author roster",
+        "Contribution role statements",
+        "Prior-work anonymity variant (PRIOR_WORK_ANONYMITY_DECISION.md)"
+      ]
+    },
+    "OPENREVIEW_TRANSACTION": {
+      "status": "OPERATOR_REQUIRED"
+    },
+    "SOT_008_PLUS30": {
+      "status": "NOT_ESTABLISHED_NONBLOCKING",
+      "seed_id": "SOT-008",
+      "statement": "16/114 TAFAZZIN mismatch; +30 offset requires row proof",
+      "in_canonical_manuscript": false,
+      "submission_blocker": false,
+      "prior_misclassification_corrected": "Must not remain a submission blocker merely because row-level +30 proof is incomplete"
+    }
+  },
+  "pr1": {
+    "status": "OPEN_UNMERGED",
+    "policy": "OPEN_HASH_ADMITTED_ONLY",
+    "merge_blocker_for_submission": false
+  },
+  "new_experiment_recommended": false
+}

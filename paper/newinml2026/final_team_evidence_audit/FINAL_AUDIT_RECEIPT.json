@@ -1,0 +1,53 @@
+{
+  "BASE_SHA": "a2550d589594ae6e440885bc68a618f3b852764d",
+  "CANONICAL_PAPER_SOURCE_SHA": "bc4b0d575d130af3f335b712ec1763c164d7d74b",
+  "CI_AUTHORITATIVE_PDF_SHA256": "ded8f72e299642a7f8ed4fc0f5318b1e961c413b5640acaa6cda6d65880448ab",
+  "CI_RUN_ID": "33264903580",
+  "SIGNATURE_STATE": "NOT_SIGNED",
+  "audit_id": "AUD-FINAL-TEAM-EVIDENCE-20260829",
+  "canonical_numerical_partial": 1,
+  "canonical_numerical_total": 11,
+  "canonical_numerical_unresolved": 0,
+  "cockpit_host": "magicPRObox.local",
+  "evidence_host": "magicSTUDIObox.local",
+  "experiment_counts": {
+    "BLOCKED": 1,
+    "COMPLETE": 7,
+    "NEGATIVE": 6,
+    "SKIPPED": 4,
+    "total": 18
+  },
+  "figures_canonical": 1,
+  "figures_classified": 1,
+  "gates": {
+    "ANONYMITY_GATE": "PASS",
+    "CLAIM_EVIDENCE_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "EXPERIMENT_ACCOUNTING_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "FIGURE_PROVENANCE_GATE": "PASS",
+    "GIT_AUTHORITY_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "GROUP_EFFORT_AUDIT_GATE": "PASS",
+    "NOTEBOOK_PROVENANCE_GATE": "NOT_APPLICABLE",
+    "NUMERICAL_CLAIM_GATE": "PASS_WITH_BOUNDED_GAPS",
+    "RERUN_LINEAGE_GATE": "PASS",
+    "TABLE_PROVENANCE_GATE": "YELLOW",
+    "TEAM_SCOPE_GATE": "PASS"
+  },
+  "llm_in_science_leaf": false,
+  "manuscript_change_recommended": "MINIMAL_RECOMMENDED",
+  "missed_core_experiments": 0,
+  "notebooks": 0,
+  "outcome_qualifiers": {
+    "BOUNDED": 4,
+    "NOT_EXECUTED": 3,
+    "POSITIVE": 1,
+    "SUPERSEDED": 1,
+    "UNDERPOWERED": 2
+  },
+  "ready_for_independent_chatgpt_review": "YES",
+  "recorded_at_utc": "2026-08-30T02:20:00Z",
+  "schema": "protein_hinge.final_team_evidence_audit.receipt.v1",
+  "sha256sums_sha256": "3c6bb7a190b7ea43500f3261185fa0b28d500d6c3b740d83ac99a2a2a8a1ae74",
+  "tables_bounded": 1,
+  "tables_canonical": 1,
+  "tables_closed": 0
+}

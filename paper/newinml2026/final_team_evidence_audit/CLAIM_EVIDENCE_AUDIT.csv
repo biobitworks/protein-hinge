@@ -1,0 +1,25 @@
+id,statement,class,evidence
+C01,Hash-valid custody can be semantically inconsistent (zero vs three abstentions),SUPPORTED_EXACT,EXP-GAP-001 / 001.1
+C02,Successor GAP run restores invariants N=4/1/3,SUPPORTED_EXACT,EXP-GAP-001.1 hashes MATCH
+C03,G3 deterministic contract passes,SUPPORTED_EXACT,Lane A 5/5
+C04,N=1 bypass unsupported identity admission,SUPPORTED_BOUNDED,Lane B N=1; not a rate
+C05,"Historical G3 wiring reconcile(symbol,symbol)",SUPPORTED_EXACT,evaluation_wiring_defect.json
+C06,G1/G2 historical corpora not recovered,SUPPORTED_EXACT,EXP-002/003 COMPLETE_NEGATIVE
+C07,G1 successor 364=98+266 breakdown,SUPPORTED_EXACT,frozen replay 2026-08-30
+C08,G2 successor 746=364+382+0,SUPPORTED_BOUNDED,frozen provenance JSON + TSV; no live NCBI this audit
+C09,382 is not a validated silent-error rate,SUPPORTED_EXACT,canonical wording matches EXP-003 terminology ceiling
+C10,G1 generality / residue mismatches as general silent errors,NOT_PROPOSITIONAL,canonical does not claim gene-general silent-error; 16/16 TAFAZZIN — Elvis paper overclaims relative to this
+C11,Morphology null retained negative 28/50 enrichment<1,SUPPORTED_BOUNDED,cached exact match; full CPJUMP1 not local
+C12,EXP-005 not executed,SUPPORTED_EXACT,READINESS_AUDIT
+C13,No structure-prediction execution in admitted evidence,SUPPORTED_EXACT,Limitations; Elvis structure-tool language CONTRADICTED for team paper
+C14,all 98 verified position by position,SUPPORTED_BOUNDED,apply_variant only emits if residue matches; not an independent second assay
+C15,+30 offset,NOT_ESTABLISHED,SOT-008
+C16,two runs a day apart,INSUFFICIENT,capture timestamps 2026-08-25 vs successor receipts 2026-08-28; not a designed two-run experiment in canonical paper
+C17,missing 100 records,SUPPORTED_BOUNDED,mechanism recovered on contemporary capture; historical 742/642 not reproduced
+C18,24.6% → 14.0% correction,SUPPORTED_BOUNDED,Elvis/SOT only; canonical omits rates; order-of-operations repair is real
+C19,six evidence types vs table contents,NOT_PROPOSITIONAL,canonical Table 1 is experiment terminals not six evidence types
+C20,three vs five verdict-state wording,NOT_PROPOSITIONAL,canonical uses Admit|Abstain plus ceilings; not a 3-of-5 verdict table
+C21,Merkle / committed-byte re-derivation,SUPPORTED_BOUNDED,canonical claims SHA-256 leaf/manifest recompute not a CT Merkle audit tree; Elvis cites RFC6962 more strongly
+C22,We present / we frame (group paper voice),SUPPORTED_BOUNDED,multi-contributor git; PR#1 not merged; Git metadata ≠ human authorship proof
+C23,Numbers not accepted from LLM as measurement authority,SUPPORTED_BOUNDED,G1/G2/GAP/G3/EXP-006 paths exist; table is hand-transcribed from receipts
+C24,Silent error language for G2 in canonical paper,SUPPORTED_EXACT,canonical refuses silent-error rate for 382
